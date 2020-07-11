@@ -201,6 +201,7 @@ $lang = array_merge($lang, array(
 	'ACP_USER_SIG'					=> 'Potpis',
 	'ACP_USER_WARNINGS'    =>  'Upozorenja',
 
+
 	'ACP_VC_SETTINGS'					=> 'Podešavanja vizuelnih potvrda',
 	'ACP_VC_CAPTCHA_DISPLAY'			=> 'CAPTCHA pregled slike',
 	'ACP_VERSION_CHECK'					=> 'Proveri da li ima nadogradnje',
@@ -595,6 +596,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_ERROR_JABBER'		=> '<strong>Jabber greška</strong><br />» %s',
 	'LOG_ERROR_EMAIL'		=> '<strong>Email greška</strong><br />» %s',
+	'LOG_ERROR_CAPTCHA'		=> '<strong>CAPTCHA greška</strong><br />» %s',
 	
 	'LOG_FORUM_ADD'							=> '<strong>Napravljen nov forum</strong><br />» %s',
 	'LOG_FORUM_DEL_FORUM'					=> '<strong>Obrisan forum</strong><br />» %s',

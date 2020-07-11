@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 	// You can define different rules for the determination of plural forms here.
 	// See http://wiki.phpbb.com/Plural_Rules for more information
 	// or ask the translation manager for help.
-	'PLURAL_RULE'		=> 1,
+	'PLURAL_RULE'		=> 7,
 
 	'1_DAY'			=> '1 dan',
 	'1_MONTH'		=> '1 mesec',
@@ -137,6 +137,7 @@ $lang = array_merge($lang, array(
 	'BROWSING_FORUM_GUESTS'	=> array(
 		1	=> 'Korisnika u ovom forumu: %2$s i %1$d gost',
 		2	=> 'Korisnika u ovom forumu: %2$s i %1$d gosta',
+		3	=> 'Korisnika u ovom forumu: %2$s i %1$d gostiju',
 	),
 	'BUTTON_EDIT'			=> 'Izmeni',
     'BUTTON_FORUM_LOCKED'	=> 'Zaključan forum',
@@ -307,10 +308,12 @@ $lang = array_merge($lang, array(
 	'GUEST_USERS_ONLINE'		=> array(
 		1	=> 'Trenutno je %d gost online',
 		2	=> 'Trenutno su %d gosta online',
+		3	=> 'Trenutno je %d gostiju online',
 	),
 	'GUEST_USERS_TOTAL'			=> array(
 		1	=> '%d gost',
-		2	=> '%d gostas',
+		2	=> '%d gosta',
+		3	=> '%d gostiju',
 	),
 	
 	'G_ADMINISTRATORS'			=> 'Administrator',
@@ -526,10 +529,12 @@ $lang = array_merge($lang, array(
 		0			=> 'Nema postova',		// 0
 		1			=> '1 post',		// 1
 		2			=> '%d posta',		// 2+
+		3			=> '%d postova',		// 2+
 	),
 	'NUM_ATTACHMENTS'		=> array(
 		1	=> '%d prikačeni fajl',
-		2	=> '%d prikačenih fajlova',
+		2	=> '%d prikačena fajla',
+		3	=> '%d prikačenih fajlova',
 	),
 
 	'OCCUPATION'				=> 'Zanimanje',
@@ -539,12 +544,14 @@ $lang = array_merge($lang, array(
 	// "... :: x registered and y hidden"
 	'ONLINE_USERS_TOTAL'		=> array(
 		1	=> 'Trenutno je <strong>%1$d</strong> korisnik online :: %2$s i %3$s',
-		2	=> 'Trenutno su <strong>%1$d</strong> korisnika online :: %2$s i %3$s',
+		2	=> 'Trenutno je <strong>%1$d</strong> korisnika online :: %2$s i %3$s',
+		3	=> 'Trenutno su <strong>%1$d</strong> korisnika online :: %2$s i %3$s',
 	),
 	// "... :: x registered, y hidden and z guests"
 	'ONLINE_USERS_TOTAL_GUESTS'	=> array(
 		1	=> 'Trenutno je <strong>%1$d</strong> korisnik online :: %2$s, %3$s i %4$s',
 		2	=> 'Trenutno je <strong>%1$d</strong> korisnika online :: %2$s, %3$s i %4$s',
+		3	=> 'Trenutno su <strong>%1$d</strong> korisnika online :: %2$s, %3$s i %4$s',
 	),
 	
 	'OPTIONS'					=> 'Opcije',
@@ -808,6 +815,7 @@ $lang = array_merge($lang, array(
 	'USER_POSTS'			=> array(
 		1	=> '%d Post',
 		2	=> '%d Posta',
+		3	=> '%d Postova',
 	),
 	'USER_NEW_PERMISSION_DISALLOWED' =>  'Žao nam je, ali niste autorizovani da koristite ovu mogućnost. Moguće da ste se tek registrovali i možda je potrebno da više učestvujete da bi mogli da koristite ovu mogućnost.',
 	'USERS'					=> 'Korisnici',
@@ -877,19 +885,6 @@ $lang = array_merge($lang, array(
 	'YAHOO'				=> 'Yahoo',
     'YOUTUBE'			=> 'YouTube',
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	'datetime'			=> array(

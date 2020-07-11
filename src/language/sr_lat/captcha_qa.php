@@ -36,9 +36,10 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'CAPTCHA_QA'				=> 'Q&amp;A CAPTCHA',
+	'CAPTCHA_QA'				=> 'Q&amp;A',
 	'CONFIRM_QUESTION_EXPLAIN'	=> 'Ovo pitanje je način za identifikovanje i prevenciju autromatskog slanja.',
 	'CONFIRM_QUESTION_WRONG'	=> 'Uneli ste netačan odgovor na pitanje za potvrdu.',
+	'CONFIRM_QUESTION_MISSING'	=> 'Pitanja za portvdu se ne mogu preuzeti. Molimo Vas da kontaktirate administratora.',
 
 	'QUESTION_ANSWERS'			=> 'Odgovori',
 	'ANSWERS_EXPLAIN'			=> 'Unesite ispravne odgovore, svaki u novom redu.',
