@@ -51,6 +51,13 @@ $lang = array_merge($lang, array(
 	'MIGRATION_NOT_VALID'				=> '%s nije ispravna migracija.',
 	'MIGRATION_SCHEMA_DONE'				=> 'Instalirana šema: %1$s; Vreme: %2$.2f sekundi',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'Instaliram šemu: %s.',
+	
+	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Migracija je neispravna. Nedostaje uslov za UKOLIKO.',
+	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'Migracija je neispravna. Odgovarajući korak za migraciju nedostaje za UKOLIKO.',
+	'MIGRATION_INVALID_DATA_CUSTOM_NOT_CALLABLE'	=> 'Migracija je neispravna. Nedostaje dodatna funkcija.',
+	'MIGRATION_INVALID_DATA_UNKNOWN_TYPE'			=> 'Migracija je neispravna. Nepoznat tip alata za migraciju.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_TOOL'			=> 'Migracija je neispravna. Nedefinisan tip alata za migraciju.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Migracija je neispravna. Nedefinisan metod alata za migraciju.',
 
 	'MODULE_ERROR'						=> 'Došlo je do greške prilikom kreiranja modula: %s',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'Nedostaje obavezan info fajl modula: %2$s',

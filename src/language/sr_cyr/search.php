@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 	'GLOBAL'				=> 'Опште саопштење',
 
 	'IGNORED_TERMS'			=> 'занемарених',
-	'IGNORED_TERMS_EXPLAIN'	=> 'Следеће речи у вашој претрази су занемарене јер су превише уобичајене: <strong>%s</strong>.',
+	'IGNORED_TERMS_EXPLAIN'	=> 'Следеће речи у вашем упиту претраге су занемарене јер су превише уобичајене: <strong>%s</strong>.',
 
 	'JUMP_TO_POST'			=> 'Скочи на поруку',
 
@@ -92,7 +92,7 @@ $lang = array_merge($lang, array(
 	'SEARCHED_FOR'				=> 'Тражени појам',
 	'SEARCHED_TOPIC'			=> 'Тражена тема',
 	'SEARCHED_QUERY'			=> 'Упит претраге',
-	'SEARCH_ALL_TERMS'			=> 'Тражи све појмове или користи упит као што је написан',
+	'SEARCH_ALL_TERMS'			=> 'Тражи све појмове или користи упит као што је унесен',
 	'SEARCH_ANY_TERMS'			=> 'Тражи било које појмове',
 	'SEARCH_AUTHOR'				=> 'Претрага по корисничком имену',
 	'SEARCH_AUTHOR_EXPLAIN'		=> 'Користите * као џокер за делимична поклапања.',

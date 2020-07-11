@@ -52,6 +52,13 @@ $lang = array_merge($lang, array(
 	'MIGRATION_SCHEMA_DONE'				=> 'Инсталирана Шема: %1$s; Време: %2$.2f секунди',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'Инсталирање Шеме: %s.',
 
+	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Миграција није ваљана. If тврдња помоћника пропушта услов.',
+	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'Миграција није ваљана. If тврдња помоћника пропушта ваљан позив кораку миграције.',
+	'MIGRATION_INVALID_DATA_CUSTOM_NOT_CALLABLE'	=> 'Миграција није ваљана. Властита позивљива функција не може бити позвана.',
+	'MIGRATION_INVALID_DATA_UNKNOWN_TYPE'			=> 'Миграција није ваљана. Непознат тип миграционог алата је сретнут.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_TOOL'			=> 'Миграција није ваљана. Недефинисан миграциони алат је сретнут.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Миграција није ваљана. Недефинисан метод миграционог алата је сретнут.',
+
 	'MODULE_ERROR'						=> 'Појавила се грешка током прављења модула: %s',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'Тражена инфо датотека модула недостаје: %2$s',
 	'MODULE_NOT_EXIST'					=> 'Тражени модул не постоји: %s',

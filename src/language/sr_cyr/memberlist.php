@@ -40,7 +40,7 @@ $lang = array_merge($lang, array(
 	'ABOUT_USER'			=> 'Профил',
 	'ACTIVE_IN_FORUM'		=> 'Најактивнији на форуму',
 	'ACTIVE_IN_TOPIC'		=> 'Најактивнији на теми',
-	'ADD_FOE'				=> 'Додај за игнорисање',
+	'ADD_FOE'				=> 'Додај за занемаривање',
 	'ADD_FRIEND'			=> 'Додај пријатеља',
 	'AFTER'					=> 'После',
 
@@ -115,7 +115,7 @@ $lang = array_merge($lang, array(
 
 	'REAL_NAME'				=> 'Име примаоца',
 	'RECIPIENT'				=> 'Прималац',
-	'REMOVE_FOE'			=> 'Уклони игнорисање',
+	'REMOVE_FOE'			=> 'Уклони занемаривање',
 	'REMOVE_FRIEND'			=> 'Уклони пријатеља',
 
 	'SELECT_MARKED'			=> 'Изабери означено',
