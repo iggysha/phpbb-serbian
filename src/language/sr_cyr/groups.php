@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* groups [Serbian (Cyrillic script)]
+* groups [Serbian]
 *
 * @package language
 * @version $Id$

@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* install [Serbian (Cyrillic script)]
+* install [Serbian]
 *
 * @package language
 * @version $Id$
@@ -151,7 +151,7 @@ $lang = array_merge($lang, array(
 	'DLL_MYSQL'					=> 'MySQL',
 	'DLL_MYSQLI'				=> 'MySQL са MySQLi Екстензијом',
 	'DLL_ORACLE'				=> 'Oracle',
-	'DLL_POSTGRES'				=> 'PostgreSQL 7.x/8.x',
+	'DLL_POSTGRES'				=> 'PostgreSQL',
 	'DLL_SQLITE'				=> 'SQLite',
 	'DLL_XML'					=> 'XML подршка [ Jabber ]',
 	'DLL_ZLIB'					=> 'zlib сабијање подршка [ gz, .tar.gz, .zip ]',
@@ -232,6 +232,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR'					=> 'Грешка при инсталацији',
 	'INST_ERR_DB_CONNECT'		=> 'Не могу да се повежем на базу, погледајте поруку о грешци испод.',
 	'INST_ERR_DB_FORUM_PATH'	=> 'Одабрана датотека базе података је у фасцикли вашег форума. Ову датотеку би требало да поставите на-месту које нема приступ мрежи.',
+	'INST_ERR_DB_INVALID_PREFIX'=> 'Префикс који сте унели није ваљан. Мора да почиње са словом и мора да садржи само слова, бројеве и цртице за подвлачење.',
 	'INST_ERR_DB_NO_ERROR'		=> 'Није дата порука о грешци.',
 	'INST_ERR_DB_NO_MYSQLI'		=> 'Верзија MySQL инсталирана на овом рачунару је неускладљива са избором “MySQL са MySQLi Екстензијом” који сте одабрали. Молимо вас да покушате са “MySQL” уместо тога.',
 	'INST_ERR_DB_NO_SQLITE'		=> 'Верзија SQLite екстензије коју имате инсталирану је престара, и мора бити надограђена најмање на верзију 2.8.2.',
@@ -352,6 +353,7 @@ $lang = array_merge($lang, array(
 
 	'TABLES_MISSING'			=> 'Не могу да пронађем ове табеле<br />» <strong>%s</strong>.',
 	'TABLE_PREFIX'				=> 'Префикс за табеле у бази',
+	'TABLE_PREFIX_EXPLAIN'		=> 'Префикс мора да почиње са словом и мора да садржи само слова, бројеве и цртице за подвлачење.',
 	'TABLE_PREFIX_SAME'			=> 'Префикс табеле треба да буде онај који се користи у програму који желите да пребаците.<br />» Префикс табеле је био %s.',
 	'TESTS_PASSED'				=> 'Пробе успешне',
 	'TESTS_FAILED'				=> 'Пробе неуспешне',

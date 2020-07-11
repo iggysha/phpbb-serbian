@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* help_faq [Serbian (Latin script)]
+* help_faq [Serbian]
 *
 * @package language
 * @version $Id: help_faq.php,v 1.19 2006/11/17 23:21:30 shs Exp $

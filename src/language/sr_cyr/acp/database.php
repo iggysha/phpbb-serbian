@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_database [Serbian (Cyrillic script)]
+* acp_database [Serbian]
 *
 * @package language
 * @version $Id$
@@ -59,6 +59,7 @@ $lang = array_merge($lang, array(
 
 	'RESTORE_FAILURE'		=> 'Датотека резервне копије је можда неисправна.',
 	'RESTORE_OPTIONS'		=> 'Поставке за враћање',
+	'RESTORE_SELECTED_BACKUP'	=> 'Да ли сигурно желите да вратите одабране резервне копије?',
 	'RESTORE_SUCCESS'		=> 'База је успешно враћена.<br /><br />Ваш форум би требало да се врати у стање када је резервна копија направљена.',
 
 	'SELECT_ALL'			=> 'Означи све',

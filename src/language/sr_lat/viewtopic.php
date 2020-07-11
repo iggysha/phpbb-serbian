@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* viewtopic [Serbian (Latin script)]
+* viewtopic [Serbian]
 *
 * @package language
 * @version $Id: viewtopic.php,v 1.14 2006/09/24 00:28:32 shs Exp $

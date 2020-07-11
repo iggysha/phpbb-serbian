@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_email [Serbian (Latin script)]
+* acp_email [Serbian]
 *
 * @package language
 * @version $Id: email.php,v 1.6 2006/09/24 00:28:08 shs Exp $

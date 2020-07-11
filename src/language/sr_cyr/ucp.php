@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* ucp [Serbian (Cyrillic script)]
+* ucp [Serbian]
 *
 * @package language
 * @version $Id$
@@ -138,6 +138,7 @@ $lang = array_merge($lang, array(
 	'CURRENT_IMAGE'				=> 'Тренутна слика',
 	'CURRENT_PASSWORD'			=> 'Тренутна лозинка',
 	'CURRENT_PASSWORD_EXPLAIN'	=> 'Морате потврдити вашу тренутну лозинку уколико желите да промените лозинку, или вашу e-mail адресу или пак корисничко име.',
+	'CUR_PASSWORD_EMPTY'		=> 'Нисте унели вашу тренутну лозинку.',
 	'CUR_PASSWORD_ERROR'		=> 'Тренутна лозинка коју сте унели је неисправна.',
 	'CUSTOM_DATEFORMAT'			=> 'Властити…',
 
@@ -268,9 +269,11 @@ $lang = array_merge($lang, array(
 	'MOVE_TO_FOLDER'				=> 'Помери у фасциклу',
 	'MOVE_UP'						=> 'Помери горе',
 
+	'NEW_EMAIL_CONFIRM_EMPTY'		=> 'Нисте унели потврду e-mail адресе.',
 	'NEW_EMAIL_ERROR'				=> 'Адреса e-mail коју сте унели се не поклапа.',
 	'NEW_FOLDER_NAME'				=> 'Ново име фасцикле',
 	'NEW_PASSWORD'					=> 'Нова лозинка',
+	'NEW_PASSWORD_CONFIRM_EMPTY'	=> 'Нисте унели потврду лозинке.',
 	'NEW_PASSWORD_ERROR'			=> 'Лозинке које сте унели се не поклапају.',
 	'NOTIFY_METHOD'					=> 'Начин обавештавања',
 	'NOTIFY_METHOD_BOTH'			=> 'Оба',

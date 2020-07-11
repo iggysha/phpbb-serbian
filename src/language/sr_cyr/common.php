@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* common [Serbian (Cyrillic script)]
+* common [Serbian]
 *
 * @package language
 * @version $Id$
@@ -40,10 +40,10 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> 'Превод - <a href="http://www.medicinari.com/" target="_new">medicinari.com</a>',
+	'TRANSLATION_INFO'	=> 'Превод - <a href="http://www.medicinari.com/">medicinari.com</a>',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d.m.Y|',	// 01 Jan 2007 (with Relative days enabled)
-	'USER_LANG'			=> 'sr-cyrl',
+	'USER_LANG'			=> 'sr',
 
 	'1_DAY'			=> '1 дан',
 	'1_MONTH'		=> '1 месец',
@@ -165,6 +165,7 @@ $lang = array_merge($lang, array(
 	'EMPTY_MESSAGE_SUBJECT'				=> 'Морате унети наслов када пишете нову поруку.',
 	'ENABLED'							=> 'Омогућено',
 	'ENCLOSURE'							=> 'Ограђивање',
+	'ENTER_USERNAME'					=> 'Унесите корисничко име',
 	'ERR_CHANGING_DIRECTORY'			=> 'Није могуће променити фасциклу.',
 	'ERR_CONNECTING_SERVER'				=> 'Грешка при повезивању на сервер.',
 	'ERR_JAB_AUTH'						=> 'Не могу да се потврдим на Jabber серверу.',
@@ -200,6 +201,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES_LINK'		=> 'Молимо кликните овде да прочитате правила форума',
 	'FROM'					=> 'од',
 	'FSOCK_DISABLED'		=> 'Поступак не може бити употпуњен јер је <var>fsockopen</var> функција онемогућена или је сервер презаузет односно недоступан.',
+	'FSOCK_TIMEOUT'			=> 'Појавила се пауза током читања из мрежног извора.',
 
 	'FTP_FSOCK_HOST'				=> 'FTP сервер',
 	'FTP_FSOCK_HOST_EXPLAIN'		=> 'FTP сервер који се користи за повезивање са вашом веб страницом.',
@@ -652,6 +654,10 @@ $lang = array_merge($lang, array(
 	'UNREAD_PMS'			=> '<strong>%d</strong> непрочитаних порука',
 	'UNREAD_POST'			=> 'Непрочитана порука',
 	'UNREAD_POSTS'			=> 'Непрочитане поруке',
+	'UNWATCH_FORUM_CONFIRM'		=> 'Да ли сигурно нежелите да пратите овај форум?',
+	'UNWATCH_FORUM_DETAILED'	=> 'Да ли сигурно нежелите да пратите форум “%s”?',
+	'UNWATCH_TOPIC_CONFIRM'		=> 'Да ли сигурно нежелите да пратите ову тему?',
+	'UNWATCH_TOPIC_DETAILED'	=> 'Да ли сигурно нежелите да пратите тему “%s”?',
 	'UNWATCHED_FORUMS'			=> 'Више не пратите изабране форуме.',
 	'UNWATCHED_TOPICS'			=> 'Више не пратите изабране теме.',
 	'UNWATCHED_FORUMS_TOPICS'	=> 'Више не пратите изабрано.',
@@ -700,6 +706,10 @@ $lang = array_merge($lang, array(
 
 	'WARNINGS'			=> 'Опомене',
 	'WARN_USER'			=> 'Опомени корисника',
+	'WATCH_FORUM_CONFIRM'	=> 'Да ли сигурно желите да пратите овај форум?',
+	'WATCH_FORUM_DETAILED'	=> 'Да ли сигурно желите да пратите форум “%s”?',
+	'WATCH_TOPIC_CONFIRM'	=> 'Да ли сигурно желите да пратите ову тему?',
+	'WATCH_TOPIC_DETAILED'	=> 'Да ли сигурно желите да пратите тему “%s”?',
 	'WELCOME_SUBJECT'	=> 'Добро дошли на %s форуме',
 	'WEBSITE'			=> 'Веб страница',
 	'WHOIS'				=> 'Ко је',

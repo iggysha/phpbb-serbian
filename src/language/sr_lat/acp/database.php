@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_database [Serbian (Latin script)]
+* acp_database [Serbian]
 *
 * @package language
 * @version $Id: database.php,v 1.12 2006/10/02 15:10:29 acydburn Exp $
@@ -32,6 +32,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_BACKUP_EXPLAIN'	=> 'Ovde možete bekapovati sve podatke vezane za phpBB. Možete sačuvati arhivu u vašem <samp>store/</samp> direktrijumu ili preuzeti direktno. U zavisnosti od konfiguracije vašeg servera bićete u mogućnosti da kompresujete fajl u nekoliko formata.',
 	'ACP_RESTORE_EXPLAIN'	=> 'Ova opcija povratiti sve phpBB tabele iz sačuvanog fajla. Ako vaš server ima podršku možete koristiti gzip ili bzip2 kompresovan tekstualni fajl i biće automatski raspakovan. <strong>UPOZORENJE</strong> Ovo će obrisati sve postojeće podatke. Proces vraćanja podataka može dugo da potraje. Molimo vas da ne otvarate druge stranice dok se proces ne završi.',
+	'RESTORE_SELECTED_BACKUP'	=> 'Da li ste sigurni da želite da povratite izabrani bekap?',
 
 	'BACKUP_DELETE'		=> 'Bekap fajl je uspešno obrisan.',
 	'BACKUP_INVALID'	=> 'Izabran fajl za bekap je neispravan.',

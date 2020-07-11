@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* mcp [Serbian (Cyrillic script)]
+* mcp [Serbian]
 *
 * @package language
 * @version $Id$

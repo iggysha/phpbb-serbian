@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* posting [Serbian (Latin script)]
+* posting [Serbian]
 *
 * @package language
 * @version $Id: posting.php,v 1.45 2006/11/24 14:45:13 dhn2 Exp $
@@ -55,6 +55,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_Q_HELP'				=> 'Citiraj tekst: [quote]tekst[/quote]  (alt+q)',
 	'BBCODE_S_HELP'				=> 'Boja fonta: [color=red]tekst[/color]  Trik: možete takođe koristiti color=#FF0000',
 	'BBCODE_U_HELP'				=> 'Podvučeni tekst: [u]tekst[/u]  (alt+u)',
+	'BBCODE_Y_HELP'				=> 'Lista: Dodaj element u listu',
 	'BBCODE_W_HELP'				=> 'Ubaci link: [url]http://url[/url] ili [url=http://url]URL tekst[/url]  (alt+w)',
 	'BBCODE_D_HELP'				=> 'Flash: [flash=width,height]http://url[/flash]  (alt+d)',
 	'BUMP_ERROR'				=> 'Ne možete tako brzo maknuti ovu temu posle zadnjeg posta.',

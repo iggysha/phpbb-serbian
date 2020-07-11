@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_bots [Serbian (Latin script)]
+* acp_bots [Serbian]
 *
 * @package language
 * @version $Id: bots.php,v 1.6 2006/10/02 15:10:29 acydburn Exp $

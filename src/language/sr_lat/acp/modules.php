@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_modules [Serbian (Latin script)]
+* acp_modules [Serbian]
 *
 * @package language
 * @version $Id: modules.php,v 1.9 2006/11/10 13:49:52 acydburn Exp $

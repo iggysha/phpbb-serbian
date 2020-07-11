@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp common [Serbian (Latin script)]
+* acp common [Serbian]
 *
 * @package language
 * @version $Id: common.php,v 1.70 2006/11/27 11:37:42 dhn2 Exp $
@@ -227,10 +227,18 @@ $lang = array_merge($lang, array(
 
 	'EDIT'					=> 'Izmeni',
 	'ENABLE'				=> 'Omogući',
+	'ERROR_MBSTRING_FUNC_OVERLOAD'			=> 'Funkcija overloading je neispravno podešeno',
+	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'	=> '<var>mbstring.func_overload</var> mora biti ili 0 ili 4. Trenutnu vrednost možete proveriti na <samp>PHP informacije</samp> stranici.',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION'	=> 'Transparent character encoding je neispravno podešeno',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> mora biti podešeno na 0. Trenutnu vrednost možete proveriti na <samp>PHP informacije</samp> stranici.',
+	'ERROR_MBSTRING_HTTP_INPUT'	=> 'HTTP input character conversion je neispravno podešeno',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'	=> '<var>mbstring.http_input</var> mora biti podešeno na <samp>pass</samp>. Trenutnu vrednost možete proveriti na <samp>PHP informacije</samp> stranici.',
+	'ERROR_MBSTRING_HTTP_OUTPUT'	=> 'output character conversion je neispravno podešeno',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'	=> '<var>mbstring.http_output</var> mora biti podešeno na <samp>pass</samp>. Trenutnu vrednost možete proveriti na <samp>PHP informacije</samp> stranici.',
 	'EXPORT_DOWNLOAD'		=> 'Preuzmi',
 	'EXPORT_STORE'			=> 'Sačuvaj',
-	'EXPLAIN_SEND_STATISTICS'  =>  'Molimo Vas da pošaljete informacije o serveru i konfiguraciji boarda phpBB-u za statističku analizu. Sve informacije koje mogu da otkriju Vaš board ili Vas su uklonjene - podaci su potpuno <strong>anonimni</strong>. Donosimo odluke o budućim verzijama phpBB-a na osnovu ovih informacija. Statistika je javno dostupna. Takođe ove podatke delimo sa PHP projektom, jezikom u kome je phpBB napisan.',
-  'EXPLAIN_SHOW_STATISTICS'   =>  'Koristeći dugme ispod možete pogledati sve podatke koji će biti poslati.',
+	'EXPLAIN_SEND_STATISTICS'  	=>  'Molimo Vas da pošaljete informacije o serveru i konfiguraciji boarda phpBB-u za statističku analizu. Sve informacije koje mogu da otkriju Vaš board ili Vas su uklonjene - podaci su potpuno <strong>anonimni</strong>. Donosimo odluke o budućim verzijama phpBB-a na osnovu ovih informacija. Statistika je javno dostupna. Takođe ove podatke delimo sa PHP projektom, jezikom u kome je phpBB napisan.',
+	'EXPLAIN_SHOW_STATISTICS'   =>  'Koristeći dugme ispod možete pogledati sve podatke koji će biti poslati.',
 
 	'FORUM_INDEX'			=> 'Forum index',
 

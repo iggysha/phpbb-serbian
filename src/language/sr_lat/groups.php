@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* groups [Serbian (Latin script)]
+* groups [Serbian]
 *
 * @package language
 * @version $Id: groups.php,v 1.15 2006/10/30 16:19:32 acydburn Exp $

@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* posting [Serbian (Latin script)]
+* posting [Serbian]
 *
 * @package language
 * @version $Id: posting.php,v 1.24 2006/11/19 14:56:06 davidmj Exp $

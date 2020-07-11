@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* ucp [Serbian (Latin script)]
+* ucp [Serbian]
 *
 * @package language
 * @version $Id: ucp.php,v 1.86 2006/11/24 14:59:13 acydburn Exp $
@@ -131,6 +131,7 @@ $lang = array_merge($lang, array(
 	'CURRENT_PASSWORD'			=> 'Trenutna šifra',
 	'CURRENT_PASSWORD_EXPLAIN'	=> 'Morate potvrditi trenutnu šifru ako želite da je promenite, promenite vašu email adresu ili korisničko ime.',
 	'CUR_PASSWORD_ERROR'		=> 'Trenutna šifra koju ste uneli je netačna.',
+	'CUR_PASSWORD_EMPTY'		=> 'Niste uneli vašu trenutnu šifru.',
 	'CUSTOM_DATEFORMAT'			=> 'Proizvoljan…',
 
 	'DEFAULT_ACTION'			=> 'Podrazumevana akcija',
@@ -261,9 +262,11 @@ $lang = array_merge($lang, array(
 	'MOVE_UP'						=> 'Pomeri gore',
 
 	'NEW_EMAIL_ERROR'				=> 'Email adrese koju ste uenli se ne poklapaju.',
+	'NEW_EMAIL_CONFIRM_EMPTY'		=> 'Niste uneli email adresu za potvrdu.',
 	'NEW_FOLDER_NAME'				=> 'Ime novog foldera',
 	'NEW_PASSWORD'					=> 'Nova šifra',
 	'NEW_PASSWORD_ERROR'			=> 'Šifre koje ste uneli se ne poklapaju.',
+	'NEW_PASSWORD_CONFIRM_EMPTY'	=> 'Niste uneli šifru za potvrdu.',
 	'NOTIFY_METHOD'					=> 'Metod obaveštenja',
 	'NOTIFY_METHOD_BOTH'			=> 'Oba',
 	'NOTIFY_METHOD_EMAIL'			=> 'Samo email-om',

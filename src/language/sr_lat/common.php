@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* common [Serbian (Latin script)]
+* common [Serbian]
 *
 * @package language
 * @version $Id: common.php,v 1.129 2006/11/24 14:59:13 acydburn Exp $
@@ -36,7 +36,7 @@ $lang = array_merge($lang, array(
 	'LEFT'				=> 'left',
 	'RIGHT'				=> 'right',
 	'DATE_FORMAT'		=> '|d M Y|',
-	'USER_LANG'			=> 'sr-latn',
+	'USER_LANG'			=> 'sr',
 
 	'1_DAY'			=> '1 dan',
 	'1_MONTH'		=> '1 mesec',
@@ -157,6 +157,7 @@ $lang = array_merge($lang, array(
 	'EMPTY_SUBJECT'						=> 'Morate uneti naslov kada pišete novu temu.',
 	'EMPTY_MESSAGE_SUBJECT'				=> 'Morate uneti naslov kada pišete novu poruku.',
 	'ENABLED'							=> 'Omogućeno',
+	'ENTER_USERNAME'					=> 'Upišite korisničko ime',
 	'ENCLOSURE'							=> 'Ograđivanje',
 	'ERR_CHANGING_DIRECTORY'			=> 'Ne mogu da promenim direktorijum',
 	'ERR_CONNECTING_SERVER'				=> 'Greška pri konekciji na server',
@@ -197,6 +198,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES_LINK'		=> 'Kliknite ovde da pročitate pravila foruma',
 	'FROM'					=> 'od',
 	'FSOCK_DISABLED'		=> 'Operacija ne može biti izvršena jer je <var>fsockopen</var> funkcija onemogućena ili je server nedostupan.',
+	'FSOCK_TIMEOUT'			=> 'Dođlo je do greške - isteklo je vreme predviđeno za pristup putem mreže.',
 
 	'FTP_FSOCK_HOST'				=> 'FTP host',
 	'FTP_FSOCK_HOST_EXPLAIN'		=> 'FTP server koji se koristi za konekciju sa vašim sajtom',
@@ -646,6 +648,10 @@ $lang = array_merge($lang, array(
 	'UNWATCHED_FORUMS'		=> 'Više ne pratite izabrane forume.',
 	'UNWATCHED_TOPICS'		=> 'Više ne pratite izabrane teme.',
 	'UNWATCHED_FORUMS_TOPICS'  	=> 'Više ne pratite izabrane teme.',
+	'UNWATCH_FORUM_CONFIRM'		=>	'Da li ste sigurni da želite da odjavite praćenje ovog foruma?',
+	'UNWATCH_FORUM_DETAILED'	=> 'Da li ste sigurni da želite da odjavite praćenje foruma “%s”?',
+	'UNWATCH_TOPIC_CONFIRM'		=> 'Da li ste sigurni da želite da odjavite praćenje ove teme?',
+	'UNWATCH_TOPIC_DETAILED'	=> 'Da li ste sigurni da želite da odjavite praćenje teme “%s”?',
 	'UPDATE'				=> 'Ažuriraj',
 	'UPLOAD_IN_PROGRESS'	=> 'Slanje je trenutno u toku',
 	'URL_REDIRECT'			=> 'Ako vaš browser ne podržava meta redirekciju molimo vas da kliknete %sOVDE%s da bi vas preusmerili.',
@@ -690,6 +696,10 @@ $lang = array_merge($lang, array(
 
 	'WARNINGS'			=> 'Upozorenja',
 	'WARN_USER'			=> 'Upozori korisnika',
+	'WATCH_FORUM_CONFIRM'		=> 'Da li ste sigurni da želite da pratite ovaj forum?',
+	'WATCH_FORUM_DETAILED'		=> 'Da li ste sigurni da želite da pratite forum “%s”?',
+	'WATCH_TOPIC_CONFIRM'		=> 'Da li ste sigurni da želite da pratite ovu temu?',
+	'WATCH_TOPIC_DETAILED'		=> 'Da li ste sigurni da želite da pratite temu “%s”?',
 	'WELCOME_SUBJECT'	=> 'Dobrodošli na %s forume',
 	'WEBSITE'			=> 'Sajt',
 	'WHOIS'				=> 'Ko',

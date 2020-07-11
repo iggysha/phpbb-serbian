@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_ban [Serbian (Latin script)]
+* acp_ban [Serbian]
 *
 * @package language
 * @version $Id: ban.php,v 1.9 2006/10/02 15:10:29 acydburn Exp $
@@ -63,6 +63,9 @@ $lang = array_merge($lang, array(
 	'IP_UNBAN_EXPLAIN'			=> 'Možete ukloniti zabranu više IP adresa odjednom koristeći odgovarajuću kombinaciju miša i tastature. Izuzete IP adrese su obeležene obojenom pozadinom.',
 
 	'LENGTH_BAN_INVALID'		=> 'Datum mora biti u formatu <kbd>GGGG-MM-DD</kbd>.',
+	
+	'OPTIONS_BANNED'			=> 'Zabranjen',
+	'OPTIONS_EXCLUDED'			=> 'Izuzet',
 	
 	'PERMANENT'		=> 'Trajno',
 	

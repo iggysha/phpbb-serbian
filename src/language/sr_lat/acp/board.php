@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_board [Serbian (Latin script)]
+* acp_board [Serbian]
 *
 * @package language
 * @version $Id: board.php,v 1.46 2006/11/23 20:56:02 shs Exp $

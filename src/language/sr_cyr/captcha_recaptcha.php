@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* recaptcha [Serbian (Cyrillic script)]
+* recaptcha [Serbian]
 *
 * @package language
 * @version $Id$

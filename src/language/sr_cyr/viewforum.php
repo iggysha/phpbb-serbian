@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* viewforum [Serbian (Cyrillic script)]
+* viewforum [Serbian]
 *
 * @package language
 * @version $Id$

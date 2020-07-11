@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_common [Serbian (Cyrillic script)]
+* acp_common [Serbian]
 *
 * @package language
 * @version $Id$
@@ -326,6 +326,16 @@ $lang = array_merge($lang, array(
 
 	'DATABASE_SERVER_INFO'	=> 'Сервер базе',
 	'DATABASE_SIZE'			=> 'Величина базе',
+
+	// Enviroment configuration checks, mbstring related
+	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> 'Функција преплављивања је непрописно конфигурисана',
+	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> '<var>mbstring.func_overload</var> мора бити подешено или на 0 или на 4. Можете проверити тренутну вредност на <samp>PHP подаци</samp> страници.',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION'			=> 'Кодирање знакова је непрописно конфигурисано',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> мора бити подешено на 0. Можете проверити тренутну вредност на <samp>PHP подаци</samp> страници.',
+	'ERROR_MBSTRING_HTTP_INPUT'						=> 'HTTP улаз пребацивања знакова је непрописно конфигурисан',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> must be set to <samp>pass</samp>. Можете проверити тренутну вредност на <samp>PHP подаци</samp> страници.',
+	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'HTTP излаз пребацивања знакова је непрописно конфигурисан',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> мора бити подешено на <samp>pass</samp>. Можете проверити тренутну вредност на <samp>PHP подаци</samp> страници.',
 
 	'FILES_PER_DAY'		=> 'Прилога дневно',
 	'FORUM_STATS'		=> 'Статистика форума',

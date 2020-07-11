@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* install [Serbian (Latin script)]
+* install [Serbian]
 *
 * @package language
 * @version $Id: install.php,v 1.63 2006/11/27 21:24:15 davidmj Exp $
@@ -208,6 +208,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR'					=> 'Greška pri instalaciji',
 	'INST_ERR_DB_CONNECT'		=> 'Ne mogu da se povežem na bazu, pogledajte poruku o grešci ispod',
 	'INST_ERR_DB_FORUM_PATH'	=> 'Fajl baze podataka se nalazi u direktorijumu vašeg foruma. Ovaj fajl bi trebalo da cuvate na lokaciji koja nije web dostupna',
+	'INST_ERR_DB_INVALID_PREFIX'	=> 'Prefiks koji ste uneli je neispravan. Mora da počinje sa slovom i mora da sadrži samo slova, brojeve i donju crtu.',
 	'INST_ERR_DB_NO_ERROR'		=> 'Nije data poruka o grešci',
 	'INST_ERR_DB_NO_MYSQLI'		=> 'Verzija MySQL-a instalirana na ovoj mašini je nekompatibilna sa “MySQL sa MySQLi Ekstenzijom” opcijom koju ste izabrali. Molimo vas da pokušate sa “MySQL” opcijom.',
 	'INST_ERR_DB_NO_SQLITE'		=> 'Verzija SQLite ekstenzije koju imate instaliranu je prestara, i mora biti nadograđena na najmanje verziju 2.8.2.',
@@ -335,6 +336,7 @@ $lang = array_merge($lang, array(
 	'TABLES_MISSING'			=> 'Ne mogu da pronašem ove tabele<br />» <strong>%s</strong>.',
 	'TABLE_PREFIX'				=> 'Prefixks za tabele u bazi',
 	'TABLE_PREFIX_SAME'			=> 'Prefiks tabele treba da bude onaj koji se koristi u softveru koji želite da konvertujete.<br />» Priloženi prefiks tabele je bio %s',
+	'TABLE_PREFIX_EXPLAIN'		=> 'Prefiks more počinjati sa slovom i može da sadrži samo slova, brojeve i donju crticu.',
 	'TESTS_PASSED'				=> 'Testovi uspešni',
 	'TESTS_FAILED'				=> 'Testovi neuspešni',
 	'TOGGLE_DISPLAY'			=> 'Prikaži/Sakrij listu fajlova',

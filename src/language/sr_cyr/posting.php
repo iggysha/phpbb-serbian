@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* posting [Serbian (Cyrillic script)]
+* posting [Serbian]
 *
 * @package language
 * @version $Id$
@@ -48,7 +48,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_A_HELP'				=> 'Линијски додат прилог: [attachment=]filename.ext[/attachment]',
 	'BBCODE_B_HELP'				=> 'Задебљан текст: [b]текст[/b]',
 	'BBCODE_C_HELP'				=> 'Приказ кода: [code]код[/code]',
-	'BBCODE_E_HELP'				=> 'Списак: Додај ставку списка',
+	'BBCODE_D_HELP'				=> 'Флеш: [flash=width,height]http://url[/flash]',
 	'BBCODE_F_HELP'				=> 'Величина слова: [size=85]мали текст[/size]',
 	'BBCODE_IS_OFF'				=> '%sББКод%s је <em>ИСКЉУЧЕН</em>',
 	'BBCODE_IS_ON'				=> '%sББКод%s је <em>УКЉУЧЕН</em>',
@@ -61,7 +61,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_S_HELP'				=> 'Боја слова: [color=red]текст[/color]  Савет: можете такође користити color=#FF0000',
 	'BBCODE_U_HELP'				=> 'Подвучен текст: [u]текст[/u]',
 	'BBCODE_W_HELP'				=> 'Убаци URL: [url]http://url[/url] или [url=http://url]URL текст[/url]',
-	'BBCODE_D_HELP'				=> 'Flash: [flash=width,height]http://url[/flash]',
+	'BBCODE_Y_HELP'				=> 'Списак: Додај ставку списка',
 	'BUMP_ERROR'				=> 'Не можете погурати ову тему тако брзо после задње поруке.',
 
 	'CANNOT_DELETE_REPLIED'		=> 'Жао нам је али можете брисати само поруке на које није одговорено.',

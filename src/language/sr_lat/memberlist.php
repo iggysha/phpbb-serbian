@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* memberlist [Serbian (Latin script)]
+* memberlist [Serbian]
 *
 * @package language
 * @version $Id: memberlist.php,v 1.26 2006/10/26 14:46:41 dhn2 Exp $

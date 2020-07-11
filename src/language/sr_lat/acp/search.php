@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_search [Serbian (Latin script)]
+* acp_search [Serbian]
 *
 * @package language
 * @version $Id: search.php,v 1.8 2006/10/02 15:10:29 acydburn Exp $

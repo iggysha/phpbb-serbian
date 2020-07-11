@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* viewforum [Serbian (Latin script)]
+* viewforum [Serbian]
 *
 * @package language
 * @version $Id: viewforum.php,v 1.14 2006/11/19 20:08:15 acydburn Exp $

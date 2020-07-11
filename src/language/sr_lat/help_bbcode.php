@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* help_bbcode [Serbian (Latin script)]
+* help_bbcode [Serbian]
 *
 * @package language
 * @version $Id: help_bbcode.php,v 1.8 2006/09/24 00:28:32 shs Exp $

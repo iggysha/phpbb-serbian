@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* memberlist [Serbian (Cyrillic script)]
+* memberlist [Serbian]
 *
 * @package language
 * @version $Id$

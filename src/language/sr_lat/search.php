@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* search [Serbian (Latin script)]
+* search [Serbian]
 *
 * @package language
 * @version $Id: search.php,v 1.15 2006/10/08 11:25:20 acydburn Exp $

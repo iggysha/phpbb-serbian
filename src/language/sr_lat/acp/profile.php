@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_profile [Serbian (Latin script)]
+* acp_profile [Serbian]
 *
 * @package language
 * @version $Id: profile.php,v 1.12 2006/11/23 20:56:02 shs Exp $

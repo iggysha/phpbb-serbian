@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_styles [Serbian (Latin script)]
+* acp_styles [Serbian]
 *
 * @package language
 * @version $Id: styles.php,v 1.21 2006/10/08 11:25:20 acydburn Exp $

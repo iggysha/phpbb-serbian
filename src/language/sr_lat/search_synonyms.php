@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* search_synonyms [Serbian (Latin script)]
+* search_synonyms [Serbian]
 *
 * @package language
 * @version $Id: search_synonyms.php,v 1.1 2006/05/28 19:06:21 naderman Exp $

@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_language [Serbian (Cyrillic script)]
+* acp_language [Serbian]
 *
 * @package language
 * @version $Id$
@@ -59,6 +59,7 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_PACK_DELETED'				=> 'Језички пакет <strong>%s</strong> је успешно уклоњен. Сви корисници који користе овај језик су враћени на задати језик форума.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Појединости језичког пакета',
 	'LANGUAGE_PACK_INSTALLED'			=> 'Језички пакет <strong>%s</strong> је успешно инсталиран.',
+	'LANGUAGE_PACK_CPF_UPDATE'			=> 'Језичке ознаке властитих поља профила’ су копиране из задатог језика. Молимо промените их уколико је неопходно.',
 	'LANGUAGE_PACK_ISO'					=> 'ISO',
 	'LANGUAGE_PACK_LOCALNAME'			=> 'Месни назив',
 	'LANGUAGE_PACK_NAME'				=> 'Име',

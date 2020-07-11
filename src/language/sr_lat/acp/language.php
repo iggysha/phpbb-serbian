@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_language [Serbian (Latin script)]
+* acp_language [Serbian]
 *
 * @package language
 * @version $Id: language.php,v 1.8 2006/10/08 11:25:20 acydburn Exp $
@@ -51,6 +51,7 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_FILES'					=> 'Jezički fajlovi',
 	'LANGUAGE_KEY'						=> 'Jezički ključ',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Ovaj jezički paket je već instaliran.',
+	'LANGUAGE_PACK_CPF_UPDATE'			=> 'Proizvoljna polja za profil su kopirana iz podrazmevanog jezika. Molimo vas da ih promenite ukoliko je potrebno.',
 	'LANGUAGE_PACK_DELETED'				=> '<strong>%s</strong> jezički paket je uspešno uklonjen. Svi korisnici koji su koristilo ovaj jezik su resetovani i postavljen im je podrazumevani jezik board-a.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Detalji jezičkog paketa',
 	'LANGUAGE_PACK_INSTALLED'			=> '<strong>%s</strong> jezički paket je uspešno instaliran.',

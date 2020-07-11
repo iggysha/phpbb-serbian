@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_ban [Serbian (Cyrillic script)]
+* acp_ban [Serbian]
 *
 * @package language
 * @version $Id$
@@ -67,6 +67,9 @@ $lang = array_merge($lang, array(
 	'IP_UNBAN_EXPLAIN'			=> 'Можете уклонити забрану (или из-узеће) вишеструких IP адреса одједном користећи одговарајућу комбинацију миша и тастатуре за ваш рачунар и прегледач. Изузете IP адресе су задебљане.',
 
 	'LENGTH_BAN_INVALID'		=> 'Датум мора бити у облику <kbd>ГГГГ-ММ-ДД</kbd>.',
+
+	'OPTIONS_BANNED'			=> 'Под забраном',
+	'OPTIONS_EXCLUDED'			=> 'Искључен',
 
 	'PERMANENT'		=> 'Трајно',
 
