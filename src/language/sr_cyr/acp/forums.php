@@ -97,6 +97,7 @@ $lang = array_merge($lang, array(
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Бележи број пута колико је кликнуто на везу форума.',
 	'FORUM_NAME'						=> 'Назив форума',
 	'FORUM_NAME_EMPTY'					=> 'Морате унети назив за овај форум.',
+	'FORUM_NAME_EMOJI'					=> 'Назив форума који сте унели није ваљан.<br>Садржи следеће неподржане знакове:<br>%s',
 	'FORUM_PARENT'						=> 'Родитељски форум',
 	'FORUM_PASSWORD'					=> 'Лозинка форума',
 	'FORUM_PASSWORD_CONFIRM'			=> 'Потврдите лозинку форума',

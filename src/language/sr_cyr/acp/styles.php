@@ -21,7 +21,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -36,55 +36,56 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
-$lang = array_merge($lang, array(
-	'ACP_STYLES_EXPLAIN'	=> 'Овде можете управљати доступним стиловима на вашем форуму. Можете мењати постојеће стилове, обрисати, деактивирати, реактивирати, инсталирати нове стилове. Можете такође видети како ће стил да изгледа користећи функцију прегледа. Такође је приказан списак укупног броја корисника за сваки стил, молимо знајте да преписивање преко корисниковог стила неће бити одражено овде.',
+$lang = array_merge($lang, [
+	'ACP_STYLES_EXPLAIN'						=> 'Овде можете управљати стиловима доступним на вашем форуму.<br>Please note you cannot uninstall the “<strong>prosilver</strong>” style as it is phpBB’s default and primary parent style.',
 
-	'CANNOT_BE_INSTALLED'			=> 'Не може бити инсталирано',
-	'CONFIRM_UNINSTALL_STYLES'		=> 'Да ли сигурно желите да деинсталирате одабране стилове?',
-	'COPYRIGHT'						=> 'Copyright',
+	'CANNOT_BE_INSTALLED'						=> 'Не може бити инсталирано',
+	'CONFIRM_UNINSTALL_STYLES'					=> 'Да ли сигурно желите да деинсталирате одабране стилове?',
+	'COPYRIGHT'									=> 'Copyright',
 
-	'DEACTIVATE_DEFAULT'		=> 'Не можете деактивирати подразумевани стил.',
-	'DELETE_FROM_FS'			=> 'Обриши из система датотека',
-	'DELETE_STYLE_FILES_FAILED'	=> 'Грешка при брисању датотека за стил "%s".',
-	'DELETE_STYLE_FILES_SUCCESS'	=> 'Датотеке за стил "%s" су обрисане.',
-	'DETAILS'					=> 'Појединости',
+	'DEACTIVATE_DEFAULT'						=> 'Не можете деактивирати подразумевани стил.',
+	'DELETE_FROM_FS'							=> 'Обриши из система датотека',
+	'DELETE_STYLE_FILES_FAILED'					=> 'Грешка при брисању датотека за стил "%s".',
+	'DELETE_STYLE_FILES_SUCCESS'				=> 'Датотеке за стил "%s" су обрисане.',
+	'DETAILS'									=> 'Појединости',
 
-	'INHERITING_FROM'			=> 'Наслеђује од',
-	'INSTALL_STYLE'				=> 'Инсталирај стил',
-	'INSTALL_STYLES'			=> 'Инсталирај стилове',
-	'INSTALL_STYLES_EXPLAIN'	=> 'Овде можете инсталирати нове стилове.<br />Уколико не можете да пронађете одређени стил на списку испод, проверите да бисте се уверили да ли је стил већ инсталиран. Уколико није инсталиран, проверите да ли је исправно додат.',
-	'INVALID_STYLE_ID'			=> 'Неисправан стил ID.',
+	'INHERITING_FROM'							=> 'Наслеђује од',
+	'INSTALL_STYLE'								=> 'Инсталирај стил',
+	'INSTALL_STYLES'							=> 'Инсталирај стилове',
+	'INSTALL_STYLES_EXPLAIN'					=> 'Овде можете инсталирати нове стилове.<br>Уколико не можете да пронађете одређени стил на списку испод, проверите да бисте се уверили да ли је стил већ инсталиран. Уколико није инсталиран, проверите да ли је исправно додат.',
+	'INVALID_STYLE_ID'							=> 'Неисправан стил ID.',
 
-	'NO_MATCHING_STYLES_FOUND'	=> 'Ниједан стил се не поклапа са вашим упитом.',
-	'NO_UNINSTALLED_STYLE'		=> 'Нису откривени деинсталирани стилови.',
+	'NO_MATCHING_STYLES_FOUND'					=> 'Ниједан стил се не поклапа са вашим упитом.',
+	'NO_UNINSTALLED_STYLE'						=> 'Нису откривени деинсталирани стилови.',
 
-	'PURGED_CACHE'				=> 'Кеш је избачен.',
+	'PURGED_CACHE'								=> 'Кеш је избачен.',
 
-	'REQUIRES_STYLE'			=> 'Овај стил тражи да стил "%s" буде инсталиран.',
+	'REQUIRES_STYLE'							=> 'Овај стил тражи да стил "%s" буде инсталиран.',
 
-	'STYLE_ACTIVATE'			=> 'Активирајте',
-	'STYLE_ACTIVE'				=> 'Активно',
-	'STYLE_DEACTIVATE'			=> 'Деактивирај',
-	'STYLE_DEFAULT'				=> 'Постави као подразумевани стил',
-	'STYLE_DEFAULT_CHANGE_INACTIVE'	=> 'Морате активирати стил пре него што га направите подразумеваним стилом.',
-	'STYLE_ERR_INVALID_PARENT'	=> 'Неисправан родитељски стил.',
-	'STYLE_ERR_NAME_EXIST'		=> 'Стил са тим називом већ постоји.',
-	'STYLE_ERR_STYLE_NAME'		=> 'Морате унети назив за овај стил.',
-	'STYLE_INSTALLED'			=> 'Стил "%s" је инсталиран.',
+	'STYLE_ACTIVATE'							=> 'Активирајте',
+	'STYLE_ACTIVE'								=> 'Активно',
+	'STYLE_DEACTIVATE'							=> 'Деактивирај',
+	'STYLE_DEFAULT'								=> 'Постави као подразумевани стил',
+	'STYLE_DEFAULT_CHANGE_INACTIVE'				=> 'Морате активирати стил пре него што га направите подразумеваним стилом.',
+	'STYLE_ERR_INVALID_PARENT'					=> 'Неисправан родитељски стил.',
+	'STYLE_ERR_NAME_EXIST'						=> 'Стил са тим називом већ постоји.',
+	'STYLE_ERR_STYLE_NAME'						=> 'Морате унети назив за овај стил.',
+	'STYLE_INSTALLED'							=> 'Стил "%s" је инсталиран.',
 	'STYLE_INSTALLED_RETURN_INSTALLED_STYLES'	=> 'Повратак на списак инсталираних стилова',
 	'STYLE_INSTALLED_RETURN_UNINSTALLED_STYLES'	=> 'Инсталирај још стилова',
-	'STYLE_NAME'				=> 'Назив стила',
-	'STYLE_NAME_RESERVED'		=> 'Стил "%s" не може бити инсталиран, јер је име заузето.',
-	'STYLE_NOT_INSTALLED'		=> 'Стил "%s" није био инсталиран.',
-	'STYLE_PATH'				=> 'Путања стила',
-	'STYLE_UNINSTALL'			=> 'Деинсталирај',
-	'STYLE_UNINSTALL_DEPENDENT'	=> 'Стил "%s" не може бити деинсталиран јер има један или више деце стилова.',
-	'STYLE_UNINSTALLED'			=> 'Стил "%s" је успешно деинсталиран.',
-	'STYLE_PHPBB_VERSION'		=> 'phpBB Издање',
-	'STYLE_USED_BY'				=> 'Коришћено од (укључујући роботе)',
-	'STYLE_VERSION'				=> 'Издање стила',
+	'STYLE_NAME'								=> 'Назив стила',
+	'STYLE_NAME_RESERVED'						=> 'Стил "%s" не може бити инсталиран, јер је име заузето.',
+	'STYLE_NOT_INSTALLED'						=> 'Стил "%s" није инсталиран.',
+	'STYLE_PATH'								=> 'Путања стила',
+	'STYLE_UNINSTALL'							=> 'Деинсталирај',
+	'STYLE_UNINSTALL_DEPENDENT'					=> 'Стил "%s" не може бити деинсталиран јер има један или више деце стилова.',
+	'STYLE_UNINSTALLED'							=> 'Стил "%s" је успешно деинсталиран.',
+	'STYLE_PHPBB_VERSION'						=> 'phpBB Издање',
+	'STYLE_USED_BY'								=> 'Коришћено од (укључујући роботе)',
+	'STYLE_VERSION'								=> 'Издање стила',
 
-	'UNINSTALL_DEFAULT'		=> 'Не можете да деинсталирате подразумевани стил.',
+	'UNINSTALL_PROSILVER'						=> 'Не можете да деинсталирате стил “prosilver”.',
+	'UNINSTALL_DEFAULT'							=> 'Не можете да деинсталирате подразумевани стил.',
 
-	'BROWSE_STYLES_DATABASE'	=> 'Преглед базе стилова',
-));
+	'BROWSE_STYLES_DATABASE'					=> 'Преглед базе стилова',
+]);
