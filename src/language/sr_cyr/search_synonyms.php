@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* search_synonyms [Serbian]
+* search_synonyms [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

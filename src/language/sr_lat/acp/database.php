@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_database [Serbian]
+* acp_database [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: database.php,v 1.12 2006/10/02 15:10:29 acydburn Exp $

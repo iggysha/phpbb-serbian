@@ -1,6 +1,6 @@
 <?php
 /**
-* acp_permissions_phpbb (phpBB Permission Set) [Serbian]
+* acp_permissions_phpbb (phpBB Permission Set) [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* install [Serbian]
+* install [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: install.php,v 1.63 2006/11/27 21:24:15 davidmj Exp $

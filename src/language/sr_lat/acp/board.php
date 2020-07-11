@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_board [Serbian]
+* acp_board [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: board.php,v 1.46 2006/11/23 20:56:02 shs Exp $
@@ -470,6 +470,12 @@ $lang = array_merge($lang, array(
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Sesije će biti nastavljene samo ako je poslato <var>X_FORWARDED_FOR</var> zaglavlje jednako onim poslatim sa prethodnim zahtevom. Zabrane će biti proverene sa IP adresama u <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Provera IP sesije',
 	'IP_VALID_EXPLAIN'				=> 'Utvrđuje koliko korisničkih IP adresa se koristi da se proveri sesija; <samp>Sve</samp> upoređuje kompletne adrese, <samp>A.B.C</samp> prve x.x.x, <samp>A.B</samp> preve x.x, <samp>Nijedno</samp> isključuje proveru.',
+	'IP_LOGIN_LIMIT_MAX'			=> 'Maksimalan broj pokušaja za prijavu po IP adresi',
+	'IP_LOGIN_LIMIT_MAX_EXPLAIN'	=> 'Maksimalan broj pokušaja za prijavu sa iste IP adrese pre nogo što se aktivira anti-spambot zaštita. Upišite 0 da bi sprečili aktiviranje anti-spambot zaštite.',
+	'IP_LOGIN_LIMIT_TIME'			=> 'Vreme za prijavu po IP adresi',
+	'IP_LOGIN_LIMIT_TIME_EXPLAIN'	=> 'Posle ovog vremena ističe vreme za prijavu.',
+	'IP_LOGIN_LIMIT_USE_FORWARDED'	=> 'Ograniči pokušaj prijave po <var>X_FORWARDED_FOR</var> zaglavlju',
+	'IP_LOGIN_LIMIT_USE_FORWARDED_EXPLAIN'	=> 'Umesto da ograničite pokupaje prijave po IP adresi, on su limitirani po <var>X_FORWARDED_FOR</var> vrednostima. <br /><em><strong>Upozorenje:</strong> Ovu opciju omogućite samo ako koristite proxy server koji je podešen za <var>X_FORWARDED_FOR</var> na verodostojne vrednosti.</em>',
 	'MAX_LOGIN_ATTEMPTS'			=> 'Maksimalan broj pokušaja za prijavu',
 	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Posle ovog broja pogrešnih prijava korisnik treba da dodatno potvrdi svoj identitet vizuelno (vizuelna potvrda)',
 	'NO_IP_VALIDATION'				=> 'Nijedno',

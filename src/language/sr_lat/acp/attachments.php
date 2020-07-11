@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_attachments [Serbian]
+* acp_attachments [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: attachments.php,v 1.15 2006/10/29 09:08:36 dhn2 Exp $

@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_permissions [Serbian]
+* acp_permissions [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: permissions.php,v 1.18 2006/10/08 11:25:20 acydburn Exp $

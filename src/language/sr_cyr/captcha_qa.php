@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* captcha_qa [Serbian]
+* captcha_qa [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

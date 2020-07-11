@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* search [Serbian]
+* search [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: search.php,v 1.15 2006/10/08 11:25:20 acydburn Exp $
@@ -49,6 +49,7 @@ $lang = array_merge($lang, array(
 	
 	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Board zahteva da budete registrovani i prijavljeni da bi pogledali vaše postove.',
 	'LOGIN_EXPLAIN_UNREADSEARCH' =>  'Board zahteva da budete registrovani i prijavljeni da bi mogli da gledate nepročitane postove.',
+	'LOGIN_EXPLAIN_NEWPOSTS'	=>	'Board zahteva da budete registrovani i prijavljeni da bi videli postove od vaše poslednje posete.',
 	
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'   =>  'Uneli ste previše reči za pretragu. Molimo Vas da ne koristite više od %1$d reči.',
 	

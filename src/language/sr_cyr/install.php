@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* install [Serbian]
+* install [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$
@@ -128,7 +128,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Грешка током извршавања <var>query_first</var>, %s (“%s”).',
 	'DB_ERR_SELECT'				=> 'Грешка током покретања <code>SELECT</code> упита.',
 	'DB_HOST'					=> 'Име сервера базе или DSN',
-	'DB_HOST_EXPLAIN'			=> 'DSN је скраћеница за Data Source Name и важи само за ODBC инсталације. На PostgreSQL, користите localhost за повезивање на local server преко UNIX domain socket и 127.0.0.1 за повезивање преко TCP.',
+	'DB_HOST_EXPLAIN'			=> 'DSN је скраћеница за Data Source Name и важи само за ODBC инсталације. На PostgreSQL, користите localhost за повезивање на local server преко UNIX domain socket и 127.0.0.1 за повезивање преко TCP. За SQLite, унесите пуну путању до датотеке ваше базе.',
 	'DB_NAME'					=> 'Име базе',
 	'DB_PASSWORD'				=> 'Лозинка базе',
 	'DB_PORT'					=> 'Порт сервера базе',
@@ -302,7 +302,7 @@ $lang = array_merge($lang, array(
 	'PHP_SETTINGS'					=> 'PHP верзија и поставке',
 	'PHP_SETTINGS_EXPLAIN'			=> '<strong>Обавезно</strong> - Морате имати бар 4.3.3 верзију PHP да бисте инсталирали phpBB. Ако је <var>safe mode</var> приказано испод ваша PHP инсталација ради у том моду. Ово ће проузроковати ограничења при удаљеној администрацији и сличним могућностима.',
 	'PHP_URL_FOPEN_SUPPORT'			=> 'PHP поставка <var>allow_url_fopen</var> је омогућена',
-	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>По избору</strong> - Ова поставка је по избору, мада неке phpBB функције као грбови ван-веб странице неће радити исправно без ње. ',
+	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>По избору</strong> - Ова поставка је по избору, мада неке phpBB функције као грбови ван-веб странице неће радити исправно без ње.',
 	'PHP_VERSION_REQD'				=> 'PHP верзија >= 4.3.3',
 	'POST_ID'						=> 'ID Поруке',
 	'PREFIX_FOUND'					=> 'Скенирање ваших табела показало је исправну инсталацију користећи <strong>%s</strong> као префикс табеле.',
@@ -370,7 +370,7 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Све датотеке су ажуриране у најновију верзију phpBB. Требало би да се сада <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">пријавите на ваш форум</a> и проверите да ли све лепо ради. Немојте заборавити да обришете, преименујете или померите вашу install фасциклу! Молимо пошаљите нам ажуриране податке о вашем серверу и конфигурацијама форума преко <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">Слање статистика</a> модула у вашој АКП.',
+	'ALL_FILES_UP_TO_DATE'		=> 'Све датотеке су ажуриране у најновију верзију phpBB. Требало би да се сада <a href="../ucp.php?mode=login">пријавите на ваш форум</a> и проверите да ли све лепо ради. Немојте заборавити да обришете, преименујете или померите вашу install фасциклу! Молимо пошаљите нам ажуриране податке о вашем серверу и конфигурацијама форума преко <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">Слање статистика</a> модула у вашој АКП.',
 	'ARCHIVE_FILE'				=> 'Изворна датотека у архиви',
 
 	'BACK'				=> 'Назад',

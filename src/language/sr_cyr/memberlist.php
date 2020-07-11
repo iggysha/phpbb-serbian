@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* memberlist [Serbian]
+* memberlist [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$
@@ -116,7 +116,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_FOE'			=> 'Уклони игнорисање',
 	'REMOVE_FRIEND'			=> 'Уклони пријатеља',
 
-	'SEARCH_USER_POSTS'		=> 'Претражи корисникове поруке',
 	'SELECT_MARKED'			=> 'Изабери означено',
 	'SELECT_SORT_METHOD'	=> 'Изабери начин ређања',
 	'SEND_AIM_MESSAGE'		=> 'Пошаљи AIM поруку',

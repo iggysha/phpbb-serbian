@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* common [Serbian]
+* common [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$
@@ -43,7 +43,7 @@ $lang = array_merge($lang, array(
 	'TRANSLATION_INFO'	=> 'Превод - <a href="http://www.medicinari.com/" target="_new">medicinari.com</a>',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d.m.Y|',	// 01 Jan 2007 (with Relative days enabled)
-	'USER_LANG'			=> 'sr',
+	'USER_LANG'			=> 'sr-cyrl',
 
 	'1_DAY'			=> '1 дан',
 	'1_MONTH'		=> '1 месец',
@@ -190,7 +190,7 @@ $lang = array_merge($lang, array(
 	'FORM_INVALID'			=> 'Прослеђени образац није исправан. Покушајте поново.',
 	'FORUM'					=> 'Форум',
 	'FORUMS'				=> 'Форуми',
-	'FORUMS_MARKED'			=> 'Сви форуми су означени као прочитани.',
+	'FORUMS_MARKED'			=> 'Одабрани форуми су означени као прочитани.',
 	'FORUM_CAT'				=> 'Категорија форума',
 	'FORUM_INDEX'			=> 'Почетна форума',
 	'FORUM_LINK'			=> 'Веза форума',
@@ -322,13 +322,14 @@ $lang = array_merge($lang, array(
 	'MARK'					=> 'Означи',
 	'MARK_ALL'				=> 'Означи све',
 	'MARK_FORUMS_READ'		=> 'Означи све форуме као прочитане',
+	'MARK_SUBFORUMS_READ'	=> 'Означи подфоруме као прочитане',
 	'MB'					=> 'MB',
 	'MIB'					=> 'MiB',
 	'MCP'					=> 'Контролна Плоча Уредника',
 	'MEMBERLIST'			=> 'Чланови',
 	'MEMBERLIST_EXPLAIN'	=> 'Преглед потпуног списка чланова',
 	'MERGE'					=> 'Спој',
-	'MERGE_POSTS'			=> 'Спој поруке',
+	'MERGE_POSTS'			=> 'Помери поруке',
 	'MERGE_TOPIC'			=> 'Спој теме',
 	'MESSAGE'				=> 'Порука',
 	'MESSAGES'				=> 'Поруке',
@@ -529,6 +530,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_TOPIC'				=> 'Претражи ову тему…',
 	'SEARCH_UNANSWERED'			=> 'Преглед неодговорених порука',
 	'SEARCH_UNREAD'				=> 'Преглед непрочитаних порука',
+	'SEARCH_USER_POSTS'			=> 'Претражи корисникове поруке',
 	'SECONDS'					=> 'Секунди',
 	'SELECT'					=> 'Изаберите',
 	'SELECT_ALL_CODE'			=> 'Изаберите све',

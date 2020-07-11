@@ -1,6 +1,6 @@
 <?php
 /** 
-* acp_permissions (phpBB Permission Set) [Serbian]
+* acp_permissions (phpBB Permission Set) [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: permissions_phpbb.php,v 1.17 2006/10/30 19:51:56 acydburn Exp $

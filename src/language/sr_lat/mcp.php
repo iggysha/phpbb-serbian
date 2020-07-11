@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* mcp [Serbian]
+* mcp [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: mcp.php,v 1.56 2006/10/08 11:25:20 acydburn Exp $

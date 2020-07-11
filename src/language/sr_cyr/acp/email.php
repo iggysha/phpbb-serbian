@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_email [Serbian]
+* acp_email [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$
@@ -52,14 +52,16 @@ $lang = array_merge($lang, array(
 	'SEND_TO_GROUP'			=> 'Пошаљи групи',
 	'SEND_TO_USERS'			=> 'Пошаљи корисницима',
 	'SEND_TO_USERS_EXPLAIN'	=> 'Уношење имена овде ће поништити утицај било које групе изабране изнад. Унесите свако корисничко име у нови ред.',
-	
+
+	'MAIL_BANNED'			=> 'Мејл корисницима под забраном',
+	'MAIL_BANNED_EXPLAIN'	=> 'Када шаљете масовни e-mail групи овде можете одабрати да ли ће корисници под забраном такође примити e-mail.',
 	'MAIL_HIGH_PRIORITY'	=> 'Висок',
 	'MAIL_LOW_PRIORITY'		=> 'Низак',
 	'MAIL_NORMAL_PRIORITY'	=> 'Нормалан',
 	'MAIL_PRIORITY'			=> 'Приоритет мејла',
 	'MASS_MESSAGE'			=> 'Ваша порука',
 	'MASS_MESSAGE_EXPLAIN'	=> 'Молимо знајте да можете унети само plain text. Све остало ће бити уклоњено пре слања.',
-	
+
 	'NO_EMAIL_MESSAGE'		=> 'Морате унети поруку.',
 	'NO_EMAIL_SUBJECT'		=> 'Морате одредити наслов за вашу поруку.',
 ));

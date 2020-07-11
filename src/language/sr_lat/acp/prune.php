@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_prune [Serbian]
+* acp_prune [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: prune.php,v 1.8 2006/11/20 17:37:54 dhn2 Exp $

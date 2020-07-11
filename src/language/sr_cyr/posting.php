@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* posting [Serbian]
+* posting [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

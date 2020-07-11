@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_language [Serbian]
+* acp_language [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: language.php,v 1.8 2006/10/08 11:25:20 acydburn Exp $

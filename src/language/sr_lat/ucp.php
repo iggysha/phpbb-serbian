@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* ucp [Serbian]
+* ucp [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: ucp.php,v 1.86 2006/11/24 14:59:13 acydburn Exp $
@@ -115,6 +115,7 @@ $lang = array_merge($lang, array(
 	'CHANGE_DEFAULT_GROUP'		=> 'Promeni podrazumevanu grupu',
 	'CHANGE_PASSWORD'			=> 'Promeni šifru',
 	'CLICK_RETURN_FOLDER'		=> '%1$sPovratak u vaš “%3$s” folder%2$s',
+	'CLICK_GOTO_FOLDER'			=> '%1$sPovratak u vaš “%3$s” folder%2$s',
 	'CONFIRMATION'				=> 'Potvrda registracije',
 	'CONFIRM_CHANGES'			=> 'Potvrdi izmene',	
 	'CONFIRM_EMAIL'				=> 'Potvrdi email adresu',
@@ -186,6 +187,7 @@ $lang = array_merge($lang, array(
 	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Polje “%s” ima nepravilne karaktere, samo alfanumerički karakteri su dozvoljeni.',
 	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Polje “%s” ima nepravilne karaktere, samo alfanumerički, razmaci ili -+_[] karakteri su dozvoljeni.',
 	'FIELD_INVALID_DATE'				=> 'Polje “%s” ima nepravilan datum.',
+	'FIELD_INVALID_VALUE'				=> 'Polje “%s” ima nepravilan sadržaj.',
 
 	'FOE_MESSAGE'				=> 'Poruka od protivnika',
 	'FOES_EXPLAIN'				=> 'Protivnici su korisnici koji će standardno biti ignorisani. Postovi tih korisnika neće biti potpuno vidljivi i privatne poruke će biti zabranjene. Znajte da ne možete ignorisati moderatore ili administratore.',

@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_forums [Serbian]
+* acp_forums [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: forums.php,v 1.20 2006/11/23 20:56:02 shs Exp $

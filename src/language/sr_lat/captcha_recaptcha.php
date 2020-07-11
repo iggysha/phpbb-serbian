@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* recaptcha [English]
+* recaptcha [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: captcha_recaptcha.php 9933 2009-08-06 09:12:21Z marshalrusty $
@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'RECAPTCHA_LANG'				=> 'sr',
+	'RECAPTCHA_LANG'				=> 'sr-latn',
 	'RECAPTCHA_NOT_AVAILABLE'		=> 'Da bi koristili reCaptcha-u, morate prethodno da napravite nalog na <a href="http://recaptcha.net">reCaptcha.net</a>.',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
 	'RECAPTCHA_INCORRECT'			=> 'Kod za vizuelnu potvrdu koji ste uneli je netačan',

@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* posting [Serbian]
+* posting [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: posting.php,v 1.24 2006/11/19 14:56:06 davidmj Exp $
@@ -174,6 +174,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_ORDER'				=> 'Redosled smajlija',
 	'SMILIES_URL'				=> 'Fajl smajlija',
 	'SMILIES_WIDTH'				=> 'Širina smajlija',
+	'SMILIE_NO_FILE'			=> 'Smajli “%s” se ignoriše jer taj fajl ne postoji.',
 
 	'WRONG_PAK_TYPE'	=> 'Izabrani paket ne sadrži odgovarajuće podatke.',
 ));

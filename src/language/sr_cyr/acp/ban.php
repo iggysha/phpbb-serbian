@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_ban [Serbian]
+* acp_ban [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

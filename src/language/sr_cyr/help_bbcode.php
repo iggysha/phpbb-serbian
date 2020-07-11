@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* help_bbcode [Serbian]
+* help_bbcode [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

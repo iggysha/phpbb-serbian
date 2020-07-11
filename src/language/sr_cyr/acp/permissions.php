@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_permissions [Serbian]
+* acp_permissions [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

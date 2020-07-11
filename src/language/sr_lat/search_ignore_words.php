@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* search_ignore_words [Serbian]
+* search_ignore_words [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: search_ignore_words.php,v 1.2 2006/10/08 11:21:39 acydburn Exp $

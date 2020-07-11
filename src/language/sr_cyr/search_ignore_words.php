@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* search_ignore_words [Serbian]
+* search_ignore_words [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

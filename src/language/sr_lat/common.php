@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* common [Serbian]
+* common [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: common.php,v 1.129 2006/11/24 14:59:13 acydburn Exp $
@@ -36,7 +36,7 @@ $lang = array_merge($lang, array(
 	'LEFT'				=> 'left',
 	'RIGHT'				=> 'right',
 	'DATE_FORMAT'		=> '|d M Y|',
-	'USER_LANG'			=> 'en-gb',
+	'USER_LANG'			=> 'sr-latn',
 
 	'1_DAY'			=> '1 dan',
 	'1_MONTH'		=> '1 mesec',
@@ -320,6 +320,7 @@ $lang = array_merge($lang, array(
 	'MARK'					=> 'Obeleži',
 	'MARK_ALL'				=> 'Obeleži sve',
 	'MARK_FORUMS_READ'		=> 'Obeleži sve forume kao pročitane',
+	'MARK_SUBFORUMS_READ'	=> 'Obeleži sve podforume kao pročitane',
 	'MB'					=> 'MB',
 	'MIB'					=> 'MiB',
 	'MCP'					=> 'Kontrolni Panel Moderatora',
@@ -522,7 +523,8 @@ $lang = array_merge($lang, array(
 	'SEARCH_SELF'				=> 'Pogledajte vaše postove',
 	'SEARCH_TOPIC'				=> 'Pronađi ovu temu',
 	'SEARCH_UNANSWERED'			=> 'Pogledaj neodgovorene postove',
-	'SEARCH_UNREAD'    =>  'Pogledaj neodgovorene postove',
+	'SEARCH_UNREAD'    			=> 'Pogledaj neodgovorene postove',
+	'SEARCH_USER_POSTS'			=> 'Pogledaj postove korisnika',
 	'SECONDS'					=> 'Sekundi',
 	'SELECT'					=> 'Izaberite',
 	'SELECT_ALL_CODE'			=> 'Obeleži sve',

@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_email [Serbian]
+* acp_email [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: email.php,v 1.6 2006/09/24 00:28:08 shs Exp $
@@ -48,6 +48,8 @@ $lang = array_merge($lang, array(
 	'SEND_TO_USERS'			=> 'Pošalji korisnicima',
 	'SEND_TO_USERS_EXPLAIN'	=> 'Unošenjem imena ovde će poništiti bilo koju grupu izabranu iznad. Unesite svako korisničko ime u novu liniju.',
 	
+	'MAIL_BANNED'			=> 'Mejlovi za zabranjene korisnike',
+	'MAIL_BANNED_EXPLAIN'	=> 'Kada šaljete masovni email grupi, ovde možete izabrati da li će zabranjeni korisnici takođe dobiti e-mail.',
 	'MAIL_HIGH_PRIORITY'	=> 'Visok',
 	'MAIL_LOW_PRIORITY'		=> 'Nizak',
 	'MAIL_NORMAL_PRIORITY'	=> 'Normalan',

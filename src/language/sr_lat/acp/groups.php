@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_groups [Serbian]
+* acp_groups [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: groups.php,v 1.13 2006/11/24 14:59:13 acydburn Exp $

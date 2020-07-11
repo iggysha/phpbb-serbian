@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_prune [Serbian]
+* acp_prune [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

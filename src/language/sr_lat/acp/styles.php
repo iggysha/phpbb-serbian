@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_styles [Serbian]
+* acp_styles [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: styles.php,v 1.21 2006/10/08 11:25:20 acydburn Exp $
@@ -284,6 +284,11 @@ $lang = array_merge($lang, array(
 	'INSTALLED_STYLE'			=> 'Instalirani stilovi',
 	'INSTALLED_TEMPLATE'		=> 'Instalirani šabloni',
 	'INSTALLED_THEME'			=> 'Instalirane teme',
+	
+	'KEEP_IMAGESET'				=> 'Sačuvaj “%s” set slika',
+	'KEEP_TEMPLATE'				=> 'Sačuvaj “%s” šablon',
+	'KEEP_THEME'				=> 'Sačuvaj “%s” temu',
+	'REPLACE_WITH_OPTION'		=> 'Zameni sa “%s”',
 
 	'LINE_SPACING'				=> 'Razmak između linija',
 	'LOCALISED_IMAGES'			=> 'Lokalizovano',

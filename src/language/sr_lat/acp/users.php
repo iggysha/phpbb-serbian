@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_users [Serbian]
+* acp_users [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: users.php,v 1.29 2007/06/18 15:12:14 kellanved Exp $

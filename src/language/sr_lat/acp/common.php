@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp common [Serbian]
+* acp common [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: common.php,v 1.70 2006/11/27 11:37:42 dhn2 Exp $

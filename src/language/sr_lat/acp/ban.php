@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_ban [Serbian]
+* acp_ban [Serbian (Latin script)]
 *
 * @package language
 * @version $Id: ban.php,v 1.9 2006/10/02 15:10:29 acydburn Exp $

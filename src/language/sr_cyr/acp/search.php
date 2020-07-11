@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_search [Serbian]
+* acp_search [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$

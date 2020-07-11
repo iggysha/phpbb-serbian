@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* search [Serbian]
+* search [Serbian (Cyrillic script)]
 *
 * @package language
 * @version $Id$
@@ -54,6 +54,7 @@ $lang = array_merge($lang, array(
 
 	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Форум захтева да будете регистровани и пријављени како бисте прегледали ваше поруке.',
 	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Форум захтева да будете регистровани и пријављени да бисте могли да видите ваше непрочитане поруке.',
+	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'Форум захтева да будете регистровани и пријављени да бисте могли да видите нове поруке од ваше последње посете.',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Изабрали сте превише речи за претрагу. Молимо немојте уносити више од %1$d речи.',
 
