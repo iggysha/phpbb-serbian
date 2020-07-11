@@ -41,16 +41,16 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> '<a href="http://www.superizradasajta.com/">Izrada Sajtova</a>',
+	'TRANSLATION_INFO'	=> '<a href="https://www.superizradasajta.com" target="_blank">izrada sajtova</a>',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d.m.Y|',	// 01 Jan 2007 (with Relative days enabled)
 	'DATETIME_FORMAT'	=> '|d M Y, H:i|',	// 01 Jan 2007, 13:37 (with Relative days enabled)
 	'USER_LANG'			=> 'sr',
 
 	// You can define different rules for the determination of plural forms here.
-	// See http://wiki.phpbb.com/Plural_Rules for more information
+	// See https://area51.phpbb.com/docs/dev/32x/language/plurals.html for more information
 	// or ask the translation manager for help.
-	'PLURAL_RULE'		=> 1,
+	'PLURAL_RULE'		=> 7,
 
 	'1_DAY'			=> '1 дан',
 	'1_MONTH'		=> '1 месец',
@@ -62,7 +62,6 @@ $lang = array_merge($lang, array(
 
 	'ACCOUNT_ALREADY_ACTIVATED'		=> 'Ваш налог је већ активиран.',
 	'ACCOUNT_DEACTIVATED'			=> 'Ваш налог је ручно деактивиран и може га поново активирати само администратор.',
-	'ACCOUNT_NOT_ACTIVATED'			=> 'Ваш налог још није активиран.',
 	'ACP'							=> 'Админ Контролна Плоча',
 	'ACP_SHORT'						=> 'АКП',
 	'ACTIVE'						=> 'активни',
@@ -81,8 +80,9 @@ $lang = array_merge($lang, array(
 	'ALL_FORUMS'					=> 'Сви форуми',
 	'ALL_MESSAGES'					=> 'Све поруке',
 	'ALL_POSTS'						=> 'Све поруке',
-	'ALL_TIMES'						=> 'Сва времена су у <abbr title="%2$s">%1$s</abbr>',
+	'ALL_TIMES'						=> 'Сва времена су у <span title="%2$s">%1$s</span>',
 	'ALL_TOPICS'					=> 'Све Теме',
+	'ALT_TEXT'						=> 'Алтернативни текст',
 	'AND'							=> 'И',
 	'ARE_WATCHING_FORUM'			=> 'Пријавили сте се да примате обавештења о новим порукама у овом форуму.',
 	'ARE_WATCHING_TOPIC'			=> 'Пријавили сте се да примате обавештења о новим порукама у овој теми.',
@@ -97,6 +97,7 @@ $lang = array_merge($lang, array(
 	'AUTH_PROVIDER_OAUTH_SERVICE_BITLY'						=> 'Bitly',
 	'AUTH_PROVIDER_OAUTH_SERVICE_FACEBOOK'					=> 'Facebook',
 	'AUTH_PROVIDER_OAUTH_SERVICE_GOOGLE'					=> 'Google',
+	'AUTH_PROVIDER_OAUTH_SERVICE_TWITTER'					=> 'Twitter',
 	'AUTH_PROVIDER_OAUTH_TOKEN_ERROR_NOT_STORED'			=> 'OAuth симбол није сачуван.',
 	'AUTH_PROVIDER_OAUTH_TOKEN_ERROR_INCORRECTLY_STORED'	=> 'OAuth симбол је неисправно сачуван.',
 	'AVATAR_DISALLOWED_CONTENT'		=> 'Додавање је одбијено јер је додата датотека препозната као могући покушај напада.',
@@ -105,11 +106,13 @@ $lang = array_merge($lang, array(
 	'AVATAR_EMPTY_FILEUPLOAD'		=> 'Додата датотека грба је празна.',
 	'AVATAR_INVALID_FILENAME'		=> '%s је неисправан назив датотеке.',
 	'AVATAR_NOT_UPLOADED'			=> 'Грб не може бити додат.',
+	'AVATAR_NO_TEMP_DIR'			=> 'Привремена фасцикла не може бити нађена или није уписљива.',
 	'AVATAR_NO_SIZE'				=> 'Ширина или висина повезаног грба не може бити утврђена. Молимо унесите их ручно.',
 	'AVATAR_PARTIAL_UPLOAD'			=> 'Одабрана датотека је само делимично додата.',
 	'AVATAR_PHP_SIZE_NA'			=> 'Величина датотеке грба је превелика.<br />Највећа дозвољена величина постављена у php.ini не може бити утврђена.',
 	'AVATAR_PHP_SIZE_OVERRUN'		=> 'Величина датотеке грба је превелика. Највећа дозвољена величина за додавање је %1$d %2$s.<br />Молимо знајте да је ово подешено у php.ini и да се не може заобићи.',
 	'AVATAR_REMOTE_UPLOAD_TIMEOUT'		=> 'Назначени грб није могао бити додат јер је захтев истекао.',
+	'AVATAR_PHP_UPLOAD_STOPPED'		=> 'Извесна PHP екстензија је зауставила додавање датотеке.',
 	'AVATAR_URL_INVALID'			=> 'URL који сте изабрали је неисправан.',
 	'AVATAR_URL_NOT_FOUND'			=> 'Датотека коју сте изабрали не може бити пронађена.',
 	'AVATAR_WRONG_FILESIZE'			=> 'Величина датотеке грба мора бити између 0 и %1$d %2$s.',
@@ -134,8 +137,10 @@ $lang = array_merge($lang, array(
 		1	=> 'Корисника прегледа овај форум: %2$s и %1$d гост',
 		2	=> 'Корисника прегледа овај форум: %2$s и %1$d госта',
 	),
+	'BUTTON_DELETE'         => 'Обриши',
 	'BUTTON_EDIT'			=> 'Учитај',
 	'BUTTON_FORUM_LOCKED'	=> 'Закључано',
+	'BUTTON_INFORMATION'    => 'Податак',
 	'BUTTON_NEW_TOPIC'		=> 'Нова Тема',
 	'BUTTON_PM'				=> 'ПП',
 	'BUTTON_PM_FORWARD'		=> 'Проследи',
@@ -144,7 +149,9 @@ $lang = array_merge($lang, array(
 	'BUTTON_PM_REPLY_ALL'	=> 'Одговори Свима',
 	'BUTTON_POST_REPLY'		=> 'Пошаљи Одговор',
 	'BUTTON_QUOTE'			=> 'Цитирај',
+	'BUTTON_REPORT'         => 'Пријави',
 	'BUTTON_TOPIC_LOCKED'	=> 'Закључано',
+	'BUTTON_WARN'           => 'Опомени',
 	'BYTES'					=> 'Бајта',
 	'BYTES_SHORT'			=> 'Б',
 
@@ -174,6 +181,10 @@ $lang = array_merge($lang, array(
 	'CONTACT'				=> 'Контакт',
 	'CONTACT_USER'			=> 'Повежи се са %s',
 	'CONTACT_US'			=> 'Повежимо се',
+	'COOKIE_CONSENT_INFO'	=> 'Научите више',
+	'COOKIE_CONSENT_MSG'	=> 'Овај сајт користи колачиће како бисмо били сигурни да ћете добити најбоље корисничко искуство у његовом коришћењу.',
+	'COOKIE_CONSENT_OK'		=> 'Схватио сам!',
+	'COOKIE_CONSENT_HREF'	=> 'http://cookiesandyou.com',
 	'COOKIES_DELETED'		=> 'Сви колачићи форума су успешно обрисани.',
 	'CURRENT_TIME'			=> 'Данас је %s',
 
@@ -181,7 +192,7 @@ $lang = array_merge($lang, array(
 	'DAYS'					=> 'Дана',
 	'DELETE'				=> 'Обриши',
 	'DELETE_ALL'			=> 'Обриши све',
-	'DELETE_COOKIES'		=> 'Обриши све колачиће форума',
+	'DELETE_COOKIES'		=> 'Обриши колачиће',
 	'DELETE_MARKED'			=> 'Обриши означене',
 	'DELETE_POST'			=> 'Обриши поруку',
 	'DELIMITER'				=> 'Граничник',
@@ -229,6 +240,7 @@ $lang = array_merge($lang, array(
 	'FACEBOOK'				=> 'Facebook',
 	'FAQ'					=> 'ЧПП',
 	'FAQ_EXPLAIN'			=> 'Често Постављана Питања',
+	'FEATURE_NOT_AVAILABLE' => 'Тражена могућност мије доступна на овом форуму.',
 	'FILENAME'				=> 'Назив датотеке',
 	'FILESIZE'				=> 'Величина датотеке',
 	'FILEDATE'				=> 'Датум датотеке',
@@ -336,8 +348,8 @@ $lang = array_merge($lang, array(
 	'INTERESTS'					=> 'Занимања',
 	'INVALID_DIGEST_CHALLENGE'	=> 'Invalid digest challenge.',
 	'INVALID_EMAIL_LOG'			=> '<strong>%s</strong> вероватно неисправна мејл адреса?',
-	'INVALID_FEED_ATTACHMENTS'	=> 'Одабрани феед је покушао да прибави прилоге са неисправним constraints.',
-	'INVALID_PLURAL_RULE'		=> 'Изабрани plural rule је неисправан. Ваљане вредности су цели бројеви између 0 и 15.',
+	'INVALID_FEED_ATTACHMENTS'	=> 'Одабрани feed је покушао да дође до прилога са неисправним constraints.',
+	'INVALID_PLURAL_RULE'		=> 'Изабрано правило множине је неисправно. Ваљане вредности су цели бројеви између 0 и 15.',
 	'IP'						=> 'IP',
 	'IP_BLACKLISTED'			=> 'Ваш IP %1$s је блокиран јер се налази на црној листи. За појединости молимо погледајте <a href="%2$s">%2$s</a>.',
 
@@ -449,6 +461,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_FORUM'				=> '<em>Форум:</em> %1$s',
 	'NOTIFICATION_GROUP_REQUEST'		=> '<strong>Захтев</strong> од %1$s за придруживање групи %2$s.',
 	'NOTIFICATION_GROUP_REQUEST_APPROVED'	=> '<strong>Захтев одобрен</strong> за придруживање групи %1$s.',
+	'NOTIFICATION_METHOD_INVALID'		=> 'Начин "%s" не одговара ваљаном начину обавештавања.',
 	'NOTIFICATION_PM'					=> '<strong>Приватна Порука</strong> од %1$s:',
 	'NOTIFICATION_POST'					=> array(
 		1	=> '<strong>Одговор</strong> од %1$s у теми:',
@@ -546,6 +559,7 @@ $lang = array_merge($lang, array(
 	),
 	'OPTIONS'					=> 'Избори',
 
+	'PAGE_NOT_FOUND'		=> 'Тражена страница не може бити пронађена.',
 	'PAGE_OF'				=> 'Страница <strong>%1$d</strong> од <strong>%2$d</strong>',
 	'PAGE_TITLE_NUMBER'		=> 'Страница %s',
 	'PASSWORD'				=> 'Лозинка',
@@ -554,7 +568,6 @@ $lang = array_merge($lang, array(
 		1	=> '%d pixel',
 		2	=> '%d pixels',
 	),
-	'PLAY_QUICKTIME_FILE'	=> 'Покрени Quicktime датотеку',
 	'PLEASE_WAIT'			=> 'Молимо сачекајте.',
 	'PM'					=> 'ПП',
 	'PM_REPORTED'			=> 'Кликни за преглед пријаве',
@@ -594,6 +607,7 @@ $lang = array_merge($lang, array(
 	'PREVIOUS'				=> 'Претходни',		// Used in pagination
 	'PREVIOUS_STEP'			=> 'Претходни',
 	'PRIVACY'				=> 'Полиса приватности',
+	'PRIVACY_LINK'			=> 'Приватност',
 	'PRIVATE_MESSAGE'		=> 'Приватна порука',
 	'PRIVATE_MESSAGES'		=> 'Приватне поруке',
 	'PRIVATE_MESSAGING'		=> 'Приватне поруке',
@@ -692,10 +706,13 @@ $lang = array_merge($lang, array(
 	'SKYPE'						=> 'Skype',
 	'SMTP_NO_AUTH_SUPPORT'		=> 'SMTP сервер не подржава потврду.',
 	'SORRY_AUTH_READ'			=> 'Нисте овлашћени да читате овај форум.',
+	'SORRY_AUTH_READ_TOPIC'		=> 'Нисте овлашћени да читате ову тему.',
 	'SORRY_AUTH_VIEW_ATTACH'	=> 'Нисте овлашћени да преузмете овај прилог.',
 	'SORT_BY'					=> 'Поређај по',
+	'SORT_DIRECTION'			=> 'Смер',
 	'SORT_JOINED'				=> 'Придружен',
 	'SORT_LOCATION'				=> 'Место',
+	'SORT_OPTIONS'				=> 'Могућности приказа и ређања',
 	'SORT_RANK'					=> 'Чин',
 	'SORT_POSTS'				=> 'Поруке',
 	'SORT_TOPIC_TITLE'			=> 'Наслов теме',
@@ -715,6 +732,7 @@ $lang = array_merge($lang, array(
 	'SUBMIT'					=> 'Прихвати',
 
 	'TB'				=> 'TB',
+	'TERMS_LINK'		=> 'Услови',
 	'TERMS_USE'			=> 'Услови коришћења',
 	'TEST_CONNECTION'	=> 'Проба повезивања',
 	'THE_TEAM'			=> 'Форум тим',
@@ -762,6 +780,10 @@ $lang = array_merge($lang, array(
 	'TOPIC_REVIEW'		=> 'Преглед теме',
 	'TOPIC_TITLE'		=> 'Наслов теме',
 	'TOPIC_UNAPPROVED'	=> 'Ова тема још увек није одобрена.',
+	'TOPIC_UNAPPROVED_FORUM'	=> array(
+		1	=> 'Тема чека одобрење',
+		2	=> 'Теме чекају одобрење',
+	),
 	'TOPIC_DELETED'		=> 'Ова тема је обрисана.',
 	'TOTAL_ATTACHMENTS'	=> 'Прилог(а)',
 	'TOTAL_LOGS'		=> array(
@@ -864,7 +886,6 @@ $lang = array_merge($lang, array(
 	'WEBSITE'			=> 'Веб страница',
 	'WHOIS'				=> 'Ко је',
 	'WHO_IS_ONLINE'		=> 'Ко је на вези',
-	'WLM'				=> 'WLM',
 	'WRONG_PASSWORD'	=> 'Унели сте неисправну лозинку.',
 
 	'WRONG_DATA_COLOUR'			=> 'Вредност боје коју сте унели није ваљана.',

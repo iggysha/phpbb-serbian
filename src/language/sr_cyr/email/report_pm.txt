@@ -1,4 +1,4 @@
-Subject: Пријава Приватне поруке - "{TOPIC_TITLE}"
+Subject: Пријава Приватне поруке - "{SUBJECT}"
 
 Поздрав {USERNAME},
 

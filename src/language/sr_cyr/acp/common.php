@@ -108,6 +108,8 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_PERMISSIONS'		=> 'Групне дозволе',
 	'ACP_GROUPS_POSITION'			=> 'Управљање позицијама у групи',
 
+	'ACP_HELP_PHPBB'			=> 'Подршка помоћи phpBB',
+
 	'ACP_ICONS'					=> 'Иконице тема',
 	'ACP_ICONS_SMILIES'			=> 'Иконице тема/смајлићи',
 	'ACP_INACTIVE_USERS'		=> 'Неактивни корисници',
@@ -167,7 +169,6 @@ $lang = array_merge($lang, array(
 	'ACP_SEARCH_SETTINGS'		=> 'Поставке претраге',
 
 	'ACP_SECURITY_SETTINGS'		=> 'Поставке безбедности',
-	'ACP_SEND_STATISTICS'		=> 'Слање статистичких података',
 	'ACP_SERVER_CONFIGURATION'	=> 'Конфигурација сервера',
 	'ACP_SERVER_SETTINGS'		=> 'Поставке сервера',
 	'ACP_SIGNATURE_SETTINGS'	=> 'Поставке потписа',
@@ -225,12 +226,26 @@ $lang = array_merge($lang, array(
 
 	'BACK'					=> 'Назад',
 
+	'CANNOT_CHANGE_FILE_GROUP'	=> 'Немогуће је променити групу датотека',
+	'CANNOT_CHANGE_FILE_PERMISSIONS'	=> 'Немогуће је променити дозволе датотеке',
+	'CANNOT_COPY_FILES'		=> 'Немогуће је копирати датотеке',
+	'CANNOT_CREATE_SYMLINK'	=> 'Немогуће је направити symlink',
+	'CANNOT_DELETE_FILES'	=> 'Немогуће је обрисати датотеке из система',
+	'CANNOT_DUMP_FILE'		=> 'Немогуће је освежити датотеку',
+	'CANNOT_MIRROR_DIRECTORY'	=> 'Немогуће је огледати директоријум',
+	'CANNOT_RENAME_FILE'	=> 'Немогуће је променити име датотеке из система',
+	'CANNOT_TOUCH_FILES'	=> 'Немогуће је одредити да ли датотека постоји',
+
+	'CONTAINER_EXCEPTION' => 'phpBB се сусрео са сметњама градећи контејнер због инсталираног прикључка. Због овог разлога, сви прикључци су привремено онемогућени. Молимо пробајте да избаците кеш вашег форума. Сви прикључци ће аутоматски поново бити омогућени када се грешка контејнера реши. Уколико се ова грешка настави, молимо посетите <a href="https://www.phpbb.com/support">phpBB.com</a> за подршку.',
+	'EXCEPTION' => 'Изузетак',
+
 	'COLOUR_SWATCH'			=> 'Веб-безбедна палета боја',
 	'CONFIG_UPDATED'		=> 'Конфигурација је успешно ажурирана.',
 	'CRON_LOCK_ERROR'		=> 'Не могу преовладати блокаду крона.',
 	'CRON_NO_SUCH_TASK'		=> 'Не могу наћи задатак крона “%s”.',
 	'CRON_NO_TASK'			=> 'Ниједан крон задатак сада не треба да се извршава.',
 	'CRON_NO_TASKS'			=> 'Ниједан крон задатак не може бити пронађен.',
+	'CURRENT_VERSION'		=> 'Тренутно издање',
 
 	'DEACTIVATE'				=> 'Деактивирај',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Унета путања “%s” не постоји.',
@@ -256,6 +271,7 @@ $lang = array_merge($lang, array(
 	'IP'					=> 'Корисничка IP адреса',
 	'IP_HOSTNAME'			=> 'IP адресе или сервери',
 
+	'LATEST_VERSION'		=> 'Најновије издање',
 	'LOAD_NOTIFICATIONS'			=> 'Приказ Обавештења',
 	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Приказ списка обавештења на свакој страници (обично у заглављу).',
 	'LOGGED_IN_AS'			=> 'Пријављени сте као:',
@@ -288,7 +304,9 @@ $lang = array_merge($lang, array(
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Тренутно имате дозволе из %1$s. Можете да прегледате форум са овим корисничким дозволама, али не можете приступити админ контролној плочи пошто дозволе админа нису пребачене. Можете <a href="%2$s"><strong>се вратити на ваш комплет дозвола</strong></a> у било које време.',
 	'PROCEED_TO_ACP'					=> '%sПродужи до АКП%s',
 
+	'RELEASE_ANNOUNCEMENT'		=> 'Саопштење',
 	'REMIND'							=> 'Подсети',
+	'REPARSE_LOCK_ERROR'				=> 'Поновна обрада је већ у току од другог поступка.',
 	'RESYNC'							=> 'Поново усклади',
 
 	'RUNNING_TASK'			=> 'Извршавање задатка: %s.',
@@ -307,8 +325,13 @@ $lang = array_merge($lang, array(
 	'TOTAL_SIZE'			=> 'Укупна величина',
 
 	'UCP'					=> 'Корисничка Контролна Плоча',
+	'URL_INVALID'			=> 'Пружена URL за поставку “%1$s” није ваљана.',
 	'USERNAMES_EXPLAIN'		=> 'Поставите свако корисничко име у одвојен ред.',
 	'USER_CONTROL_PANEL'	=> 'Корисничка Контролна Плоча',
+
+	'UPDATE_NEEDED'			=> 'Форум није ажуран.',
+	'UPDATE_NOT_NEEDED'		=> 'Форум је ажуран.',
+	'UPDATES_AVAILABLE'		=> 'Доступна ажурирања:',
 
 	'WARNING'				=> 'Опомена',
 ));
@@ -373,7 +396,8 @@ $lang = array_merge($lang, array(
 	'NUMBER_USERS'		=> 'Број корисника',
 	'NUMBER_ORPHAN'		=> 'Неповезани прилози',
 
-	'PHP_VERSION_OLD'	=> 'Издање PHP на овом серверу (%1$s) више неће бити подржано од будућих издања phpBB. Најмања неопходно издање ће бити PHP %2$s. %3$sПојединости%4$s',
+	'PHP_VERSION'		=> 'PHP издање',
+	'PHP_VERSION_OLD'	=> 'Издање PHP на овом серверу (%1$s) више неће бити подржано од будућих издања phpBB. Најмање тражено издање ће бити PHP %2$s. %3$sПојединости%4$s',
 
 	'POSTS_PER_DAY'		=> 'Порука дневно',
 
@@ -420,9 +444,14 @@ $lang = array_merge($lang, array(
 	'VALUE'							=> 'Вредност',
 	'VERSIONCHECK_FAIL'				=> 'Неуспешно добијање података о најновијем издању.',
 	'VERSIONCHECK_FORCE_UPDATE'		=> 'Поновна-Провера издања',
-	'VERSIONCHECK_INVALID_ENTRY'	=> 'Latest version information contains an unsupported entry.',
-	'VERSIONCHECK_INVALID_URL'		=> 'Latest version information contains invalid URL.',
-	'VERSIONCHECK_INVALID_VERSION'	=> 'Latest version information contains an invalid version.',
+	'VERSION_CHECK'					=> 'Провера издања',
+	'VERSION_CHECK_EXPLAIN'			=> 'Проверава да ли је ваше phpBB издање ажурно.',
+	'VERSIONCHECK_INVALID_ENTRY'	=> 'Податак најновијег издања садржи неподржани улаз.',
+	'VERSIONCHECK_INVALID_URL'		=> 'Податак најновијег издања садржи неисправну URL.',
+	'VERSIONCHECK_INVALID_VERSION'	=> 'Податак најновијег издања садржи неисправно издање.',
+	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Ваше phpBB издање није ажурно.<br />Испод је веза до саопштења о издању, која садржи више података као и упутства о ажурирању.',
+	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Ваше phpBB издање није ажурно.',
+	'VERSION_UP_TO_DATE_ACP'		=> 'Ваше phpBB издање је ажурно. Тренутно нема више доступних ажурирања.',
 	'VIEW_ADMIN_LOG'				=> 'Преглед записа администратора',
 	'VIEW_INACTIVE_USERS'			=> 'Преглед неактивних корисника',
 
@@ -455,16 +484,18 @@ $lang = array_merge($lang, array(
 	'USER_IS_INACTIVE'		=> 'Корисник је неактиван',
 ));
 
-// Send statistics page
+// Help support phpBB page
 $lang = array_merge($lang, array(
 	'EXPLAIN_SEND_STATISTICS'	=> 'Молимо пошаљите податке о вашем серверу и конфигурацији форума phpBB за статистичку анализу. Сви подаци који могу да препознају вас или вашу веб страницу су уклоњени - подаци су потпуно <strong>анонимни</strong>. На овим подацима заснивамо одлуке о будућим phpBB издањима. Направљене статистике су јавно доступне. Такође делимо ове податке са PHP пројектом, програмским језиком којим је направљен phpBB.',
 	'EXPLAIN_SHOW_STATISTICS'	=> 'Користећи дугме испод можете прегледати све променљиве које ће бити пренете.',
 	'DONT_SEND_STATISTICS'		=> 'Вратите се на АКП уколико не желите да пошаљете статистичке податке за phpBB.',
 	'GO_ACP_MAIN'				=> 'Иди на АКП почетну страну',
 	'HIDE_STATISTICS'			=> 'Сакриј појединости',
-	'SEND_STATISTICS'			=> 'Пошаљи статистичке податке',
+	'SEND_STATISTICS'			=> 'Пошаљи статистике',
+	'SEND_STATISTICS_LONG'		=> 'Пошаљи статистичке податке',
 	'SHOW_STATISTICS'			=> 'Прикажи појединости',
 	'THANKS_SEND_STATISTICS'	=> 'Хвала вам за слање ваших података.',
+	'FAIL_SEND_STATISTICS'		=> 'phpBB није у могућности да пошаље статистике',
 ));
 
 // Log Entries
@@ -522,6 +553,7 @@ $lang = array_merge($lang, array(
 	'LOG_BBCODE_ADD'		=> '<strong>Додат нови ББКод</strong><br />» %s',
 	'LOG_BBCODE_EDIT'		=> '<strong>Учитан ББКод</strong><br />» %s',
 	'LOG_BBCODE_DELETE'		=> '<strong>Обрисан ББКод</strong><br />» %s',
+	'LOG_BBCODE_CONFIGURATION_ERROR'	=> '<strong>Грешка током конфигурисања ББКод</strong>: %1$s<br />» %2$s',
 
 	'LOG_BOT_ADDED'		=> '<strong>Додат нови робот</strong><br />» %s',
 	'LOG_BOT_DELETE'	=> '<strong>Обрисан робот</strong><br />» %s',
@@ -797,4 +829,5 @@ $lang = array_merge($lang, array(
 	'LOG_EXT_ENABLE'	=> '<strong>Омогућен прикључак</strong><br />» %s',
 	'LOG_EXT_DISABLE'	=> '<strong>Онемогућен прикључак</strong><br />» %s',
 	'LOG_EXT_PURGE'		=> '<strong>Обрисани подаци прикључка</strong><br />» %s',
+	'LOG_EXT_UPDATE'	=> '<strong>Прикључак је ажуриран</strong><br />» %s',
 ));

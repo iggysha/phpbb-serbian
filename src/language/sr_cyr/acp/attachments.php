@@ -70,9 +70,6 @@ $lang = array_merge($lang, array(
 
 	'CAT_FLASH_FILES'			=> 'Flash датотеке',
 	'CAT_IMAGES'				=> 'Слике',
-	'CAT_QUICKTIME_FILES'		=> 'Quicktime датотеке',
-	'CAT_RM_FILES'				=> 'RealMedia датотеке',
-	'CAT_WM_FILES'				=> 'Windows Media датотеке',
 	'CHECK_CONTENT'				=> 'Провера датотека прилога',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Неки прегледачи могу бити преварени да преузму неисправан mimetype за додате датотеке. Ова поставка обезбеђује да такве датотеке које ово вероватно узрокују буду одбијене.',
 	'CREATE_GROUP'				=> 'Направи нову групу',
@@ -105,9 +102,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_FLASH_FILES'			=> 'Flash Датотеке',
 	'EXT_GROUP_IMAGES'				=> 'Слике',
 	'EXT_GROUP_PLAIN_TEXT'			=> 'Plain Text',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Media',
-	'EXT_GROUP_REAL_MEDIA'			=> 'Real Media',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
 
 	'FILES_GONE'			=> 'Неки од прилога које сте изабрали за брисање не постоје. Можда су већ обрисани. Прилози који постоје су обрисани.',
 	'FILES_STATS_WRONG'		=> 'Ваша статистика датотека изгледа није ажурна и треба да буде поново усклађена. Тренутне вредности: број прилога = %1$d, укупна величина прилога = %2$s.<br />Кликните на %3$shere%4$s да поново ускладите.',
@@ -117,8 +111,6 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'Димензије везе слике',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Приказује слику прилога као текстуалну везу у једном реду уколико је слика већа од овога. За онемогућавање оваквог понашања, поставите вредности на 0px пута 0px.',
-	'IMAGICK_PATH'				=> 'ImageMagick путања',
-	'IMAGICK_PATH_EXPLAIN'		=> 'Пуна путања до imagemagick апликације за пребацивање, н.пр. <samp>/usr/bin/</samp>.',
 
 	'MAX_ATTACHMENTS'				=> 'Највећи број прилога по поруци',
 	'MAX_ATTACHMENTS_PM'			=> 'Највећи број прилога по приватној поруци',
@@ -141,7 +133,6 @@ $lang = array_merge($lang, array(
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Није изабрана група екстензија.',
 	'NO_FILE_CAT'				=> 'Ниједна',
 	'NO_IMAGE'					=> 'Без слике',
-	'NO_THUMBNAIL_SUPPORT'		=> 'Подршка за изведене сличице је онемогућена. За исправно функционисање треба да буде омогућена или GD екстензија или инсталиран imagemagick. Ниједно није пронађено.',
 	'NO_UPLOAD_DIR'				=> 'Фасцикла за додавања коју сте изабрали не постоји.',
 	'NO_WRITE_UPLOAD'			=> 'Фасцикла за додавања коју сте изабрали није уписљива. Молимо вас да промените дозволе како бисте омогућили серверу да уписује у њих.',
 
@@ -153,7 +144,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_DISALLOWED_IPS'			=> 'Уклони или поново-укључи <em>недозвољене</em> IP адресе/сервере',
 	'RESYNC_FILES_STATS_CONFIRM'	=> 'Да ли сигурно желите да поново ускладите статистику датотека?',
 
-	'SEARCH_IMAGICK'				=> 'Претрага за ImageMagick',
 	'SECURE_ALLOW_DENY'				=> 'Списак Дозвола/Забрана',
 	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Промени подразумевано понашање када су безбедна преузимања омогућена од списка Дозвола/Забрана у оно од <strong>бела листа</strong> (Дозвола) или <strong>црна листа</strong> (Забрана).',
 	'SECURE_DOWNLOADS'				=> 'Омогући безбедна преузимања',

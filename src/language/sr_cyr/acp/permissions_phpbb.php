@@ -107,6 +107,7 @@ $lang = array_merge($lang, array(
 // Forum Permissions
 $lang = array_merge($lang, array(
 	'ACL_F_LIST'		=> 'Може да види форум',
+	'ACL_F_LIST_TOPICS' => 'Може да види теме',
 	'ACL_F_READ'		=> 'Може да чита форум',
 	'ACL_F_SEARCH'		=> 'Може да претражује форум',
 	'ACL_F_SUBSCRIBE'	=> 'Може да прати форум',
@@ -120,6 +121,7 @@ $lang = array_merge($lang, array(
 	'ACL_F_POST'		=> 'Може да започне нову тему',
 	'ACL_F_STICKY'		=> 'Може да шаље лепљиве',
 	'ACL_F_ANNOUNCE'	=> 'Може да шаље саопштења',
+	'ACL_F_ANNOUNCE_GLOBAL'	=> 'Може да шаље општа саопштења',
 	'ACL_F_REPLY'		=> 'Може да одговара на теме',
 	'ACL_F_EDIT'		=> 'Може да учита сопствене поруке',
 	'ACL_F_DELETE'		=> 'Може да трајно обрише сопствене поруке',

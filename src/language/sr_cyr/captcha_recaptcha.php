@@ -37,16 +37,16 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'RECAPTCHA_LANG'				=> 'sr',
+	'RECAPTCHA_LANG'				=> 'sr', // Find the language/country code on https://developers.google.com/recaptcha/docs/language - If no code exists for your language you can use "en" or leave the string empty
 	'RECAPTCHA_NOT_AVAILABLE'		=> 'У настојању да користите reCaptcha, морате направити налог на <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
-	'RECAPTCHA_INCORRECT'			=> 'Код видне потврде који сте унели је неисправан',
+	'RECAPTCHA_INCORRECT'			=> 'Решење које сте пружили је неисправно',
+	'RECAPTCHA_NOSCRIPT'			=> 'Молимо омогућите JavaScript у вашем прегледачу да бисте учитали изазов.',
 
 	'RECAPTCHA_PUBLIC'				=> 'Јавни reCaptcha кључ',
 	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Ваш јавни reCaptcha кључ. Кључеви се могу добити на <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'				=> 'Приватни reCaptcha кључ',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Ваш приватни reCaptcha кључ. Кључеви се могу добити на <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 
-	'RECAPTCHA_EXPLAIN'				=> 'У настојању да спречимо аутоматске пријаве, тражимо да унесете приказани текст у поље испод.',
-	'RECAPTCHA_SOCKET_ERROR'		=> 'Било је сметњи при повезивању на RECAPTCHA сервис: није било могуће отворити сокет. Пробајте поново касније.',
+	'RECAPTCHA_EXPLAIN'				=> 'У настојању да спречимо аутоматске пријаве, тражимо да употпуните следећи изазов.',
 ));

@@ -88,6 +88,7 @@ $lang = array_merge($lang, array(
 	'NO_UNREAD_POSTS'		=> 'Нема нових непрочитаних порука за ову тему.',
 	'NO_VOTE_OPTION'		=> 'Морате изабрати понуду када гласате.',
 	'NO_VOTES'				=> 'Нема гласова',
+	'NO_AUTH_PRINT_TOPIC'	=> 'Нисте овлашћени да штампате теме.',
 
 	'POLL_ENDED_AT'			=> 'Гласање се завршава %s',
 	'POLL_RUN_TILL'			=> 'Гласање траје до %s',

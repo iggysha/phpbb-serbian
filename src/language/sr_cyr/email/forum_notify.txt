@@ -1,4 +1,5 @@
 Subject: Обавештење о новој поруци - "{FORUM_NAME}"
+List-Unsubscribe: <{U_STOP_WATCHING_FORUM}>
 
 Поздрав {USERNAME},
 

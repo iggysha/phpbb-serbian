@@ -53,7 +53,8 @@ $lang = array_merge($lang, array(
 	'NEW_POSTS_LOCKED'		=> 'Нове поруке [ Закључани ]',	// Not used anymore
 	'NO_NEW_POSTS_HOT'		=> 'Нема нових порука [ Популарни ]',	// Not used anymore
 	'NO_NEW_POSTS_LOCKED'	=> 'Нема нових порука [ Закључани ]',	// Not used anymore
-	'NO_READ_ACCESS'		=> 'Немате потребне дозволе да читате теме у овом форуму.',
+	'NO_READ_ACCESS'		=> 'Немате потребне дозволе да прегледате или читате теме у овом форуму.',
+	'NO_FORUMS_IN_CATEGORY'	=> 'Ова категорија нема форуме.',
 	'NO_UNREAD_POSTS_HOT'		=> 'Нема непрочитаних порука [ Популарни ]',
 	'NO_UNREAD_POSTS_LOCKED'	=> 'Нема непрочитаних порука [ Закључани ]',
 

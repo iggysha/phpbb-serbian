@@ -48,10 +48,18 @@ $lang = array_merge($lang, array(
 	'MIGRATION_EFFECTIVELY_INSTALLED'	=> 'Миграција је већ успешно инсталирана (прескочено): %s',
 	'MIGRATION_EXCEPTION_ERROR'			=> 'Нешто је кренуло лоше током захтева и изузетак је избачен. Промене направљене пре грешке која се појавила су враћене на најбољи могући начин, али бисте ипак требали да проверите форум за могуће грешке.',
 	'MIGRATION_NOT_FULFILLABLE'			=> 'Миграција "%1$s" није употпуњена, недостаје миграција "%2$s".',
+	'MIGRATION_NOT_INSTALLED'			=> 'Миграција "%s" није инсталирана.',
 	'MIGRATION_NOT_VALID'				=> '%s није исправна миграција.',
 	'MIGRATION_SCHEMA_DONE'				=> 'Инсталирана Шема: %1$s; Време: %2$.2f секунди',
 	'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'Инсталирамо Шему: %1$s; Време: %2$.2f секунди',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'Инсталирање Шеме: %s.',
+
+	'MIGRATION_REVERT_DATA_DONE'		=> 'Враћено Дана: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_REVERT_DATA_IN_PROGRESS'	=> 'Враћање Дана: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_REVERT_DATA_RUNNING'		=> 'Враћање Дана: %s.',
+	'MIGRATION_REVERT_SCHEMA_DONE'		=> 'Враћена Шема: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_REVERT_SCHEMA_IN_PROGRESS'	=> 'Враћање Шеме: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_REVERT_SCHEMA_RUNNING'	=> 'Враћање Шеме: %s.',
 
 	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Миграција није ваљана. If тврдња помоћника пропушта услов.',
 	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'Миграција није ваљана. If тврдња помоћника пропушта ваљан позив кораку миграције.',

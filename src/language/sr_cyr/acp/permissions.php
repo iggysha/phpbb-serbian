@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<p>За више података о подешавању и управљању дозволама на вашем phpBB3 форуму, молимо погледајте одељак на <a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/permissions/">Setting permissions of our Quick Start Guide</a>.</p>
+		<p>За више података о подешавању и управљању дозволама на вашем phpBB3 форуму, молимо погледајте одељак на <a href="https://www.phpbb.com/support/docs/en/3.2/ug/quickstart/permissions/">Setting permissions of our Quick Start Guide</a>.</p>
 	',
 
 	'ACL_NEVER'				=> 'Никада',
