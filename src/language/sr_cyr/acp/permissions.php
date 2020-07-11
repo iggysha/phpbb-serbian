@@ -171,7 +171,7 @@ $lang = array_merge($lang, array(
 	'ROLE_FORUM_POLLS'			=> 'Обични Приступ + Гласања',
 	'ROLE_FORUM_READONLY'		=> 'Приступ Само за Читање',
 	'ROLE_FORUM_STANDARD'		=> 'Обични Приступ',
-	'ROLE_FORUM_NEW_MEMBER'		=> 'Ново регистровани Корисник',
+	'ROLE_FORUM_NEW_MEMBER'		=> 'Приступ Ново Регистрованих Корисника',
 	'ROLE_MOD_FULL'				=> 'Пуни Уредник',
 	'ROLE_MOD_QUEUE'			=> 'Чекање Уредника',
 	'ROLE_MOD_SIMPLE'			=> 'Једноставан Уредник',
@@ -181,7 +181,7 @@ $lang = array_merge($lang, array(
 	'ROLE_USER_NOAVATAR'		=> 'Без Грба',
 	'ROLE_USER_NOPM'			=> 'Без Приватних Порука',
 	'ROLE_USER_STANDARD'		=> 'Обичне Могућности',
-	'ROLE_USER_NEW_MEMBER'		=> 'Ново регистровани Корисник',
+	'ROLE_USER_NEW_MEMBER'		=> 'Могућности Ново Регистрованих Корисника',
 
 
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Може приступити управљању форумом и поставкама дозвола форума.',

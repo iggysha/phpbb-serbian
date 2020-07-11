@@ -268,6 +268,7 @@ $lang = array_merge($lang, array(
 	'IMG_USER_ICON9'		=> 'Korisnički definisana slika 9',
 	'IMG_USER_ICON10'		=> 'Korisnički definisana slika 10',
 
+	'INACTIVE_STYLES'			=> 'Neaktivni stilovi',
 	'INCLUDE_DIMENSIONS'		=> 'Pridruži dimenzije',
 	'INCLUDE_IMAGESET'			=> 'Pridruži set slika',
 	'INCLUDE_TEMPLATE'			=> 'Pridruži šablon',

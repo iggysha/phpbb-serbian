@@ -43,6 +43,7 @@ $lang = array_merge($lang, array(
 	'AVAILABLE'					=> 'Dostupno',
 	'AVAILABLE_CONVERTORS'		=> 'Dostupni konverteri',
 
+	'BACKUP_NOTICE'				=> 'Napravite bekap vašeg boarda pre nadogradnje u slučaju da se pojave problemi tokom procesa nadogradnje.',
 	'BEGIN_CONVERT'				=> 'Započni konverziju',
 	'BLANK_PREFIX_FOUND'		=> 'Skeniranje vaših tabela je pokazalo ispravnu instalaciju bez prefiksa tabela.',
 	'BOARD_NOT_INSTALLED'			=> 'Nije pronađena instalacija',

@@ -447,6 +447,7 @@ $lang = array_merge($lang, array(
 	'POST_TIME'				=> 'Vremenu posta',
 	'POST_TOPIC'			=> 'Počni novu temu',
 	'POST_UNAPPROVED'		=> 'Ovaj post čeka na odobrenje',
+	'POWERED_BY'			=> 'Pokreće ga %s',
 	'PREVIEW'				=> 'Pregled',
 	'PREVIOUS'				=> 'Prethodni',
 	'PREVIOUS_STEP'			=> 'Prethodni',
@@ -457,6 +458,7 @@ $lang = array_merge($lang, array(
 	'PROFILE'				=> 'Korisnički Kontrolni Panel',
 	'PIXEL'      =>  'px',
 
+	'RANK'						=> 'Čin',
 	'READING_FORUM'				=> 'Pregled tema u %s',
 	'READING_GLOBAL_ANNOUNCE'	=> 'Pregled globalnog obaveštenja',
 	'READING_LINK'				=> 'Prateći link foruma %s',

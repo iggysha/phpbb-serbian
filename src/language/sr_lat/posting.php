@@ -37,6 +37,7 @@ $lang = array_merge($lang, array(
 	'ADD_POLL'					=> 'Pravljenje glasanja',
 	'ADD_POLL_EXPLAIN'			=> 'Ako ne želite da dodate glasanje u vašu temu, ostavite polja prazna',
 	'ALREADY_DELETED'			=> 'Žao nam je ali ova poruka je već obrisana.',
+	'ATTACH_DISK_FULL'			=> 'Nema dovoljno slobodnog mesta na disku da sačuvate fajl.',
 	'ATTACH_QUOTA_REACHED'		=> 'Žao nam je, ali dostignuto je ograničenje boarda za prikačene fajlove.',
 	'ATTACH_SIG'				=> 'Prikači potpis (potpisi se mogu menjati u KKP-u)',
 

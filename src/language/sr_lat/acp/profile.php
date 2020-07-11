@@ -127,6 +127,8 @@ $lang = array_merge($lang, array(
 
 	'SAVE'							=> 'Sačuvaj',
 	'SECOND_OPTION'					=> 'Druga opcija',
+	'SHOW_NOVALUE_FIELD'			=> 'Prikaži polje ako nema izabrane vrednosti',
+	'SHOW_NOVALUE_FIELD_EXPLAIN'	=> 'Određuje da li će polje profila biti prikazano ako nije selektovana ni jedna opcija za opciona polja ili ako nije izabrana ni jedna vrednost za obavezna polja.',
 	'STEP_1_EXPLAIN_CREATE'			=> 'Ovde možete uneti prve osnovne parametre vašeg oplja profila. Ove informacije su potrebne za drugi korak gde možete podesiti preostale opcije i gde možete pogledati i doterati vaše polje profila.',
 	'STEP_1_EXPLAIN_EDIT'			=> 'Ovde možete promeniti osnovne parametre vašeg polja profila. Relevantne opcije su preračunate u drugom koraku, gde ste u mogućnosti da pogledate i testirate izmenjena podešavanja.',
 	'STEP_1_TITLE_CREATE'			=> 'Dodaj polje profila',
