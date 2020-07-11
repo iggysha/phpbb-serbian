@@ -68,6 +68,12 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NAME'			=> 'Naziv ekstenzije',
 	'EXTENSION_ACTIONS'			=> 'Akcije',
 	'EXTENSION_OPTIONS'			=> 'Opcije',
+	'EXTENSION_INSTALL_HEADLINE'=> 'Instalacija ekstenzije',
+	'EXTENSION_INSTALL_EXPLAIN'	=> '<ol>
+			<li>Preuzmite ekstenziju iz phpBB baze ekstenzija</li>
+			<li>Raspakujte ekstenziju i ubacite fajlove u <samp>ext/</samp> folder vašeg phpBB boarda</li>
+			<li>Omogućite ekstenziju, ovde u menadžeru ekstenzija</li>
+		</ol>',
 	'EXTENSION_UPDATE_HEADLINE'	=> 'Ažuriranje ekstenzije',
 	'EXTENSION_UPDATE_EXPLAIN'	=> '<ol>
 			<li>Onemogući ekstenziju</li>
@@ -109,6 +115,7 @@ $lang = array_merge($lang, array(
 	'AUTHOR_HOMEPAGE'		=> 'Sajt',
 	'AUTHOR_ROLE'			=> 'Uloga',
 
+
 	'NOT_UP_TO_DATE'		=> '%s nije poslednja verzija',
 	'UP_TO_DATE'			=> '%s poslednja verzija',
 	'ANNOUNCEMENT_TOPIC'	=> 'Obaveštenje prilikom izdavanja',
@@ -118,6 +125,9 @@ $lang = array_merge($lang, array(
 	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'Proveri sve verzije',
 	'FORCE_UNSTABLE'					=> 'Uvek proveri ima li nestabilnih verzija',
 	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Podešavanje provere verzija',
+	
+	'BROWSE_EXTENSIONS_DATABASE'		=> 'Pogledajte bazu ekstenzija',
+
 
 	'META_FIELD_NOT_SET'	=> 'Obavezno meta polje %s nije podešeno.',
 	'META_FIELD_INVALID'	=> 'Meta polje %s nije ispravno.',

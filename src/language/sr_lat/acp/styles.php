@@ -107,4 +107,5 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_DEFAULT'		=> 'Ne možete deinstalirati podrazumevani stil.',
 	
 
+	'BROWSE_STYLES_DATABASE'	=> 'Pregledajte bazu stilova',
 ));

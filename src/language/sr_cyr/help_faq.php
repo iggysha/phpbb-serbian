@@ -338,7 +338,7 @@ $help = array(
 	),
 	array(
 		0 => 'Ко је написао овај форум?',
-		1 => 'Овај програм (у његовом неизмењеном облику) је направио, издао и заштитио од умножавања <a href="https://www.phpbb.com/">phpBB Limited</a>. Доступан је под GNU General Public Licence, верзија 2 (GPL-2.0) и може бити слободно растуран. Погледајте <a href="https://www.phpbb.com/about/">About phpBB</a> за више појединости.',
+		1 => 'Овај програм (у његовом неизмењеном облику) је направио, издао и заштитио од умножавања <a href="https://www.phpbb.com/">phpBB Limited</a>. Доступан је под GNU General Public Licence, издање 2 (GPL-2.0) и може бити слободно растуран. Погледајте <a href="https://www.phpbb.com/about/">About phpBB</a> за више појединости.',
 	),
 	array(
 		0 => 'Зашто X могућност није доступна?',

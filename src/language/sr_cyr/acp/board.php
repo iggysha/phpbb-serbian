@@ -425,7 +425,7 @@ $lang = array_merge($lang, array(
 	'AUTH_PROVIDER_OAUTH_TITLE'					=> 'OAuth',
 	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Тајна',
 
-	'APACHE_SETUP_BEFORE_USE'	=> 'Морате да подесите apache потврду пре него пребаците phpBB на овај начин потврде. Имајте у виду да корисничко име које користите за apache потврду мора бити исто као и ваше phpBB корисничко име. Apache потврда може бити коришћена само са mod_php (не са CGI верзијом) и safe_mode онемогућеним.',
+	'APACHE_SETUP_BEFORE_USE'	=> 'Морате да подесите apache потврду пре него пребаците phpBB на овај начин потврде. Имајте у виду да корисничко име које користите за apache потврду мора бити исто као и ваше phpBB корисничко име. Apache потврда може бити коришћена само са mod_php (не са CGI издањем) и safe_mode онемогућеним.',
 
 	'LDAP'							=> 'LDAP',
 	'LDAP_DN'						=> 'LDAP база <var>dn</var>',

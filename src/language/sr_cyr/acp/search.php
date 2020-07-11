@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Брисање индекса је у току',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Позадина претраге тренутно брише свој индекс. Ово може узети неколико минута.',
 
-	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'MySQL fulltext позадина може бити коришћена само са верзијом MySQL4 или јачом.',
+	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'MySQL fulltext позадина може бити коришћена само са MySQL4 издањем или јачим.',
 	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext индекси могу бити коришћени само са MyISAM или InnoDB табелама. MySQL 5.6.4 или новији је неопходан за fulltext индексе на InnoDB табелама.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Укупан број индексираних порука',
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Речи са бар оволико знакова ће бити индексиране за претрагу. Ви или ваш провајдер можете променити ову поставку само мењањем mysql конфигурације.',
@@ -61,11 +61,11 @@ $lang = array_merge($lang, array(
 
 	'FULLTEXT_POSTGRES_INCOMPATIBLE_DATABASE'	=> 'PostgreSQL пуни текст позадина може бити коришћена само са PostgreSQL.',
 	'FULLTEXT_POSTGRES_TOTAL_POSTS'			=> 'Укупан број индексираних порука',
-	'FULLTEXT_POSTGRES_VERSION_CHECK'		=> 'PostgreSQL верзија',
+	'FULLTEXT_POSTGRES_VERSION_CHECK'		=> 'PostgreSQL издање',
 	'FULLTEXT_POSTGRES_TS_NAME'				=> 'Претрага текста Конфигурациони Профил:',
 	'FULLTEXT_POSTGRES_MIN_WORD_LEN'			=> 'Најмања дужина речи за кључне речи',
 	'FULLTEXT_POSTGRES_MAX_WORD_LEN'			=> 'Највећа дужина речи за кључне речи',
-	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'		=> 'Ова позадина претраге захтева PostgreSQL 8.3 верзију или новију.',
+	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'		=> 'Ова позадина претраге захтева PostgreSQL 8.3 издање или новије.',
 	'FULLTEXT_POSTGRES_TS_NAME_EXPLAIN'				=> 'Конфигурациони профил Текст претраге коришћен за одређивање прослеђивача и речника.',
 	'FULLTEXT_POSTGRES_MIN_WORD_LEN_EXPLAIN'			=> 'Речи са бар оволико знакова ће бити укључене у упит за базу.',
 	'FULLTEXT_POSTGRES_MAX_WORD_LEN_EXPLAIN'			=> 'Речи са не више од оволико знакова ће бити укључене у упит за базу.',

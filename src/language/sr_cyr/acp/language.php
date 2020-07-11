@@ -73,4 +73,6 @@ $lang = array_merge($lang, array(
 	'THOSE_MISSING_LANG_VARIABLES'		=> 'Следеће језичке променљиве недостају у “%s” језичком пакету',
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Деинсталирани језички пакети',
+
+	'BROWSE_LANGUAGE_PACKS_DATABASE'	=> 'Преглед базе језичких пакета',
 ));

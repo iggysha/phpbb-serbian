@@ -83,4 +83,6 @@ $lang = array_merge($lang, array(
 	'STYLE_USED_BY'				=> 'Коришћено од (укључујући роботе)',
 
 	'UNINSTALL_DEFAULT'		=> 'Не можете да деинсталирате подразумевани стил.',
+
+	'BROWSE_STYLES_DATABASE'	=> 'Преглед базе стилова',
 ));

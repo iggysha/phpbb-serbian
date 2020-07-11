@@ -40,7 +40,7 @@ $lang = array_merge($lang, array(
 	'EXTENSIONS_ADMIN'			=> 'Управник Прикључака',
 	'EXTENSIONS_EXPLAIN'		=> 'А Управник Прикључака је алат у вашем phpBB Форуму који вам омогућава да управљате стањем свих ваших прикључака и да прегледате податке о њима.',
 	'EXTENSION_INVALID_LIST'	=> 'Прикључак “%s” није исправан.<br />%s<br /><br />',
-	'EXTENSION_NOT_AVAILABLE'	=> 'Одабрани прикључак није доступан за овај форум, молимо проверите да ли су ваша phpBB и PHP верзија дозвољене (погледајте страницу појединости).',
+	'EXTENSION_NOT_AVAILABLE'	=> 'Одабрани прикључак није доступан за овај форум, молимо проверите да ли су ваше phpBB и PHP издање дозвољени (погледајте страницу појединости).',
 	'EXTENSION_DIR_INVALID'		=> 'Одабрани прикључак има неисправну структуру фасцикли и не може бити омогућен.',
 	'EXTENSION_NOT_ENABLEABLE'	=> 'Одабрани прикључак не може бити омогућен, молимо проверите техничке захтеве прикључка.',
 
@@ -68,6 +68,12 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NAME'			=> 'Назив Прикључка',
 	'EXTENSION_ACTIONS'			=> 'Поступци',
 	'EXTENSION_OPTIONS'			=> 'Поставке',
+	'EXTENSION_INSTALL_HEADLINE'=> 'Инсталирање прикључка',
+	'EXTENSION_INSTALL_EXPLAIN'	=> '<ol>
+			<li>Преузмите прикључак из phpBB’s базе прикључака</li>
+			<li>Отпакујте прикључак и додајте га у фасциклу <samp>ext/</samp> вашег phpBB форума</li>
+			<li>Омогућите прикључак, овде у Управнику прикључака</li>
+		</ol>',
 	'EXTENSION_UPDATE_HEADLINE'	=> 'Ажурирање прикључка',
 	'EXTENSION_UPDATE_EXPLAIN'	=> '<ol>
 			<li>Онемогући прикључак</li>
@@ -85,7 +91,7 @@ $lang = array_merge($lang, array(
 	'EXTENSION_DELETE_DATA_CONFIRM'	=> 'Да ли сигурно желите да обришете податке удружене са прикључком “%s”?<br /><br />Ово уклања све његове податке и поставке и не може бити опозвано!',
 	'EXTENSION_DISABLE_CONFIRM'		=> 'Да ли сигурно желите да онемогућите “%s” прикључак?',
 	'EXTENSION_ENABLE_CONFIRM'		=> 'Да ли сигурно желите да омогућите “%s” прикључак?',
-	'EXTENSION_FORCE_UNSTABLE_CONFIRM'	=> 'Да ли сигурно желите да присилите на коришћење нестабилне верзије?',
+	'EXTENSION_FORCE_UNSTABLE_CONFIRM'	=> 'Да ли сигурно желите да присилите на коришћење нестабилног издања?',
 
 	'RETURN_TO_EXTENSION_LIST'	=> 'Повратак на списак прикључака',
 
@@ -94,15 +100,15 @@ $lang = array_merge($lang, array(
 	'CLEAN_NAME'			=> 'Јасан Назив',
 	'TYPE'					=> 'Тип',
 	'DESCRIPTION'			=> 'Опис',
-	'VERSION'				=> 'Верзија',
+	'VERSION'				=> 'Издање',
 	'HOMEPAGE'				=> 'Главна',
 	'PATH'					=> 'Путања Датотеке',
 	'TIME'					=> 'Време Објаве',
 	'LICENSE'				=> 'Лиценца',
 
 	'REQUIREMENTS'			=> 'Захтеви',
-	'PHPBB_VERSION'			=> 'phpBB Верзија',
-	'PHP_VERSION'			=> 'PHP Верзија',
+	'PHPBB_VERSION'			=> 'phpBB Издање',
+	'PHP_VERSION'			=> 'PHP Издање',
 	'AUTHOR_INFORMATION'	=> 'Подаци Аутора',
 	'AUTHOR_NAME'			=> 'Име',
 	'AUTHOR_EMAIL'			=> 'Мејл',
@@ -112,12 +118,14 @@ $lang = array_merge($lang, array(
 	'NOT_UP_TO_DATE'		=> '%s није ажуран',
 	'UP_TO_DATE'			=> '%s је ажуран',
 	'ANNOUNCEMENT_TOPIC'	=> 'Саопштење о Издању',
-	'DOWNLOAD_LATEST'		=> 'Верзија за Преузимање',
-	'NO_VERSIONCHECK'		=> 'Никакви подаци нису дати при провери верзије.',
+	'DOWNLOAD_LATEST'		=> 'Издање за Преузимање',
+	'NO_VERSIONCHECK'		=> 'Никакви подаци нису дати при провери издања.',
 
-	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'Поновна-Провера свих верзија',
-	'FORCE_UNSTABLE'					=> 'Увек провера за нестабилне верзије',
-	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Поставке провере верзије',
+	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'Поновна-Провера свих издања',
+	'FORCE_UNSTABLE'					=> 'Увек провера за нестабилна издања',
+	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Поставке провере издања',
+
+	'BROWSE_EXTENSIONS_DATABASE'		=> 'Преглед базе прикључака',
 
 	'META_FIELD_NOT_SET'	=> 'Тражено мета поље %s није подешено.',
 	'META_FIELD_INVALID'	=> 'Мета поље %s је неисправно.',

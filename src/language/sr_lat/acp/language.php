@@ -77,4 +77,5 @@ $lang = array_merge($lang, array(
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'uklonjeni jezički fajlovi',
 
+	'BROWSE_LANGUAGE_PACKS_DATABASE'	=> 'Pogledajte bazu jezičkih paketa',
 	));
