@@ -183,7 +183,8 @@ $lang = array_merge($lang, array(
 	'ACL_M_MERGE'	=> 'Može da spoji teme',
 
 	'ACL_M_INFO'	=> 'Može videti detalje posta',
-	'ACL_M_WARN'	=> 'Može davati upozorenja<br /><em>Ovo podešavanje je samo globalno dodeljeno. Ono nije bazirano po forumima.</em>',
+	'ACL_M_WARN'	=> 'Može davati upozorenja<br /><em>Ovo podešavanje je samo globalno dodeljeno. Nije bazirano po forumima.</em>',
+	'ACL_M_PM_REPORT'	=> 'Može da zatvara i briše prijave privatnih poruka<br /><em>Ovo podešavanje je samo globalno dodeljeno. Nije bazirano po forumima.</em>', // This moderator setting is only global (and not local)
 	'ACL_M_BAN'		=> 'Može da upravlja zabranamabr /><em>Ovo podešavanje je samo globalno dodeljeno. Ono nije bazirano po forumima.</em>', // This moderator setting is only global (and not local)
 ));
 

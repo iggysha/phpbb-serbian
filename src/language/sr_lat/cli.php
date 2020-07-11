@@ -47,6 +47,7 @@ $lang = array_merge($lang, array(
 	'CLI_CONFIG_SET_FAILURE'			=> 'Ne mogu da podesim %s',
 	'CLI_CONFIG_SET_SUCCESS'			=> 'Uspešno podešeno %s',
 
+
 	'CLI_DESCRIPTION_CRON_LIST'					=> 'Ispisuje listu spremnih i nespremnih cron poslova.',
 	'CLI_DESCRIPTION_CRON_RUN'					=> 'Pokreće sve spremne cron poslove.',
 	'CLI_DESCRIPTION_CRON_RUN_ARGUMENT_1'		=> 'Ime zadakta koji treba da se pokrene',
@@ -78,4 +79,10 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_ENABLED'			=> 'Uključena',
 
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Uspešno preračunate sume evih emajlova.',
+));
+
+// Additional help for commands.
+$lang = array_merge($lang, array(
+	'CLI_HELP_CRON_RUN'			=> $lang['CLI_DESCRIPTION_CRON_RUN'] . ' Opciono, možete odrediti cron zadatak da se pokrene sama kada je pokrenut određeni cron zadatak.',
+
 ));

@@ -78,6 +78,7 @@ $lang = array_merge($lang, array(
 
 	'HIDE_MEMBER_SEARCH'	=> 'Sakrij pretragu članova',
 
+
 	'IM_ADD_CONTACT'		=> 'Dodaj kontakt',
 	'IM_DOWNLOAD_APP'		=> 'Preuzmi aplikaciju',
 	'IM_JABBER'				=> 'Znajte da su korisnici možda izabrali da ne primaju unsolicited instant poruke.',
@@ -103,6 +104,8 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Administrator zahteva da budete registrovani i prijavljeni da bi videli profile.',
 	'LOGIN_EXPLAIN_TEAM' => 'Administrator zahteva da budete registrovani i prijavljeni da bi pristupili timu',
 
+
+	'MANAGE_GROUP'			=> 'Uređivanje grupe',
 	'MORE_THAN'				=> 'Više od',
 
 	'NO_CONTACT_FORM'			=> 'Nema kontakt forme',
@@ -152,5 +155,6 @@ $lang = array_merge($lang, array(
     'VIEW_TWITTER_PROFILE'	=> 'Pogledaj Twitter profil',
     'VIEW_YOUTUBE_CHANNEL'	=> 'Pogledaj YouTube kanal',
     'VIEW_GOOGLEPLUS_PROFILE'	=> 'Pogleda Google+ profil',
+
 
 ));

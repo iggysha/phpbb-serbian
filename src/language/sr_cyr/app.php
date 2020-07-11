@@ -44,5 +44,5 @@ $lang = array_merge($lang, array(
 	'CONTROLLER_ARGUMENT_VALUE_MISSING'	=> 'Недостаје вредност за аргумент #%1$s: <strong>%3$s</strong> у класи <strong>%2$s</strong>',
 	'CONTROLLER_NOT_SPECIFIED'			=> 'Није назначен контролер.',
 	'CONTROLLER_METHOD_NOT_SPECIFIED'	=> 'Није назначен метод за контролер.',
-	'CONTROLLER_SERVICE_UNDEFINED'		=> 'Сервис за контролер "<strong>%s</strong>" није одређен у ./config/services.yml.',
+	'CONTROLLER_SERVICE_UNDEFINED'		=> 'Сервис за контролер “<strong>%s</strong>” није одређен у ./config/services.yml.',
 ));

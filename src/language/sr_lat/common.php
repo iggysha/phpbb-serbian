@@ -343,6 +343,7 @@ $lang = array_merge($lang, array(
 	'IMAGE_FILETYPE_INVALID'	=> 'Tip fajla slike %d za mimetype %s nije podržan.',
 	'IMAGE_FILETYPE_MISMATCH'	=> 'Neslaganje tipa fajla slike: očekivana ekstenzija je %1$s ali je data %2$s.',
 	'IN'						=> 'u',
+	'INACTIVE'					=> 'Neaktivan',
 	'INDEX'						=> 'Index stranica',
 	'INFORMATION'				=> 'Informacija',
 	'INTERESTS'					=> 'Interesi',
