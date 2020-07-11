@@ -207,7 +207,7 @@ $lang = array_merge($lang, array(
 		2	=> 'Preuzet %d puta',
 	),
 	'EDIT_POST'							=> 'Izmeni post',
-	'ELLIPSIS'							=> 'Elipsa',
+	'ELLIPSIS'							=>	'…',
 	'EMAIL'								=> 'Email',
 	'EMAIL_ADDRESS'						=> 'Email adresa',
 	'EMAIL_INVALID_EMAIL'				=> 'Neispravna email adresa',
