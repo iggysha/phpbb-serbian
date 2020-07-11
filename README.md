@@ -1,2 +1,3 @@
 # phpbb-serbian
-phpBB in Serbian
+
+phpBB in Serbian (unofficial translations).
