@@ -50,6 +50,7 @@ $lang = array_merge($lang, array(
 	'MIGRATION_NOT_FULFILLABLE'			=> 'Migracija "%1$s" nije potpuna, nedostaje migracija "%2$s".',
 	'MIGRATION_NOT_VALID'				=> '%s nije ispravna migracija.',
 	'MIGRATION_SCHEMA_DONE'				=> 'Instalirana šema: %1$s; Vreme: %2$.2f sekundi',
+	'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'Instaliranje šeme: %1$s; Vreme: %2$.2f sekundi',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'Instaliram šemu: %s.',
 	
 	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Migracija je neispravna. Nedostaje uslov za UKOLIKO.',
@@ -60,9 +61,12 @@ $lang = array_merge($lang, array(
 	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Migracija je neispravna. Nedefinisan metod alata za migraciju.',
 
 	'MODULE_ERROR'						=> 'Došlo je do greške prilikom kreiranja modula: %s',
+	'MODULE_EXISTS'						=> 'Modul već postoji: %s',
+	'MODULE_EXIST_MULTIPLE'				=> 'Nekoliko modula sa zadatim imenom roditeljskog modula već postoje: %s. Pokušajte da koristite pre/posle ključeve da bi razjasnili položaj modula.',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'Nedostaje obavezan info fajl modula: %2$s',
 	'MODULE_NOT_EXIST'					=> 'Nedostaje obavezan modul: %s',
 
+	'PARENT_MODULE_FIND_ERROR'			=> 'Nije moguće utvrditi roditeljski modul za: %s',
 	'PERMISSION_NOT_EXIST'				=> 'Dozvola "%s" neočekivano ne postoji.',
 
 	'ROLE_NOT_EXIST'					=> 'Uloga dozvole "%s" neočekivano ne postoji.',

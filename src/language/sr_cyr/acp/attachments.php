@@ -117,7 +117,7 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'Димензије везе слике',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Приказује слику прилога као текстуалну везу у једном реду уколико је слика већа од овога. За онемогућавање оваквог понашања, поставите вредности на 0px пута 0px.',
-	'IMAGICK_PATH'				=> 'Imagemagick путања',
+	'IMAGICK_PATH'				=> 'ImageMagick путања',
 	'IMAGICK_PATH_EXPLAIN'		=> 'Пуна путања до imagemagick апликације за пребацивање, н.пр. <samp>/usr/bin/</samp>.',
 
 	'MAX_ATTACHMENTS'				=> 'Највећи број прилога по поруци',
@@ -153,7 +153,7 @@ $lang = array_merge($lang, array(
 	'REMOVE_DISALLOWED_IPS'			=> 'Уклони или поново-укључи <em>недозвољене</em> IP адресе/сервере',
 	'RESYNC_FILES_STATS_CONFIRM'	=> 'Да ли сигурно желите да поново ускладите статистику датотека?',
 
-	'SEARCH_IMAGICK'				=> 'Претрага за Imagemagick',
+	'SEARCH_IMAGICK'				=> 'Претрага за ImageMagick',
 	'SECURE_ALLOW_DENY'				=> 'Списак Дозвола/Забрана',
 	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Промени подразумевано понашање када су безбедна преузимања омогућена од списка Дозвола/Забрана у оно од <strong>бела листа</strong> (Дозвола) или <strong>црна листа</strong> (Забрана).',
 	'SECURE_DOWNLOADS'				=> 'Омогући безбедна преузимања',

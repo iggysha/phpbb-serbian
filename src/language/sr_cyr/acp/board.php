@@ -570,6 +570,7 @@ $lang = array_merge($lang, array(
 	'SMTP_PORT'						=> 'SMTP порт сервера',
 	'SMTP_PORT_EXPLAIN'				=> 'Промените ово само уколико знате да је ваш SMTP сервер на другом порту.',
 	'SMTP_SERVER'					=> 'SMTP адреса сервера',
+	'SMTP_SERVER_EXPLAIN'			=> 'Имајте у виду да морате да омогућите протокол који ваш сервер користи. Уколико користите SSL, то мора бити "ssl://your.mailserver.com"',
 	'SMTP_SETTINGS'					=> 'SMTP поставке',
 	'SMTP_USERNAME'					=> 'SMTP корисничко име',
 	'SMTP_USERNAME_EXPLAIN'			=> 'Унесите корисничко име само уколико га ваш SMTP сервер захтева.',

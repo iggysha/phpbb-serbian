@@ -41,7 +41,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> 'Превод - <a href="http://www.medicinari.com/">medicinari.com</a>',
+	'TRANSLATION_INFO'	=> '<a href="http://www.superizradasajta.com/">Izrada Sajtova</a>',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d.m.Y|',	// 01 Jan 2007 (with Relative days enabled)
 	'DATETIME_FORMAT'	=> '|d M Y, H:i|',	// 01 Jan 2007, 13:37 (with Relative days enabled)
@@ -673,7 +673,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_POSTS_BY'			=> 'Претрага порука по',
 	'SEARCH_SELF'				=> 'Ваше поруке',
 	'SEARCH_TOPIC'				=> 'Претражи ову тему…',
-	'SEARCH_UNANSWERED'			=> 'Неодговорене поруке',
+	'SEARCH_UNANSWERED'			=> 'Неодговорене теме',
 	'SEARCH_UNREAD'				=> 'Непрочитане поруке',
 	'SEARCH_USER_POSTS'			=> 'Претражи корисник’ове поруке',
 	'SECONDS'					=> 'Секунди',
@@ -815,7 +815,7 @@ $lang = array_merge($lang, array(
 	'USERS'					=> 'Корисници',
 	'USE_PERMISSIONS'		=> 'Испробавање дозвола корисника',
 
-	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Жао нам је, али нисте овлашћени да користите ову могућност. Можда сте само регистровани овде а треба да учествујете више да бисте могли да користите ову могућност.',
+	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Жао нам је, али нисте овлашћени да користите ову могућност. Можда сте само регистровани овде а треба да учествујете више у дискусијама да бисте могли да користите ову могућност.',
 
 	'VARIANT_DATE_SEPARATOR'	=> ' / ',	// Used in date format dropdown, eg: "Today, 13:37 / 01 Jan 2007, 13:37" ... to join a relative date with calendar date
 	'VIEWED'					=> 'Прегледане',

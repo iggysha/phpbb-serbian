@@ -398,6 +398,7 @@ $lang = array_merge($lang, array(
 	'DATABASE_UPDATE_COMPLETE'			=> 'Nadogradnja baze je završena!',
 	'DATABASE_UPDATE_CONTINUE'			=> 'Nastavi nadogradnju baze',
 	'DATABASE_UPDATE_NOT_COMPLETED'		=> 'Nadogradnja baze još nije završena.',
+	'DATABASE_VERSION'					=> 'Verzija baze',
 	'DELETE_USER_REMOVE'				=> 'Obriši korisnika i ukloni postove',
 	'DELETE_USER_RETAIN'				=> 'Obriši korisnika ali zadrži postove',
 	'DESTINATION'						=> 'Odredišni fajl',
@@ -434,6 +435,7 @@ $lang = array_merge($lang, array(
 	'FILES_NOT_MODIFIED_EXPLAIN'	=> 'Sledeći fajlovi nisu izmenjeni i predstavljaju originalne phpBB fajlove verzije sa koje želite da se nadogradite.',
 	'FILES_UP_TO_DATE'				=> 'Već nadograđeni fajlovi',
 	'FILES_UP_TO_DATE_EXPLAIN'		=> 'Sledeći fajlovi su ažurni i nema potrebe da se ažuriraju.',
+	'FILES_VERSION'					=> 'Verzija fajlova',
 	'FTP_SETTINGS'					=> 'FTP Podešavanja',
 	'FTP_UPDATE_METHOD'				=> 'FTP Slanje',
 
@@ -476,6 +478,7 @@ $lang = array_merge($lang, array(
 
 	'OLD_UPDATE_FILES'		=> 'Fajlovi za nadogradnju su zastareli. Nađeni fajlovi su za nadogradnju sa phpBB-a %1$s na phpBB %2$s ali je poslednja verzija phpBB-a %3$s.',
 
+	'PACKAGE_VERSION'					=> 'Instalirana verzija paketa',
 	'PACKAGE_UPDATES_TO'				=> 'Trenutni paket se nadograđuje na verziju',
 	'PERFORM_DATABASE_UPDATE'			=> 'Izvrši nadogradnju baze',
 	'PERFORM_DATABASE_UPDATE_EXPLAIN'	=> 'Ispod ćete nanaći link za nadogradnju baze. Ovaj skript se mora posebno pokrenuti jer nadogradnja baze može dovesti do neočekivanog ponašanja ako ste prijavljeni. Nadogradnja baue može da potraje, zato vas molimo da ne zaustavljate izvršenje skripta iako naizgled deluje da se proces blokirao. Nakon što kliknete na link i nadogradnja se završi možete zatvoriti prozor.',
@@ -516,6 +519,12 @@ $lang = array_merge($lang, array(
 	'UPDATE_DATABASE_SCHEMA'		=> 'Nadograđujem šemu baze',
 	'UPDATE_FILES'					=> 'Nadogradi fajlove',
 	'UPDATE_FILES_NOTICE'			=> 'Proverite da li ste nadogradili i fajlove vašeg boarda, ovaj fajl samo nadograđuje vašu bazu.',
+	'UPDATE_INCOMPLETE'				=> 'Vaša instalacija phpBB-a nije ispravno nadograđena.',
+	'UPDATE_INCOMPLETE_MORE'		=> 'Pogledajte informacije ispod da bi ispravili ovu grešku.',
+	'UPDATE_INCOMPLETE_EXPLAIN'		=> '<h1>Nekompletna nadogradnja</h1>
+
+		<p>Izgleda da vaša poslednja nadogradnja phpBB instalacije nije završena. Idite na <a href="%1$s" title="%1$s">database_update skriptu</a> i pokrenite je. Ukoliko je nema, molimo <a href="https://www.phpbb.com/downloads/" title="phpBB downloads">preuzmite odgovarajuću verziju</a>, upload-ujte "install" folder u glavni phpBB folder (tamo gde je i config.php fajl) i <a href="%1$s" title="%1$s">pokrenite skriptu za nodogradnju baze</a>.</p>',
+
 	'UPDATE_INSTALLATION'			=> 'Nadogradi phpBB Instalaciju',
 	'UPDATE_INSTALLATION_EXPLAIN'	=> 'Sa ovom opcijom, moguće je da nadogradite vašu phpBB instalaciju na poslednju verziju.<br />Tokom procesa svi vaši fajlovi će biti provereni za njihov integritet. U mogućnosti ste da pregledate sve razlike i fajlove pre nadogradnje.<br /><br />Nadogradnja samog fajla može se izvršiti na dva različita načina.</p><h2>Minimalna Nadogradnja</h2><p>Sa ovom nadogradnjom možete samo preuzeti vaš lični set izmenjenih fajlova da bi bili sigurni da ne izgubite modifikacije koje ste mođda uradili. Nakon preuzimanja ovog paketa potrebno je da ručno pošaljete fajlove na njihovu ispravnu poziciju u phpBB root direktorijumu. Kada to uradite, možete ponovo proveriti status fajla da bi provereili da li ste pomerili fajlove u njihove tačne lokacije. Ako je sve ispravno ažurirano bićete prosleđeni na ažuriranje baze.</p><h2>Automatska nadogradnja sa FTP-om</h2><p>Ovaj metod je sličan prvom ali bez potrebe da preuzimate promenjene fajlove i šaljete ih na vaš server. Ovo će biti urađeno umesto vas. Da bi koristili ovaj metod potrebno je da znate detalje o vašem FTP nalogu jer će vam oni biti zatraženi. Kada završite proceduru bićete redirektovani na ažuriranje fajlova gde možete proveriti da li je sve ažurirano korektno. Ako jeste, bićete prosleđeni na ažuriranje baze.',
 	'UPDATE_INSTRUCTIONS'			=> '

@@ -50,6 +50,7 @@ $lang = array_merge($lang, array(
 	'MIGRATION_NOT_FULFILLABLE'			=> 'Миграција "%1$s" није употпуњена, недостаје миграција "%2$s".',
 	'MIGRATION_NOT_VALID'				=> '%s није исправна миграција.',
 	'MIGRATION_SCHEMA_DONE'				=> 'Инсталирана Шема: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'Инсталирамо Шему: %1$s; Време: %2$.2f секунди',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'Инсталирање Шеме: %s.',
 
 	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Миграција није ваљана. If тврдња помоћника пропушта услов.',
@@ -60,9 +61,12 @@ $lang = array_merge($lang, array(
 	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Миграција није ваљана. Недефинисан метод миграционог алата је сретнут.',
 
 	'MODULE_ERROR'						=> 'Појавила се грешка током прављења модула: %s',
+	'MODULE_EXISTS'						=> 'Модул већ постоји: %s',
+	'MODULE_EXIST_MULTIPLE'				=> 'Неколико модула са датим langname родитељског модула већ постоји: %s. Пробајте да користите пре/после кључеве да разјасните место модула.',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'Тражена инфо датотека модула недостаје: %2$s',
 	'MODULE_NOT_EXIST'					=> 'Тражени модул не постоји: %s',
 
+	'PARENT_MODULE_FIND_ERROR'			=> 'Немогуће је одредити ознаку родитељског модула: %s',
 	'PERMISSION_NOT_EXIST'				=> 'Поставка дозволе "%s" неочекивано не постоји.',
 
 	'ROLE_NOT_EXIST'					=> 'Рола дозвола "%s" неочекивано не постоји.',
