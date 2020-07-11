@@ -44,7 +44,7 @@ $lang = array_merge($lang, array(
 	'DIRECTION'			=> 'ltr',
 
 	'DATE_FORMAT'		=> '|d M Y|',
-	'USER_LANG'			=> 'sr',
+	'USER_LANG'			=> 'sr-lat',
 
 
 	

@@ -1,0 +1,8 @@
+# composer
+vendor/
+composer.phar
+composer.lock
+
+# validation prerequisites
+phpbb/
+3.?/
