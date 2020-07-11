@@ -77,6 +77,7 @@ $lang = array_merge($lang, array(
 
 	'SEARCHED_FOR'				=> 'Тражени појам',
 	'SEARCHED_TOPIC'			=> 'Тражена тема',
+	'SEARCHED_QUERY'			=> 'Упит претраге',
 	'SEARCH_ALL_TERMS'			=> 'Тражи све појмове или користи упит као што је написан',
 	'SEARCH_ANY_TERMS'			=> 'Тражи било које појмове',
 	'SEARCH_AUTHOR'				=> 'Претрага по корисничком имену',

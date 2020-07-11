@@ -160,6 +160,7 @@ $lang = array_merge($lang, array(
 	'EDIT_POST'							=> 'Учитај поруку',
 	'EMAIL'								=> 'E-mail', // Short form for EMAIL_ADDRESS
 	'EMAIL_ADDRESS'						=> 'E-mail адреса',
+	'EMAIL_INVALID_EMAIL'				=> 'Адреса e-mail коју сте унели није исправна.',
 	'EMAIL_SMTP_ERROR_RESPONSE'			=> 'Дошло је до сметњи приликом слања e-mail у <strong>Линији %1$s</strong>. Одговара: %2$s.',
 	'EMPTY_SUBJECT'						=> 'Морате унети наслов када пишете нову тему.',
 	'EMPTY_MESSAGE_SUBJECT'				=> 'Морате унети наслов када пишете нову поруку.',
@@ -390,6 +391,7 @@ $lang = array_merge($lang, array(
 	'NO_POSTS_TIME_FRAME'		=> 'Нема порука у овој теми за изабрани временски период.',
 	'NO_FEED_ENABLED'			=> 'Feeds нису доступни на овом форуму.',
 	'NO_FEED'					=> 'Тражени feed није доступан.',
+	'NO_STYLE_DATA'				=> 'Не могу добити податке стила',
 	'NO_SUBJECT'				=> 'Нисте унели наслов',								// Used for posts having no subject defined but displayed within management pages.
 	'NO_SUCH_SEARCH_MODULE'		=> 'Одабрана позадина претраге не постоји.',
 	'NO_SUPPORTED_AUTH_METHODS'	=> 'Нема подржаних начина потврде.',
@@ -568,9 +570,11 @@ $lang = array_merge($lang, array(
 	'SUBJECT'					=> 'Наслов',
 	'SUBMIT'					=> 'Прихвати',
 
+	'TB'				=> 'TB',
 	'TERMS_USE'			=> 'Услови коришћења',
 	'TEST_CONNECTION'	=> 'Проба повезивања',
 	'THE_TEAM'			=> 'Тим',
+	'TIB'				=> 'TiB',
 	'TIME'				=> 'Време',
 	
 	'TOO_LARGE'						=> 'Вредност коју сте унели је превелика.',
@@ -718,6 +722,7 @@ $lang = array_merge($lang, array(
 	'WHO_IS_ONLINE'		=> 'Ко је на вези',
 	'WRONG_PASSWORD'	=> 'Унели сте неисправну лозинку.',
 
+	'WRONG_DATA_COLOUR'			=> 'Вредност боје коју сте унели није ваљана.',
 	'WRONG_DATA_ICQ'			=> 'Број који сте унели није исправан ICQ број.',
 	'WRONG_DATA_JABBER'			=> 'Име које сте унели није исправно име Jabber налога.',
 	'WRONG_DATA_LANG'			=> 'Језик који сте изабрали није исправан.',

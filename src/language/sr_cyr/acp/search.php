@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Позадина претраге тренутно брише свој индекс. Ово може узети неколико минута.',
 
 	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'MySQL fulltext позадина може бити коришћена само са верзијом MySQL4 или јачом.',
-	'FULLTEXT_MYSQL_NOT_MYISAM'				=> 'MySQL fulltext индекси могу бити коришћени само са MyISAM табелама.',
+	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext индекси могу бити коришћени само са MyISAM или InnoDB табелама. MySQL 5.6.4 или новији је неопходан за fulltext индексе на InnoDB табелама.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Укупан број индексираних порука',
 	'FULLTEXT_MYSQL_MBSTRING'				=> 'Подршка за не-латинске UTF-8 знакове користећи mbstring:',
 	'FULLTEXT_MYSQL_PCRE'					=> 'Подршка за не-латинске UTF-8 знакове користећи PCRE:',
