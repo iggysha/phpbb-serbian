@@ -320,7 +320,7 @@ $lang = array_merge($lang, array(
 	),
 	'HIDE_GUESTS'					=> 'Сакриј госте',
 	'HIDE_ME'						=> 'Сакриј мој статус на вези за ову сесију',
-	'HOURS'							=> 'Сати',
+	'HOURS'							=> 'Часа',
 	'HOME'							=> 'Почетна',
 
 	'ICQ'						=> 'ICQ',
@@ -410,7 +410,7 @@ $lang = array_merge($lang, array(
 	'MODERATOR'				=> 'Уредник',
 	'MODERATORS'			=> 'Уредници',
 	'MODULE_NOT_ACCESS'		=> 'Модул није приступљив',
-	'MODULE_NOT_FIND'		=> 'Не могу да нађем модул %s',
+	'MODULE_NOT_FIND'		=> 'Не могу да пронађем модул %s',
 	'MODULE_FILE_INCORRECT_CLASS'	=> 'Датотека модула %s не садржи исправну класу [%s]',
 	'MONTH'					=> 'Месец',
 	'MOVE'					=> 'Премести',
