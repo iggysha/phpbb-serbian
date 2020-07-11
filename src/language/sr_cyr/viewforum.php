@@ -44,19 +44,24 @@ $lang = array_merge($lang, array(
 	'ICON_ANNOUNCEMENT'		=> 'Саопштење',
 	'ICON_STICKY'			=> 'Лепљива',
 
-	'LOGIN_NOTIFY_FORUM'	=> 'Обавештени сте о овом форуму, молимо Вас да се пријавите како бисте га прегледали.',
+	'LOGIN_NOTIFY_FORUM'	=> 'Обавештени сте о овом форуму, молимо вас да се пријавите како бисте га прегледали.',
 
 	'MARK_TOPICS_READ'		=> 'Означи теме као прочитане',
 
-	'NEW_POSTS_HOT'			=> 'Нове поруке [ Популарни ]',
-	'NEW_POSTS_LOCKED'		=> 'Нове поруке [ Закључани ]',
-	'NO_NEW_POSTS_HOT'		=> 'Нема нових порука [ Популарни ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'Нема нових порука [ Закључани ]',
+	'NEW_POSTS_HOT'			=> 'Нове поруке [ Популарни ]',	// Not used anymore
+	'NEW_POSTS_LOCKED'		=> 'Нове поруке [ Закључани ]',	// Not used anymore
+	'NO_NEW_POSTS_HOT'		=> 'Нема нових порука [ Популарни ]',	// Not used anymore
+	'NO_NEW_POSTS_LOCKED'	=> 'Нема нових порука [ Закључани ]',	// Not used anymore
 	'NO_READ_ACCESS'		=> 'Немате потребне дозволе да читате теме у овом форуму.',
+	'NO_UNREAD_POSTS_HOT'		=> 'Нема непрочитаних порука [ Популарни ]',
+	'NO_UNREAD_POSTS_LOCKED'	=> 'Нема непрочитаних порука [ Закључани ]',
 
 	'POST_FORUM_LOCKED'		=> 'Форум је закључан',
 
 	'TOPICS_MARKED'			=> 'Теме за овај форум су сада означене као прочитане.',
+
+	'UNREAD_POSTS_HOT'		=> 'Непрочитане поруке [ Популарни ]',
+	'UNREAD_POSTS_LOCKED'	=> 'Непрочитане поруке [ Закључани ]',
 
 	'VIEW_FORUM'			=> 'Преглед форума',
 	'VIEW_FORUM_TOPIC'		=> '1 тема',

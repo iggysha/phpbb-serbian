@@ -61,6 +61,7 @@ $lang = array_merge($lang, array(
 	'SITE_NAME'						=> 'Naziv sajta',
 	'SYSTEM_DST'					=> 'Omogući Daylight Savings',
 	'SYSTEM_TIMEZONE'				=> 'Sistemska vremenska zona',
+	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Vremenska zona za prikaz vremena za korisnike koji nisu prijavljeni (gosti, botovi). Prijavljeni korisnici podešavaju svoju vremensku zonu tokom registracije i mogu je promeniti u kontrolnom panelu.',
 	'WARNINGS_EXPIRE'				=> 'Trajanje upozorenja',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Broj dana posle posle objave pre nego što upozorenje za korisnika istekne',
 ));
@@ -388,6 +389,7 @@ $lang = array_merge($lang, array(
 	'YES_POST_MARKING_EXPLAIN'		=> 'Označava teme u kojima je korisnik pisao.',
 	'YES_READ_MARKING'				=> 'Omogući server-side označavanje tema',
 	'YES_READ_MARKING_EXPLAIN'		=> 'Smešta pročitan/nepročitan status u bazu podataka na serveru umesto u kolačić.',
+	'YES_UNREAD_SEARCH'				=> 'Omogućuje pretragu nepročitanih postova',
 ));
 
 // Auth settings

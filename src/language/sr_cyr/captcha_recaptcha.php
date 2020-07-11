@@ -46,7 +46,7 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_PRIVATE'				=> 'Приватни reCaptcha кључ',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Ваш приватни reCaptcha кључ. Кључеви се могу добити на <a href="http://recaptcha.net">reCaptcha.net</a>.',
 
-	'RECAPTCHA_EXPLAIN'				=> 'У настојању да спречимо аутоматске пријаве, тражимо да унесете обе од речи приказаних испод у текстуално поље.',
+	'RECAPTCHA_EXPLAIN'				=> 'У настојању да спречимо аутоматске пријаве, тражимо да унесете обе од речи приказаних испод у текстуалном пољу.',
 ));
 
 ?>

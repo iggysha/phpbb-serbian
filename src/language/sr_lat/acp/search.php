@@ -56,6 +56,8 @@ $lang = array_merge($lang, array(
 	'FULLTEXT_MYSQL_PCRE'					=> 'Podrška za ne-latinske UTF-8 karaktere koristeći PCRE:',
 	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Ako PCRE nema svojstva unikod karaktera, bekend pretrage će pokušati da koristi mbstring’s regularni izraz.',
 	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Ovaj bekend pretrage zahteva PCRE svojstva unikod karaktera, koji je dostupan samo u PHP 4.4, 5.1 i većim, ako želite da tražite ne-latinske karaktere.',
+	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Reči od najmanje ovoliko karaktera će biti indeksirane za pretragu. Vi ili Vaš host možete promeniti ovo podešavanje samo ukoliko izmenite mysql konfiguraciju.',
+	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Reči od najmanje ovoliko karaktera će biti indeksirane za pretragu. Vi ili Vaš host možete promeniti ovo podešavanje samo ukoliko izmenite mysql konfiguraciju.',
 
 	'GENERAL_SEARCH_SETTINGS'				=> 'Generalna podešavanja pretrage',
 	'GO_TO_SEARCH_INDEX'					=> 'Idi na stranicu za pretragu indeksa',

@@ -49,10 +49,15 @@ $lang = array_merge($lang, array(
 	'NO_NEW_POSTS_HOT'		=> 'Nema novih postova [ Popularni ]',
 	'NO_NEW_POSTS_LOCKED'	=> 'Nema novih postova [ Zaključanih ]',
 	'NO_READ_ACCESS'		=> 'Nemate potrebne dozvole da pregledate teme u ovom forumu.',
+	'NO_UNREAD_POSTS_HOT'	=> 'Nema privatnih postova [ Popularni ]', 
+	'NO_UNREAD_POSTS_LOCKED' => 'Nema nepročitanih postova [ Zaključanih ]',
 
 	'POST_FORUM_LOCKED'		=> 'Forum je zaključan',
 
 	'TOPICS_MARKED'			=> 'Teme za ovaj forum su sada obeležene kao pročitane',
+	
+	'UNREAD_POSTS_HOT'		=> 'Nepročitani postovi [ Popularni ]',
+	'UNREAD_POSTS_LOCKED'	=> 'Nepročitani postovi [ Zaključani ]',
 
 	'VIEW_FORUM'			=> 'Pogledaj forum',
 	'VIEW_FORUM_TOPIC'		=> '1 tema',

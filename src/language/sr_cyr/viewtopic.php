@@ -48,30 +48,30 @@ $lang = array_merge($lang, array(
 	'BUMP_TOPIC'			=> 'Погурај тему',
 
 	'CODE'					=> 'Код',
-	'COLLAPSE_QR'			=> 'Сакриј брзи одговор',
+	'COLLAPSE_QR'			=> 'Сакриј Брзи Одговор',
 
 	'DELETE_TOPIC'			=> 'Обриши тему',
 	'DOWNLOAD_NOTICE'		=> 'Немате потребне дозволе да прегледате прилоге у овој поруци.',
 
 	'EDITED_TIMES_TOTAL'	=> 'Последње учитавање од %1$s дана %2$s, учитано %3$d пута укупно.',
 	'EDITED_TIME_TOTAL'		=> 'Последње учитавање од %1$s дана %2$s, учитано %3$d пут.',
-	'EMAIL_TOPIC'			=> 'Пошаљи тему пријатељу у e-mail',
+	'EMAIL_TOPIC'			=> 'Пошаљи тему пријатељу преко e-mail',
 	'ERROR_NO_ATTACHMENT'	=> 'Одабрани прилог више не постоји.',
 
 	'FILE_NOT_FOUND_404'	=> 'Датотека <strong>%s</strong> не постоји.',
 	'FORK_TOPIC'			=> 'Копирај тему',
-	'FULL_EDITOR'			=> 'Пуни уређивач',
+	'FULL_EDITOR'			=> 'Пуни Уређивач',
 	
 	'LINKAGE_FORBIDDEN'		=> 'Нисте овлашћени да прегледате, преузмете или везујете од/до ове веб странице.',
-	'LOGIN_NOTIFY_TOPIC'	=> 'Обавештени сте о овој теми, молимо Вас да се пријавите како бисте је прегледали.',
+	'LOGIN_NOTIFY_TOPIC'	=> 'Обавештени сте о овој теми, молимо вас да се пријавите како бисте је прегледали.',
 	'LOGIN_VIEWTOPIC'		=> 'Форум захтева да будете регистровани и пријављени како бисте прегледали ову тему.',
 
 	'MAKE_ANNOUNCE'				=> 'Промени у “Саопштење”',
 	'MAKE_GLOBAL'				=> 'Промени у “Глобално”',
-	'MAKE_NORMAL'				=> 'Промени у “Обичну тему”',
+	'MAKE_NORMAL'				=> 'Промени у “Обичну Тему”',
 	'MAKE_STICKY'				=> 'Промени у “Лепљиву”',
-	'MAX_OPTIONS_SELECT'		=> 'Можете изабрати највише <strong>%d</strong> поставки',
-	'MAX_OPTION_SELECT'			=> 'Можете изабрати највише <strong>1</strong> поставку',
+	'MAX_OPTIONS_SELECT'		=> 'Можете изабрати највише <strong>%d</strong> понуда',
+	'MAX_OPTION_SELECT'			=> 'Можете изабрати највише <strong>1</strong> понуду',
 	'MISSING_INLINE_ATTACHMENT'	=> 'Прилог <strong>%s</strong> више није доступан',
 	'MOVE_TOPIC'				=> 'Помери тему',
 
@@ -88,13 +88,13 @@ $lang = array_merge($lang, array(
 	'PRINT_TOPIC'			=> 'Преглед за штампу',
 
 	'QUICK_MOD'				=> 'Брзи-мод алати',
-	'QUICKREPLY'			=> 'Брзи одговор',
+	'QUICKREPLY'			=> 'Брзи Одговор',
 	'QUOTE'					=> 'Цитирај',
 
 	'REPLY_TO_TOPIC'		=> 'Одговори на тему',
 	'RETURN_POST'			=> '%sПовратак на поруку%s',
 
-	'SHOW_QR'				=> 'Брзи одговор',
+	'SHOW_QR'				=> 'Брзи Одговор',
 	'SUBMIT_VOTE'			=> 'Гласај',
 
 	'TOTAL_VOTES'			=> 'Укупно гласова',

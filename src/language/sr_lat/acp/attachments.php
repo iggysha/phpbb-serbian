@@ -93,6 +93,16 @@ $lang = array_merge($lang, array(
 	'EXTENSION_GROUPS'				=> 'Ekstenzione grupe',
 	'EXTENSION_GROUP_DELETED'		=> 'Ekstenziona grupa je uspešno obrisana.',
 	'EXTENSION_GROUP_EXIST'			=> 'Ekstenziona grupa %s već postoji',
+	
+	'EXT_GROUP_ARCHIVES'			=> 'Arhive',
+	'EXT_GROUP_DOCUMENTS'			=> 'Dokumenti',
+	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Fajlovi za download',
+	'EXT_GROUP_FLASH_FILES'			=> 'Flash fajlovi',
+	'EXT_GROUP_IMAGES'				=> 'Slike',
+	'EXT_GROUP_PLAIN_TEXT'			=> 'Običan tekst',
+	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Medij',
+	'EXT_GROUP_REAL_MEDIA'			=> 'Real Medij',
+	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Medij',
 
 	'GO_TO_EXTENSIONS'		=> 'Idi na panel za menadžment ekstenzija',
 	'GROUP_NAME'			=> 'Ime grupe',

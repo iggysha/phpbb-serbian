@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ALREADY_DEFAULT_GROUP'		=> 'Одабрана група је већ Ваша задата група.',
+	'ALREADY_DEFAULT_GROUP'		=> 'Одабрана група је већ ваша задата група.',
 	'ALREADY_IN_GROUP'			=> 'Већ сте члан одабране групе.',
 	'ALREADY_IN_GROUP_PENDING'	=> 'Већ сте тражили да се придружите одабраној групи.',
 
@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'CHANGED_DEFAULT_GROUP'		=> 'Успешно сте променили задату групу.',
 
 	'GROUP_AVATAR'						=> 'Грб групе',
-	'GROUP_CHANGE_DEFAULT'				=> 'Да ли сигурно желите да промените Ваше задато чланство у групи “%s”?',
+	'GROUP_CHANGE_DEFAULT'				=> 'Да ли сигурно желите да промените ваше задато чланство у групи “%s”?',
 	'GROUP_CLOSED'						=> 'Затворена',
 	'GROUP_DESC'						=> 'Опис групе',
 	'GROUP_HIDDEN'						=> 'Сакривена',
@@ -60,7 +60,7 @@ $lang = array_merge($lang, array(
 	'GROUP_JOIN_PENDING'				=> 'Захтев за приступ групи',
 	'GROUP_JOIN_PENDING_CONFIRM'		=> 'Да ли сигурно желите да пошаљете захтев за придруживање одабраној групи?',
 	'GROUP_JOINED'						=> 'Успешно сте се придружили одабраној групи.',
-	'GROUP_JOINED_PENDING'				=> 'Успешно сте послали захтев за чланство у групи. Молимо Вас да сачекате вођу групе да одобри Ваше чланство.',
+	'GROUP_JOINED_PENDING'				=> 'Успешно сте послали захтев за чланство у групи. Молимо вас да сачекате вођу групе да одобри ваше чланство.',
 	'GROUP_LIST'						=> 'Управљање члановима',
 	'GROUP_MEMBERS'						=> 'Чланови групе',
 	'GROUP_NAME'						=> 'Назив групе',
@@ -69,7 +69,7 @@ $lang = array_merge($lang, array(
 	'GROUP_RESIGN_MEMBERSHIP'			=> 'Повући чланство у групи',
 	'GROUP_RESIGN_MEMBERSHIP_CONFIRM'	=> 'Да ли сигурно желите да се повучете из чланства у одабраној групи?',
 	'GROUP_RESIGN_PENDING'				=> 'Повуци захтев на чекању одобрења за чланство у групи',
-	'GROUP_RESIGN_PENDING_CONFIRM'		=> 'Да ли сигурно желите да повучете Ваш захтев на чекању за чланство у одабраној групи?',
+	'GROUP_RESIGN_PENDING_CONFIRM'		=> 'Да ли сигурно желите да повучете ваш захтев на чекању за чланство у одабраној групи?',
 	'GROUP_RESIGNED_MEMBERSHIP'			=> 'Успешно сте уклоњени из одабране групе.',
 	'GROUP_RESIGNED_PENDING'			=> 'Ваш захтев на чекању за чланство је успешно уклоњен из одабране групе.',
 	'GROUP_TYPE'						=> 'Тип групе',
@@ -80,8 +80,8 @@ $lang = array_merge($lang, array(
 
 	'NO_LEADERS'					=> 'Нисте вођа ниједне групе.',
 	'NOT_LEADER_OF_GROUP'			=> 'Захтевани поступак се не може извршити јер нисте вођа одабране групе.',
-	'NOT_MEMBER_OF_GROUP'			=> 'Захтевани поступак се не може извршити јер нисте члан одабране групе или Ваше чланство још није одобрено.',
-	'NOT_RESIGN_FROM_DEFAULT_GROUP'	=> 'Није Вам омогућено да се повучете из Ваше задате групе.',
+	'NOT_MEMBER_OF_GROUP'			=> 'Захтевани поступак се не може извршити јер нисте члан одабране групе или ваше чланство још није одобрено.',
+	'NOT_RESIGN_FROM_DEFAULT_GROUP'	=> 'Није вам омогућено да се повучете из ваше задате групе.',
 	
 	'PRIMARY_GROUP'		=> 'Основна група',
 
@@ -90,7 +90,7 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_CHANGE'			=> 'Из “%1$s” групе у “%2$s”',
 	'USER_GROUP_DEMOTE'			=> 'Откажи вођство',
 	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Да ли сигурно желите да откажете вођство у одабраној групи?',
-	'USER_GROUP_DEMOTED'		=> 'Успешно сте отказали Ваше вођство.',
+	'USER_GROUP_DEMOTED'		=> 'Успешно сте отказали ваше вођство.',
 ));
 
 ?>

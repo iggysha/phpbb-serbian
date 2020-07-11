@@ -145,6 +145,7 @@ $lang = array_merge($lang, array(
 	'DLL_MBSTRING'				=> 'Multi-byte karakterna podrška',
 	'DLL_MSSQL'					=> 'MSSQL Server 2000+',
 	'DLL_MSSQL_ODBC'			=> 'MSSQL Server 2000+ preko ODBC-a',
+	'DLL_MSSQLNATIVE'			=> 'MSSQL Server 2005+ [ Native ]',
 	'DLL_MYSQL'					=> 'MySQL',
 	'DLL_MYSQLI'				=> 'MySQL sa MySQLi Ekstenzijom',
 	'DLL_ORACLE'				=> 'Oracle',
@@ -537,6 +538,7 @@ $lang = array_merge($lang, array(
 	'UPLOAD_METHOD'					=> 'Metod nadogradnje',
 
 	'UPDATE_DB_SUCCESS'				=> 'Nadogradnja baze je uspešna.',
+	'UPGRADE_INSTRUCTIONS'			=> 'Nova opcija <strong>%1$s</strong> je dostupna. Molimo Vas da pročitate <a href="%2$s" title="%2$s"><strong>objavu</strong></a> da bi saznali [ta ima da ponudi, i kako da se nadogradite.',
 	'USER_ACTIVE'					=> 'Activan korisnik',
 	'USER_INACTIVE'					=> 'Neaktivan korisnik',
 	

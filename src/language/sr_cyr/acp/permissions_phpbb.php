@@ -97,7 +97,7 @@ $lang = array_merge($lang, array(
 
 // User Permissions
 $lang = array_merge($lang, array(
-	'acl_u_viewprofile'	=> array('lang' => 'Може прегледати профиле, списак чланова и На вези списак', 'cat' => 'profile'),
+	'acl_u_viewprofile'	=> array('lang' => 'Може прегледати профиле, списак чланова и на вези списак', 'cat' => 'profile'),
 	'acl_u_chgname'		=> array('lang' => 'Може променити корисничко име', 'cat' => 'profile'),
 	'acl_u_chgpasswd'	=> array('lang' => 'Може променити лозинку', 'cat' => 'profile'),
 	'acl_u_chgemail'	=> array('lang' => 'Може променити e-mail адресу', 'cat' => 'profile'),
@@ -128,9 +128,9 @@ $lang = array_merge($lang, array(
 
 	'acl_u_sendemail'	=> array('lang' => 'Може да шаље e-mails', 'cat' => 'misc'),
 	'acl_u_sendim'		=> array('lang' => 'Може да шаље тренутне поруке', 'cat' => 'misc'),
-	'acl_u_ignoreflood'	=> array('lang' => 'Може да игнорише ограничење поплаве', 'cat' => 'misc'),
-	'acl_u_hideonline'	=> array('lang' => 'Може да сакрије статус На вези', 'cat' => 'misc'),
-	'acl_u_viewonline'	=> array('lang' => 'Може да види сакривене кориснике На вези', 'cat' => 'misc'),
+	'acl_u_ignoreflood'	=> array('lang' => 'Може да занемари ограничење поплаве', 'cat' => 'misc'),
+	'acl_u_hideonline'	=> array('lang' => 'Може да сакрије статус на вези', 'cat' => 'misc'),
+	'acl_u_viewonline'	=> array('lang' => 'Може да види сакривене кориснике на вези', 'cat' => 'misc'),
 	'acl_u_search'		=> array('lang' => 'Може да претражује форум', 'cat' => 'misc'),
 ));
 
@@ -166,7 +166,7 @@ $lang = array_merge($lang, array(
 	'acl_f_email'		=> array('lang' => 'Може да шаље теме на e-mail', 'cat' => 'actions'),
 
 	'acl_f_search'		=> array('lang' => 'Може да претражује форум', 'cat' => 'misc'),
-	'acl_f_ignoreflood' => array('lang' => 'Може да игнорише ограничење поплаве', 'cat' => 'misc'),
+	'acl_f_ignoreflood' => array('lang' => 'Може да занемари ограничење поплаве', 'cat' => 'misc'),
 	'acl_f_postcount'	=> array('lang' => 'Повећа бројач порука<br /><em>Молимо знајте да ова поставка делује само на нове поруке.</em>', 'cat' => 'misc'),
 	'acl_f_noapprove'	=> array('lang' => 'Може да шаље поруке без одобрења', 'cat' => 'misc'),
 ));
@@ -206,7 +206,7 @@ $lang = array_merge($lang, array(
 	'acl_a_bbcode'		=> array('lang' => 'Може да одређује ББКод тагове', 'cat' => 'posting'),
 	'acl_a_attach'		=> array('lang' => 'Може да мења поставке у вези прилога', 'cat' => 'posting'),
 
-	'acl_a_user'		=> array('lang' => 'Може да управља корисницима<br /><em>Ово такође укључује виђење корисниковог прегледача на списку На вези.</em>', 'cat' => 'user_group'),
+	'acl_a_user'		=> array('lang' => 'Може да управља корисницима<br /><em>Ово такође укључује виђење корисниковог прегледача на списку на вези.</em>', 'cat' => 'user_group'),
 	'acl_a_userdel'		=> array('lang' => 'Може брисати/поткресивати кориснике', 'cat' => 'user_group'),
 	'acl_a_group'		=> array('lang' => 'Може да управља групама', 'cat' => 'user_group'),
 	'acl_a_groupadd'	=> array('lang' => 'Може да додаје нове групе', 'cat' => 'user_group'),

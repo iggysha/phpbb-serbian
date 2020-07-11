@@ -57,6 +57,7 @@ $lang = array_merge($lang, array(
 	'NO_SEARCH'				=> 'Žao nam je, ali nemate dozvolu da koristite sistem pretrage.',
 	'NO_SEARCH_RESULTS'		=> 'Nema rezultata.',
 	'NO_SEARCH_TIME'		=> 'Žao nam je, ali trenutno ne možete koristiti sistem pretrage. Molimo vas da pokušate ponovo kasnije.',
+	'NO_SEARCH_UNREADS'		=> 'Žao nam je, ali pretraga za obrisanim postovima je isključena na ovom boardu.',
 	'WORD_IN_NO_POST'		=> 'Nije pronađen nijedan post jer se reč %s ne pojavljuje ni u jednom postu.',
 	'WORDS_IN_NO_POST'		=> 'Nije pronađen nijedan post jer se reči %s ne pojavljuju ni u jednom postu.',
 

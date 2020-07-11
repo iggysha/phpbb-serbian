@@ -39,6 +39,7 @@ $lang = array_merge($lang, array(
 
 	'CANNOT_BAN_FOUNDER'			=> 'Ne možete da zabranite osnivačke naloge.',
 	'CANNOT_BAN_YOURSELF'			=> 'Ne možete da zabranite sami sebe.',
+	'CANNOT_BAN_ANONYMOUS'			=> 'Ne možete da zabranite anonimne korisnike. Dozvole za anonimne korisnike možete podesiti u delu Dozvole.',
 	'CANNOT_DEACTIVATE_BOT'			=> 'Ne možete da deaktivirate bot naloge. Molimo vas da deaktivirate bot-a.',
 	'CANNOT_DEACTIVATE_FOUNDER'		=> 'Ne možete da deaktivirate osnivačke naloge.',
 	'CANNOT_DEACTIVATE_YOURSELF'	=> 'Ne možete da deaktivirate vaš nalog.',
