@@ -1,18 +1,28 @@
 <?php
-/** 
+/**
 *
-* acp_search [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: search.php,v 1.8 2006/10/02 15:10:29 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -47,17 +57,48 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Brisanje indeksa u toku',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Bekend pretrage trenutno briše indeks. Ovo može potrajati nekoliko minuta.',
 
-	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'MySQL fulltext bekend može da se koristi samo sa vezijom MySQL4 ili jačom.',
-	'FULLTEXT_MYSQL_NOT_MYISAM'				=> 'MySQL fulltext indeksi mogu da se koriste samo sa MyISAM tabelama.',
-	'FULLTEXT_MYSQL_SUBJECT_CARDINALITY'	=> 'Kardinalnost indeksa teme posta (procena unikatnih vrednosti)',
-	'FULLTEXT_MYSQL_TEXT_CARDINALITY'		=> 'Kardinalnost indeksa teksta posta (procena unikatnih vrednosti)',
+	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'MySQL fulltext backend može da se koristi samo sa MySQL4 i novijim.',
+	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext indeksiranje može da se koristi samo sa MyISAM ili InnoDB tabelama. MySQL 5.6.4 ili noviji je obavezan za fulltext indeksiranje na InnoDB tabelama.',
+	
+	
+	
+	
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Ukupni broj indeksiranih postova',
-	'FULLTEXT_MYSQL_MBSTRING'				=> 'Podrška za ne-latinske UTF-8 karaktere koristeći mbstring:',
-	'FULLTEXT_MYSQL_PCRE'					=> 'Podrška za ne-latinske UTF-8 karaktere koristeći PCRE:',
-	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Ako PCRE nema svojstva unikod karaktera, bekend pretrage će pokušati da koristi mbstring’s regularni izraz.',
-	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Ovaj bekend pretrage zahteva PCRE svojstva unikod karaktera, koji je dostupan samo u PHP 4.4, 5.1 i većim, ako želite da tražite ne-latinske karaktere.',
+	
+	
+	
+	
+	
+	
+	
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Reči od najmanje ovoliko karaktera će biti indeksirane za pretragu. Vi ili Vaš host možete promeniti ovo podešavanje samo ukoliko izmenite mysql konfiguraciju.',
 	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Reči od najmanje ovoliko karaktera će biti indeksirane za pretragu. Vi ili Vaš host možete promeniti ovo podešavanje samo ukoliko izmenite mysql konfiguraciju.',
+	'FULLTEXT_POSTGRES_INCOMPATIBLE_DATABASE'	=> 'PostgreSQL fulltext backend može da se koristi samo sa PostgreSQL.',
+	'FULLTEXT_POSTGRES_TOTAL_POSTS'			=> 'Ukupan broj indeksiranih postova',
+	'FULLTEXT_POSTGRES_VERSION_CHECK'		=> 'PostgreSQL veryija',
+	'FULLTEXT_POSTGRES_TS_NAME'				=> 'Konfiguracioni profil tekst pretrage:',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN'			=> 'Minimalna dužina reči za ključne reči',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN'			=> 'Maksimalna dužina reči za ključne reči',
+	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'		=> 'Ovaj mod pretrage zahteva PostgreSQL verziju 8.3 i noviju.',
+	'FULLTEXT_POSTGRES_TS_NAME_EXPLAIN'				=> 'Profil konfiguracije tekst pretrage koji se koristi za utvđivanje prosledioca i rečnika.',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN_EXPLAIN'			=> 'Reči sa najmanje ovoliko karaktera će biti uključene u upite.',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN_EXPLAIN'			=> 'Reči sa ne više od ovoliko karaktera će biti uključene u upite.',
+	
+	'FULLTEXT_SPHINX_CONFIGURE'				=> 'Podesite sledeće opcije da bi generisali sphinx konfiguracioni fajl',
+	'FULLTEXT_SPHINX_DATA_PATH'				=> 'Putanja do data direktorijuma',
+	'FULLTEXT_SPHINX_DATA_PATH_EXPLAIN'		=> 'Koristi se z ačuvanje indeksa i log fajlova. Trebalo bi da napravite ovaj folder van web dostupnih foldera. (trebalo bi da ima trailing slash)',
+	'FULLTEXT_SPHINX_DELTA_POSTS'			=> 'Broj postova in često ažuriranom delta indeksu',
+	'FULLTEXT_SPHINX_HOST'					=> 'Sphinx search daemon host',
+	'FULLTEXT_SPHINX_HOST_EXPLAIN'			=> 'Host na kom sphinx daemon (searchd) sluša. Ostavite prazno za podrazumevani localhost',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT'		=> 'Indexer memorijski limit',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT_EXPLAIN'	=> 'Ovaj broj bi uvek morao biti manji od RAM memorije koja je dostupna. Ukoliko primetite periodične probleme sa performansama to može biti zbog toga što indekser koristi previše resursa. Pomoći će ukoliko smanjite količinu memorije koa je dostupna indekseru.',
+	'FULLTEXT_SPHINX_MAIN_POSTS'			=> 'Broj postova u glavnom indeksu',
+	'FULLTEXT_SPHINX_PORT'					=> 'Sphinx search daemon port',
+	'FULLTEXT_SPHINX_PORT_EXPLAIN'			=> 'Port na kom sphinx daemon (searchd) sluša. Ostavite prazno za podrazumevani Sphinx API port 9312',
+	'FULLTEXT_SPHINX_WRONG_DATABASE'		=> 'Sphinx pretraga za phpBB podržava samo MySQL i PostgreSQL.',
+	'FULLTEXT_SPHINX_CONFIG_FILE'			=> 'Sphinx ckonfiguracioni fajl',
+	'FULLTEXT_SPHINX_CONFIG_FILE_EXPLAIN'	=> 'Generisan sadržaj sphinx konfiguracionog fajla. Ovi posaci trebaju biti prosleđeni u sphinx.conf koji koristi sphinx daemon. Zamenite [dbuser] i [dbpassword] sa vašim podacima za bazu.',
+	'FULLTEXT_SPHINX_NO_CONFIG_DATA'		=> 'Sphinx podaci i putanja konfiguracionog foldera nisu definisani. Definišite ih da bi se generisao konfiguracioni fajl.',
 
 	'GENERAL_SEARCH_SETTINGS'				=> 'Generalna podešavanja pretrage',
 	'GO_TO_SEARCH_INDEX'					=> 'Idi na stranicu za pretragu indeksa',
@@ -82,8 +123,15 @@ $lang = array_merge($lang, array(
 
 	'SEARCH_GUEST_INTERVAL'					=> 'Interval flodovanja pretrage za gosta',
 	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> 'Broj sekundi koje gost mora da sačeka između dve pretrage. Ako jedan gost nešto traži, svi ostali će morati da sačekaju dok ne prođe ovde uneto vreme.',
-	'SEARCH_INDEX_CREATE_REDIRECT'			=> 'Svi postovi do posta id %1$d su sada indeksirani, od čega su %2$d postova bili u ovom koraku.<br />Trenutni nivo indeksiranja je otprilike %3$.1f posta u sekundi.<br />Indeksiranje u toku…',
-	'SEARCH_INDEX_DELETE_REDIRECT'			=> 'Svi postovi do posta id %1$d su uklonjeni iz indeksa pretrage.<br />Brisanje u toku…',
+	'SEARCH_INDEX_CREATE_REDIRECT'			=> array(
+		2	=> 'Svi postovi do posta id %2$d su sada indeksirani, od čega %1$d postova je bilo u ovom koraku.<br />',
+	),
+	'SEARCH_INDEX_CREATE_REDIRECT_RATE'		=> array(
+		2	=> 'Trenutni stepen indeksiranja je otprilike %1$.1f posta u sekundi.<br />Indeksiranje u toku…',
+	),
+	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
+		2	=> 'Svi postovi do posta id %2$d su uklonjeni iz indeksa pretrage.<br />Brisanje u toku…',
+	),
 	'SEARCH_INDEX_CREATED'					=> 'Uspešno su indeksirani svi postovi u bazi boarda.',
 	'SEARCH_INDEX_REMOVED'					=> 'Uspešno ste izbrisali indeks pretrage za ovaj bekend.',
 	'SEARCH_INTERVAL'						=> 'Interval flodovanja pretrage za korisnika',
@@ -102,5 +150,3 @@ $lang = array_merge($lang, array(
 	'YES_SEARCH_UPDATE'						=> 'Omogući ažuriranje fulltext-a',
 	'YES_SEARCH_UPDATE_EXPLAIN'				=> 'Ažuriranje indeksa fulltext-a kada se šalje post, poništava se ukoliko je pretraga isključena.',
 ));
-
-?>

@@ -1,18 +1,28 @@
 <?php
-/** 
+/**
 *
-* acp_bots [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: bots.php,v 1.6 2006/10/02 15:10:29 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -54,8 +64,7 @@ $lang = array_merge($lang, array(
 	'BOT_STYLE'			=> 'Bot stil',
 	'BOT_STYLE_EXPLAIN'	=> 'Stil koji bot koristi za board.',
 	'BOT_UPDATED'		=> 'Postojeći bot je uspešno ažuriran.',
-	'BOT_VIS'			=> 'Bot vidljiv',
-	'BOT_VIS_EXPLAIN'	=> 'Dozvoli da bot bude viđen od svih korisnika u Ko je OnLine listi.',
+	
 
 	'ERR_BOT_AGENT_MATCHES_UA'	=> 'Agent bota kojeg ste odabrali je sličan onom kojeg trenutno koristite. Molimo vas da podesite agetnta ovog bota.',
 	'ERR_BOT_NO_IP'				=> 'IP adresa koju ste izabrali je neispravna ili je nemoguće pronaći host.',
@@ -64,5 +73,3 @@ $lang = array_merge($lang, array(
 	'NO_BOT'		=> 'Nije pronađen ni jedan bot sa zadatin ID-om.',
 	'NO_BOT_GROUP'	=> 'Ne mogu da pronađem spcijalnu bot grupu.',
 ));
-
-?>

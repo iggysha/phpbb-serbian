@@ -1,4 +1,4 @@
-Subject: Aktiviranje korisnickog naloga
+Subject: Активирање корисничког налога
 
 Поздрав,
 
@@ -9,6 +9,5 @@ Subject: Aktiviranje korisnickog naloga
 
 Користите ову везу да активирате налог:
 {U_ACTIVATE}
-
 
 {EMAIL_SIG}

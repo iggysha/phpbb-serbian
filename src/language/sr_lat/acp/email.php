@@ -1,18 +1,24 @@
 <?php
-/** 
+/**
 *
-* acp_email [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: email.php,v 1.6 2006/09/24 00:28:08 shs Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -60,5 +66,3 @@ $lang = array_merge($lang, array(
 	'NO_EMAIL_MESSAGE'		=> 'Morate uneti poruku.',
 	'NO_EMAIL_SUBJECT'		=> 'Morate uneti naslov vaše poruke.',
 ));
-
-?>

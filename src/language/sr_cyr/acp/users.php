@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* acp_users [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -52,10 +53,11 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Не можете да форсирате поновну активацију налога оснивача.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Не можете да форсирате поновну активацију вашег налога.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Не можете да уклоните кориснички налог госта.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'Немате дозволу да уклањате налоге оснивача.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Не можете да уклоните ваш кориснички налог.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Не можете да унапредите игнорисане кориснике да буду оснивачи.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Треба да активирате кориснике пре него што их прогласите за осниваче, само активирани корисници могу бити унапређени.',
-	'CONFIRM_EMAIL_EXPLAIN'			=> 'Треба само ово да одредите уколико мењате корисникову e-mail адресу.',
+	'CONFIRM_EMAIL_EXPLAIN'			=> 'Треба само ово да одредите уколико мењате корисникову мејл адресу.',
 
 	'DELETE_POSTS'			=> 'Обриши поруке',
 	'DELETE_USER'			=> 'Обриши корисника',
@@ -63,10 +65,10 @@ $lang = array_merge($lang, array(
 
 	'FORCE_REACTIVATION_SUCCESS'	=> 'Успешно форсирана поновна активација.',
 	'FOUNDER'						=> 'Оснивач',
-	'FOUNDER_EXPLAIN'				=> 'Оснивачи имају све администраторске дозволе и никада не могу да буду забрањени, обрисани или измењени од чланова не-оснивача.',
+	'FOUNDER_EXPLAIN'				=> 'Оснивачи имају све администраторске дозволе и никада не могу да буду забрањени, обрисани или промењени од чланова не-оснивача.',
 
 	'GROUP_APPROVE'					=> 'Одобри члана',
-	'GROUP_DEFAULT'					=> 'Направи задату групу за члана',
+	'GROUP_DEFAULT'					=> 'Направи подразумевану групу за члана',
 	'GROUP_DELETE'					=> 'Уклони члана из групе',
 	'GROUP_DEMOTE'					=> 'Расчини вођу групе',
 	'GROUP_PROMOTE'					=> 'Унапреди у вођу групе',
@@ -75,7 +77,7 @@ $lang = array_merge($lang, array(
 
 	'LAST_ACTIVE'			=> 'Последња активност',
 
-	'MOVE_POSTS_EXPLAIN'	=> 'Молимо вас да изаберете форум у који желите да померите све поруке од овог корисника.',
+	'MOVE_POSTS_EXPLAIN'	=> 'Молимо вас да изаберете форум у који желите да преместите све поруке од овог корисника.',
 
 	'NO_SPECIAL_RANK'		=> 'Није додељен посебан чин',
 	'NO_WARNINGS'			=> 'Без опомена.',
@@ -94,8 +96,8 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN_ACTIVATE'			=> 'Активирање налога',
 	'USER_ADMIN_ACTIVATED'			=> 'Корисник је успешно активиран.',
 	'USER_ADMIN_AVATAR_REMOVED'		=> 'Успешно је уклоњен грб из корисниковог налога.',
-	'USER_ADMIN_BAN_EMAIL'			=> 'Забрана по e-mail',
-	'USER_ADMIN_BAN_EMAIL_REASON'	=> 'E-mail адреса је забрањена преко управљања корисницима',
+	'USER_ADMIN_BAN_EMAIL'			=> 'Забрана по мејлу',
+	'USER_ADMIN_BAN_EMAIL_REASON'	=> 'Мејл адреса је забрањена преко управљања корисницима',
 	'USER_ADMIN_BAN_IP'				=> 'Забрана по IP адреси',
 	'USER_ADMIN_BAN_IP_REASON'		=> 'IP адреса је забрањена преко управљања корисницима',
 	'USER_ADMIN_BAN_NAME_REASON'	=> 'Корисничко име је забрањено преко управљања корисницима',
@@ -107,10 +109,10 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN_DEL_OUTBOX'			=> 'Испразни ПП за слање',
 	'USER_ADMIN_DEL_POSTS'			=> 'Обриши све поруке',
 	'USER_ADMIN_DEL_SIG'			=> 'Обриши потпис',
-	'USER_ADMIN_EXPLAIN'			=> 'Овде можете да промените податке о вашим корисницима и одређене посебне поставке.',
+	'USER_ADMIN_EXPLAIN'			=> 'Овде можете да промените податке ваших корисника и одређене посебне поставке.',
 	'USER_ADMIN_FORCE'				=> 'Форсирај поновну активацију',
-	'USER_ADMIN_LEAVE_NR'			=> 'Помери из Ново Регистрованих',
-	'USER_ADMIN_MOVE_POSTS'			=> 'Помери све поруке',
+	'USER_ADMIN_LEAVE_NR'			=> 'Премести из Ново Регистрованих',
+	'USER_ADMIN_MOVE_POSTS'			=> 'Премести све поруке',
 	'USER_ADMIN_SIG_REMOVED'		=> 'Потпис из корисниковог налога је успешно уклоњен.',
 	'USER_ATTACHMENTS_REMOVED'		=> 'Сви прилози овог корисника су успешно уклоњени.',
 	'USER_AVATAR_NOT_ALLOWED'		=> 'Грб не може бити приказан јер су грбови недозвољени.',
@@ -129,7 +131,7 @@ $lang = array_merge($lang, array(
 	'USER_OUTBOX_EMPTY'				=> 'Корисниково за слање приватних порука је већ празно.',
 	'USER_OVERVIEW_UPDATED'			=> 'Појединости корисника су ажуриране.',
 	'USER_POSTS_DELETED'			=> 'Успешно су уклоњене све поруке од овог корисника.',
-	'USER_POSTS_MOVED'				=> 'Успешно су померене поруке корисника у циљани форум.',
+	'USER_POSTS_MOVED'				=> 'Успешно су премештене поруке корисника у циљани форум.',
 	'USER_PREFS_UPDATED'			=> 'Корисникове поставке су ажуриране.',
 	'USER_PROFILE'					=> 'Профил корисника',
 	'USER_PROFILE_UPDATED'			=> 'Профил корисника је ажуриран.',
@@ -139,5 +141,3 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_LOG_DELETED'		=> 'Подаци нису доступни. Вероватно је запис обрисан.',
 	'USER_TOOLS'					=> 'Основни алати',
 ));
-
-?>

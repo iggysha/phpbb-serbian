@@ -6,7 +6,6 @@ Molimo vas da sačuvate ovaj email. Sledi informacija o vašem nalogu:
 
 ----------------------------
 Korisničko ime: {USERNAME}
-Šifra: {PASSWORD}
 ----------------------------
 
 Vaš nalog je trenutno neaktivan. Ne možete ga koristiti dok ne kliknete na sledeći link:

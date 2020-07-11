@@ -1,18 +1,24 @@
 <?php
-/** 
+/**
 *
-* acp_database [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: database.php,v 1.12 2006/10/02 15:10:29 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -66,5 +72,3 @@ $lang = array_merge($lang, array(
 	'TABLE_SELECT'		=> 'Izbor tabela',
 	'TABLE_SELECT_ERROR'=> 'Morate itabrati najmanje jednu tabelu.',
 ));
-
-?>

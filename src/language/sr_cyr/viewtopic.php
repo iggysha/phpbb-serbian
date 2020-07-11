@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* viewtopic [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -36,32 +37,36 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	'APPROVE'								=> 'Одобри',
 	'ATTACHMENT'						=> 'Прилог',
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Могућност прилога је искључена.',
 
-	'BOOKMARK_ADDED'		=> 'Успешно сте убацили тему у белешке.',
+	'BOOKMARK_ADDED'		=> 'Успешно сте убацили тему у забелешке.',
 	'BOOKMARK_ERR'			=> 'Бележење теме није успело. Молимо пробајте поново.',
-	'BOOKMARK_REMOVED'		=> 'Успешно сте уклонили тему из белешки.',
-	'BOOKMARK_TOPIC'		=> 'Тему у белешке',
-	'BOOKMARK_TOPIC_REMOVE'	=> 'Уклони из белешки',
-	'BUMPED_BY'				=> 'Задње погурана од %1$s у %2$s.',
+	'BOOKMARK_REMOVED'		=> 'Успешно сте уклонили тему из забелешки.',
+	'BOOKMARK_TOPIC'		=> 'Тему у забелешке',
+	'BOOKMARK_TOPIC_REMOVE'	=> 'Уклони из забелешки',
+	'BUMPED_BY'				=> 'Последње погурана од %1$s у %2$s.',
 	'BUMP_TOPIC'			=> 'Погурај тему',
 
 	'CODE'					=> 'Код',
-	'COLLAPSE_QR'			=> 'Сакриј Брзи Одговор',
 
 	'DELETE_TOPIC'			=> 'Обриши тему',
+	'DELETED_INFORMATION'	=> 'Обрисана од %1$s дана %2$s',
+	'DISAPPROVE'					=> 'Неодобри',
 	'DOWNLOAD_NOTICE'		=> 'Немате потребне дозволе да прегледате прилоге у овој поруци.',
 
-	'EDITED_TIMES_TOTAL'	=> 'Последње учитавање од %1$s дана %2$s, учитано %3$d пута укупно.',
-	'EDITED_TIME_TOTAL'		=> 'Последње учитавање од %1$s дана %2$s, учитано %3$d пут.',
-	'EMAIL_TOPIC'			=> 'Пошаљи тему пријатељу преко e-mail',
+	'EDITED_TIMES_TOTAL'	=> array(
+		1	=> 'Последње учитавање од %2$s дана %3$s, учитано %1$d пут укупно.',
+		2	=> 'Последње учитавање од %2$s дана %3$s, учитано %1$d пута укупно.',
+	),
+	'EMAIL_TOPIC'			=> 'Тему на мејл',
 	'ERROR_NO_ATTACHMENT'	=> 'Одабрани прилог више не постоји.',
 
 	'FILE_NOT_FOUND_404'	=> 'Датотека <strong>%s</strong> не постоји.',
-	'FORK_TOPIC'			=> 'Копирај тему',
-	'FULL_EDITOR'			=> 'Пуни Уређивач',
-	
+	'FORK_TOPIC'			=> 'Умножи тему',
+	'FULL_EDITOR'			=> 'Пуни Уређивач &amp; Преглед',
+
 	'LINKAGE_FORBIDDEN'		=> 'Нисте овлашћени да прегледате, преузмете или везујете од/до ове веб странице.',
 	'LOGIN_NOTIFY_TOPIC'	=> 'Обавештени сте о овој теми, молимо вас да се пријавите како бисте је прегледали.',
 	'LOGIN_VIEWTOPIC'		=> 'Форум захтева да будете регистровани и пријављени како бисте прегледали ову тему.',
@@ -70,10 +75,12 @@ $lang = array_merge($lang, array(
 	'MAKE_GLOBAL'				=> 'Промени у “Глобално”',
 	'MAKE_NORMAL'				=> 'Промени у “Обичну Тему”',
 	'MAKE_STICKY'				=> 'Промени у “Лепљиву”',
-	'MAX_OPTIONS_SELECT'		=> 'Можете изабрати највише <strong>%d</strong> понуда',
-	'MAX_OPTION_SELECT'			=> 'Можете изабрати највише <strong>1</strong> понуду',
+	'MAX_OPTIONS_SELECT'		=> array(
+		1	=> 'Можете изабрати <strong>%d</strong> понуду',
+		2	=> 'Можете изабрати највише <strong>%d</strong> понуда',
+	),
 	'MISSING_INLINE_ATTACHMENT'	=> 'Прилог <strong>%s</strong> више није доступан',
-	'MOVE_TOPIC'				=> 'Помери тему',
+	'MOVE_TOPIC'				=> 'Премести тему',
 
 	'NO_ATTACHMENT_SELECTED'=> 'Нисте изабрали прилог за преузимање или преглед.',
 	'NO_NEWER_TOPICS'		=> 'Нема новијих тема у овом форуму.',
@@ -85,6 +92,7 @@ $lang = array_merge($lang, array(
 	'POLL_ENDED_AT'			=> 'Гласање се завршава %s',
 	'POLL_RUN_TILL'			=> 'Гласање траје до %s',
 	'POLL_VOTED_OPTION'		=> 'Гласали сте за ову понуду',
+	'POST_DELETED_RESTORE'	=> 'Ова порука је обрисана. Може бити враћена.',
 	'PRINT_TOPIC'			=> 'Преглед за штампу',
 
 	'QUICK_MOD'				=> 'Брзи-мод алати',
@@ -92,11 +100,13 @@ $lang = array_merge($lang, array(
 	'QUOTE'					=> 'Цитирај',
 
 	'REPLY_TO_TOPIC'		=> 'Одговори на тему',
+	'RESTORE'				=> 'Врати',
+	'RESTORE_TOPIC'			=> 'Врати тему',
 	'RETURN_POST'			=> '%sПовратак на поруку%s',
 
-	'SHOW_QR'				=> 'Брзи Одговор',
 	'SUBMIT_VOTE'			=> 'Гласај',
 
+	'TOPIC_TOOLS'			=> 'Алати теме',
 	'TOTAL_VOTES'			=> 'Укупно гласова',
 
 	'UNLOCK_TOPIC'			=> 'Откључај тему',
@@ -105,13 +115,12 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_TOPIC'		=> 'Следећа тема',
 	'VIEW_PREVIOUS_TOPIC'	=> 'Претходна тема',
 	'VIEW_RESULTS'			=> 'Преглед резултата',
-	'VIEW_TOPIC_POST'		=> '1 порука',
-	'VIEW_TOPIC_POSTS'		=> '%d порука',
+	'VIEW_TOPIC_POSTS'		=> array(
+		1	=> '%d порука',
+		2	=> '%d порука',
+	),
 	'VIEW_UNREAD_POST'		=> 'Прва непрочитана порука',
-	'VISIT_WEBSITE'			=> 'WWW',
 	'VOTE_SUBMITTED'		=> 'Ваш глас је прихваћен.',
 	'VOTE_CONVERTED'		=> 'Мењање гласова није подржано за пребачена гласања.',
 
 ));
-
-?>

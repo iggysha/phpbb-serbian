@@ -1,18 +1,24 @@
 <?php
-/** 
+/**
 *
-* acp_forums [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: forums.php,v 1.20 2006/11/23 20:56:02 shs Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -32,12 +38,16 @@ if (empty($lang) || !is_array($lang))
 
 // Forum Admin
 $lang = array_merge($lang, array(
-	'AUTO_PRUNE_DAYS'			=> 'Automatski sažimanje zastarelih',
+	'AUTO_PRUNE_DAYS'			=> 'Automatsko sažimanje zastarelih',
 	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Broj dana od poslednjeg posta posle koga će tema biti uklonjena.',
 	'AUTO_PRUNE_FREQ'			=> 'Učestalost automatskog sažimanja',
 	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Vreme u danima između sažimanja.',
 	'AUTO_PRUNE_VIEWED'			=> 'Trajanje zastarelih postova',
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Broj dana od pregleda poslednje teme posle kojeg će tema biti uklonjena.',
+	'AUTO_PRUNE_SHADOW_FREQ'	=> 'Učestalost automatskog sažimanja senki tema',
+	'AUTO_PRUNE_SHADOW_DAYS'	=> 'Automatsko sažimanje senki dana',
+	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Broj dana nakon kojih se senka teme uklanja.',
+	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Vreme u danima između dva sažimanja.',
 
   'CONTINUE'            =>  'Nastavi',
 	'COPY_PERMISSIONS'				=> 'Kopiraj dozvole iz',
@@ -97,6 +107,8 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_UNSET_EXPLAIN' 	=> 'Označite ovde ukoliko želite da uklonite šifru foruma.',
 	'FORUM_PASSWORD_OLD' 						=> 'Šifra za forum koristi stari načine enkripcije i trebalo bi da se promeni.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Podešavanje sažimanja foruma',
+	'FORUM_PRUNE_SHADOW'				=> 'Omogući automatsko sažimanje senki tema',
+	'FORUM_PRUNE_SHADOW_EXPLAIN'			=> 'Briše forum sa senkama tema. Podesite parametre učestalosti/perioda ispod.',
 	'FORUM_RESYNCED'					=> 'Forum "%s" je uspešno resihronizovan',
 	'FORUM_RULES_EXPLAIN'				=> 'Pravila foruma su prikazana na svim stranicama u zadatom forumu.',
 	'FORUM_RULES_LINK'					=> 'Link do pravila foruma',
@@ -151,5 +163,3 @@ $lang = array_merge($lang, array(
 
 	'UNLOCKED'			=> 'Otključan',
 ));
-
-?>

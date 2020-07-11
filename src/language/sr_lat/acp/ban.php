@@ -1,18 +1,24 @@
 <?php
-/** 
+/**
 *
-* acp_ban [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: ban.php,v 1.9 2006/10/02 15:10:29 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -77,5 +83,3 @@ $lang = array_merge($lang, array(
 	'USER_UNBAN'				=> 'Ukloni zabranu korisničkih imena',
 	'USER_UNBAN_EXPLAIN'		=> 'Možete ukloniti zabranu više korisnika odjednom koristeći odgovarajuću kombinaciju miša i tastature. Izuzeti korisnici su obeleženi obojenom pozadinom.',
 ));
-
-?>

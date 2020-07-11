@@ -18,6 +18,11 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 // DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
@@ -33,13 +38,14 @@ if (empty($lang) || !is_array($lang))
 // BBCodes 
 // Note to translators: you can translate everything but what's between { and }
 $lang = array_merge($lang, array(
-	'ACP_BBCODES_EXPLAIN'		=> 'BBKod je specijalna implementacija HTML-a nudeći veću kontrolu šta se i kako prikazuje. Sa ove stranice možete dodati, ikloniti ili izmeniti BBKodove',
+	'ACP_BBCODES_EXPLAIN'		=> 'BBKod je specijalna implementacija HTML-a nudeći veću kontrolu šta se i kako prikazuje. Sa ove stranice možete dodati, ukloniti ili izmeniti BBKodove',
 	'ADD_BBCODE'				=> 'Dodaj novi BBKod',
 
 	'BBCODE_ADDED'				=> 'BBKod je uspešno dodat.',
 	'BBCODE_EDITED'				=> 'BBKod je uspešno izmenjen.',
-	'BBCODE_DANGER'      =>  'BBKod koji pokušavate da dodate koristi {TEXT} unutar HTML atributa. Ovo je moguća sigurnosna XSS ranjivost. Pokušajte da koristite restriktivnije {SIMPLETEXT} ili {INTTEXT} tipove. Nastavite samo ukoliko ste sigurni da ste razumeli rizike i odlučili da i dalje koristite {TEXT} kao apsolutno neizbežno.',
-  'BBCODE_DANGER_PROCEED' =>  'Nastavljam',
+	'BBCODE_DELETED'			=> 'BBCode je uspešno uklonjen.',
+	'BBCODE_DANGER'				=> 'BBKod koji pokušavate da dodate izgleda koristi {TEXT} token unutar HTML atributa. Ovo je mogući problem sa XSS bezbednošću. Pokušajte da koristite restriktivnije {SIMPLETEXT} ili {INTTEXT} tipove. Nastavite samo ukoliko razumete rizik i smatrate da je korišćenje {TEXT} apsolutno neizbežno.',
+	'BBCODE_DANGER_PROCEED'		=> 'Nastavi - razumem rizik', //'I understand the risk',
 	'BBCODE_NOT_EXIST'			=> 'BBKod koji ste izabrali ne postoji.',
 	'BBCODE_HELPLINE'			=> 'Pomoćna linija',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Ovo polje sadrži mouseover tekst BBKoda',
@@ -52,14 +58,14 @@ $lang = array_merge($lang, array(
 	'BBCODE_TAG_TOO_LONG'		=> 'Definicija taga kojeg ste uneli je predugačka, molimo vas da skratite definiciju taga.',
 	'BBCODE_TAG_DEF_TOO_LONG'	=> 'Definicija taga kojeg ste uneli je predugačka, molimo vas da skratite definiciju taga.',
 	'BBCODE_USAGE'				=> 'BBKod upotreba',
-	'BBCODE_USAGE_EXAMPLE'		=> '[colour={COLOR}]{TEXT}[/colour]<br /><br />[font={TEXT1}]{TEXT2}[/font]',
-	'BBCODE_USAGE_EXPLAIN'		=> 'Ovde definišete kako da koristite BBKod. Tamenite sve promenljive unose odgovarajućim (%spogledajte ispod%s)',
+	'BBCODE_USAGE_EXAMPLE'		=> '[highlight={COLOR}]{TEXT}[/highlight]<br /><br />[font={SIMPLETEXT1}]{SIMPLETEXT2}[/font]',
+	'BBCODE_USAGE_EXPLAIN'		=> 'Ovde definišete kako da koristite BBKod. Zamenite sve promenljive unose odgovarajućim (%spogledajte ispod%s)',
 
 	'EXAMPLE'						=> 'Primer:',
 	'EXAMPLES'						=> 'Primeri:',
 
 	'HTML_REPLACEMENT'				=> 'HTML zamena',
-	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;font color="{COLOR}"&gt;{TEXT}&lt;/font&gt;<br /><br />&lt;font face="{TEXT1}"&gt;{TEXT2}&lt;/font&gt;',
+	'HTML_REPLACEMENT_EXAMPLE'		=> '&lt;span style="background-color: {COLOR};"&gt;{TEXT}&lt;/span&gt;<br /><br />&lt;span style="font-family: {SIMPLETEXT1};"&gt;{SIMPLETEXT2}&lt;/span&gt;',
 	'HTML_REPLACEMENT_EXPLAIN'		=> 'Ovde definišete podrazumevanu HTML zamenu (svaki šablon može iamti svoju sopstvenu HTML zamenu). Ne zaboravite da vratite simbole koje ste koristili iznad!',
 
 	'TOKEN'					=> 'Simbol',
@@ -70,11 +76,15 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_SMILIES'    => 'Dostigli ste ograničenje od %d smajlija.',
 
 	'tokens'	=>	array(
-		'TEXT'			=> 'Bilo kakav tekst, uključujući i strane karaktere, brojeve itd…',
+		'TEXT'			=> 'Bilo kakav tekst, uključujući i strane karaktere, brojeve itd… Ne bi trebalo da koristite ovaj token u HTML tagovima. Umesto toga koristite IDENTIFIER, INTTEXT ili SIMPLETEXT.',
+		'SIMPLETEXT'	=> 'Karakteri iz latiničnog alfabeta (A-Z), brojevi, razmaci, zarezi, tačke, minus, plus, crta i donja crta',
+		'INTTEXT'		=> 'Unikod slovni karakteri, brojevi, razmaci, zarezi, tačke, minus, plus, crta, donja crta i razmak.',
+		'IDENTIFIER'	=> 'Karakteri iz latiničnog alfabeta (A-Z), brojevi, crta i donja crta',
 		'NUMBER'		=> 'Bilo kakva serija brojeva',
 		'EMAIL'			=> 'Ispravna email adresa',
 		'URL'			=> 'Ispravan URL koristeći bilo koji protokol (http, ftp, itd… ne može se koristiti za javascript). Ako ništa nije dodeljeno, "http://" se podrazumeva',
-		'LOCAL_URL'		=> 'Lokalni URL. URL mora biti relativan na stranicu sa temom i ne može sadržati naziv servera ili protokol',
+		'LOCAL_URL'		=> 'Lokalni URL. URL mora biti relativan na stranicu sa temom i ne može sadržati naziv servera ili protokol jer linkovi imaju prefiks “%s”',
+		'RELATIVE_URL'	=> 'Relativni URL. Ovo možete koristiti da pogodite delove adrese, ali budite pažljivi: pun URL je validan relativni URL. Kada želite da koristite relativne adrese Vašeg boarda, koristite LOCAL_URL token.',
 		'COLOR'			=> 'HTML boja, može biti bilo u numeričkom obliku <samp>#FF1234</samp> ili <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS cboja</a> kao <samp>fuchsia</samp> ili <samp>InactiveBorder</samp>'
 	)
 ));
@@ -110,22 +120,24 @@ $lang = array_merge($lang, array(
 	'FIRST'			=> 'Prvi',
 
 	'ICONS_ADD'				=> 'Dodaj novu ikonicu',
-	'ICONS_ADDED'			=> 'Ikonica je uspešno dodata.',
+	'ICONS_ADDED'			=> array(
+		0	=> 'Nijedna ikonica nije dodata.',
+		1	=> 'Ikonica je uspešno dodata.',
+		2	=> 'Ikonice su uspešno dodate.',
+	),
 	'ICONS_CONFIG'			=> 'Konfiguracija ikonica',
 	'ICONS_DELETED'			=> 'Ikonica je uspešno uklonjena.',
 	'ICONS_EDIT'			=> 'Izmeni ikonicu',
-	'ICONS_EDITED'			=> 'Ikonica je uspešno izmenjena.',
+	'ICONS_EDITED'			=> array(
+		0	=> 'Nijedna ikonica nije ažurirana.',
+		1	=> 'Ikonica je uspešno ažurirana.',
+		2	=> 'Ikonice su uspešno ažurirane.',
+	),
 	'ICONS_HEIGHT'			=> 'Visina ikonice',
 	'ICONS_IMAGE'			=> 'Slika ikonice',
 	'ICONS_IMPORTED'		=> 'Paket ikonica je uspešno instaliran.',
 	'ICONS_IMPORT_SUCCESS'	=> 'Paket ikonica je uspešno uvežen.',
 	'ICONS_LOCATION'		=> 'Lokacija ikonica',
-	'ICON_NONE_ADDED'		=> 'Nije dodata nijedna ikonica.',
-	'ICONS_NONE_ADDED'  	=> 'Nije dodata nijedna ikonica.',
-	'ICONS_ONE_ADDED' 	=> 'Ikonica je uspešno dodata.',
-	'ICONS_ONE_EDITED' 	=> 'Ikonica je uspešno ažurirana.',
-	'ICONS_NONE_EDITED'	=> 'Nijedna ikonica nije izmenjena.',
-	'ICON_NONE_EDITED'	=> 'Nijedna ikonica nije ažurirana.',
 	'ICONS_NOT_DISPLAYED'	=> 'Sledeće ikonice se ne prikazuju na stranici za pisanje posta',
 	'ICONS_ORDER'			=> 'Redosled ikonica',
 	'ICONS_URL'				=> 'Fajl ikonice',
@@ -152,16 +164,21 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Izaberite fajl paketa',
 	'SMILIES_ADD'				=> 'Dodaj novi smajli',
-	'SMILIES_ADDED'				=> 'Smajli je uspešno dodat.',
-	'SMILIES_NONE_ADDED'	=> 'Nijedan smajli nije doda.',
-	'SMILIES_ONE_ADDED' 	=> 'Smajli je uspešno dodat.',
-	'SMILIES_NONE_EDITED'	=> 'Nijedan smajli nije ažuriran.',
-	'SMILIES_ONE_EDITED'	=> 'Smajli je uspešno ažuriran.',
+	'SMILIES_ADDED'				=> array(
+		0	=> 'Nijedan smajli nije dodat.',
+		1	=> 'Smajli je uspešno dodat.',
+		2	=> 'Smajlići su uspešno dodati.',
+	),
+	
 	'SMILIES_CODE'				=> 'Kod smajlija',
 	'SMILIES_CONFIG'			=> 'Konfiguracija smajlija',
 	'SMILIES_DELETED'			=> 'Smajli je uspešno uklonjen.',
 	'SMILIES_EDIT'				=> 'Izmeni smajli',
-	'SMILIES_EDITED'			=> 'Smajli je uspešno izmenjen.',
+	'SMILIES_EDITED'			=> array(
+		0	=> 'Nijedan smajli nije ažuriran.',
+		1	=> 'Smajli je uspešno ažuriran.',
+		2	=> 'Smajlići su uspešno ažurirani.',
+	),
 	'SMILIES_EMOTION'			=> 'Emocija',
 	'SMILIES_HEIGHT'			=> 'Visina smajlija',
 	'SMILIES_IMAGE'				=> 'Slika smajlija',
@@ -176,6 +193,11 @@ $lang = array_merge($lang, array(
 	'SMILIES_WIDTH'				=> 'Širina smajlija',
 	'SMILIE_NO_FILE'			=> 'Smajli “%s” se ignoriše jer taj fajl ne postoji.',
 
+	'TOO_MANY_SMILIES'			=> array(
+		1	=> 'Dostignut je limit od %d smajlija.',
+		2	=> 'Dostignut je limit od %d smajlija.',
+	),
+	
 	'WRONG_PAK_TYPE'	=> 'Izabrani paket ne sadrži odgovarajuće podatke.',
 ));
 
@@ -264,7 +286,6 @@ $lang = array_merge($lang, array(
 	'REASON_TITLE_TRANSLATED'	=> 'Prikazan naslov razloga',
 	'REASON_UPDATED'			=> 'Razlog za izveštaj/odbijanje je uspešno izmenjen.',
 
+
 	'USED_IN_REPORTS'		=> 'Koristi se u izveštajima',
 ));
-
-?>

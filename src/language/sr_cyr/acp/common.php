@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* acp_common [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -46,11 +47,11 @@ $lang = array_merge($lang, array(
 	'ACP_AUTOMATION'			=> 'Аутоматизација',
 	'ACP_AVATAR_SETTINGS'		=> 'Поставке грба',
 
-	'ACP_BACKUP'				=> 'Резервна копија',
+	'ACP_BACKUP'				=> 'Резервни умножак',
 	'ACP_BAN'					=> 'Забрана',
-	'ACP_BAN_EMAILS'			=> 'Забрана e-mails',
+	'ACP_BAN_EMAILS'			=> 'Забрана мејлова',
 	'ACP_BAN_IPS'				=> 'Забрана IP адреса',
-	'ACP_BAN_USERNAMES'			=> 'Забрана корисничких имена',
+	'ACP_BAN_USERNAMES'			=> 'Забрани кориснике',
 	'ACP_BBCODES'				=> 'ББКодови',
 	'ACP_BOARD_CONFIGURATION'	=> 'Конфигурација форума',
 	'ACP_BOARD_FEATURES'		=> 'Могућности форума',
@@ -60,8 +61,9 @@ $lang = array_merge($lang, array(
 
 	'ACP_CAPTCHA'				=> 'CAPTCHA',
 
+	'ACP_CAT_CUSTOMISE'			=> 'Прилагоди',
 	'ACP_CAT_DATABASE'			=> 'База података',
-	'ACP_CAT_DOT_MODS'			=> '.МОДови',
+	'ACP_CAT_DOT_MODS'			=> 'Прикључци',
 	'ACP_CAT_FORUMS'			=> 'Форуми',
 	'ACP_CAT_GENERAL'			=> 'Уопште',
 	'ACP_CAT_MAINTENANCE'		=> 'Одржавање',
@@ -73,6 +75,8 @@ $lang = array_merge($lang, array(
 	'ACP_CAT_USERS'				=> 'Корисници',
 	'ACP_CLIENT_COMMUNICATION'	=> 'Комуникација са клијентима',
 	'ACP_COOKIE_SETTINGS'		=> 'Поставке колачића',
+	'ACP_CONTACT'				=> 'Контакт страница',
+	'ACP_CONTACT_SETTINGS'		=> 'Поставке контакт странице',
 	'ACP_CRITICAL_LOGS'			=> 'Запис грешака',
 	'ACP_CUSTOM_PROFILE_FIELDS'	=> 'Властита поља профила',
 
@@ -80,15 +84,17 @@ $lang = array_merge($lang, array(
 	'ACP_DISALLOW'				=> 'Недозволи',
 	'ACP_DISALLOW_USERNAMES'	=> 'Недозволи корисничка имена',
 
-	'ACP_EMAIL_SETTINGS'		=> 'E-mail поставке',
-	'ACP_EXTENSION_GROUPS'		=> 'Управљање групама екстензија',
+	'ACP_EMAIL_SETTINGS'		=> 'Мејл поставке',
+	'ACP_EXTENSION_GROUPS'		=> 'Управљање прилог групама екстензија',
+	'ACP_EXTENSION_MANAGEMENT'	=> 'Управљање прикључцима',
+	'ACP_EXTENSIONS'			=> 'Управљање прикључцима',
 
 	'ACP_FORUM_BASED_PERMISSIONS'	=> 'Дозволе основане на форумима',
 	'ACP_FORUM_LOGS'				=> 'Записи форума',
 	'ACP_FORUM_MANAGEMENT'			=> 'Управљање форумом',
 	'ACP_FORUM_MODERATORS'			=> 'Уредници форума',
 	'ACP_FORUM_PERMISSIONS'			=> 'Дозволе форума',
-	'ACP_FORUM_PERMISSIONS_COPY'	=> 'Копирај дозволе форума',
+	'ACP_FORUM_PERMISSIONS_COPY'	=> 'Умножи дозволе форума',
 	'ACP_FORUM_ROLES'				=> 'Роле форума',
 
 	'ACP_GENERAL_CONFIGURATION'		=> 'Општа конфигурација',
@@ -100,10 +106,10 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE'				=> 'Управљање групама',
 	'ACP_GROUPS_MANAGEMENT'			=> 'Управљање групама',
 	'ACP_GROUPS_PERMISSIONS'		=> 'Групне дозволе',
+	'ACP_GROUPS_POSITION'			=> 'Управљање позицијама у групи',
 
 	'ACP_ICONS'					=> 'Иконице тема',
 	'ACP_ICONS_SMILIES'			=> 'Иконице тема/смајлићи',
-	'ACP_IMAGESETS'				=> 'Комплети слика',
 	'ACP_INACTIVE_USERS'		=> 'Неактивни корисници',
 	'ACP_INDEX'					=> 'АКП почетна',
 
@@ -115,12 +121,16 @@ $lang = array_merge($lang, array(
 	'ACP_LOGGING'				=> 'Записи',
 
 	'ACP_MAIN'					=> 'АКП почетна',
-	'ACP_MANAGE_EXTENSIONS'		=> 'Управљање екстензијама',
+
+	'ACP_MANAGE_ATTACHMENTS'			=> 'Управљање прилозима',
+	'ACP_MANAGE_ATTACHMENTS_EXPLAIN'	=> 'Овде можете да видите и обришете датотеке приложене уз поруке и приватне поруке.',
+
+	'ACP_MANAGE_EXTENSIONS'		=> 'Управљање прилог екстензијама',
 	'ACP_MANAGE_FORUMS'			=> 'Управљање форумима',
 	'ACP_MANAGE_RANKS'			=> 'Управљање чиновима',
 	'ACP_MANAGE_REASONS'		=> 'Управљање пријављеним/одбијеним разлозима',
 	'ACP_MANAGE_USERS'			=> 'Управљање корисницима',
-	'ACP_MASS_EMAIL'			=> 'Масовни e-mail',
+	'ACP_MASS_EMAIL'			=> 'Масовни мејл',
 	'ACP_MESSAGES'				=> 'Поруке',
 	'ACP_MESSAGE_SETTINGS'		=> 'Поставке приватних порука',
 	'ACP_MODULE_MANAGEMENT'		=> 'Управљање модулима',
@@ -147,7 +157,7 @@ $lang = array_merge($lang, array(
 	'ACP_REASONS'				=> 'Пријављени/одбијени разлози',
 	'ACP_REGISTER_SETTINGS'		=> 'Поставке регистрације корисника',
 
-	'ACP_RESTORE'				=> 'Поново успостави',
+	'ACP_RESTORE'				=> 'Врати',
 
 	'ACP_FEED'					=> 'Feed управљање',
 	'ACP_FEED_SETTINGS'			=> 'Feed поставке',
@@ -162,11 +172,12 @@ $lang = array_merge($lang, array(
 	'ACP_SERVER_SETTINGS'		=> 'Поставке сервера',
 	'ACP_SIGNATURE_SETTINGS'	=> 'Поставке потписа',
 	'ACP_SMILIES'				=> 'Смајлићи',
-	'ACP_STYLE_COMPONENTS'		=> 'Састојци стилова',
 	'ACP_STYLE_MANAGEMENT'		=> 'Управљање стиловима',
 	'ACP_STYLES'				=> 'Стилови',
+	'ACP_STYLES_CACHE'			=> 'Избаци Кеш',
+	'ACP_STYLES_INSTALL'		=> 'Инсталирај Стилове',
 
-	'ACP_SUBMIT_CHANGES'		=> 'Прихвати измене',
+	'ACP_SUBMIT_CHANGES'		=> 'Прихвати промене',
 
 	'ACP_TEMPLATES'				=> 'Предлошци',
 	'ACP_THEMES'				=> 'Теме',
@@ -192,7 +203,7 @@ $lang = array_merge($lang, array(
 
 	'ACP_VC_SETTINGS'					=> 'Спамбот контрамере',
 	'ACP_VC_CAPTCHA_DISPLAY'			=> 'CAPTCHA преглед слике',
-	'ACP_VERSION_CHECK'					=> 'Провери за надоградњу',
+	'ACP_VERSION_CHECK'					=> 'Провери за ажурирања',
 	'ACP_VIEW_ADMIN_PERMISSIONS'		=> 'Преглед административних дозвола',
 	'ACP_VIEW_FORUM_MOD_PERMISSIONS'	=> 'Преглед дозвола за уређивање форума',
 	'ACP_VIEW_FORUM_PERMISSIONS'		=> 'Преглед форум-основаних дозвола',
@@ -216,6 +227,10 @@ $lang = array_merge($lang, array(
 
 	'COLOUR_SWATCH'			=> 'Веб-безбедна палета боја',
 	'CONFIG_UPDATED'		=> 'Конфигурација је успешно ажурирана.',
+	'CRON_LOCK_ERROR'		=> 'Не могу преовладати блокаду крона.',
+	'CRON_NO_SUCH_TASK'		=> 'Не могу наћи задатак крона “%s”.',
+	'CRON_NO_TASK'			=> 'Ниједан крон задатак сада не треба да се извршава.',
+	'CRON_NO_TASKS'			=> 'Ниједан крон задатак не може бити пронађен.',
 
 	'DEACTIVATE'				=> 'Деактивирај',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Унета путања “%s” не постоји.',
@@ -226,6 +241,7 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_AS'				=> 'Преузми као',
 	'DOWNLOAD_STORE'			=> 'Преузми или сачувај датотеку',
 	'DOWNLOAD_STORE_EXPLAIN'	=> 'Можете непосредно преузети датотеку или је сачувати у вашој <samp>store/</samp> фасцикли.',
+	'DOWNLOADS'					=> 'Преузимања',
 
 	'EDIT'					=> 'Учитај',
 	'ENABLE'				=> 'Омогући',
@@ -240,6 +256,8 @@ $lang = array_merge($lang, array(
 	'IP'					=> 'Корисничка IP адреса',
 	'IP_HOSTNAME'			=> 'IP адресе или сервери',
 
+	'LOAD_NOTIFICATIONS'			=> 'Приказ Обавештења',
+	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Приказ списка обавештења на свакој страници (обично у заглављу).',
 	'LOGGED_IN_AS'			=> 'Пријављени сте као:',
 	'LOGIN_ADMIN'			=> 'Да бисте могли да администрирате форум морате бити пријављени корисник.',
 	'LOGIN_ADMIN_CONFIRM'	=> 'Да бисте могли да администрирате форум морате се поново-пријавити.',
@@ -251,12 +269,13 @@ $lang = array_merge($lang, array(
 	'MENU_TOGGLE'			=> 'Сакриј или прикажи бочни мени',
 	'MORE'					=> 'Још',			// Not used at the moment
 	'MORE_INFORMATION'		=> 'Још података »',
-	'MOVE_DOWN'				=> 'Помери доле',
-	'MOVE_UP'				=> 'Помери горе',
+	'MOVE_DOWN'				=> 'Премести доле',
+	'MOVE_UP'				=> 'Премести горе',
 
 	'NOTIFY'				=> 'Обавештење',
 	'NO_ADMIN'				=> 'Нисте овлашћени да администрирате овај форум.',
-	'NO_EMAILS_DEFINED'		=> 'Није пронађена исправна e-mail адреса.',
+	'NO_EMAILS_DEFINED'		=> 'Није пронађена исправна мејл адреса.',
+	'NO_FILES_TO_DELETE'	=> 'Прилози које сте одабрали за брисање не постоје.',
 	'NO_PASSWORD_SUPPLIED'	=> 'Треба да унесете вашу лозинку за приступ Админ Контролној Плочи.',
 
 	'OFF'					=> 'Искључено',
@@ -271,8 +290,8 @@ $lang = array_merge($lang, array(
 
 	'REMIND'							=> 'Подсети',
 	'RESYNC'							=> 'Поново усклади',
-	'RETURN_TO'							=> 'Повратак на…',
 
+	'RUNNING_TASK'			=> 'Извршавање задатка: %s.',
 	'SELECT_ANONYMOUS'		=> 'Изабери анонимног корисника',
 	'SELECT_OPTION'			=> 'Изабери поставку',
 
@@ -283,6 +302,10 @@ $lang = array_merge($lang, array(
 
 	'SHOW_ALL_OPERATIONS'	=> 'Прикажи све поступке',
 
+	'TASKS_NOT_READY'			=> 'Неспремни задаци:',
+	'TASKS_READY'			=> 'Спремни задаци:',
+	'TOTAL_SIZE'			=> 'Укупна величина',
+
 	'UCP'					=> 'Корисничка Контролна Плоча',
 	'USERNAMES_EXPLAIN'		=> 'Поставите свако корисничко име у одвојен ред.',
 	'USER_CONTROL_PANEL'	=> 'Корисничка Контролна Плоча',
@@ -292,17 +315,17 @@ $lang = array_merge($lang, array(
 
 // PHP info
 $lang = array_merge($lang, array(
-	'ACP_PHP_INFO_EXPLAIN'	=> 'Ова страница приказује податак о верзији PHP инсталираној на серверу. Укључује појединости о учитаним модулима, доступним променљивама и задатим поставкама. Овај податак може бити користан при дијагностици сметњи. Молимо знајте да ће неке хостинг компаније ограничити који подаци ће бити приказани овде због сигурносних разлога. Препоручујемо вам да не дајете никакве појединачне податке са ове странице осим када су затражени од <a href="https://www.phpbb.com/about/team/">званичних чланова тима</a> на форумима подршке.',
+	'ACP_PHP_INFO_EXPLAIN'	=> 'Ова страница приказује податак о верзији PHP инсталираној на серверу. Укључује појединости о учитаним модулима, доступним променљивама и подразумеваним поставкама. Овај податак може бити користан при дијагностици сметњи. Молимо знајте да ће неке хостинг компаније ограничити који подаци ће бити приказани овде због безбедносних разлога. Препоручујемо вам да не дајете никакве појединачне податке са ове странице осим када су затражени од <a href="https://www.phpbb.com/about/team/">званичних чланова тима</a> на форумима подршке.',
 
-	'NO_PHPINFO_AVAILABLE'	=> 'Подаци о вашој PHP конфигурацији не могу да буду утврђени. Phpinfo() је онемогућен из сигурносних разлога.',
+	'NO_PHPINFO_AVAILABLE'	=> 'Подаци о вашој PHP конфигурацији не могу да буду утврђени. Phpinfo() је онемогућен из безбедносних разлога.',
 ));
 
 // Logs
 $lang = array_merge($lang, array(
 	'ACP_ADMIN_LOGS_EXPLAIN'	=> 'Ово је списак свих поступака обављених од администратора форума. Можете их поређати по корисничком имену, датуму, IP адреси или поступку. Уколико имате одговарајуће дозволе можете такође обрисати појединачне поступке или запис у целини.',
-	'ACP_CRITICAL_LOGS_EXPLAIN'	=> 'Ово је списак поступака обављених од самог форума. Овај запис пружа податак који можете да користите за решавање одређених сметњи, на пример за не-испоруку e-mails. Можете их поређати по корисничком имену, датуму, IP адреси или поступку. Уколико имате одговарајуће дозволе можете такође обрисати појединачне поступке или запис у целини.',
+	'ACP_CRITICAL_LOGS_EXPLAIN'	=> 'Ово је списак поступака обављених од самог форума. Овај запис пружа податак који можете да користите за решавање одређених сметњи, на пример за не-испоруку мејлова. Можете их поређати по корисничком имену, датуму, IP адреси или поступку. Уколико имате одговарајуће дозволе можете такође обрисати појединачне поступке или запис у целини.',
 	'ACP_MOD_LOGS_EXPLAIN'		=> 'Ово је списак свих поступака урађених на форумима, темама и порукама као и поступака обављених на корисницима од уредника, укључујући забране. Можете их поређати по корисничком имену, датуму, IP адреси или поступку. Уколико имате одговарајуће дозволе можете такође обрисати појединачне поступке или запис у целини.',
-	'ACP_USERS_LOGS_EXPLAIN'	=> 'Ово је списак свих поступака обављених од корисника или над корисницима (извештаји, опомене и корисничке белешке).',
+	'ACP_USERS_LOGS_EXPLAIN'	=> 'Ово је списак свих поступака обављених од корисника или над корисницима (пријаве, опомене и корисничке белешке).',
 	'ALL_ENTRIES'				=> 'Сви записи',
 
 	'DISPLAY_LOG'	=> 'Прикажи записе од претходних',
@@ -318,7 +341,7 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ADMIN_INTRO'				=> 'Хвала што сте изабрали phpBB као решење за ваш форум. Овај екран ће вам дати брз преглед свих статистика вашег форума. Везе на страни леве руке вам омогућују да контролишете сваку појаву на форуму. Свака страница ће имати упутство како да користите алате.',
 	'ADMIN_LOG'					=> 'Запис поступака администратора',
-	'ADMIN_LOG_INDEX_EXPLAIN'	=> 'Ово вам даје преглед задњих пет поступака обављених од администратора форума. Пуна копија записа може бити виђена из одговарајуће ставке менија или следећи везу испод.',
+	'ADMIN_LOG_INDEX_EXPLAIN'	=> 'Ово вам даје преглед последњих пет поступака обављених од администратора форума. Пуни умножак записа може бити виђен из одговарајуће ставке менија или следећи везу испод.',
 	'AVATAR_DIR_SIZE'			=> 'Величина фасцикле грбова',
 
 	'BOARD_STARTED'		=> 'Форум почео са радом',
@@ -342,6 +365,7 @@ $lang = array_merge($lang, array(
 
 	'GZIP_COMPRESSION'	=> 'GZip сабијање',
 
+	'NO_SEARCH_INDEX'	=> 'Одабрана позадина претраге нема индекс претраге.<br />Молимо направите индекс за “%1$s” у %2$sиндекс претраге%3$s одељку.',
 	'NOT_AVAILABLE'		=> 'Није доступна',
 	'NUMBER_FILES'		=> 'Број прилога',
 	'NUMBER_POSTS'		=> 'Број порука',
@@ -353,32 +377,41 @@ $lang = array_merge($lang, array(
 
 	'POSTS_PER_DAY'		=> 'Порука дневно',
 
-	'PURGE_CACHE'			=> 'Поткреши кеш',
-	'PURGE_CACHE_CONFIRM'	=> 'Да ли сигурно желите да обришете кеш?',
-	'PURGE_CACHE_EXPLAIN'	=> 'Брисање свих кешираних ставки, ово укључује и кеширане датотеке предложака или упите.',
+	'PURGE_CACHE'			=> 'Избаци кеш',
+	'PURGE_CACHE_CONFIRM'	=> 'Да ли сигурно желите да избаците кеш?',
+	'PURGE_CACHE_EXPLAIN'	=> 'Избацивање свих кешираних ставки, ово укључује и кеширане датотеке предложака или упите.',
+	'PURGE_CACHE_SUCCESS'	=> 'Кеш је успешно избачен.',
 
-	'PURGE_SESSIONS'			=> 'Поткресивање свих сесија',
-	'PURGE_SESSIONS_CONFIRM'	=> 'Да ли сте сигурни да желите да поткрешете све сесије? Ово ће одјавити све кориснике.',
-	'PURGE_SESSIONS_EXPLAIN'	=> 'Поткресивање свих сесија. Ово ће одјавити све кориснике.',
+	'PURGE_SESSIONS'			=> 'Избацивање свих сесија',
+	'PURGE_SESSIONS_CONFIRM'	=> 'Да ли сте сигурни да желите да избаците све сесије? Ово ће одјавити све кориснике.',
+	'PURGE_SESSIONS_EXPLAIN'	=> 'Избацивање свих сесија. Ово ће одјавити све кориснике.',
+	'PURGE_SESSIONS_SUCCESS'	=> 'Сесије су успешно избачене.',
 
 	'RESET_DATE'					=> 'Поново подеси датум када је форум почео са радом',
 	'RESET_DATE_CONFIRM'			=> 'Да ли сигурно желите да поново подесите датум када је форум почео са радом?',
+	'RESET_DATE_SUCCESS'				=> 'Датум почетка форум’а је поново подешен',
 	'RESET_ONLINE'					=> 'Поново подеси када је било највише корисника на вези',
 	'RESET_ONLINE_CONFIRM'			=> 'Да ли сигурно желите да поново подесите када је било највише корисника на вези?',
+	'RESET_ONLINE_SUCCESS'				=> 'Највише корисника на вези је поново подешено',
 	'RESYNC_POSTCOUNTS'				=> 'Поново усклади број порука',
 	'RESYNC_POSTCOUNTS_EXPLAIN'		=> 'Само ће постојеће поруке бити узете у разматрање. Поткресане поруке неће бити бројане.',
 	'RESYNC_POSTCOUNTS_CONFIRM'		=> 'Да ли сигурно желите да поново ускладите број порука?',
+	'RESYNC_POSTCOUNTS_SUCCESS'			=> 'Број порука је поново усклађен',
 	'RESYNC_POST_MARKING'			=> 'Поново усклади тачкасте теме',
 	'RESYNC_POST_MARKING_CONFIRM'	=> 'Да ли сигурно желите да поново ускладите тачкасте теме?',
 	'RESYNC_POST_MARKING_EXPLAIN'	=> 'Прво одзначава све теме и онда исправно означи теме које имају било какву активност у последњих шест месеци.',
+	'RESYNC_POST_MARKING_SUCCESS'	=> 'Тачкасте теме су поново усклађене',
 	'RESYNC_STATS'					=> 'Поново усклади статистику',
 	'RESYNC_STATS_CONFIRM'			=> 'Да ли сигурно желите да поново ускладите статистику?',
 	'RESYNC_STATS_EXPLAIN'			=> 'Прерачунава укупан број порука, тема, корисника и датотека.',
+	'RESYNC_STATS_SUCCESS'			=> 'Статистика је поново усклађена',
 	'RUN'							=> 'Покрени сада',
 
 	'STATISTIC'					=> 'Статистика',
 	'STATISTIC_RESYNC_OPTIONS'	=> 'Поново усклади или поново подеси статистику',
 
+	'TIMEZONE_INVALID'	=> 'Временска зона коју сте изабрали је неисправна.',
+	'TIMEZONE_SELECTED'	=> '(тренутно изабрано)',
 	'TOPICS_PER_DAY'	=> 'Тема дневно',
 
 	'UPLOAD_DIR_SIZE'	=> 'Величина послатих прилога',
@@ -404,8 +437,8 @@ $lang = array_merge($lang, array(
 	'INACTIVE_REASON_REMIND'		=> 'Форсирана поновна активација налога корисника',
 	'INACTIVE_REASON_UNKNOWN'		=> 'Непознат',
 	'INACTIVE_USERS'				=> 'Неактивни корисници',
-	'INACTIVE_USERS_EXPLAIN'		=> 'Ово је списак корисника који су се регистровали али чији су налози неактивни. Можете активирати, обрисати или подсетити (слањем e-mail) ове кориснике уколико желите.',
-	'INACTIVE_USERS_EXPLAIN_INDEX'	=> 'Ово је списак последњих 10 регистрованих корисника који имају неактивне налоге. Налози су неактивни било зато што је омогућеена активација налога у поставкама регистрације корисника и ови налози корисника’ још нису активирани, или зато што су ови налози деактивирани. Пуни списак је доступан следећи везу испод одакле можете да активирате, обришете или подсетите (слањем e-mail) ове кориснике уколико желите.',
+	'INACTIVE_USERS_EXPLAIN'		=> 'Ово је списак корисника који су се регистровали али чији су налози неактивни. Можете активирати, обрисати или подсетити (слањем мејла) ове кориснике уколико желите.',
+	'INACTIVE_USERS_EXPLAIN_INDEX'	=> 'Ово је списак последњих 10 регистрованих корисника који имају неактивне налоге. Налози су неактивни било зато што је омогућеена активација налога у поставкама регистрације корисника и ови налози корисника’ још нису активирани, или зато што су ови налози деактивирани. Пуни списак је доступан следећи везу испод одакле можете да активирате, обришете или подсетите (слањем мејла) ове кориснике уколико желите.',
 
 	'NO_INACTIVE_USERS'	=> 'Нема неактивних корисника',
 
@@ -413,7 +446,7 @@ $lang = array_merge($lang, array(
 	'SORT_LAST_VISIT'	=> 'Последњој посети',
 	'SORT_REASON'		=> 'Разлогу',
 	'SORT_REG_DATE'		=> 'Датуму регистрације',
-	'SORT_LAST_REMINDER'=> 'Задњем подсећању',
+	'SORT_LAST_REMINDER'=> 'Последњем подсећању',
 	'SORT_REMINDER'		=> 'Послатом подсећању',
 
 	'USER_IS_INACTIVE'		=> 'Корисник је неактиван',
@@ -457,7 +490,7 @@ $lang = array_merge($lang, array(
 	'LOG_ACL_DEL_FORUM_LOCAL_F_'		=> '<strong>Уклоњене дозволе Корисника/Групе</strong> из %1$s<br />» %2$s',
 
 	'LOG_ACL_TRANSFER_PERMISSIONS'		=> '<strong>Дозволе су пребачене из</strong><br />» %s',
-	'LOG_ACL_RESTORE_PERMISSIONS'		=> '<strong>Сопствене дозволе су поново враћене након коришћења дозвола из</strong><br />» %s',
+	'LOG_ACL_RESTORE_PERMISSIONS'		=> '<strong>Сопствене дозволе су враћене након коришћења дозвола из</strong><br />» %s',
 
 	'LOG_ADMIN_AUTH_FAIL'		=> '<strong>Неуспешан покушај пријаве администратора</strong>',
 	'LOG_ADMIN_AUTH_SUCCESS'	=> '<strong>Успешна пријава администратора</strong>',
@@ -475,13 +508,13 @@ $lang = array_merge($lang, array(
 
 	'LOG_BAN_EXCLUDE_USER'	=> '<strong>Искључен корисник из забране</strong> због “<em>%1$s</em>”<br />» %2$s',
 	'LOG_BAN_EXCLUDE_IP'	=> '<strong>Искључена IP адреса из забране</strong> због “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_EXCLUDE_EMAIL' => '<strong>Искључен e-mail из забране</strong> због “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_EXCLUDE_EMAIL' => '<strong>Искључен мејл из забране</strong> због “<em>%1$s</em>”<br />» %2$s',
 	'LOG_BAN_USER'			=> '<strong>Забрањен корисник</strong> због “<em>%1$s</em>”<br />» %2$s',
 	'LOG_BAN_IP'			=> '<strong>Забрањена IP адреса</strong> због “<em>%1$s</em>”<br />» %2$s',
-	'LOG_BAN_EMAIL'			=> '<strong>Забрањен e-mail</strong> због “<em>%1$s</em>”<br />» %2$s',
+	'LOG_BAN_EMAIL'			=> '<strong>Забрањен мејл</strong> због “<em>%1$s</em>”<br />» %2$s',
 	'LOG_UNBAN_USER'		=> '<strong>Уклоњена забрана за корисника</strong><br />» %s',
 	'LOG_UNBAN_IP'			=> '<strong>Уклоњена забрана за IP адресу</strong><br />» %s',
-	'LOG_UNBAN_EMAIL'		=> '<strong>Уклоњена забрана за e-mail</strong><br />» %s',
+	'LOG_UNBAN_EMAIL'		=> '<strong>Уклоњена забрана за мејл</strong><br />» %s',
 
 	'LOG_BBCODE_ADD'		=> '<strong>Додат нови ББКод</strong><br />» %s',
 	'LOG_BBCODE_EDIT'		=> '<strong>Учитан ББКод</strong><br />» %s',
@@ -501,7 +534,7 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_AUTH'			=> '<strong>Промењене поставке потврде</strong>',
 	'LOG_CONFIG_AVATAR'			=> '<strong>Промењене поставке грба</strong>',
 	'LOG_CONFIG_COOKIE'			=> '<strong>Промењене поставке колачића</strong>',
-	'LOG_CONFIG_EMAIL'			=> '<strong>Промењене e-mail поставке</strong>',
+	'LOG_CONFIG_EMAIL'			=> '<strong>Промењене мејл поставке</strong>',
 	'LOG_CONFIG_FEATURES'		=> '<strong>Промењене поставке форума</strong>',
 	'LOG_CONFIG_LOAD'			=> '<strong>Промењене поставке учитавања</strong>',
 	'LOG_CONFIG_MESSAGE'		=> '<strong>Промењене поставке приватних порука</strong>',
@@ -517,26 +550,32 @@ $lang = array_merge($lang, array(
 
 	'LOG_APPROVE_TOPIC'			=> '<strong>Одобрена тема</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Тема погурана од корисника</strong><br />» %s',
-	'LOG_DELETE_POST'			=> '<strong>Обрисана порука “%1$s” написана од</strong><br />» %2$s',
+	'LOG_DELETE_POST'			=> '<strong>Обрисана порука “%1$s” написана од “%2$s” због следећег разлога</strong><br />» %3$s',
 	'LOG_DELETE_SHADOW_TOPIC'	=> '<strong>Обрисана притајена тема</strong><br />» %s',
-	'LOG_DELETE_TOPIC'			=> '<strong>Обрисана тема “%1$s” написана од</strong><br />» %2$s',
-	'LOG_FORK'					=> '<strong>Копирана тема</strong><br />» из %s',
+	'LOG_DELETE_TOPIC'			=> '<strong>Обрисана тема “%1$s” написана од “%2$s” због следећег разлога</strong><br />» %3$s',
+	'LOG_FORK'					=> '<strong>Умножена тема</strong><br />» из %s',
 	'LOG_LOCK'					=> '<strong>Закључана тема</strong><br />» %s',
 	'LOG_LOCK_POST'				=> '<strong>Закључана порука</strong><br />» %s',
 	'LOG_MERGE'					=> '<strong>Спојене поруке</strong> у тему<br />» %s',
-	'LOG_MOVE'					=> '<strong>Померена тема</strong><br />» из %1$s у %2$s',
+	'LOG_MOVE'					=> '<strong>Премештена тема</strong><br />» из %1$s у %2$s',
+	'LOG_MOVED_TOPIC'			=> '<strong>Премештена тема</strong><br />» %s',
 	'LOG_PM_REPORT_CLOSED'		=> '<strong>Затворена ПП пријава</strong><br />» %s',
 	'LOG_PM_REPORT_DELETED'		=> '<strong>Обрисана ПП пријава</strong><br />» %s',
 	'LOG_POST_APPROVED'			=> '<strong>Одобрена порука</strong><br />» %s',
-	'LOG_POST_DISAPPROVED'		=> '<strong>Неодобрена порука “%1$s” са следећим разлогом</strong><br />» %2$s',
-	'LOG_POST_EDITED'			=> '<strong>Учитана порука “%1$s” написана од</strong><br />» %2$s',
+	'LOG_POST_DISAPPROVED'		=> '<strong>Неодобрена порука “%1$s” написана од “%3$s” због следећег разлога</strong><br />» %2$s',
+	'LOG_POST_EDITED'			=> '<strong>Учитана порука “%1$s” написана од “%2$s” због следећег разлога</strong><br />» %3$s',
+	'LOG_POST_RESTORED'			=> '<strong>Враћена порука</strong><br />» %s',
 	'LOG_REPORT_CLOSED'			=> '<strong>Затворена пријава</strong><br />» %s',
 	'LOG_REPORT_DELETED'		=> '<strong>Обрисана пријава</strong><br />» %s',
-	'LOG_SPLIT_DESTINATION'		=> '<strong>Померене раздвојене поруке</strong><br />» у %s',
+	'LOG_RESTORE_TOPIC'			=> '<strong>Враћена тема “%1$s” написана од</strong><br />» %2$s',
+	'LOG_SOFTDELETE_POST'		=> '<strong>Привремено обрисана порука “%1$s” написана од “%2$s” због следећег разлога</strong><br />» %3$s',
+	'LOG_SOFTDELETE_TOPIC'		=> '<strong>Привремено обрисана тема “%1$s” написана од “%2$s” због следећег разлога</strong><br />» %3$s',
+	'LOG_SPLIT_DESTINATION'		=> '<strong>Премештене раздвојене поруке</strong><br />» у %s',
 	'LOG_SPLIT_SOURCE'			=> '<strong>Раздвојене поруке</strong><br />» из %s',
 
 	'LOG_TOPIC_APPROVED'		=> '<strong>Одобрена тема</strong><br />» %s',
-	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Неодобрена тема “%1$s” са следећим разлогом</strong><br />%2$s',
+	'LOG_TOPIC_RESTORED'		=> '<strong>Враћена тема</strong><br />» %s',
+	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Неодобрена тема “%1$s” написана од “%3$s” због следећег разлога</strong><br />» %2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Поново усклађени бројачи тема</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>Промењен тип теме</strong><br />» %s',
 	'LOG_UNLOCK'				=> '<strong>Откључана тема</strong><br />» %s',
@@ -545,37 +584,37 @@ $lang = array_merge($lang, array(
 	'LOG_DISALLOW_ADD'		=> '<strong>Додато недозвољено корисничко име</strong><br />» %s',
 	'LOG_DISALLOW_DELETE'	=> '<strong>Обрисано недозвољено корисничко име</strong>',
 
-	'LOG_DB_BACKUP'			=> '<strong>Резервна копија базе</strong>',
-	'LOG_DB_DELETE'			=> '<strong>Обрисана резервна копија базе</strong>',
-	'LOG_DB_RESTORE'		=> '<strong>Поново успостављена резервна копија базе</strong>',
+	'LOG_DB_BACKUP'			=> '<strong>Резервни умножак базе</strong>',
+	'LOG_DB_DELETE'			=> '<strong>Обрисан резервни умножак базе</strong>',
+	'LOG_DB_RESTORE'		=> '<strong>Враћен резервни умножак базе</strong>',
 
 	'LOG_DOWNLOAD_EXCLUDE_IP'	=> '<strong>Искључена IP адреса/сервер из списка преузимања</strong><br />» %s',
 	'LOG_DOWNLOAD_IP'			=> '<strong>Додата IP адреса/сервер у списак преузимања</strong><br />» %s',
 	'LOG_DOWNLOAD_REMOVE_IP'	=> '<strong>Уклоњена IP адреса/сервер из списка преузимања</strong><br />» %s',
 
 	'LOG_ERROR_JABBER'		=> '<strong>Jabber грешка</strong><br />» %s',
-	'LOG_ERROR_EMAIL'		=> '<strong>E-mail грешка</strong><br />» %s',
+	'LOG_ERROR_EMAIL'		=> '<strong>Мејл грешка</strong><br />» %s',
 
 	'LOG_FORUM_ADD'							=> '<strong>Направљен нови форум</strong><br />» %s',
-	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Копиране дозволе форума</strong> са %1$s<br />» %2$s',
+	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Умножене дозволе форума</strong> са %1$s<br />» %2$s',
 	'LOG_FORUM_DEL_FORUM'					=> '<strong>Обрисан форум</strong><br />» %s',
 	'LOG_FORUM_DEL_FORUMS'					=> '<strong>Обрисан форум и његови подфоруми</strong><br />» %s',
-	'LOG_FORUM_DEL_MOVE_FORUMS'				=> '<strong>Обрисан форум и померени подфоруми</strong> у %1$s<br />» %2$s',
-	'LOG_FORUM_DEL_MOVE_POSTS'				=> '<strong>Обрисан форум и померене поруке </strong> у %1$s<br />» %2$s',
-	'LOG_FORUM_DEL_MOVE_POSTS_FORUMS'		=> '<strong>Обрисан форум и његови подфоруми, померене поруке</strong> у %1$s<br />» %2$s',
-	'LOG_FORUM_DEL_MOVE_POSTS_MOVE_FORUMS'	=> '<strong>Обрисан форум, померене поруке</strong> у %1$s <strong>и подфоруми</strong> у %2$s<br />» %3$s',
+	'LOG_FORUM_DEL_MOVE_FORUMS'				=> '<strong>Обрисан форум и премештени подфоруми</strong> у %1$s<br />» %2$s',
+	'LOG_FORUM_DEL_MOVE_POSTS'				=> '<strong>Обрисан форум и премештене поруке </strong> у %1$s<br />» %2$s',
+	'LOG_FORUM_DEL_MOVE_POSTS_FORUMS'		=> '<strong>Обрисан форум и његови подфоруми, премештене поруке</strong> у %1$s<br />» %2$s',
+	'LOG_FORUM_DEL_MOVE_POSTS_MOVE_FORUMS'	=> '<strong>Обрисан форум, премештене поруке</strong> у %1$s <strong>и подфоруми</strong> у %2$s<br />» %3$s',
 	'LOG_FORUM_DEL_POSTS'					=> '<strong>Обрисан форум и његове поруке</strong><br />» %s',
 	'LOG_FORUM_DEL_POSTS_FORUMS'			=> '<strong>Обрисан форум, његове поруке и подфоруми</strong><br />» %s',
-	'LOG_FORUM_DEL_POSTS_MOVE_FORUMS'		=> '<strong>Обрисан форум и његове поруке, померени подфоруми</strong> у %1$s<br />» %2$s',
+	'LOG_FORUM_DEL_POSTS_MOVE_FORUMS'		=> '<strong>Обрисан форум и његове поруке, премештени подфоруми</strong> у %1$s<br />» %2$s',
 	'LOG_FORUM_EDIT'						=> '<strong>Учитане појединости форума</strong><br />» %s',
-	'LOG_FORUM_MOVE_DOWN'					=> '<strong>Померен форум</strong> %1$s <strong>испод</strong> %2$s',
-	'LOG_FORUM_MOVE_UP'						=> '<strong>Померен форум</strong> %1$s <strong>изнад</strong> %2$s',
+	'LOG_FORUM_MOVE_DOWN'					=> '<strong>Премештен форум</strong> %1$s <strong>испод</strong> %2$s',
+	'LOG_FORUM_MOVE_UP'						=> '<strong>Премештен форум</strong> %1$s <strong>изнад</strong> %2$s',
 	'LOG_FORUM_SYNC'						=> '<strong>Поново-усклађен форум</strong><br />» %s',
 
 	'LOG_GENERAL_ERROR'	=> '<strong>Појавила се општа грешка</strong>: %1$s <br />» %2$s',
 
 	'LOG_GROUP_CREATED'		=> '<strong>Направљена нова корисничка група</strong><br />» %s',
-	'LOG_GROUP_DEFAULTS'	=> '<strong>Група “%1$s” је постављена као задата за чланове</strong><br />» %2$s',
+	'LOG_GROUP_DEFAULTS'	=> '<strong>Група “%1$s” је постављена као подразумевана за чланове</strong><br />» %2$s',
 	'LOG_GROUP_DELETE'		=> '<strong>Обрисана корисничка група</strong><br />» %s',
 	'LOG_GROUP_DEMOTED'		=> '<strong>Расчињене вође у корисничкој групи</strong> %1$s<br />» %2$s',
 	'LOG_GROUP_PROMOTED'	=> '<strong>Чланови унапређени у вође у корисничкој групи</strong> %1$s<br />» %2$s',
@@ -588,19 +627,9 @@ $lang = array_merge($lang, array(
 
 	'LOG_IMAGE_GENERATION_ERROR'	=> '<strong>Грешка приликом прављења слике</strong><br />» Грешка у %1$s на линији %2$s: %3$s',
 
-	'LOG_IMAGESET_ADD_DB'			=> '<strong>Додат нови комплет слика у базу</strong><br />» %s',
-	'LOG_IMAGESET_ADD_FS'			=> '<strong>Додат нови комплет слика у систем датотека</strong><br />» %s',
-	'LOG_IMAGESET_DELETE'			=> '<strong>Обрисан комплет слика</strong><br />» %s',
-	'LOG_IMAGESET_EDIT_DETAILS'		=> '<strong>Учитане појединости комплета слика</strong><br />» %s',
-	'LOG_IMAGESET_EDIT'				=> '<strong>Учитан комплет слика</strong><br />» %s',
-	'LOG_IMAGESET_EXPORT'			=> '<strong>Извезен комплет слика</strong><br />» %s',
-	'LOG_IMAGESET_LANG_MISSING'		=> '<strong>Комплети слика промашили “%2$s” место</strong><br />» %1$s',
-	'LOG_IMAGESET_LANG_REFRESHED'	=> '<strong>Освежено “%2$s” место комплета слика</strong><br />» %1$s',
-	'LOG_IMAGESET_REFRESHED'		=> '<strong>Освежен комплет слика</strong><br />» %s',
-
 	'LOG_INACTIVE_ACTIVATE'	=> '<strong>Активирани неактивни корисници</strong><br />» %s',
 	'LOG_INACTIVE_DELETE'	=> '<strong>Обрисани неактивни корисници</strong><br />» %s',
-	'LOG_INACTIVE_REMIND'	=> '<strong>Послат e-mail подсетник неактивним корисницима</strong><br />» %s',
+	'LOG_INACTIVE_REMIND'	=> '<strong>Послат мејл потсетник неактивним корисницима</strong><br />» %s',
 	'LOG_INSTALL_CONVERTED'	=> '<strong>Пребачено из %1$s у phpBB %2$s</strong>',
 	'LOG_INSTALL_INSTALLED'	=> '<strong>Инсталиран phpBB %s</strong>',
 
@@ -617,14 +646,14 @@ $lang = array_merge($lang, array(
 	'LOG_LANGUAGE_FILE_REPLACED'	=> '<strong>Замењена језичка датотека</strong><br />» %s',
 	'LOG_LANGUAGE_FILE_SUBMITTED'	=> '<strong>Послата језичка датотека и смештена у store фасциклу</strong><br />» %s',
 
-	'LOG_MASS_EMAIL'		=> '<strong>Послат масовни e-mail</strong><br />» %s',
+	'LOG_MASS_EMAIL'		=> '<strong>Послат масовни мејл</strong><br />» %s',
 
 	'LOG_MCP_CHANGE_POSTER'	=> '<strong>Промењен пошиљалац у теми “%1$s”</strong><br />» из %2$s у %3$s',
 
 	'LOG_MODULE_DISABLE'	=> '<strong>Модул онемогућен</strong><br />» %s',
 	'LOG_MODULE_ENABLE'		=> '<strong>Модул укључен</strong><br />» %s',
-	'LOG_MODULE_MOVE_DOWN'	=> '<strong>Модул померен доле</strong><br />» %1$s испод %2$s',
-	'LOG_MODULE_MOVE_UP'	=> '<strong>Модул померен горе</strong><br />» %1$s изнад %2$s',
+	'LOG_MODULE_MOVE_DOWN'	=> '<strong>Модул премештен доле</strong><br />» %1$s испод %2$s',
+	'LOG_MODULE_MOVE_UP'	=> '<strong>Модул премештен горе</strong><br />» %1$s изнад %2$s',
 	'LOG_MODULE_REMOVED'	=> '<strong>Модул уклоњен</strong><br />» %s',
 	'LOG_MODULE_ADD'		=> '<strong>Модул додат</strong><br />» %s',
 	'LOG_MODULE_EDIT'		=> '<strong>Модул учитан</strong><br />» %s',
@@ -642,6 +671,8 @@ $lang = array_merge($lang, array(
 	'LOG_U_ROLE_EDIT'		=> '<strong>Рола корисника учитана</strong><br />» %s',
 	'LOG_U_ROLE_REMOVED'	=> '<strong>Рола корисника уклоњена</strong><br />» %s',
 
+	'LOG_PLUPLOAD_TIDY_FAILED'		=> '<strong>Немогуће отворити %1$s за сређивање, проверите дозволе.</strong><br />Изузетак: %2$s<br />Траг: %3$s',
+
 	'LOG_PROFILE_FIELD_ACTIVATE'	=> '<strong>Поље профила активирано</strong><br />» %s',
 	'LOG_PROFILE_FIELD_CREATE'		=> '<strong>Поље профила додато</strong><br />» %s',
 	'LOG_PROFILE_FIELD_DEACTIVATE'	=> '<strong>Поље профила деактивирано</strong><br />» %s',
@@ -650,13 +681,13 @@ $lang = array_merge($lang, array(
 
 	'LOG_PRUNE'					=> '<strong>Поткресани форуми</strong><br />» %s',
 	'LOG_AUTO_PRUNE'			=> '<strong>Аутоматски-поткресани форуми</strong><br />» %s',
+	'LOG_PRUNE_SHADOW'		=> '<strong>Аутоматски-поткресане притајене теме</strong><br />» %s',
 	'LOG_PRUNE_USER_DEAC'		=> '<strong>Деактивирани корисници</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>Поткресани корисници и обрисане поруке</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>Поткресани корисници и поруке задржане</strong><br />» %s',
 
-	'LOG_PURGE_CACHE'			=> '<strong>Поткресан кеш</strong>',
-	'LOG_PURGE_SESSIONS'		=> '<strong>Поткресане сесије</strong>',
-
+	'LOG_PURGE_CACHE'			=> '<strong>Избачен кеш</strong>',
+	'LOG_PURGE_SESSIONS'		=> '<strong>Избачене сесије</strong>',
 
 	'LOG_RANK_ADDED'		=> '<strong>Додат нови чин</strong><br />» %s',
 	'LOG_RANK_REMOVED'		=> '<strong>Уклоњен чин</strong><br />» %s',
@@ -669,33 +700,41 @@ $lang = array_merge($lang, array(
 	'LOG_REFERER_INVALID'		=> '<strong>Потврда препоручиоца неуспешна</strong><br />»Препоручилац је био “<em>%1$s</em>”. Захтев је одбијен а сесија завршена.',
 	'LOG_RESET_DATE'			=> '<strong>Поново подешен датум када је форум почео са радом</strong>',
 	'LOG_RESET_ONLINE'			=> '<strong>Поново подешено највише корисника на вези</strong>',
+	'LOG_RESYNC_FILES_STATS'	=> '<strong>Поново усклађена статистика датотека</strong>',
 	'LOG_RESYNC_POSTCOUNTS'		=> '<strong>Поново усклађен број порука корисника</strong>',
 	'LOG_RESYNC_POST_MARKING'	=> '<strong>Поново усклађене тачкасте теме</strong>',
 	'LOG_RESYNC_STATS'			=> '<strong>Порука, тема и статистика корисника поново усклађена</strong>',
 
 	'LOG_SEARCH_INDEX_CREATED'	=> '<strong>Направљен индекс претраге за</strong><br />» %s',
 	'LOG_SEARCH_INDEX_REMOVED'	=> '<strong>Уклоњен индекс претраге за</strong><br />» %s',
+	'LOG_SPHINX_ERROR'			=> '<strong>Sphinx Грешка</strong><br />» %s',
 	'LOG_STYLE_ADD'				=> '<strong>Додат нови стил</strong><br />» %s',
 	'LOG_STYLE_DELETE'			=> '<strong>Обрисан стил</strong><br />» %s',
 	'LOG_STYLE_EDIT_DETAILS'	=> '<strong>Учитан стил</strong><br />» %s',
 	'LOG_STYLE_EXPORT'			=> '<strong>Извезен стил</strong><br />» %s',
 
+	// @deprecated 3.1
 	'LOG_TEMPLATE_ADD_DB'			=> '<strong>Додат нови комплет предложака у базу</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_TEMPLATE_ADD_FS'			=> '<strong>Додат нови комплет предложака у систем датотека</strong><br />» %s',
 	'LOG_TEMPLATE_CACHE_CLEARED'	=> '<strong>Обрисане кеширане верзије датотека предложака у комплету предложака <em>%1$s</em></strong><br />» %2$s',
 	'LOG_TEMPLATE_DELETE'			=> '<strong>Обрисан комплет предложака</strong><br />» %s',
 	'LOG_TEMPLATE_EDIT'				=> '<strong>Учитан комплет предложака <em>%1$s</em></strong><br />» %2$s',
 	'LOG_TEMPLATE_EDIT_DETAILS'		=> '<strong>Учитане појединости предлошка</strong><br />» %s',
 	'LOG_TEMPLATE_EXPORT'			=> '<strong>Извезен комплет предложака</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_TEMPLATE_REFRESHED'		=> '<strong>Освежен комплет предложака</strong><br />» %s',
 
+	// @deprecated 3.1
 	'LOG_THEME_ADD_DB'			=> '<strong>Додата нова тема у базу</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_THEME_ADD_FS'			=> '<strong>Додата нова тема у систем датотека</strong><br />» %s',
 	'LOG_THEME_DELETE'			=> '<strong>Обрисана тема</strong><br />» %s',
 	'LOG_THEME_EDIT_DETAILS'	=> '<strong>Учитане појединости теме</strong><br />» %s',
 	'LOG_THEME_EDIT'			=> '<strong>Учитана тема <em>%1$s</em></strong>',
 	'LOG_THEME_EDIT_FILE'		=> '<strong>Учитана тема <em>%1$s</em></strong><br />» Измењена датотека <em>%2$s</em>',
 	'LOG_THEME_EXPORT'			=> '<strong>Извезена тема</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_THEME_REFRESHED'		=> '<strong>Освежена тема</strong><br />» %s',
 
 	'LOG_UPDATE_DATABASE'	=> '<strong>Ажурирана База из верзије %1$s у верзију %2$s</strong>',
@@ -704,7 +743,7 @@ $lang = array_merge($lang, array(
 	'LOG_USER_ACTIVE'		=> '<strong>Корисник активиран</strong><br />» %s',
 	'LOG_USER_BAN_USER'		=> '<strong>Забрањен Корисник преко управљања корисницима</strong> због “<em>%1$s</em>”<br />» %2$s',
 	'LOG_USER_BAN_IP'		=> '<strong>Забрањена IP адреса преко управљања корисницима</strong> због “<em>%1$s</em>”<br />» %2$s',
-	'LOG_USER_BAN_EMAIL'	=> '<strong>Забрањен e-mail преко управљања корисницима</strong> због “<em>%1$s</em>”<br />» %2$s',
+	'LOG_USER_BAN_EMAIL'	=> '<strong>Забрањен мејл преко управљања корисницима</strong> због “<em>%1$s</em>”<br />» %2$s',
 	'LOG_USER_DELETED'		=> '<strong>Обрисан корисник</strong><br />» %s',
 	'LOG_USER_DEL_ATTACH'	=> '<strong>Уклоњени сви прилози од корисника</strong><br />» %s',
 	'LOG_USER_DEL_AVATAR'	=> '<strong>Уклоњен грб корисника</strong><br />» %s',
@@ -712,12 +751,12 @@ $lang = array_merge($lang, array(
 	'LOG_USER_DEL_POSTS'	=> '<strong>Уклоњене све поруке од корисника</strong><br />» %s',
 	'LOG_USER_DEL_SIG'		=> '<strong>Уклоњен потпис корисника</strong><br />» %s',
 	'LOG_USER_INACTIVE'		=> '<strong>Деактивиран корисник</strong><br />» %s',
-	'LOG_USER_MOVE_POSTS'	=> '<strong>Померене поруке корисника</strong><br />» поруке од “%1$s” у форум “%2$s”',
+	'LOG_USER_MOVE_POSTS'	=> '<strong>Премештене поруке корисника</strong><br />» поруке од “%1$s” у форум “%2$s”',
 	'LOG_USER_NEW_PASSWORD'	=> '<strong>Промењена лозинка корисника</strong><br />» %s',
 	'LOG_USER_REACTIVATE'	=> '<strong>Форсирана поновна активација корисника</strong><br />» %s',
 	'LOG_USER_REMOVED_NR'	=> '<strong>Уклоњена новорегистрована застава са корисника</strong><br />» %s',
 
-	'LOG_USER_UPDATE_EMAIL'	=> '<strong>Корисник “%1$s” је променио e-mail</strong><br />» из “%2$s” у “%3$s”',
+	'LOG_USER_UPDATE_EMAIL'	=> '<strong>Корисник “%1$s” је променио мејл</strong><br />» из “%2$s” у “%3$s”',
 	'LOG_USER_UPDATE_NAME'	=> '<strong>Промењено корисничко име</strong><br />» из “%1$s” у “%2$s”',
 	'LOG_USER_USER_UPDATE'	=> '<strong>Ажуриране појединости корисника</strong><br />» %s',
 
@@ -728,25 +767,30 @@ $lang = array_merge($lang, array(
 	'LOG_USER_GENERAL'			=> '<strong>Додат унос:</strong><br />» %s',
 	'LOG_USER_INACTIVE_USER'	=> '<strong>Кориснички налог де-активиран</strong>',
 	'LOG_USER_LOCK'				=> '<strong>Корисник закључао сопствену тему</strong><br />» %s',
-	'LOG_USER_MOVE_POSTS_USER'	=> '<strong>Померене све поруке у форум</strong>» %s',
+	'LOG_USER_MOVE_POSTS_USER'	=> '<strong>Премештене све поруке у форум</strong>» %s',
 	'LOG_USER_REACTIVATE_USER'	=> '<strong>Форсирана поновна активација корисника</strong>',
 	'LOG_USER_UNLOCK'			=> '<strong>Корисник откључао сопствену тему</strong><br />» %s',
 	'LOG_USER_WARNING'			=> '<strong>Додата опомена кориснику</strong><br />» %s',
 	'LOG_USER_WARNING_BODY'		=> '<strong>Следећа опомена је додељена овом кориснику</strong><br />» %s',
 
-	'LOG_USER_GROUP_CHANGE'			=> '<strong>Корисник је променио задату групу</strong><br />» %s',
+	'LOG_USER_GROUP_CHANGE'			=> '<strong>Корисник је променио подразумевану групу</strong><br />» %s',
 	'LOG_USER_GROUP_DEMOTE'			=> '<strong>Корисник је расчињен као вођа корисничке групе</strong><br />» %s',
-	'LOG_USER_GROUP_JOIN'			=> '<strong>Корисник се прикључио групи</strong><br />» %s',
-	'LOG_USER_GROUP_JOIN_PENDING'	=> '<strong>Корисник се прикључио групи и треба да буде одобрен</strong><br />» %s',
+	'LOG_USER_GROUP_JOIN'			=> '<strong>Корисник се придружио групи</strong><br />» %s',
+	'LOG_USER_GROUP_JOIN_PENDING'	=> '<strong>Корисник се придружио групи и треба да буде одобрен</strong><br />» %s',
 	'LOG_USER_GROUP_RESIGN'			=> '<strong>Корисник се повукао из чланства у групи</strong><br />» %s',
 
 	'LOG_WARNING_DELETED'		=> '<strong>Обрисана опомена корисника</strong><br />» %s',
-	'LOG_WARNINGS_DELETED'		=> '<strong>Обрисане %2$s опомене корисника</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+	'LOG_WARNINGS_DELETED'		=> array(
+		1 => '<strong>Обрисана опомена корисника</strong><br />» %1$s',
+		2 => '<strong>Обрисане %2$d опомене корисника</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+	),
 	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Обрисане све опомене корисника</strong><br />» %s',
 
 	'LOG_WORD_ADD'			=> '<strong>Додат пречистач речи</strong><br />» %s',
 	'LOG_WORD_DELETE'		=> '<strong>Обрисан пречистач речи</strong><br />» %s',
 	'LOG_WORD_EDIT'			=> '<strong>Учитан пречистач речи</strong><br />» %s',
-));
 
-?>
+	'LOG_EXT_ENABLE'	=> '<strong>Омогућен прикључак</strong><br />» %s',
+	'LOG_EXT_DISABLE'	=> '<strong>Онемогућен прикључак</strong><br />» %s',
+	'LOG_EXT_PURGE'		=> '<strong>Обрисани подаци прикључка</strong><br />» %s',
+));

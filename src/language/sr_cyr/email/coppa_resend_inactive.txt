@@ -1,4 +1,4 @@
-Subject: Dobro dosli na "{SITENAME}"
+Subject: Добро дошли на "{SITENAME}"
 
 {WELCOME_MSG}
 
@@ -16,7 +16,7 @@ Subject: Dobro dosli na "{SITENAME}"
 Дозвола за учешће на форуму "{SITENAME}" - {U_BOARD}
 
 Корисничко име: {USERNAME}
-E-mail: {EMAIL_ADDRESS}
+Мејл: {EMAIL_ADDRESS}
 
 ПРЕГЛЕДАО САМ ПОДАТКЕ КОЈЕ МИ ЈЕ ДАЛО МОЈЕ ДЕТЕ И ОВИМ ДАЈЕМ ДОЗВОЛУ ФОРУМУ "{SITENAME}" ДА САЧУВА ОВЕ ПОДАТКЕ. 
 РАЗУМЕМ ДА ОВИ ПОДАЦИ МОГУ БИТИ ПРОМЕЊЕНИ У БИЛО КОЈЕ ВРЕМЕ УНОШЕЊЕМ ЛОЗИНКЕ. 

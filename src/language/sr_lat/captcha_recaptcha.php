@@ -37,16 +37,15 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RECAPTCHA_LANG'				=> 'sr',
-	'RECAPTCHA_NOT_AVAILABLE'		=> 'Da bi koristili reCaptcha-u, morate prethodno da napravite nalog na <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_NOT_AVAILABLE'		=> 'Da bi koristili reCaptcha-u, morate prethodno da napravite nalog na <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
 	'RECAPTCHA_INCORRECT'			=> 'Kod za vizuelnu potvrdu koji ste uneli je netačan',
 
 	'RECAPTCHA_PUBLIC'				=> 'Javni reCaptcha ključ',
-	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Vaš javni reCaptcha ključ. Ključeve možete dobiti na <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Vaš javni reCaptcha ključ. Ključeve možete dobiti na <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'				=> 'Privatni reCaptcha ključ',
-	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Vaš privatni reCaptcha ključ. Ključeve možete dobiti na <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Vaš privatni reCaptcha ključ. Ključeve možete dobiti na <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 
 	'RECAPTCHA_EXPLAIN'				=> 'Da bi sprečili automatske registracije, tražimo da unesete obe reči prikazane ispod u za to predviđeno polje.',
+	'RECAPTCHA_SOCKET_ERROR'		=> 'Problem u povezivanju sa RECAPTCHA servisom: ne mogu da otvorim soket. Molimo pokušajte kasnije.',
 ));
-
-?>

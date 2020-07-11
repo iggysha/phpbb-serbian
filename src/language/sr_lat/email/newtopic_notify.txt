@@ -1,8 +1,7 @@
 Subject: Obaveštenje o novoj temi — “{FORUM_NAME}”
-
 Zdravo {USERNAME},
 
-Dobili ste ovo obaveštenje jer ste izabrali da pratite forum “{FORUM_NAME}” na sajtu “{SITENAME}”. Ovaj forum ima novu temu od vaše poslednje posete “{TOPIC_TITLE}”. Možete iskoristiti sledeći link da pogledate forum, a nećete dobijati više obaveštenja dok ne posetite forum.
+Dobili ste ovo obaveštenje jer ste izabrali da pratite forum “{FORUM_NAME}” na sajtu “{SITENAME}”. Ovaj forum ima novu temu <!-- IF AUTHOR_NAME !== '' --> od {AUTHOR_NAME}<!-- ENDIF --> od vaše poslednje posete “{TOPIC_TITLE}”. Možete iskoristiti sledeći link da pogledate forum, a nećete dobijati više obaveštenja dok ne posetite forum.
 
 {U_FORUM}
 

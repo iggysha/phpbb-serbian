@@ -1,18 +1,27 @@
 <?php
-/** 
+/**
 *
-* memberlist [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: memberlist.php,v 1.26 2006/10/26 14:46:41 dhn2 Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -42,12 +51,13 @@ $lang = array_merge($lang, array(
 	
 	'BEFORE'				=> 'Pre',
 
-	'CC_EMAIL'				=> 'Pošaljite kopiju ovog email-a sebi',
-	'CONTACT_USER'			=> 'Kontakt',
+	'CC_SENDER' 			=> 'Kopija za pošaljioca',
+	'CONTACT_ADMIN' 		=> 'Kontaktirajte administratora',
 
 	'DEST_LANG'				=> 'Jezik',
 	'DEST_LANG_EXPLAIN'		=> 'Izaberite odgovarajući jezik (ako postoji) za primaoca ove poruke.',
-
+	
+	'EDIT_PROFILE' 			=> 'Izmena profila',
 	'EMAIL_BODY_EXPLAIN'	=> 'Ova poruka će biti poslata kao običan tekst, nemojte ubacivati bilo kakav HTML ili BBKod. Povratna adresa za ovu poruku će biti podešena kao i vaša email adresa.',
 	'EMAIL_DISABLED'		=> 'Žao nam je, ali sve funkcije vezane za email su isključene.',
 	'EMAIL_SENT'			=> 'Email je poslat.',
@@ -56,6 +66,8 @@ $lang = array_merge($lang, array(
 	'EMPTY_MESSAGE_EMAIL'	=> 'Morate uneti poruku koja će biti poslata.',
 	'EMPTY_MESSAGE_IM'		=> 'Morate uneti poruku da bi bila poslata.',
 	'EMPTY_NAME_EMAIL'		=> 'Morate uneti pravo ime primaoca.',
+	'EMPTY_SENDER_EMAIL' 	=> 'Morate uneti email adresu pošaljioca',
+	'EMPTY_SENDER_NAME' 	=> 'Morate uneti ime pošaljioca',
 	'EMPTY_SUBJECT_EMAIL'	=> 'Morate uneti naslov za ovaj email.',
 	'EQUAL_TO'				=> 'Jednako',
 
@@ -67,16 +79,10 @@ $lang = array_merge($lang, array(
 	'HIDE_MEMBER_SEARCH'	=> 'Sakrij pretragu članova',
 
 	'IM_ADD_CONTACT'		=> 'Dodaj kontakt',
-	'IM_AIM'				=> 'Znajte da će vam trebati AOL Instant Messenger instaliran da bi mogli da koristite ovu opciju.',
-	'IM_AIM_EXPRESS'		=> 'AIM Express',
 	'IM_DOWNLOAD_APP'		=> 'Preuzmi aplikaciju',
-	'IM_ICQ'				=> 'Znajte da su korisnici možda izabrali da ne primaju unsolicited instant poruke.',
 	'IM_JABBER'				=> 'Znajte da su korisnici možda izabrali da ne primaju unsolicited instant poruke.',
 	'IM_JABBER_SUBJECT'		=> 'Ovo je automatska poruka - molimo vas da ne odgovarate! Poruka od korisnika %1$s na %2$s',
 	'IM_MESSAGE'			=> 'Vaša poruka',
-	'IM_MSNM'				=> 'Znajte da će vam trebati Windows Messenger instaliran da bi mogli da koristite ovu opciju.',
-	'IM_MSNM_BROWSER'		=> 'Vaš browser ne podržava ovo.',
-	'IM_MSNM_CONNECT'		=> 'MSNM nije konektovan.\nMorate se povezati na MSNM za nastavak.',		
 	'IM_NAME'				=> 'Vaše ime',
 	'IM_NO_DATA'			=> 'Nema pogodne informacije o kontaktu za ovog korisnika.',
 	'IM_NO_JABBER'			=> 'Žao nam je, direktne poruke od Jabber korisnika nisu podržani na ovom serveru. Trebaće vam Jabber klijent instaliran na vašem računaruda bi kontaktirali primaoce iznad.',
@@ -88,15 +94,19 @@ $lang = array_merge($lang, array(
 	
 	'LAST_ACTIVE'				=> 'Poslednji put aktivan',
 	'LESS_THAN'					=> 'Manje od',
-	'LIST_USER'					=> '1 korisnik',
-	'LIST_USERS'				=> '%d korisnika',
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Administrator zahteva da budete registrovani i prijavljeni da bi pogledali članove tima.',
+	'LIST_USERS'				=> array(
+		1	=> '%d korisnik',
+		2	=> '%d korisnika',
+	),
 	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Administrator zahteva da budete registrovani i prijavljeni za pristup listi članova.',
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Administrator zahteva da budete registrovani i prijavljeni da bi tražili korisnike.',
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Administrator zahteva da budete registrovani i prijavljeni da bi videli profile.',
+	'LOGIN_EXPLAIN_TEAM' => 'Administrator zahteva da budete registrovani i prijavljeni da bi pristupili timu',
 
 	'MORE_THAN'				=> 'Više od',
 
+	'NO_CONTACT_FORM'			=> 'Nema kontakt forme',
+    'NO_CONTACT_PAGE'			=> 'Nema kontatk strane',
 	'NO_EMAIL'				=> 'Nemate dozvolu da pošaljete email ovom korisniku.',
 	'NO_VIEW_USERS'			=> 'Niste autorizovani da pogledate listu članova ili profile.',
 
@@ -105,22 +115,20 @@ $lang = array_merge($lang, array(
 
 	'POST_IP'				=> 'Poslato sa IP/domena',
 
-	'RANK'					=> 'Čin',
 	'REAL_NAME'				=> 'Ime primaoca',
 	'RECIPIENT'				=> 'Primaoc',
 	'REMOVE_FOE'			=> 'Ukloni protivnika',
 	'REMOVE_FRIEND'			=> 'Ukloni prijatelja',
 
-	'SEARCH_USER_POSTS'		=> 'Pretraži korisnikove postove',
 	'SELECT_MARKED'			=> 'Izaberi obeležene',
 	'SELECT_SORT_METHOD'	=> 'Izaberi metod sortiranja',
-	'SEND_AIM_MESSAGE'		=> 'Pošalji AIM poruku',
 	'SEND_ICQ_MESSAGE'		=> 'Pošalji ICQ poruku',
 	'SEND_IM'				=> 'Instant poruke',
 	'SEND_JABBER_MESSAGE'	=> 'Pošalji Jabber poruku',
 	'SEND_MESSAGE'			=> 'Poruka',
-	'SEND_MSNM_MESSAGE'		=> 'Pošalji MSNM/WLM poruku',
 	'SEND_YIM_MESSAGE'		=> 'Pošalji YIM poruku',
+	'SENDER_EMAIL_ADDRESS'		=> 'Email adresa pošaljioca',
+	'SENDER_NAME'				=> 'Ime pošaljioca',
 	'SORT_EMAIL'			=> 'Email',
 	'SORT_LAST_ACTIVE'		=> 'Poslednje aktivanim',
 	'SORT_POST_COUNT'		=> 'Broju postova',
@@ -136,11 +144,13 @@ $lang = array_merge($lang, array(
 		0		=> 'Do sada nije poslata opomena',
 		1		=> '%1$d opomena poslata<br />» %2$s',
 	),
+	'USERS_PER_PAGE'		=> 'Korisnika po stranici',
 
 	'VIEWING_PROFILE'		=> 'Pregled profila - %s',
-	'VISITED'				=> 'Poslednja poseta',
+	'VIEW_FACEBOOK_PROFILE' => 'Pogledaj Facebook profil',
+    'VIEW_SKYPE_PROFILE'	=> 'Pogledaj Skype profil',
+    'VIEW_TWITTER_PROFILE'	=> 'Pogledaj Twitter profil',
+    'VIEW_YOUTUBE_CHANNEL'	=> 'Pogledaj YouTube kanal',
+    'VIEW_GOOGLEPLUS_PROFILE'	=> 'Pogleda Google+ profil',
 
-	'WWW'					=> 'Sajt',
 ));
-
-?>

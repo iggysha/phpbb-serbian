@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* mcp [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -53,8 +54,12 @@ $lang = array_merge($lang, array(
 	'APPROVE_POST_CONFIRM'	=> 'Да ли сигурно желите да одобрите ову поруку?',
 	'APPROVE_POSTS'			=> 'Одобри поруке',
 	'APPROVE_POSTS_CONFIRM'	=> 'Да ли сигурно желите да одобрите изабране поруке?',
+	'APPROVE_TOPIC'			=> 'Одобри тему',
+	'APPROVE_TOPIC_CONFIRM'	=> 'Да ли сигурно желите да одобрите ову тему?',
+	'APPROVE_TOPICS'		=> 'Одобри теме',
+	'APPROVE_TOPICS_CONFIRM'=> 'Да ли сигурно желите да одобрите изабране теме?',
 
-	'CANNOT_MOVE_SAME_FORUM'=> 'Не можете померити тему у форум у којем се тема већ налази.',
+	'CANNOT_MOVE_SAME_FORUM'=> 'Не можете преместити тему у форум у којем се тема већ налази.',
 	'CANNOT_WARN_ANONYMOUS'	=> 'Не можете опоменути нерегистроване кориснике.',
 	'CANNOT_WARN_SELF'		=> 'Не можете опоменути самог себе.',
 	'CAN_LEAVE_BLANK'		=> 'Ово може бити остављено празно.',
@@ -73,16 +78,12 @@ $lang = array_merge($lang, array(
 	'DELETE_PM_REPORTS'			=> 'Обриши ПП пријаве',
 	'DELETE_PM_REPORTS_CONFIRM'	=> 'Да ли сигурно желите да обришете одабране ПП пријаве?',
 	'DELETE_POSTS'				=> 'Обриши поруке',
-	'DELETE_POSTS_CONFIRM'		=> 'Да ли сигурно желите да обришете ове поруке?',
-	'DELETE_POST_CONFIRM'		=> 'Да ли сигурно желите да обришете ову поруку?',
 	'DELETE_REPORT'				=> 'Обриши пријаву',
 	'DELETE_REPORT_CONFIRM'		=> 'Да ли сигурно желите да обришете изабрану пријаву?',
 	'DELETE_REPORTS'			=> 'Обриши пријаве',
 	'DELETE_REPORTS_CONFIRM'	=> 'Да ли сигурно желите да обришете изабране пријаве?',
 	'DELETE_SHADOW_TOPIC'		=> 'Обриши притајену тему',
 	'DELETE_TOPICS'				=> 'Обриши изабране теме',
-	'DELETE_TOPICS_CONFIRM'		=> 'Да ли сигурно желите да обришете ове теме?',
-	'DELETE_TOPIC_CONFIRM'		=> 'Да ли сигурно желите да обришете ову тему?',
 	'DISAPPROVE'				=> 'Неодобри',
 	'DISAPPROVE_REASON'			=> 'Разлог за неодобрење',
 	'DISAPPROVE_POST'			=> 'Неодобри поруку',
@@ -96,11 +97,11 @@ $lang = array_merge($lang, array(
 	'EMPTY_TOPICS_REMOVED_WARNING'	=> 'Молимо знајте да су једна или више тема уклоњене из базе зато што су биле или постале празне.',
 
 	'FEEDBACK'				=> 'Повратни одговор',
-	'FORK'					=> 'Копирај',
-	'FORK_TOPIC'			=> 'Копирај тему',
-	'FORK_TOPIC_CONFIRM'	=> 'Да ли сигурно желите да копирате ову тему?',
-	'FORK_TOPICS'			=> 'Копирај изабране теме',
-	'FORK_TOPICS_CONFIRM'	=> 'Да ли сигурно желите да копирате изабране теме?',
+	'FORK'					=> 'Умножи',
+	'FORK_TOPIC'			=> 'Умножи тему',
+	'FORK_TOPIC_CONFIRM'	=> 'Да ли сигурно желите да умножите ову тему?',
+	'FORK_TOPICS'			=> 'Умножи изабране теме',
+	'FORK_TOPICS_CONFIRM'	=> 'Да ли сигурно желите да умножите изабране теме?',
 	'FORUM_DESC'			=> 'Опис',
 	'FORUM_NAME'			=> 'Назив форума',
 	'FORUM_NOT_EXIST'		=> 'Форум који сте изабрали не постоји.',
@@ -120,8 +121,10 @@ $lang = array_merge($lang, array(
 	'LATEST_WARNING_TIME'		=> 'Последње додељене опомене',
 	'LATEST_WARNINGS'			=> 'Последњих 5 опомена',
 	'LEAVE_SHADOW'				=> 'Оставите притајену тему на месту',
-	'LIST_REPORT'				=> '1 пријава',
-	'LIST_REPORTS'				=> '%d пријава',
+	'LIST_REPORTS'				=> array(
+		1	=> '%d пријава',
+		2	=> '%d пријава',
+	),
 	'LOCK'						=> 'Закључај',
 	'LOCK_POST_POST'			=> 'Закључај поруку',
 	'LOCK_POST_POST_CONFIRM'	=> 'Да ли сигурно желите да спречите учитавање ове поруке?',
@@ -143,7 +146,7 @@ $lang = array_merge($lang, array(
 	'MCP_ADD'						=> 'Додај опомену',
 
 	'MCP_BAN'					=> 'Забране',
-	'MCP_BAN_EMAILS'			=> 'Забрана e-mails',
+	'MCP_BAN_EMAILS'			=> 'Забрана мејлова',
 	'MCP_BAN_IPS'				=> 'Забрана IP адреса',
 	'MCP_BAN_USERNAMES'			=> 'Забрани Корисничка имена',
 
@@ -200,6 +203,10 @@ $lang = array_merge($lang, array(
 	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Ово је списак свих порука које захтевају одобрење пре него што постану видљиве корисницима.',
 	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Теме чекају на одобрење',
 	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Ово је списак свих тема које захтевају одобрење пре него што постану видљиве корисницима.',
+	'MCP_QUEUE_DELETED_POSTS'				=> 'Обрисане поруке',
+	'MCP_QUEUE_DELETED_POSTS_EXPLAIN'		=> 'Ово је списак свих привремено обрисаних порука. Можете вратити или трајно обрисати поруке са овог екрана.',
+	'MCP_QUEUE_DELETED_TOPICS'				=> 'Обрисане теме',
+	'MCP_QUEUE_DELETED_TOPICS_EXPLAIN'		=> 'Ово је списак свих привремено обрисаних тема. Можете вратити или трајно обрисати теме са овог екрана.',
 
 	'MCP_VIEW_USER'			=> 'Преглед опомена за одређеног корисника',
 
@@ -209,8 +216,8 @@ $lang = array_merge($lang, array(
 	'MCP_WARN_POST'			=> 'Опомена за одређену поруку',
 	'MCP_WARN_USER'			=> 'Опомени корисника',
 
-	'MERGE_POSTS_CONFIRM'	=> 'Да ли сигурно желите да померите изабране поруке?',
-	'MERGE_TOPIC_EXPLAIN'	=> 'Користећи образац испод можете померити изабране поруке у другу тему. Поруке ће бити раздвојене од ове теме и спојене у другу тему. Овим порукама неће бити промењен редослед и појавиће се као да су их корисници послали у нову тему.<br />Молимо вас да унесете id одредишне теме или кликните на “Изабери тему” да је потражите.',
+	'MERGE_POSTS_CONFIRM'	=> 'Да ли сигурно желите да преместите изабране поруке?',
+	'MERGE_TOPIC_EXPLAIN'	=> 'Користећи образац испод можете преместити изабране поруке у другу тему. Поруке ће бити раздвојене од ове теме и спојене у другу тему. Овим порукама неће бити промењен редослед и појавиће се као да су их корисници послали у нову тему.<br />Молимо вас да унесете id одредишне теме или кликните на “Изабери тему” да је потражите.',
 	'MERGE_TOPIC_ID'		=> 'Број за препознавање одредишне теме',
 	'MERGE_TOPICS'			=> 'Споји теме',
 	'MERGE_TOPICS_CONFIRM'	=> 'Да ли сигурно желите да спојите изабране теме?',
@@ -220,9 +227,9 @@ $lang = array_merge($lang, array(
 	'MOD_OPTIONS'			=> 'Могућности уредника',
 	'MORE_INFO'				=> 'Више података',
 	'MOST_WARNINGS'			=> 'Корисници са највише опомена',
-	'MOVE_TOPIC_CONFIRM'	=> 'Да ли сигурно желите да померите тему у нови форум?',
-	'MOVE_TOPICS'			=> 'Помери изабране теме',
-	'MOVE_TOPICS_CONFIRM'	=> 'Да ли сигурно желите да померите изабране теме у нови форум?',
+	'MOVE_TOPIC_CONFIRM'	=> 'Да ли сигурно желите да преместите тему у нови форум?',
+	'MOVE_TOPICS'			=> 'Премести изабране теме',
+	'MOVE_TOPICS_CONFIRM'	=> 'Да ли сигурно желите да преместите изабране теме у нови форум?',
 
 	'NOTIFY_POSTER_APPROVAL'		=> 'Обавести пошиљаоца о одобрењу?',
 	'NOTIFY_POSTER_DISAPPROVAL'		=> 'Обавести пошиљаоца о неодобравању?',
@@ -230,32 +237,39 @@ $lang = array_merge($lang, array(
 	'NOT_MODERATOR'					=> 'Ви нисте уредник овог форума.',
 	'NO_DESTINATION_FORUM'			=> 'Молимо изаберите форум за одредиште.',
 	'NO_DESTINATION_FORUM_FOUND'	=> 'Нема доступног одредишног форума.',
-	'NO_ENTRIES'					=> 'Нема записа уноса за овај период.',
+	'NO_ENTRIES'					=> 'Нема записа уноса.',
 	'NO_FEEDBACK'					=> 'Не постоји повратни одговор за овог корисника.',
 	'NO_FINAL_TOPIC_SELECTED'		=> 'Морате изабрати одредишну тему за спајање порука.',
 	'NO_MATCHES_FOUND'				=> 'Нема пронађених поклапања.',
 	'NO_POST'						=> 'Морате изабрати поруку како бисте опоменули корисника за поруку.',
 	'NO_POST_REPORT'				=> 'Ова порука није пријављена.',
 	'NO_POST_SELECTED'				=> 'Морате изабрати најмање једну поруку како бисте извели овај поступак.',
+	'NO_POSTS_DELETED'				=> 'Нема обрисаних порука.',
+	'NO_POSTS_QUEUE'				=> 'Нема порука које чекају на одобрење.',
 	'NO_REASON_DISAPPROVAL'			=> 'Молимо вас да дате одговарајући разлог за неодобрење.',
 	'NO_REPORT'						=> 'Нема пронађене пријаве',
 	'NO_REPORTS'					=> 'Нема пронађених пријава',
 	'NO_REPORT_SELECTED'			=> 'Морате изабрати бар једну пријаву како бисте извели овај поступак.',
 	'NO_TOPIC_ICON'					=> 'Нема',
 	'NO_TOPIC_SELECTED'				=> 'Морате изабрати бар једну тему да бисте извршили овај поступак.',
+	'NO_TOPICS_DELETED'				=> 'Нема обрисаних тема.',
 	'NO_TOPICS_QUEUE'				=> 'Нема тема на чекању за одобрење.',
 
 	'ONLY_TOPIC'			=> 'Само тема “%s”',
 	'OTHER_USERS'			=> 'Остали корисници који пишу са ове IP адресе',
 
+	'QUICKMOD_ACTION_NOT_ALLOWED' => "%s није дозвољено као quickmod",
+
 	'PM_REPORT_CLOSED_SUCCESS'	=> 'Одабрана ПП пријава је успешно затворена.',
 	'PM_REPORT_DELETED_SUCCESS'	=> 'Одабрана ПП пријава је успешно обрисана.',
 	'PM_REPORTED_SUCCESS'		=> 'Ова приватна порука је успешно пријављена.',
-	'PM_REPORT_TOTAL'			=> 'Укупно има <strong>1</strong> ПП пријава за преглед.',
 	'PM_REPORTS_CLOSED_SUCCESS'	=> 'Одабране ПП пријаве су успешно затворене.',
 	'PM_REPORTS_DELETED_SUCCESS'=> 'Одабране ПП пријаве су успешно обрисане.',
-	'PM_REPORTS_TOTAL'			=> 'Укупно има <strong>%d</strong> ПП пријава за преглед.',
-	'PM_REPORTS_ZERO_TOTAL'		=> 'Нема ПП пријава за преглед.',
+	'PM_REPORTS_TOTAL'			=> array(
+		0	=> 'Нема ПП пријава за преглед.',
+		1	=> 'Укупно има <strong>1</strong> ПП пријава за преглед.',
+		2	=> 'Укупно има <strong>%d</strong> ПП пријава за преглед.',
+	),
 	'PM_REPORT_DETAILS'			=> 'Појединости пријаве приватне поруке',
 	'POSTER'					=> 'Пошиљалац',
 	'POSTS_APPROVED_SUCCESS'	=> 'Одабране поруке су одобрене.',
@@ -263,15 +277,17 @@ $lang = array_merge($lang, array(
 	'POSTS_DISAPPROVED_SUCCESS'	=> 'Одабране поруке су неодобрене.',
 	'POSTS_LOCKED_SUCCESS'		=> 'Одабране поруке су успешно закључане.',
 	'POSTS_MERGED_SUCCESS'		=> 'Одабране поруке су спојене.',
-	'POSTS_UNLOCKED_SUCCESS'	=> 'Одабране поруке су успешно откључане.',
 	'POSTS_PER_PAGE'			=> 'Порука по страници',
 	'POSTS_PER_PAGE_EXPLAIN'	=> '(Поставите на 0 за преглед свих порука.)',
+	'POSTS_RESTORED_SUCCESS'	=> 'Одабране поруке су успешно враћене.',
+	'POSTS_UNLOCKED_SUCCESS'	=> 'Одабране поруке су успешно откључане.',
 	'POST_APPROVED_SUCCESS'		=> 'Одабрана порука је одобрена.',
 	'POST_DELETED_SUCCESS'		=> 'Одабрана порука је успешно уклоњена из базе.',
 	'POST_DISAPPROVED_SUCCESS'	=> 'Одабрана порука је неодобрена.',
 	'POST_LOCKED_SUCCESS'		=> 'Порука је успешно закључана.',
 	'POST_NOT_EXIST'			=> 'Порука коју сте тражили не постоји.',
 	'POST_REPORTED_SUCCESS'		=> 'Ова порука је успешно пријављена.',
+	'POST_RESTORED_SUCCESS'		=> 'Ова порука је успешно враћена.',
 	'POST_UNLOCKED_SUCCESS'		=> 'Порука је успешно откључана.',
 
 	'READ_USERNOTES'			=> 'Белешке корисника',
@@ -282,8 +298,11 @@ $lang = array_merge($lang, array(
 	'REPORTED_ON_DATE'			=> 'послата',
 	'REPORTS_CLOSED_SUCCESS'	=> 'Одабране пријаве су успешно затворене.',
 	'REPORTS_DELETED_SUCCESS'	=> 'Одабране пријаве су успешно обрисане.',
-	'REPORTS_TOTAL'				=> 'Укупно има <strong>%d</strong> пријава за преглед.',
-	'REPORTS_ZERO_TOTAL'		=> 'Нема пријава за преглед.',
+	'REPORTS_TOTAL'				=> array(
+		0	=> 'Нема пријава за преглед.',
+		1	=> 'Укупно има <strong>1</strong> пријава за преглед.',
+		2	=> 'Укупно има <strong>%d</strong> пријава за преглед.',
+	),
 	'REPORT_CLOSED'				=> 'Ова пријава је већ затворена.',
 	'REPORT_CLOSED_SUCCESS'		=> 'Одабрана пријава је успешно затворена.',
 	'REPORT_DELETED_SUCCESS'	=> 'Одабрана пријава је успешно обрисана.',
@@ -295,8 +314,16 @@ $lang = array_merge($lang, array(
 	'REPORT_POST_EXPLAIN'		=> 'Користите овај образац да пријавите изабрану поруку уредницима и администраторима форума. Пријављивање би уопштено требало да буде коришћено само уколико порука крши правила форума.',
 	'REPORT_REASON'				=> 'Разлог пријаве',
 	'REPORT_TIME'				=> 'Време пријаве',
-	'REPORT_TOTAL'				=> 'Укупно има <strong>1</strong> пријава за преглед.',
-	'RESYNC'					=> 'Ресинхронизуј',
+	'RESTORE'					=> 'Врати',
+	'RESTORE_POST'				=> 'Врати поруку',
+	'RESTORE_POST_CONFIRM'		=> 'Да ли сигурно желите да вратите ову поруку?',
+	'RESTORE_POSTS'				=> 'Врати поруке',
+	'RESTORE_POSTS_CONFIRM'		=> 'Да ли сигурно желите да вратите одабране поруке?',
+	'RESTORE_TOPIC'				=> 'Врати тему',
+	'RESTORE_TOPIC_CONFIRM'		=> 'Да ли сигурно желите да вратите ову тему?',
+	'RESTORE_TOPICS'			=> 'Врати теме',
+	'RESTORE_TOPICS_CONFIRM'	=> 'Да ли сигурно желите да вратите одабране теме?',
+	'RESYNC'					=> 'Поново усклади',
 	'RETURN_MESSAGE'			=> '%sПовратак на поруку%s',
 	'RETURN_NEW_FORUM'			=> '%sИди на нови форум%s',
 	'RETURN_NEW_TOPIC'			=> '%sИди на нову тему%s',
@@ -318,13 +345,13 @@ $lang = array_merge($lang, array(
 	'SORT_DATE'							=> 'Датум',
 	'SORT_IP'							=> 'IP адресе',
 	'SORT_WARNINGS'						=> 'Опомене',
-	'SPLIT_AFTER'						=> 'Раздвој тему од изабране поруке па надаље',
+	'SPLIT_AFTER'						=> 'Раздвоји тему од изабране поруке па надаље',
 	'SPLIT_FORUM'						=> 'Форум за нову тему',
-	'SPLIT_POSTS'						=> 'Раздвој изабране поруке',
+	'SPLIT_POSTS'						=> 'Раздвоји изабране поруке',
 	'SPLIT_SUBJECT'						=> 'Наслов нове теме',
-	'SPLIT_TOPIC_ALL'					=> 'Раздвој тему од изабраних порука',
+	'SPLIT_TOPIC_ALL'					=> 'Раздвоји тему од изабраних порука',
 	'SPLIT_TOPIC_ALL_CONFIRM'			=> 'Да ли сигурно желите да раздвојите ову тему?',
-	'SPLIT_TOPIC_BEYOND'				=> 'Раздвој тему код изабране поруке',
+	'SPLIT_TOPIC_BEYOND'				=> 'Раздвоји тему код изабране поруке',
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> 'Да ли сигурно желите да раздвојите ову тему код изабране поруке?',
 	'SPLIT_TOPIC_EXPLAIN'				=> 'Користећи образац испод можете раздвојити тему на две, било одабиром порука појединачно било раздвајањем код изабране поруке.',
 
@@ -333,29 +360,33 @@ $lang = array_merge($lang, array(
 	'TOPICS_APPROVED_SUCCESS'	=> 'Одабране теме су одобрене.',
 	'TOPICS_DELETED_SUCCESS'	=> 'Одабране теме су успешно уклоњене из базе.',
 	'TOPICS_DISAPPROVED_SUCCESS'=> 'Одабране теме су неодобрене.',
-	'TOPICS_FORKED_SUCCESS'		=> 'Одабране теме су успешно копиране.',
+	'TOPICS_FORKED_SUCCESS'		=> 'Одабране теме су успешно умножене.',
 	'TOPICS_LOCKED_SUCCESS'		=> 'Одабране теме су закључане.',
-	'TOPICS_MOVED_SUCCESS'		=> 'Одабране теме су успешно померене.',
+	'TOPICS_MOVED_SUCCESS'		=> 'Одабране теме су успешно премештене.',
+	'TOPICS_RESTORED_SUCCESS'	=> 'Одабране теме су успешно враћене.',
 	'TOPICS_RESYNC_SUCCESS'		=> 'Одабране теме су поново усклађене.',
 	'TOPICS_TYPE_CHANGED'		=> 'Типови тема су успешно промењени.',
 	'TOPICS_UNLOCKED_SUCCESS'	=> 'Одабране теме су откључане.',
 	'TOPIC_APPROVED_SUCCESS'	=> 'Одабрана тема је одобрена.',
 	'TOPIC_DELETED_SUCCESS'		=> 'Одабрана тема је успешно уклоњена из базе.',
 	'TOPIC_DISAPPROVED_SUCCESS'	=> 'Одабрана тема је неодобрена.',
-	'TOPIC_FORKED_SUCCESS'		=> 'Одабрана тема је успешно копирана.',
+	'TOPIC_FORKED_SUCCESS'		=> 'Одабрана тема је успешно умножена.',
 	'TOPIC_LOCKED_SUCCESS'		=> 'Одабрана тема је закључана.',
-	'TOPIC_MOVED_SUCCESS'		=> 'Одабрана тема је успешно померена.',
+	'TOPIC_MOVED_SUCCESS'		=> 'Одабрана тема је успешно премештена.',
 	'TOPIC_NOT_EXIST'			=> 'Тема коју сте изабрали не постоји.',
-	'TOPIC_RESYNC_SUCCESS'		=> 'Одабрана тема је ресинхронизована.',
+	'TOPIC_RESTORED_SUCCESS'	=> 'Одабрана тема је успешно враћена.',
+	'TOPIC_RESYNC_SUCCESS'		=> 'Одабрана тема је поново усклађена.',
 	'TOPIC_SPLIT_SUCCESS'		=> 'Одабрана тема је успешно раздвојена.',
 	'TOPIC_TIME'				=> 'Време теме',
 	'TOPIC_TYPE_CHANGED'		=> 'Тип теме је успешно промењен.',
 	'TOPIC_UNLOCKED_SUCCESS'	=> 'Одабрана тема је откључана.',
 	'TOTAL_WARNINGS'			=> 'Укупно Опомена',
 
-	'UNAPPROVED_POSTS_TOTAL'		=> 'Укупно има <strong>%d</strong> порука које чекају на одобрење.',
-	'UNAPPROVED_POSTS_ZERO_TOTAL'	=> 'Нема порука које чекају на одобрење.',
-	'UNAPPROVED_POST_TOTAL'			=> 'Укупно има <strong>1</strong> порука која чека на одобрење.',
+	'UNAPPROVED_POSTS_TOTAL'		=> array(
+		0	=> 'Нема порука које чекају на одобрење.',
+		1	=> 'Укупно има <strong>1</strong> порука која чека на одобрење.',
+		2	=> 'Укупно има <strong>%d</strong> порука које чекају на одобрење.',
+	),
 	'UNLOCK'						=> 'Откључај',
 	'UNLOCK_POST'					=> 'Откључај поруку',
 	'UNLOCK_POST_EXPLAIN'			=> 'Дозволи учитавање',
@@ -381,7 +412,7 @@ $lang = array_merge($lang, array(
 	'WARNING_PM_BODY'		=> 'Следи опомена која вам је додељена од администратора или уредника ове веб странице.[quote]%s[/quote]',
 	'WARNING_PM_SUBJECT'	=> 'Додељена опомена форума',
 	'WARNING_POST_DEFAULT'	=> 'Ово је опомена због следеће поруке коју сте послали: %s .',
-	'WARNINGS_ZERO_TOTAL'	=> 'Нема опомена.',
+	'NO_WARNINGS'	=> 'Нема опомена.',
 
 	'YOU_SELECTED_TOPIC'	=> 'Изабрали сте тему број %d: %s.',
 
@@ -397,8 +428,6 @@ $lang = array_merge($lang, array(
 			'SPAM'		=> 'Пријављена порука има само сврху да рекламира неку веб страницу или неки производ.',
 			'OFF_TOPIC'	=> 'Пријављена порука је о промашеној теми.',
 			'OTHER'		=> 'Пријављена порука се не уклапа ни у једну другу категорију, молимо вас да користите поље за више података.',
-		)
+		),
 	),
 ));
-
-?>

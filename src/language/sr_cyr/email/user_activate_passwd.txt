@@ -1,4 +1,4 @@
-Subject: Aktivacija nove lozinke
+Subject: Активација нове лозинке
 
 Поздрав {USERNAME}
 

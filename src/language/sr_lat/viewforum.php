@@ -1,18 +1,28 @@
 <?php
-/** 
+/**
 *
-* viewforum [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: viewforum.php,v 1.14 2006/11/19 20:08:15 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -42,7 +52,6 @@ $lang = array_merge($lang, array(
 	'LOGIN_NOTIFY_FORUM'	=> 'Obavešteni ste ovom forumu, molimo vas da se prijavite da bi ga pogledali.',
 
 	'MARK_TOPICS_READ'		=> 'Obeleži teme kao pročitane',
-	'MOVED_TOPIC'			=> 'Pomerena tema',
 
 	'NEW_POSTS_HOT'			=> 'Novi postovi [ Popularni ]',
 	'NEW_POSTS_LOCKED'		=> 'Novi postovi [ Zaključani ]',
@@ -60,8 +69,8 @@ $lang = array_merge($lang, array(
 	'UNREAD_POSTS_LOCKED'	=> 'Nepročitani postovi [ Zaključani ]',
 
 	'VIEW_FORUM'			=> 'Pogledaj forum',
-	'VIEW_FORUM_TOPIC'		=> '1 tema',
-	'VIEW_FORUM_TOPICS'		=> '%d tema',
+	'VIEW_FORUM_TOPICS'		=> array(
+		1	=> '%d tema',
+		2	=> '%d tema',
+	),
 ));
-
-?>

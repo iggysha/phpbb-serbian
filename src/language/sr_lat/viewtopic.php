@@ -1,18 +1,27 @@
 <?php
-/** 
+/**
 *
-* viewtopic [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: viewtopic.php,v 1.14 2006/09/24 00:28:32 shs Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -33,6 +42,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ATTACHMENT'						=> 'Prikačeni fajl',
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Prikačeni fajlovi su isključeni',
+	'APPROVE'							=> 'Odobri',
 
 	'BOOKMARK_ADDED'		=> 'Uspešno ste dodali belešku za temu.',
 	'BOOKMARK_ERR'			=> 'Obeležavanje teme nije uspelo. Molimo pokušajte ponovo.',
@@ -43,13 +53,17 @@ $lang = array_merge($lang, array(
 	'BUMP_TOPIC'			=> 'Bump topic',
 
 	'CODE'					=> 'Kod',
-	'COLLAPSE_QR'    => 'Sakrij Brzi odgovor',
+
 
 	'DELETE_TOPIC'			=> 'Obriši temu',
+	'DELETED_INFORMATION'	=> 'Obrisao %1$s u %2$s',
 	'DOWNLOAD_NOTICE'		=> 'Nemate potrebne dozvole da pogledate prikačene fajlove u ovom postu.',
+	'DISAPPROVE'			=> 'Ne odobravaj',
 
-	'EDITED_TIMES_TOTAL'	=> 'Poslednji put menjao %1$s dana %2$s, izmenjena %3$d puta',
-	'EDITED_TIME_TOTAL'		=> 'Poslednji put menjao %1$s dana %2$s, izmenjena samo jedanput',
+	'EDITED_TIMES_TOTAL'	=> array(
+		1	=> 'Poslednja izmena od %2$s u %3$s, izmenjeno %1$d put ukupno.',
+		2	=> 'Poslednja izmena od %2$s u %3$s, izmenjeno %1$d puta ukupno.',
+	),
 	'EMAIL_TOPIC'			=> 'Pošalji temu prijatelju email-om',
 	'ERROR_NO_ATTACHMENT'	=> 'Izabrani prikačeni fajl više ne postoji',
 
@@ -65,8 +79,11 @@ $lang = array_merge($lang, array(
 	'MAKE_GLOBAL'				=> 'Promeni u globalnu',
 	'MAKE_NORMAL'				=> 'Promeni u standardnu temu',
 	'MAKE_STICKY'				=> 'Promeni u lepljivu',
-	'MAX_OPTIONS_SELECT'		=> 'Možete izabrati najviše <strong>%d</strong> opcija',
-	'MAX_OPTION_SELECT'			=> 'Možete izabrati najviše <strong>1</strong> opciju',
+	'MAX_OPTIONS_SELECT'		=> array(
+		1	=> 'Možete izabrati <strong>%d</strong> opciju',
+		2	=> 'Možete izabrati do <strong>%d</strong> opcije',
+	),
+	
 	'MISSING_INLINE_ATTACHMENT'	=> 'Prikačeni fajl <strong>%s</strong> više nije dostupan',
 	'MOVE_TOPIC'				=> 'Pomeri temu',
 
@@ -81,6 +98,10 @@ $lang = array_merge($lang, array(
 	'POLL_RUN_TILL'			=> 'Glasanje traje do %s',
 	'POLL_VOTED_OPTION'		=> 'Glasali ste za ovu opciju',
 	'PRINT_TOPIC'			=> 'Pogled za štampu',
+	'POST_DELETED_RESTORE'	=> 'Povrati obrisani post',
+	
+	'RESTORE'				=> 'Povrati',
+	'RESTORE_TOPIC'			=> 'Povrati temu',
 
 	'QUICK_MOD'				=> 'Brzi alati',
 	'QUICKREPLY'     =>  'Brzi odgovor',
@@ -90,9 +111,9 @@ $lang = array_merge($lang, array(
 	'RETURN_POST'			=> '%sVrati se na post%s',
 
 	'SUBMIT_VOTE'			=> 'Glasaj',
-	'SHOW_QR'        =>  'Prikaži brzi odgovor',
 
 	'TOTAL_VOTES'			=> 'Ukupno glasova',
+	'TOPIC_TOOLS'			=>	'Alatke teme',
 
 	'UNLOCK_TOPIC'			=> 'Otključaj temu',
 
@@ -100,14 +121,13 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_TOPIC'		=> 'Sledeća tema',
 	'VIEW_PREVIOUS_TOPIC'	=> 'Prethodna tema',
 	'VIEW_RESULTS'			=> 'Pogledaj rezultate',
-	'VIEW_TOPIC_POST'		=> '1 Post',
-	'VIEW_TOPIC_POSTS'		=> '%d Posta',
+	'VIEW_TOPIC_POSTS'		=> array(
+
+		1	=> '%d post',
+		2	=> '%d postova',
+	),
 	'VIEW_UNREAD_POST'		=> 'Prvi nepročitan post',
-	'VISIT_WEBSITE'			=> 'WWW',
 	'VOTE_SUBMITTED'		=> 'Vaš glas je prihvaćen',
 	'VOTE_CONVERTED'		=> 'Menjanje glasova nije moguće za izmenjena glasanja.',
 
-	'WROTE'					=> 'je napisao',
 ));
-
-?>

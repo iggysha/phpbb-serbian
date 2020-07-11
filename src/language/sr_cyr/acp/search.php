@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* acp_search [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -52,15 +53,38 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Брисање индекса је у току',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Позадина претраге тренутно брише свој индекс. Ово може узети неколико минута.',
 
-	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'MySQL fulltext позадина може бити коришћена само са верзијом MySQL4 или јачом.',
+	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'MySQL fulltext позадина може бити коришћена само са верзијом MySQL4 или јачом.',
 	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext индекси могу бити коришћени само са MyISAM или InnoDB табелама. MySQL 5.6.4 или новији је неопходан за fulltext индексе на InnoDB табелама.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Укупан број индексираних порука',
-	'FULLTEXT_MYSQL_MBSTRING'				=> 'Подршка за не-латинске UTF-8 знакове користећи mbstring:',
-	'FULLTEXT_MYSQL_PCRE'					=> 'Подршка за не-латинске UTF-8 знакове користећи PCRE:',
-	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Уколико PCRE не садржи својства уникод знакова, позадина претраге ће покушати да користи mbstring уобичајени израз.',
-	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Ова позадина претраге захтева PCRE својства уникод знакова, доступна само у PHP 4.4, 5.1 и јачим, уколико желите да претражујете не-латинске знакове.',
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Речи са бар оволико знакова ће бити индексиране за претрагу. Ви или ваш провајдер можете променити ову поставку само мењањем mysql конфигурације.',
 	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Речи са не више од оволико знакова ће бити индексиране за претрагу. Ви или ваш провајдер можете променити ову поставку само мењањем mysql конфигурације.',
+
+	'FULLTEXT_POSTGRES_INCOMPATIBLE_DATABASE'	=> 'PostgreSQL пуни текст позадина може бити коришћена само са PostgreSQL.',
+	'FULLTEXT_POSTGRES_TOTAL_POSTS'			=> 'Укупан број индексираних порука',
+	'FULLTEXT_POSTGRES_VERSION_CHECK'		=> 'PostgreSQL верзија',
+	'FULLTEXT_POSTGRES_TS_NAME'				=> 'Претрага текста Конфигурациони Профил:',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN'			=> 'Најмања дужина речи за кључне речи',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN'			=> 'Највећа дужина речи за кључне речи',
+	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'		=> 'Ова позадина претраге захтева PostgreSQL 8.3 верзију или новију.',
+	'FULLTEXT_POSTGRES_TS_NAME_EXPLAIN'				=> 'Конфигурациони профил Текст претраге коришћен за одређивање прослеђивача и речника.',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN_EXPLAIN'			=> 'Речи са бар оволико знакова ће бити укључене у упит за базу.',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN_EXPLAIN'			=> 'Речи са не више од оволико знакова ће бити укључене у упит за базу.',
+
+	'FULLTEXT_SPHINX_CONFIGURE'				=> 'Подесите следеће поставке за прављење sphinx конфиг датотеке',
+	'FULLTEXT_SPHINX_DATA_PATH'				=> 'Путања до фасцикле са подацима',
+	'FULLTEXT_SPHINX_DATA_PATH_EXPLAIN'		=> 'Биће коришћена за похрањивање индекса и датотека записа. Требало би да ову фасциклу направите ван веб приступачних фасцикли. (требало би да има пратећу косу црту)',
+	'FULLTEXT_SPHINX_DELTA_POSTS'			=> 'Број порука у често ажурираном делта индексу',
+	'FULLTEXT_SPHINX_HOST'					=> 'Домаћин духа sphinx претраге',
+	'FULLTEXT_SPHINX_HOST_EXPLAIN'			=> 'Домаћин на коме дух sphinx претраге (searchd) ослушкује. Оставите празно да бисте користили подразумевани localhost',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT'		=> 'Ограничење меморије индексера',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT_EXPLAIN'	=> 'Овај број треба стално да буде мањи од RAM меморије доступне на вашој машини. Уколико искусите повремене сметње у раду то може бити због тога што индексер користи превише ресурса. Може бити од помоћи да снизите количину меморије доступне индексеру.',
+	'FULLTEXT_SPHINX_MAIN_POSTS'			=> 'Број порука у главном индексу',
+	'FULLTEXT_SPHINX_PORT'					=> 'Порт духа sphinx претраге',
+	'FULLTEXT_SPHINX_PORT_EXPLAIN'			=> 'Порт на коме дух sphinx претраге (searchd) ослушкује. Оставите празно да бисте користили подразумевани Sphinx API port 9312',
+	'FULLTEXT_SPHINX_WRONG_DATABASE'		=> 'Sphinx претрага за phpBB подржава MySQL и PostgreSQL само.',
+	'FULLTEXT_SPHINX_CONFIG_FILE'			=> 'Sphinx конфиг датотека',
+	'FULLTEXT_SPHINX_CONFIG_FILE_EXPLAIN'	=> 'Изведени садржај sphinx конфиг датотеке. Ови подаци треба да буду налепљени у sphinx.conf који се користи од духа sphinx претраге. Замените [dbuser] и [dbpassword] држаче са одговарајућим подацима ваше базе.',
+	'FULLTEXT_SPHINX_NO_CONFIG_DATA'		=> 'Путања фасцикле sphinx података није одређена. Молимо одредите путању и пошаљите како би се направила конфиг датотека.',
 
 	'GENERAL_SEARCH_SETTINGS'				=> 'Опште поставке претраге',
 	'GO_TO_SEARCH_INDEX'					=> 'Иди на почетну страницу претраге',
@@ -85,8 +109,15 @@ $lang = array_merge($lang, array(
 
 	'SEARCH_GUEST_INTERVAL'					=> 'Интервал поплаве претраге за госта',
 	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> 'Број секунди које гост мора да сачека између претрага. Уколико један гост претражује сви остали морају да чекају док временски интервал не прође.',
-	'SEARCH_INDEX_CREATE_REDIRECT'			=> 'Све поруке до поруке id %1$d су сада индексиране, од чега је %2$d порука било у овом кораку.<br />Тренутни износ индексирања је приближно %3$.1f порука по секунди.<br />Индексирање је у току…',
-	'SEARCH_INDEX_DELETE_REDIRECT'			=> 'Све поруке до поруке id %1$d су уклоњене из индекса претраге.<br />Брисање је у току…',
+	'SEARCH_INDEX_CREATE_REDIRECT'			=> array(
+		2	=> 'Све поруке до поруке id %2$d су сада индексиране, од чега је %1$d порука било у овом кораку.<br />',
+	),
+	'SEARCH_INDEX_CREATE_REDIRECT_RATE'		=> array(
+		2	=> 'Тренутни износ индексирања је приближно %1$.1f порука по секунди.<br />Индексирање је у току…',
+	),
+	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
+		2	=> 'Све поруке до поруке id %2$d су уклоњене из индекса претраге.<br />Брисање је у току…',
+	),
 	'SEARCH_INDEX_CREATED'					=> 'Успешно су индексиране све поруке у бази форума.',
 	'SEARCH_INDEX_REMOVED'					=> 'Успешно је обрисан индекс претраге за ову позадину.',
 	'SEARCH_INTERVAL'						=> 'Интервал поплаве претраге за корисника',
@@ -94,7 +125,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_STORE_RESULTS'					=> 'Дужина кеша резултата претраге',
 	'SEARCH_STORE_RESULTS_EXPLAIN'			=> 'Кеширани резултати претраге ће истећи после овог времена, у секундама. Подесите на 0 уколико желите да онемогућите кеширање претраге.',
 	'SEARCH_TYPE'							=> 'Позадина претраге',
-	'SEARCH_TYPE_EXPLAIN'					=> 'phpBB вам омогућава да изаберете позадину која се користи за претрагу текста у садржају поруке. По задатом претрага користи phpBB fulltext претрагу.',
+	'SEARCH_TYPE_EXPLAIN'					=> 'phpBB вам омогућава да изаберете позадину која се користи за претрагу текста у садржају поруке. По подразумеваном претрага користи phpBB fulltext претрагу.',
 	'SWITCHED_SEARCH_BACKEND'				=> 'Променили сте позадину претраге. Како бисте користили нову позадину претраге требало би да проверите да ли постоји направљен индекс за позадину коју сте изабрали.',
 
 	'TOTAL_WORDS'							=> 'Укупан број индексираних речи',
@@ -105,5 +136,3 @@ $lang = array_merge($lang, array(
 	'YES_SEARCH_UPDATE'						=> 'Омогући fulltext ажурирање',
 	'YES_SEARCH_UPDATE_EXPLAIN'				=> 'Ажурирање индекса fulltext када се шаљу поруке, поништава се уколико је претрага онемогућена.',
 ));
-
-?>

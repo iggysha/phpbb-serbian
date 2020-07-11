@@ -1,18 +1,28 @@
 <?php
 /**
 *
-* acp_users [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: users.php,v 1.29 2007/06/18 15:12:14 kellanved Exp $
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+
+
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -48,6 +58,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Ne možete da forsirate reaktivaciju vašeg naloga.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Ne možete da uklonite korisnički nalog gosta.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Ne možete da uklonite vaš nalog.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'Ne možete ukloniti naloge osnivača.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Ne možete da proglasite ignorisane korisnike da budu osnivači.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Morate da aktivirate korisnike pre nego što ih proglasite za osnivače, samo aktivni korisnici mogu biti promovisani.',
 	'CONFIRM_EMAIL_EXPLAIN'			=> 'Ovo samo odrešujete ukoliko menjate korisničku email adresu.',
@@ -134,5 +145,3 @@ $lang = array_merge($lang, array(
 	'USER_TOOLS'					=> 'Osnovni alati',
 	'USER_WARNING_LOG_DELETED' =>  'Nema dostupnih informacija. Moguće je da je zapis u logu izbrisan.',
 ));
-
-?>

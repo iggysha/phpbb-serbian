@@ -16,7 +16,7 @@ ili pošaljite poštom na:
 Dozvola za pristup forumu “{SITENAME}”
 
 Korisničko ime: {USERNAME}
-Šifra: {PASSWORD}
+
 Email: {EMAIL_ADDRESS}
 
 UPOZNAT SAM SA INFORMACIJOM KOJU MI JE DETE DALO I ODOBRAVAM FORUMU “{SITENAME}” DA SAČUVA OVE INFORMACIJE. 

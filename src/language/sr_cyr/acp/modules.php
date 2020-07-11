@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* acp_modules [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -41,7 +42,7 @@ $lang = array_merge($lang, array(
 	'ADD_MODULE_CONFIRM'			=> 'Да ли сигурно желите да додате изабрани модул са изабраним модом?',
 	'ADD_MODULE_TITLE'				=> 'Додај модул',
 
-	'CANNOT_REMOVE_MODULE'	=> 'Модул не може да се уклони, има додељене подмодуле. Молимо вас да уклоните или померите све подмодуле пре извођења овог поступка.',
+	'CANNOT_REMOVE_MODULE'	=> 'Модул не може да се уклони, има додељене подмодуле. Молимо вас да уклоните или преместите све подмодуле пре извођења овог поступка.',
 	'CATEGORY'				=> 'Категорија',
 	'CHOOSE_MODE'			=> 'Изаберите мод модула',
 	'CHOOSE_MODE_EXPLAIN'	=> 'Изаберите мод модула који се користи.',
@@ -56,7 +57,7 @@ $lang = array_merge($lang, array(
 	'EDIT_MODULE'			=> 'Учитај модул',
 	'EDIT_MODULE_EXPLAIN'	=> 'Овде можете да унесете посебне поставке модула.',
 
-	'HIDDEN_MODULE'			=> 'Сакривен модул',
+	'HIDDEN_MODULE'			=> 'Скривен модул',
 
 	'MODULE'					=> 'Модул',
 	'MODULE_ADDED'				=> 'Модул је успешно додат.',
@@ -66,10 +67,10 @@ $lang = array_merge($lang, array(
 	'MODULE_EDITED'				=> 'Модул је успешно учитан.',
 	'MODULE_ENABLED'			=> 'Модул је омогућен',
 	'MODULE_LANGNAME'			=> 'Име језика модула',
-	'MODULE_LANGNAME_EXPLAIN'	=> 'Унесите приказно име модула. Користите језичку непроменљиву уколико се име прослеђује из језичке датотеке.',
+	'MODULE_LANGNAME_EXPLAIN'	=> 'Унесите приказано име модула. Користите језичку непроменљиву уколико се име прослеђује из језичке датотеке.',
 	'MODULE_TYPE'				=> 'Тип модула',
 
-	'NO_CATEGORY_TO_MODULE'	=> 'Не могу да пребацим категорију у модул. Молимо вас да уклоните/померите све подмодуле пре извођења овог поступка.',
+	'NO_CATEGORY_TO_MODULE'	=> 'Не могу да пребацим категорију у модул. Молимо вас да уклоните/преместите све подмодуле пре извођења овог поступка.',
 	'NO_MODULE'				=> 'Нема пронађених модула.',
 	'NO_MODULE_ID'			=> 'Није изабран id модула.',
 	'NO_MODULE_LANGNAME'	=> 'Нема изабраног језичког имена модула.',
@@ -80,5 +81,3 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MODULE'			=> 'Изаберите модул',
 ));
-
-?>

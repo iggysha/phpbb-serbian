@@ -1,4 +1,4 @@
-Subject: Reaktivirajte vas nalog
+Subject: Реактивирајте ваш налог
 
 Поздрав {USERNAME},
 

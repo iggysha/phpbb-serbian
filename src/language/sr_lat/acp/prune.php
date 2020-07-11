@@ -1,18 +1,29 @@
 <?php
-/** 
+/**
 *
-* acp_prune [Serbian]
+* This file is part of the phpBB Forum Software package.
+
 *
-* @package language
-* @version $Id: prune.php,v 1.8 2006/11/20 17:37:54 dhn2 Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+
+
+
+
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -33,6 +44,8 @@ if (empty($lang) || !is_array($lang))
 // User pruning
 $lang = array_merge($lang, array(
 	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Ovde možete brisati (ili deaktivirati) korisnike sa vašeg boarda. Ovo može biti učinjeno na više načina; po brojaču postova, poslednjoj aktivnosti, itd. Svaki od ovih kriterijuma se može kombinovati, npr. možete izbaciti korisnike koji su zadnji put bili aktivni pre 2002-01-01 sa manje od 10 postova. Alternativno možete uneti listu korisnika direktno u polju ispod, svaki uneti kriterijum biće ignorisan. Budite oprezni sa ovim! Kada jednom obrišete korisnika nema povratka.',
+	
+	'CRITERIA'				=> 'Kriterijum',
 
 	'DEACTIVATE_DELETE'			=> 'Deaktiviraj ili obriši',
 	'DEACTIVATE_DELETE_EXPLAIN'	=> 'Izaberite da li želite da deaktivirate korisnike ili ih kompletno obrišete, znajte da nema povratka!',
@@ -44,6 +57,9 @@ $lang = array_merge($lang, array(
 
 	'LAST_ACTIVE_EXPLAIN'		=> 'Unesite datum u <kbd>GGGG-MM-DD</kbd> formatu.',
 
+	'POSTS_ON_QUEUE'			=> 'Postovi koji čekaju odobrenje',
+	'PRUNE_USERS_GROUP_EXPLAIN'	=> 'Ograničenje na korisnike unutar izabrane grupe.',
+	'PRUNE_USERS_GROUP_NONE'	=> 'Sve grupe',
 	'PRUNE_USERS_LIST'				=> 'Korisnici koji će biti obrisani',
 	'PRUNE_USERS_LIST_DELETE'		=> 'Sa izabranim kriterijumom za brisanje korisnika, sledeći nalozi će biti obrisani.',
 	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'Sa izabranim kriterijumom za brisanje korisnika, sledeći nalozi će biti deaktivirani.',
@@ -82,5 +98,3 @@ $lang = array_merge($lang, array(
 
 	'TOPICS_PRUNED'		=> 'Sažete teme',
 ));
-
-?>

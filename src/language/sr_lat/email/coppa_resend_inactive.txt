@@ -9,14 +9,13 @@ Molimo vas da odštampate ovu poruku i date je roditelju ili staratelju da je po
 {FAX_INFO}
 
 ili pošaljite poštom na:
-
 {MAIL_INFO}
 
 ------------------------------ ISECITE OVDE ------------------------------
 Dozvola za pristup forumu “{SITENAME}”
 
 Korisničko ime: {USERNAME}
-Šifra: {PASSWORD}
+
 Email: {EMAIL_ADDRESS}
 
 UPOZNAT SAM SA INFORMACIJOM KOJU MI JE DETE DALO I ODOBRAVAM FORUMU “{SITENAME}” DA SAČUVA OVE INFORMACIJE. 

@@ -1,18 +1,27 @@
 <?php
-/** 
+/**
 *
-* acp_permissions [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: permissions.php,v 1.18 2006/10/08 11:25:20 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -48,7 +57,7 @@ $lang = array_merge($lang, array(
 	
 		<br />
 
-		<p>Za dalje informacije o podešavanju i upravljanu dozvolama na vašem phpBB3 forumu, pogledajte <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">odeljak 1.5 našeg uputstva za brz početak</a>.</p>
+		<p>Za dalje informacije o podešavanju i upravljanu dozvolama na vašem phpBB3 forumu, pogledajte <a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/permissions/">Setting Permission odeljak našeg uputstva za brz početak</a>.</p>
 	',
 
 	'ACL_NEVER'				=> 'Nikada',
@@ -124,7 +133,6 @@ $lang = array_merge($lang, array(
 
 	'GROUPS_NOT_ASSIGNED'		=> 'Nema grupa kojima je dodeljeno ovo pravilo',
 
-	'LOOK_UP_FORUMS_EXPLAIN'	=> 'Mođete izabrati više od jednog foruma',
 	'LOOK_UP_GROUP'				=> 'Potraži korisničku grupu',
 	'LOOK_UP_USER'				=> 'Potraži korisnika',
 
@@ -279,5 +287,3 @@ $lang = array_merge($lang, array(
 	'WRONG_PERMISSION_TYPE'	=> 'Izabran pogrešan tip dozvole.',
 	'WRONG_PERMISSION_SETTING_FORMAT'  	=> 'Podešavanja dezvola su u pogrešnom formatu, phpBB ne može da ih ispravno protumači.',
 ));
-
-?>

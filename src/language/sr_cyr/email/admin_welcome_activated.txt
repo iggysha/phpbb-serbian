@@ -1,4 +1,4 @@
-Subject: Vas nalog je aktiviran
+Subject: Ваш налог је активиран
 
 Поздрав {USERNAME},
 

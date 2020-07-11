@@ -1,18 +1,24 @@
 <?php
-/** 
+/**
 *
-* acp_language [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: language.php,v 1.8 2006/10/08 11:25:20 acydburn Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -34,22 +40,12 @@ $lang = array_merge($lang, array(
 	'ACP_FILES'						=> 'Admin jezički fajlovi',
 	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Ovde možete da instalirate/uklonite jezičke pakete',
 
-	'EMAIL_FILES'			=> 'Email šabloni',
-
-	'FILE_CONTENTS'				=> 'Sadržaji fajla',
-	'FILE_FROM_STORAGE'			=> 'Fajl iz direktorijuma',
-
-	'HELP_FILES'				=> 'Pomoćni fajlovi',
-
+	'DELETE_LANGUAGE_CONFIRM'		=> 'Da li ste sigurni da želite da obrišete “%s”?',
+	
+	
 	'INSTALLED_LANGUAGE_PACKS'	=> 'Instalirani jezički paketi',
-	'INVALID_LANGUAGE_PACK'		=> 'Izabran jezički paket nije ispravan. Molimo vas da proverite jezički paket i ponovo ga postavite na server ako je potrebno.',
-	'INVALID_UPLOAD_METHOD'		=> 'Izabrani metod za upload nije validan, molimo vas da izaberete drugačiji metod.',
-
+	
 	'LANGUAGE_DETAILS_UPDATED'			=> 'Detlji jezika su uspešno ažurirani.',
-	'LANGUAGE_ENTRIES'					=> 'Jezički unosi',
-	'LANGUAGE_ENTRIES_EXPLAIN'			=> 'Ovde mođete izmeniti postojeći jezički paket ili onaj koji još uvek nije preveden.<br /><strong>Obaveštenje:</strong> Kada jednom izmenite jezički paket, izmene će biti sačuvane u posebnom direktorijumu koji možete download-ovati. Vaši korisnici neće videti izmene sve dok ne zamenite originalni jezički fajl (tako što ćete ih upload-ovati).',
-	'LANGUAGE_FILES'					=> 'Jezički fajlovi',
-	'LANGUAGE_KEY'						=> 'Jezički ključ',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Ovaj jezički paket je već instaliran.',
 	'LANGUAGE_PACK_CPF_UPDATE'			=> 'Proizvoljna polja za profil su kopirana iz podrazmevanog jezika. Molimo vas da ih promenite ukoliko je potrebno.',
 	'LANGUAGE_PACK_DELETED'				=> '<strong>%s</strong> jezički paket je uspešno uklonjen. Svi korisnici koji su koristilo ovaj jezik su resetovani i postavljen im je podrazumevani jezik board-a.',
@@ -66,33 +62,19 @@ $lang = array_merge($lang, array(
 	'LANG_ISO_CODE'						=> 'ISO Kod',
 	'LANG_LOCAL_NAME'					=> 'Lokalni naziv',
 
-	'MISSING_LANGUAGE_FILE'		=> 'Nedostaje jezički fajl: <strong style="color:red">%s</strong>',
+	'MISSING_LANG_FILES'		=> 'Nedostaju jezički fajlovi',
 	'MISSING_LANG_VARIABLES'	=> 'Nedostaju jezičke promenljive',
-	'MODS_FILES'				=> 'MODovi jezičkih fajlova',
-
+	
 	'NO_FILE_SELECTED'				=> 'Niste izabrali jezički fajl.',
 	'NO_LANG_ID'					=> 'Niste izabrali jezički paket.',
 	'NO_REMOVE_DEFAULT_LANG'		=> 'Ne možete ukloniti podrazumevani jezički paket.<br />Ako želite da uklonite ovaj jezički paket, prvo promenite podrazumevani jezik board-a.',
 	'NO_UNINSTALLED_LANGUAGE_PACKS'	=> 'Nema uklonjenih jezičkih paketa',
 
-	'REMOVE_FROM_STORAGE_FOLDER'		=> 'Ukloni iz direktorijuma za smeštanje',
-
-	'SELECT_DOWNLOAD_FORMAT'	=> 'Izaberite format za download',
-	'SUBMIT_AND_DOWNLOAD'		=> 'Potvrdi i preuzmi fajl',
-	'SUBMIT_AND_UPLOAD'			=> 'Potvrdi i pošalji fajl',
-
+	
 	'THOSE_MISSING_LANG_FILES'			=> 'Sledeći jezički fajlovi nedostaju u %s jezičkom direktorijumu',
 	'THOSE_MISSING_LANG_VARIABLES'		=> 'Sledeće promenljive jezičkih fajlova nedostaju u <strong>%s</strong> jezičkom paketom',
 
+
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'uklonjeni jezički fajlovi',
 
-	'UNABLE_TO_WRITE_FILE'		=> 'Fajl ne može da se upiše u %s.',
-	'UPLOAD_COMPLETED'			=> 'Slanje je uspešno izvršrno.',
-	'UPLOAD_FAILED'				=> 'Slanje fajla nije uspelo iz nepoznatih razloga. Možda ćete morati da zamenite ekvivalentne fajlove ručno.',
-	'UPLOAD_METHOD'				=> 'Metod slanja',
-	'UPLOAD_SETTINGS'			=> 'Podešavanje slanja',
-
-	'WRONG_LANGUAGE_FILE'		=> 'Izabrani jezički fajl je neispravan.',
-));
-
-?>
+	));

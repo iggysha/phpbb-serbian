@@ -60,5 +60,3 @@ $lang = array_merge($lang, array(
 	'QA_ERROR_MSG'				=> 'Popunite sva polja i unesite najmanje jedan odgovor.',
 	'QA_LAST_QUESTION'			=> 'Ne možete obrisati sva pitanja dok je ovaj plugin aktivan.',
 ));
-
-?>

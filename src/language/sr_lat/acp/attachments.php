@@ -1,18 +1,27 @@
 <?php
-/** 
+/**
 *
-* acp_attachments [Serbian]
+
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: attachments.php,v 1.15 2006/10/29 09:08:36 dhn2 Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+
+
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
 /**
 * DO NOT CHANGE
 */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -31,12 +40,16 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+
+
 	'ACP_ATTACHMENT_SETTINGS_EXPLAIN'	=> 'Ovde možete podešavati glavne opcije prikačenih fajlova i dodatne specijalne kategorije.',
 	'ACP_EXTENSION_GROUPS_EXPLAIN'		=> 'Ovde možete dodavati, brisati, menjati i onemogućiti proširene grupe. Dalje opcije uključuju dodeljivanje specijalnih kategorija grupama, menjanje moda za download i definisanje ikonica za upload koja će biti prikazana ispred prikačenog fajla koji pripada toj grupi.',
 	'ACP_MANAGE_EXTENSIONS_EXPLAIN'		=> 'Ovde možete menjati vaše dozvoljene ekstenzije. Da bi aktivirali svoju ekstenziju, molimo vas da idete na panel Menadžment grupa ekstenzija. Strogo preporučujemo da ne dozvolite ekstenzije sa skriptama (kao što su <code>php</code>, <code>php3</code>, <code>php4</code>, <code>phtml</code>, <code>pl</code>, <code>cgi</code>, <code>py</code>, <code>rb</code>, <code>asp</code>, <code>aspx</code>, i tako dalje)',
+	
 	'ACP_ORPHAN_ATTACHMENTS_EXPLAIN'	=> 'Ovde možete videti fajlove u direktorijumu za upload prikačenih fajlova ali ne i fajlove prikačene za postove. Ovo se uglavnom dešava ako korisnik prikači fajl ali ne pošalje post. U mogućnosti ste da brišete fajlove ili ih prikačite na postojeće postove. Da bi prikačili fajl na post, morate imati validan ID posta, koji morate sami da utvrdite, mada je ova opcija uglavnom za one ljude koji žele da pošalju fajlove nekim drugim programom i da dodele (uglavnom velike) fajlove na postojeći post.',
 	'ADD_EXTENSION'						=> 'Dodaj ekstenziju',
 	'ADD_EXTENSION_GROUP'				=> 'Dodaj grupu ekstenzija',
+	
 	'ADMIN_UPLOAD_ERROR'				=> 'Greške u toku pokušaja da se prikači fajl: %s',
 	'ALLOWED_FORUMS'					=> 'Dozvoljeni forumi',
 	'ALLOWED_FORUMS_EXPLAIN'			=> 'Omogućuje da postavite dodeljene ekstenzije na izabran (ili na sve ako su izabrani) forume',
@@ -57,6 +70,7 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Maksimano prostora na hard disku za prikačene fajlove u privatnim porukama, 0 je neograničeno.',
 	'ATTACH_ORPHAN_URL'					=> 'Nepovezani fajlovi',
 	'ATTACH_POST_ID'					=> 'ID posta',
+	'ATTACH_POST_TYPE'					=> 'Tip posta',
 	'ATTACH_QUOTA'						=> 'Ukupna kvota za prikačene fajlove',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Maksimano prostora na hard disku za sve prikačene fajlove, 0 je neograničeno.',
 	'ATTACH_TO_POST'					=> 'Prikači fajl za post',
@@ -75,8 +89,6 @@ $lang = array_merge($lang, array(
 	'DEFINE_ALLOWED_IPS'			=> 'Definiši dozvoljene IP adrese/hostove',
 	'DEFINE_DISALLOWED_IPS'			=> 'Definiši zabranjene IP adrese/hostove',
 	'DOWNLOAD_ADD_IPS_EXPLAIN'		=> 'Da definišete nekoliko različitih IP adresa ili hostova unesite svaki od njih u novi red. Za definisanje opsega IP adresa razdvojite početne i krajnje adrese sa crticom (-), za džokere koristite zvezdicu (*)',
-	'DOWNLOAD_MODE'					=> 'Tip download-a',
-	'DOWNLOAD_MODE_EXPLAIN'			=> 'Ako imate problema dok download-ujete fajlove, postavite vrednost na Fizički, i korisnik će biti upućen na fajl. Nemojte postavljati vrednost na Fizički ako vam stvarno nije potrebno, jer otkriva ime fajla.',
 	'DOWNLOAD_REMOVE_IPS_EXPLAIN'	=> 'Možete isključiti (ili ponovo uključiti) više IP adresa odjednom koristeći odgovarajuću kombinaciju miša i tastature. Isključene IP adrese imaju plavu pozadinu.',
 	'DISPLAY_INLINED'				=> 'Prikaži slike direktno',
 	'DISPLAY_INLINED_EXPLAIN'		=> 'Ako je podešeno na Ne, prikačene slike će biti prikazane kao link.',
@@ -103,6 +115,9 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Medij',
 	'EXT_GROUP_REAL_MEDIA'			=> 'Real Medij',
 	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Medij',
+	
+	'FILES_GONE'			=> 'Neki od prikačenih fajlova koje ste izabrali za brisanje ne postoji. Oni us verovatno već obrisani. Prikačeni fajlovi koji su postojali su obrisani.',
+	'FILES_STATS_WRONG'		=> 'Statistika faših fajlova je verovatno netačna i trebalo bi je sinhronizovati. Trenutne vrednosti: broj prikačenih fajlova = %1$d, ukupna veličina prikaženih fajlova = %2$s.<br />Kliknite %3$sovde%4$s za ponovnu sinhronizaciju.',
 
 	'GO_TO_EXTENSIONS'		=> 'Idi na panel za menadžment ekstenzija',
 	'GROUP_NAME'			=> 'Ime grupe',
@@ -127,6 +142,7 @@ $lang = array_merge($lang, array(
 	'NOT_ALLOWED_IN_PM'			=> 'Nije dozvoljeno u privatnim porukama',
 	'NOT_ALLOWED_IN_PM_POST'	=> 'Nije dozvoljeno',
 	'NOT_ASSIGNED'				=> 'Nije dodeljeno',
+	'NO_ATTACHMENTS'			=> 'Nema nađenih prikačenih fajlova za ovaj period.',
 	'NO_EXT_GROUP'				=> 'Nijedna',
 	'NO_EXT_GROUP_NAME'			=> 'Nije uneto ime grupe',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Nije izabrana ekstenziona grupa.',
@@ -142,6 +158,7 @@ $lang = array_merge($lang, array(
 
 	'REMOVE_ALLOWED_IPS'		=> 'Ukloni ili ponovo uključi dozvoljene IP adese/hostove',
 	'REMOVE_DISALLOWED_IPS'		=> 'Ukloni ili ponovo uključi zabranjene IP adese/hostove',
+	'RESYNC_FILES_STATS_CONFIRM'	=> 'Da li ste sigurni da želite da resihronizujete statistiku fajlova?',
 
 	'SEARCH_IMAGICK'				=> 'Potraži Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Lista Dozvola/Zabrana',
@@ -159,6 +176,7 @@ $lang = array_merge($lang, array(
 	'SUCCESS_EXTENSION_GROUP_ADD'	=> 'Grupa ekstenzija je uspešno dodata',
 	'SUCCESS_EXTENSION_GROUP_EDIT'	=> 'Grupa ekstenzija je uspešno ažurirana',
 
+
 	'UPLOADING_FILES'				=> 'Upload fajlova',
 	'UPLOADING_FILE_TO'				=> 'Upload fajla %1$s na post broj %2$d',
 	'UPLOAD_DENIED_FORUM'			=> 'Nemate dozvolu da upload-ujete fajlove na forum %s',
@@ -167,5 +185,3 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICON'					=> 'Upload ikonica',
 	'UPLOAD_NOT_DIR'				=> 'Lokacija za upload koju ste odredili nije direktorijum.',
 ));
-
-?>

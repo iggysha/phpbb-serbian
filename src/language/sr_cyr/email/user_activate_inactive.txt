@@ -1,4 +1,4 @@
-Subject: Vas nalog je deaktiviran
+Subject: Ваш налог је деактивиран
 
 Поздрав {USERNAME},
 

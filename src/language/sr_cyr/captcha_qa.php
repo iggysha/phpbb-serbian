@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* captcha_qa [Serbian]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id$
-* @copyright (c) 2009 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -47,7 +48,7 @@ $lang = array_merge($lang, array(
 	'ANSWER'					=> 'Одговор',
 	'EDIT_QUESTION'				=> 'Учитај Питање',
 	'QUESTIONS'					=> 'Питања',
-	'QUESTIONS_EXPLAIN'			=> 'За свако попуњавање образаца где сте омогућили Q&amp;A прикључак, корисници ће бити питани једно од питања назначених овде. За коришћење овог прикључка бар једно питање мора бити постављено у задатом језику. Ова питања би требало да буду лака за вашу циљну групу да одговори but beyond the ability of a bot capable of running a Google™ search. Коришћење великог и редовно мењаног комплета питања ће постићи најбоље резултате. Омогућите стриктну поставку уколико ваше питање указује на мешовита велика и мала слова, знакове интерпункције или празан простор.',
+	'QUESTIONS_EXPLAIN'			=> 'За свако попуњавање образаца где сте омогућили Q&amp;A прикључак, корисници ће бити питани једно од питања назначених овде. За коришћење овог прикључка бар једно питање мора бити постављено у подразумеваном језику. Ова питања би требало да буду лака за вашу циљну групу да одговори али ван домашаја ботова који могу да врше Google™ претраге. Коришћење великог и редовно мењаног комплета питања ће постићи најбоље резултате. Омогућите стриктну поставку уколико ваше питање указује на мешовита велика и мала слова, знакове интерпункције или празан простор.',
 	'QUESTION_DELETED'			=> 'Питање обрисано',
 	'QUESTION_LANG'				=> 'Језик',
 	'QUESTION_LANG_EXPLAIN'		=> 'Језик на којем су ова питања и њихови одговори написани.',
@@ -61,5 +62,3 @@ $lang = array_merge($lang, array(
 	'QA_LAST_QUESTION'			=> 'Не можете да обришете сва питања док је прикључак активан.',
 
 ));
-
-?>
