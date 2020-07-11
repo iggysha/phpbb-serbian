@@ -81,6 +81,7 @@ $lang = array_merge($lang, array(
 	'STYLE_UNINSTALL_DEPENDENT'	=> 'Стил "%s" не може бити деинсталиран јер има један или више деце стилова.',
 	'STYLE_UNINSTALLED'			=> 'Стил "%s" је успешно деинсталиран.',
 	'STYLE_USED_BY'				=> 'Коришћено од (укључујући роботе)',
+	'STYLE_VERSION'				=> 'Style version',
 
 	'UNINSTALL_DEFAULT'		=> 'Не можете да деинсталирате подразумевани стил.',
 

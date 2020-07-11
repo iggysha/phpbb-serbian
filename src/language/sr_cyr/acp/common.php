@@ -373,7 +373,7 @@ $lang = array_merge($lang, array(
 	'NUMBER_USERS'		=> 'Број корисника',
 	'NUMBER_ORPHAN'		=> 'Неповезани прилози',
 
-	'PHP_VERSION_OLD'	=> 'Издање PHP на овом серверу више неће бити подржано од будућих издања phpBB. %sПојединости%s',
+	'PHP_VERSION_OLD'	=> 'Издање PHP на овом серверу (%1$s) више неће бити подржано од будућих издања phpBB. Најмања неопходно издање ће бити PHP %2$s. %3$sПојединости%4$s',
 
 	'POSTS_PER_DAY'		=> 'Порука дневно',
 
@@ -417,11 +417,14 @@ $lang = array_merge($lang, array(
 	'UPLOAD_DIR_SIZE'	=> 'Величина послатих прилога',
 	'USERS_PER_DAY'		=> 'Корисника дневно',
 
-	'VALUE'						=> 'Вредност',
-	'VERSIONCHECK_FAIL'			=> 'Неуспешно добијање података о најновијем издању.',
-	'VERSIONCHECK_FORCE_UPDATE'	=> 'Поновна-Провера издања',
-	'VIEW_ADMIN_LOG'			=> 'Преглед записа администратора',
-	'VIEW_INACTIVE_USERS'		=> 'Преглед неактивних корисника',
+	'VALUE'							=> 'Вредност',
+	'VERSIONCHECK_FAIL'				=> 'Неуспешно добијање података о најновијем издању.',
+	'VERSIONCHECK_FORCE_UPDATE'		=> 'Поновна-Провера издања',
+	'VERSIONCHECK_INVALID_ENTRY'	=> 'Latest version information contains an unsupported entry.',
+	'VERSIONCHECK_INVALID_URL'		=> 'Latest version information contains invalid URL.',
+	'VERSIONCHECK_INVALID_VERSION'	=> 'Latest version information contains an invalid version.',
+	'VIEW_ADMIN_LOG'				=> 'Преглед записа администратора',
+	'VIEW_INACTIVE_USERS'			=> 'Преглед неактивних корисника',
 
 	'WELCOME_PHPBB'			=> 'Добро дошли на phpBB',
 	'WRITABLE_CONFIG'		=> 'Ваша конфигурациона датотека (config.php) је тренутно уписљива од-света. Веома вас подстичемо да промените дозволе у 640 или бар у 644 (на пример: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">chmod</a> 640 config.php).',

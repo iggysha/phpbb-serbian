@@ -100,6 +100,7 @@ $lang = array_merge($lang, array(
 	'AVATAR_DRIVER_UPLOAD_TITLE'	=> 'Додати грб',
 	'AVATAR_DRIVER_UPLOAD_EXPLAIN'	=> 'Додајте ваш властити грб на сајт.',
 	'AVATAR_EXPLAIN'				=> 'Највеће димензије; ширина: %1$s, висина: %2$s, величина датотеке: %3$.2f KiB.',
+	'AVATAR_EXPLAIN_NO_FILESIZE'	=> 'Највеће димензије; ширина: %1$s, висина: %2$s.',
 	'AVATAR_FEATURES_DISABLED'		=> 'Функција грбова је тренутно онемогућена.',
 	'AVATAR_GALLERY'				=> 'Месна галерија',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'Не могу да додам грб за %s.',

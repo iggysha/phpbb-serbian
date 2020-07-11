@@ -574,6 +574,7 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> 'Ажурирам податке',
 	'UPDATING_TO_LATEST_STABLE'		=> 'Надограђујем базу у најновије стабилно издање',
 	'UPDATED_VERSION'				=> 'Ажурирано издање',
+	'UPGRADE_INSTRUCTIONS'			=> 'Ново издање <strong>%1$s</strong> је доступно. Молимо прочитајте <a href="%2$s" title="%2$s"><strong>Обавештење о издању</strong></a> како бисте научили шта се муди, и како да надоградите.',
 	'UPLOAD_METHOD'					=> 'Начин додавања',
 
 	'UPDATE_DB_SUCCESS'				=> 'Ажурирање базе је било успешно.',

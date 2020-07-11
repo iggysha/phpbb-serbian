@@ -336,6 +336,7 @@ $lang = array_merge($lang, array(
 	'INTERESTS'					=> 'Занимања',
 	'INVALID_DIGEST_CHALLENGE'	=> 'Invalid digest challenge.',
 	'INVALID_EMAIL_LOG'			=> '<strong>%s</strong> вероватно неисправна мејл адреса?',
+	'INVALID_FEED_ATTACHMENTS'	=> 'Одабрани феед је покушао да прибави прилоге са неисправним constraints.',
 	'INVALID_PLURAL_RULE'		=> 'Изабрани plural rule је неисправан. Ваљане вредности су цели бројеви између 0 и 15.',
 	'IP'						=> 'IP',
 	'IP_BLACKLISTED'			=> 'Ваш IP %1$s је блокиран јер се налази на црној листи. За појединости молимо погледајте <a href="%2$s">%2$s</a>.',

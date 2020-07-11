@@ -55,6 +55,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_DISABLE_EXTENSION'			=> 'Онемогућава назначену екстензију.',
 	'CLI_DESCRIPTION_ENABLE_EXTENSION'			=> 'Омогућава назначену екстензију.',
 	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Проналази миграције од којих не зависи горе.',
+	'CLI_DESCRIPTION_FIX_LEFT_RIGHT_IDS'		=> 'Поправља структуру распореда форума и модула.',
 	'CLI_DESCRIPTION_GET_CONFIG'				=> 'Добија вредност конфигурационе поставке',
 	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Повећава вредност конфигурационе интегралне поставке',
 	'CLI_DESCRIPTION_LIST_EXTENSIONS'			=> 'Приказује списак свих екстензија у бази и систему датотека.',
@@ -64,6 +65,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_RECALCULATE_EMAIL_HASH'	=> 'Прерачунава user_email_hash колону users табеле.',
 	'CLI_DESCRIPTION_SET_ATOMIC_CONFIG'			=> 'Подешава вредност конфигурационе поставке само уколико се стара поклапа са тренутном вредности',
 	'CLI_DESCRIPTION_SET_CONFIG'				=> 'Подешава вредност конфигурационе поставке',
+	'CLI_DESCRIPTION_UPDATE_HASH_BCRYPT'		=> 'Ажурира застареле hashes лозинки како би били hashed са bcrypt.',
 
 	'CLI_EXTENSION_DISABLE_FAILURE'		=> 'Не могу онемогућити екстензију %s',
 	'CLI_EXTENSION_DISABLE_SUCCESS'		=> 'Успешно онемогућена екстензија %s',
@@ -77,7 +79,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_DISABLED'			=> 'Онемогућено',
 	'CLI_EXTENSIONS_ENABLED'			=> 'Омогућено',
 
+	'CLI_FIXUP_FIX_LEFT_RIGHT_IDS_SUCCESS'		=> 'Успешно поправљена структура распореда форума и модула.',
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Успешно прерачунате све email hashes.',
+	'CLI_FIXUP_UPDATE_HASH_BCRYPT_SUCCESS'		=> 'Успешно ажурирани застарели hashes лозинки у bcrypt.'
 ));
 
 // Additional help for commands.
