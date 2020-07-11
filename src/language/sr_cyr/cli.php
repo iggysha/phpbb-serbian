@@ -54,9 +54,9 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_DELETE_CONFIG'				=> 'Брише поставку конфигурације',
 	'CLI_DESCRIPTION_DISABLE_EXTENSION'			=> 'Онемогућава назначену екстензију.',
 	'CLI_DESCRIPTION_ENABLE_EXTENSION'			=> 'Омогућава назначену екстензију.',
-	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Проналази миграције од којих не зависи.',
+	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Проналази миграције од којих не зависи горе.',
 	'CLI_DESCRIPTION_GET_CONFIG'				=> 'Добија вредност конфигурационе поставке',
-	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Повећава вредност конфигурационе поставке',
+	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Повећава вредност конфигурационе интегралне поставке',
 	'CLI_DESCRIPTION_LIST_EXTENSIONS'			=> 'Приказује списак свих екстензија у бази и систему датотека.',
 	'CLI_DESCRIPTION_OPTION_SAFE_MODE'			=> 'Ради у Safe Mode (без екстензија).',
 	'CLI_DESCRIPTION_OPTION_SHELL'				=> 'Launch the shell.',
@@ -78,4 +78,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_ENABLED'			=> 'Омогућено',
 
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Успешно прерачунате све email hashes.',
+));
+
+// Additional help for commands.
+$lang = array_merge($lang, array(
+	'CLI_HELP_CRON_RUN'			=> $lang['CLI_DESCRIPTION_CRON_RUN'] . ' Необавезно можете назначити назив крон задатка за извршавање само назначеног крон задатка.',
 ));

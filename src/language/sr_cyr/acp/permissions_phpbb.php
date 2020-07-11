@@ -155,9 +155,10 @@ $lang = array_merge($lang, array(
 	'ACL_M_SPLIT'	=> 'Може да раздвоји теме',
 	'ACL_M_MERGE'	=> 'Може да споји теме',
 
-	'ACL_M_INFO'	=> 'Може видети појединости поруке',
-	'ACL_M_WARN'	=> 'Може давати опомене<br /><em>Ова поставка је додељена само уопште. Није основана на форумима.</em>', // This moderator setting is only global (and not local)
-	'ACL_M_BAN'		=> 'Може управљати забранама<br /><em>Ова поставка је додељена само уопште. Није основана на форумима.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_INFO'		=> 'Може видети појединости поруке',
+	'ACL_M_WARN'		=> 'Може давати опомене<br /><em>Ова поставка је додељена само уопште. Није основана на форумима.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_PM_REPORT'	=> 'Може затварати и брисати пријаве приватних порука<br /><em>Ова поставка је додељена само уопште. Није основана на форумима.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_BAN'			=> 'Може управљати забранама<br /><em>Ова поставка је додељена само уопште. Није основана на форумима.</em>', // This moderator setting is only global (and not local)
 ));
 
 // Admin Permissions

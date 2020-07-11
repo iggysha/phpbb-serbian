@@ -339,7 +339,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TYPE_QUOTE'							=> 'Неко вас је цитирао у поруци',
 	'NOTIFICATION_TYPE_REPORT'							=> 'Неко је пријавио поруку',
 	'NOTIFICATION_TYPE_TOPIC'							=> 'Неко је послао нову тему у форум који пратите',
-	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> 'Новорегистрованом кориснику треба активација',
+	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> 'Кориснику треба активација',
 
 	'NOTIFY_METHOD'					=> 'Начин обавештавања',
 	'NOTIFY_METHOD_BOTH'			=> 'Оба',

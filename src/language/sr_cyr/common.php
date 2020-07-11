@@ -329,6 +329,7 @@ $lang = array_merge($lang, array(
 	'IMAGE_FILETYPE_INVALID'	=> 'Тип датотеке слике %d за mimetype %s није подржан.',
 	'IMAGE_FILETYPE_MISMATCH'	=> 'Тип датотеке слике се не слаже: очекивана екстензија је %1$s а дата је %2$s.',
 	'IN'						=> 'у',
+	'INACTIVE'					=> 'Неактиван',
 	'INDEX'						=> 'Почетна страница',
 	'INFORMATION'				=> 'Подаци',
 	'INSECURE_REDIRECT'			=> 'Покушано је преусмеравање на могуће небезбедну url.',
@@ -467,7 +468,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TOPIC_DISAPPROVED'	=> '<strong>Тема није одобрена</strong>:',
 	'NOTIFICATION_TOPIC_IN_QUEUE'		=> '<strong>Захтев за одобрење</strong> теме од %1$s:',
 	'NOTIFICATION_TYPE_NOT_EXIST'		=> 'Тип обавештења "%s" недостаје у систему датотека.',
-	'NOTIFICATION_ADMIN_ACTIVATE_USER'	=> '<strong>Потребна активација</strong> за новорегистрованог корисника: “%1$s”',
+	'NOTIFICATION_ADMIN_ACTIVATE_USER'	=> '<strong>Потребна активација</strong> за деактивираног или новорегистрованог корисника: “%1$s”',
 	// Used in conjuction with NOTIFICATION_BOOKMARK and NOTIFICATION_POST.
 	'NOTIFICATION_MANY_OTHERS'			=> 'осталих',
 	'NOTIFICATION_X_OTHERS'				=> array(
