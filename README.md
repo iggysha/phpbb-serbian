@@ -10,8 +10,8 @@ Build translation:
 
     ./build.py
 
-Translation source is in `/src` and it is Cyrilic only. Latin is built by simply
-transcribing Cyrilic to Latin script.
+Translation source is in `/src` and it is Cyrillic only. Latin is built by simply
+transcribing Cyrillic to Latin script.
 
 Make sure translations pass the validator:
 

@@ -7,7 +7,7 @@ import shutil
 SRC_DIR = "./src"
 DST_DIR = "./build"
 
-""" Serbian cyrilic script.
+""" Serbian Cyrillic script.
     DO NOT change the order of characters.
 """
 SR_CYR = (
@@ -28,13 +28,13 @@ SR_LAT = (
 )
 
 def cyr_to_lat(text):
-    """ Transliterate Serbian cyrilic srcipt to latin, character for character.
+    """ Transliterate Serbian Cyrillic srcipt to latin, character for character.
     """
     return ''.join([c if c not in SR_CYR else SR_LAT[SR_CYR.index(c)] for c in text])
 
 class Builder(object):
     """ Serbian translation builder for phpBB.
-        1. build sr-lat from sr-cyr by transposing cyrilic to latin script
+        1. build sr-lat from sr-cyr by transliterating Cyrillic to Latin script
     """
 
     def __init__(self):
