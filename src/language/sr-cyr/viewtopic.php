@@ -59,6 +59,7 @@ $lang = array_merge($lang, array(
 	'EDITED_TIMES_TOTAL'	=> array(
 		1	=> 'Последње учитавање од %2$s дана %3$s, учитано %1$d пут укупно.',
 		2	=> 'Последње учитавање од %2$s дана %3$s, учитано %1$d пута укупно.',
+		3	=> 'Последње учитавање од %2$s дана %3$s, учитано %1$d пута укупно.',
 	),
 	'EMAIL_TOPIC'			=> 'Тему на мејл',
 	'ERROR_NO_ATTACHMENT'	=> 'Одабрани прилог више не постоји.',
@@ -76,8 +77,9 @@ $lang = array_merge($lang, array(
 	'MAKE_NORMAL'				=> 'Промени у “Обичну Тему”',
 	'MAKE_STICKY'				=> 'Промени у “Лепљиву”',
 	'MAX_OPTIONS_SELECT'		=> array(
-		1	=> 'Можете изабрати <strong>%d</strong> понуду',
-		2	=> 'Можете изабрати највише <strong>%d</strong> понуда',
+		1	=> 'Можете изабрати највише <strong>%d</strong> понуду',
+		2	=> 'Можете изабрати највише <strong>%d</strong> понуде',
+		3	=> 'Можете изабрати највише <strong>%d</strong> понуда',
 	),
 	'MISSING_INLINE_ATTACHMENT'	=> 'Прилог <strong>%s</strong> више није доступан',
 	'MOVE_TOPIC'				=> 'Премести тему',
@@ -118,7 +120,8 @@ $lang = array_merge($lang, array(
 	'VIEW_RESULTS'			=> 'Преглед исхода',
 	'VIEW_TOPIC_POSTS'		=> array(
 		1	=> '%d порука',
-		2	=> '%d порука',
+		2	=> '%d поруке',
+		3	=> '%d порука',
 	),
 	'VIEW_UNREAD_POST'		=> 'Прва непрочитана порука',
 	'VOTE_SUBMITTED'		=> 'Ваш глас је прихваћен.',

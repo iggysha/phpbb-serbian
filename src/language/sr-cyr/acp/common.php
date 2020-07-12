@@ -818,7 +818,8 @@ $lang = array_merge($lang, array(
 	'LOG_WARNING_DELETED'		=> '<strong>Обрисана опомена корисника</strong><br />» %s',
 	'LOG_WARNINGS_DELETED'		=> array(
 		1 => '<strong>Обрисана опомена корисника</strong><br />» %1$s',
-		2 => '<strong>Обрисане %2$d опомене корисника</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+		2 => '<strong>Обрисане %2$d опомене корисника</strong><br />» %1$s',
+		3 => '<strong>Обрисано %2$d опомена корисника</strong><br />» %1$s',
 	),
 	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Обрисане све опомене корисника</strong><br />» %s',
 

@@ -41,7 +41,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> '<a href="https://www.superizradasajta.com" target="_blank">izrada sajtova</a>',
+	'TRANSLATION_INFO'	=> 'forum.astrolog.rs',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d.m.Y|',	// 01 Jan 2007 (with Relative days enabled)
 	'DATETIME_FORMAT'	=> '|d M Y, H:i|',	// 01 Jan 2007, 13:37 (with Relative days enabled)
@@ -137,6 +137,7 @@ $lang = array_merge($lang, array(
 	'BROWSING_FORUM_GUESTS'	=> array(
 		1	=> 'Корисника прегледа овај форум: %2$s и %1$d гост',
 		2	=> 'Корисника прегледа овај форум: %2$s и %1$d госта',
+		3	=> 'Корисника прегледа овај форум: %2$s и %1$d гостију',
 	),
 	'BUTTON_DELETE'         => 'Обриши',
 	'BUTTON_EDIT'			=> 'Учитај',
@@ -163,7 +164,8 @@ $lang = array_merge($lang, array(
 	'CHANGING_PROFILE'		=> 'Промена поставки профила',
 	'CHARACTERS'			=> array(
 		1	=> '%d знак',
-		2	=> '%d знакова',
+		2	=> '%d знака',
+		3	=> '%d знакова',
 	),
 	'COLLAPSE_VIEW'			=> 'Сажет преглед',
 	'CLOSE_WINDOW'			=> 'Затвори прозор',
@@ -210,6 +212,7 @@ $lang = array_merge($lang, array(
 		0	=> 'Још није преузето',
 		1	=> 'Преузето %d пут',
 		2	=> 'Преузето %d пута',
+		3	=> 'Преузето %d пута',
 	),
 
 	'EDIT_POST'							=> 'Учитај поруку',
@@ -310,10 +313,12 @@ $lang = array_merge($lang, array(
 	'GUEST_USERS_ONLINE'		=> array(
 		1	=> 'Има %d гост на вези',
 		2	=> 'Има %d госта на вези',
+		3	=> 'Има %d гостију на вези',
 	),
 	'GUEST_USERS_TOTAL'			=> array(
 		1	=> '%d гост',
 		2	=> '%d госта',
+		3	=> '%d гостију',
 	),
 	'G_ADMINISTRATORS'			=> 'Администратори',
 	'G_BOTS'					=> 'Роботи',
@@ -325,11 +330,13 @@ $lang = array_merge($lang, array(
 
 	'HIDDEN_USERS_ONLINE'		=> array(
 		1	=> '%d скривени корисник',
-		2	=> '%d скривених корисника',
+		2	=> '%d скривена корисника',
+		3	=> '%d скривених корисника',
 	),
 	'HIDDEN_USERS_TOTAL'		=> array(
-		1	=> '%d скривених',
-		2	=> '%d скривених',
+		1	=> '%d скривен',
+		2	=> '%d скривена',
+		3	=> '%d скривених',
 	),
 	'HIDE_GUESTS'					=> 'Сакриј госте',
 	'HIDE_ME'						=> 'Сакриј мој статус на вези за ову сесију',
@@ -417,7 +424,8 @@ $lang = array_merge($lang, array(
 	'MESSAGES'				=> 'Поруке',
 	'MESSAGES_COUNT'		=> array(
 		1	=> '%d порука',
-		2	=> '%d порука',
+		2	=> '%d поруке',
+		3	=> '%d порука',
 	),
 	'MESSAGE_BODY'			=> 'Тело поруке',
 	'MINUTES'				=> 'Минута',
@@ -458,6 +466,8 @@ $lang = array_merge($lang, array(
 	// A, B, C and others replied...
 	'NOTIFICATION_BOOKMARK'				=> array(
 		1	=> '<strong>Одговор</strong> од %1$s у забележеној теми:',
+		2	=> '<strong>Одговор</strong> од %1$s у забележеној теми:',
+		3	=> '<strong>Одговор</strong> од %1$s у забележеној теми:',
 	),
 	'NOTIFICATION_FORUM'				=> '<em>Форум:</em> %1$s',
 	'NOTIFICATION_GROUP_REQUEST'		=> '<strong>Захтев</strong> од %1$s за придруживање групи %2$s.',
@@ -466,12 +476,16 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_PM'					=> '<strong>Приватна Порука</strong> од %1$s:',
 	'NOTIFICATION_POST'					=> array(
 		1	=> '<strong>Одговор</strong> од %1$s у теми:',
+		2	=> '<strong>Одговор</strong> од %1$s у теми:',
+		3	=> '<strong>Одговор</strong> од %1$s у теми:',
 	),
 	'NOTIFICATION_POST_APPROVED'		=> '<strong>Порука одобрена</strong>:',
 	'NOTIFICATION_POST_DISAPPROVED'		=> '<strong>Порука није одобрена</strong>:',
 	'NOTIFICATION_POST_IN_QUEUE'		=> '<strong>Захтев за одобрење</strong> поруке од %1$s:',
 	'NOTIFICATION_QUOTE'				=> array(
 		1	=> '<strong>Цитирани</strong> од %1$s у:',
+		2	=> '<strong>Цитирани</strong> од %1$s у:',
+		3	=> '<strong>Цитирани</strong> од %1$s у:',
 	),
 	'NOTIFICATION_REFERENCE'			=> '"%1$s"',
 	'NOTIFICATION_REASON'				=> '<em>Разлог:</em> %1$s.',
@@ -487,7 +501,9 @@ $lang = array_merge($lang, array(
 	// Used in conjuction with NOTIFICATION_BOOKMARK and NOTIFICATION_POST.
 	'NOTIFICATION_MANY_OTHERS'			=> 'осталих',
 	'NOTIFICATION_X_OTHERS'				=> array(
-		2	=> '%d осталих',
+		1	=> '%d остао',
+		2	=> '%d остала',
+		3	=> '%d осталих',
 	),
 	'NOTIFY_ADMIN'				=> 'Молимо вас да обавестите администратора.',
 	'NOTIFY_ADMIN_EMAIL'		=> 'Молимо вас да обавестите администратора: <a href="mailto:%1$s">%1$s</a>',
@@ -538,11 +554,13 @@ $lang = array_merge($lang, array(
 	'NUM_ATTACHMENTS'		=> array(
 		1	=> '%d прилог',
 		2	=> '%d прилога',
+		3	=> '%d прилога',
 	),
 	'NUM_POSTS_IN_QUEUE'		=> array(
-		0			=> 'Нема порука на чекању',		// 0
-		1			=> '1 порука на чекању',		// 1
-		2			=> '%d порука на чекању',		// 2+
+		0			=> 'Нема порука на чекању',
+		1			=> '%d порука на чекању',
+		2			=> '%d поруке на чекању',
+		3			=> '%d порука на чекању',
 	),
 
 	'OCCUPATION'				=> 'Занимање',
@@ -553,11 +571,13 @@ $lang = array_merge($lang, array(
 	'ONLINE_USERS_TOTAL'		=> array(
 		1	=> 'Укупно има <strong>%1$d</strong> корисник на вези :: %2$s и %3$s',
 		2	=> 'Укупно има <strong>%1$d</strong> корисника на вези :: %2$s и %3$s',
+		3	=> 'Укупно има <strong>%1$d</strong> корисника на вези :: %2$s и %3$s',
 	),
 	// "... :: x registered, y hidden and z guests"
 	'ONLINE_USERS_TOTAL_GUESTS'	=> array(
 		1	=> 'Укупно има <strong>%1$d</strong> корисник на вези :: %2$s, %3$s и %4$s',
 		2	=> 'Укупно има <strong>%1$d</strong> корисника на вези :: %2$s, %3$s и %4$s',
+		3	=> 'Укупно има <strong>%1$d</strong> корисника на вези :: %2$s, %3$s и %4$s',
 	),
 	'OPTIONS'					=> 'Избори',
 
@@ -567,8 +587,9 @@ $lang = array_merge($lang, array(
 	'PASSWORD'				=> 'Лозинка',
 	'PIXEL'					=> 'px',
 	'PIXELS'				=> array(
-		1	=> '%d pixel',
-		2	=> '%d pixels',
+		1	=> '%d пиксел',
+		2	=> '%d пиксела',
+		3	=> '%d пиксела',
 	),
 	'PLEASE_WAIT'			=> 'Молимо сачекајте.',
 	'PM'					=> 'ПП',
@@ -631,12 +652,14 @@ $lang = array_merge($lang, array(
 	'REGISTERED_USERS'			=> 'Регистрованих корисника:',
 	// "... and 2 hidden users online"
 	'REG_USERS_ONLINE'			=> array(
-		1	=> 'Има %1$d регистрованих корисника и %2$s на вези',
-		2	=> 'Има %1$d регистрованих корисника и %2$s на вези',
+		1	=> 'Има %1$d регистровани корисник и %2$s на вези',
+		2	=> 'Има %1$d регистрована корисника и %2$s на вези',
+		3	=> 'Има %1$d регистрованих корисника и %2$s на вези',
 	),
 	'REG_USERS_TOTAL'			=> array(
-		1	=> '%d регистрованих',
-		2	=> '%d регистрованих',
+		1	=> '%d регистровани',
+		2	=> '%d регистрована',
+		3	=> '%d регистрованих',
 	),
 	'REMOVE'					=> 'Уклони',
 	'REMOVE_INSTALL'			=> 'Молимо вас да обришете, преместите или преименујете install фасциклу пре него што почнете да користите форум. Ако је ова фасцикла још увек присутна, само ће Админ Контролна Плоча (АКП) бити доступна.',
@@ -785,28 +808,37 @@ $lang = array_merge($lang, array(
 	'TOPIC_UNAPPROVED_FORUM'	=> array(
 		1	=> 'Тема чека одобрење',
 		2	=> 'Теме чекају одобрење',
+		3	=> 'Тема чека одобрење',
 	),
 	'TOPIC_DELETED'		=> 'Ова тема је обрисана.',
 	'TOTAL_ATTACHMENTS'	=> 'Прилог(а)',
 	'TOTAL_LOGS'		=> array(
 		1	=> '%d запис',
 		2	=> '%d записа',
+		3	=> '%d записа',
 	),
 	'TOTAL_PMS'		=> array(
-		1	=> '%d приватних порука укупно',
-		2	=> '%d приватних порука укупно',
+		1	=> '%d приватна порука укупно',
+		2	=> '%d приватне поруке укупно',
+		3	=> '%d приватних порука укупно',
 	),
 	'TOPIC_POLL'		=> 'Ова тема има гласање.',
 	'TOTAL_POSTS'		=> 'Укупно порука',
 	'TOTAL_POSTS_COUNT'	=> array(
-		2	=> 'Укупно порука <strong>%d</strong>',
+		1	=> 'Укупно <strong>%d</strong> порука',
+		2	=> 'Укупно <strong>%d</strong> поруке',
+		3	=> 'Укупно <strong>%d</strong> порука',
 	),
 	'TOPIC_REPORTED'	=> 'Ова тема је пријављена',
 	'TOTAL_TOPICS'		=> array(
-		2	=> 'Укупно тема <strong>%d</strong>',
+		1	=> 'Укупно <strong>%d</strong> тема',
+		2	=> 'Укупно <strong>%d</strong> теме',
+		3	=> 'Укупно <strong>%d</strong> тема',
 	),
 	'TOTAL_USERS'		=> array(
-		2	=> 'Укупно чланова <strong>%d</strong>',
+		1	=> 'Укупно <strong>%d</strong> члан',
+		2	=> 'Укупно <strong>%d</strong> члана',
+		3	=> 'Укупно <strong>%d</strong> чланова',
 	),
 	'TRACKED_PHP_ERROR'	=> 'Праћене PHP грешке: %s',
 	'TWITTER'			=> 'Twitter',
@@ -834,8 +866,9 @@ $lang = array_merge($lang, array(
 	'USER_AVATAR'			=> 'Корисников грб',
 	'USER_CANNOT_READ'		=> 'Не можете читати поруке у овом форуму.',
 	'USER_POSTS'			=> array(
-		1	=> '%d Порука',
-		2	=> '%d Порука',
+		1	=> '%d порука',
+		2	=> '%d поруке',
+		3	=> '%d порука',
 	),
 	'USERS'					=> 'Корисници',
 	'USE_PERMISSIONS'		=> 'Испробавање дозвола корисника',
@@ -848,6 +881,7 @@ $lang = array_merge($lang, array(
 		0	=> 'Још није прегледано',
 		1	=> 'Прегледано %d пут',
 		2	=> 'Прегледано %d пута',
+		3	=> 'Прегледано %d пута',
 	),
 	'VIEWING_CONTACT_ADMIN'		=> 'Прегледа контакт страницу',
 	'VIEWING_FAQ'				=> 'Прегледа ЧПП',
@@ -865,8 +899,9 @@ $lang = array_merge($lang, array(
 	'VIEW_NEWEST_POST'			=> 'Преглед прве непрочитане поруке',
 	'VIEW_NOTES'				=> 'Преглед белешки корисника',
 	'VIEW_ONLINE_TIMES'			=> array(
-		1	=> 'основано на корисницима активним у последњих %d минута',
+		1	=> 'основано на корисницима активним у последњи %d минут',
 		2	=> 'основано на корисницима активним у последњих %d минута',
+		3	=> 'основано на корисницима активним у последњих %d минута',
 	),
 	'VIEW_TOPIC'				=> 'Преглед теме',
 	'VIEW_TOPIC_ANNOUNCEMENT'	=> 'Саопштење: ',
@@ -914,6 +949,7 @@ $lang = array_merge($lang, array(
 			0		=> 'пре мање од минута',
 			1		=> 'пре %d минут',
 			2		=> 'пре %d минута',
+			3		=> 'пре %d минута',
 		),
 
 		'Sunday'	=> 'Недеља',
