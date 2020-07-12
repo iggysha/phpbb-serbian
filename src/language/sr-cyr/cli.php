@@ -78,8 +78,6 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_REPARSER_REPARSE_OPT_RANGE_SIZE'	=> 'Приближан број извештаја за обраду у овом тренутку',
 	'CLI_DESCRIPTION_REPARSER_REPARSE_OPT_RESUME'		=> 'Крени поновну обраду тамо где је последње извршење заустављено',
 
-	'CLI_DESCRIPTION_RECALCULATE_EMAIL_HASH'			=> 'Поновно израчунава user_email_hash колону у табели корисника.',
-
 	'CLI_DESCRIPTION_SET_ATOMIC_CONFIG'					=> 'Поставља конфигурациону вредност поставке само ако се стара поклапа са тренутном вредности',
 	'CLI_DESCRIPTION_SET_CONFIG'						=> 'Поставља конфигурациону вредност поставке',
 
@@ -130,7 +128,6 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_ENABLED'			=> 'Омогућено',
 
 	'CLI_FIXUP_FIX_LEFT_RIGHT_IDS_SUCCESS'		=> 'Успешно поправљена хијерархијска структура форума и модула.',
-	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Успешно прерачунате све email hashes.',
 	'CLI_FIXUP_UPDATE_HASH_BCRYPT_SUCCESS'		=> 'Успешно ажурирани застарели хашеви лозинки са bcrypt.',
 
 	'CLI_MIGRATION_NAME'					=> 'Назив миграције, including the namespace (use forward slashes instead of backslashes to avoid problems).',

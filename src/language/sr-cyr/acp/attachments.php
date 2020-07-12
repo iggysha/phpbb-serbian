@@ -68,7 +68,6 @@ $lang = array_merge($lang, array(
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Највише простора на хард диску доступно за све прилоге на форуму, са 0 постаје неограничено.',
 	'ATTACH_TO_POST'					=> 'Додај датотеку поруци',
 
-	'CAT_FLASH_FILES'			=> 'Flash датотеке',
 	'CAT_IMAGES'				=> 'Слике',
 	'CHECK_CONTENT'				=> 'Провера датотека прилога',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Неки прегледачи могу бити преварени да преузму неисправан mimetype за додате датотеке. Ова поставка обезбеђује да такве датотеке које ово вероватно узрокују буду одбијене.',
@@ -99,7 +98,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_ARCHIVES'			=> 'Архиве',
 	'EXT_GROUP_DOCUMENTS'			=> 'Документи',
 	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Преузимљиве Датотеке',
-	'EXT_GROUP_FLASH_FILES'			=> 'Flash Датотеке',
 	'EXT_GROUP_IMAGES'				=> 'Слике',
 	'EXT_GROUP_PLAIN_TEXT'			=> 'Plain Text',
 

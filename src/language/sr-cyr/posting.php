@@ -281,7 +281,6 @@ $lang = array_merge($lang, array(
 	'TOPIC_BUMPED'				=> 'Тема је успешно погурана.',
 
 	'UNAUTHORISED_BBCODE'		=> 'Не можете користити одређене ББКодове: %s.',
-	'UNGLOBALISE_EXPLAIN'		=> 'Како бисте пребацили ову тему из глобалне у обичну, треба да изаберете форум у којем желите да ова тема буде приказана.',
 	'UNSUPPORTED_CHARACTERS_MESSAGE'	=> 'Ваша порука садржи следеће неподржане знакове:<br />%s',
 	'UNSUPPORTED_CHARACTERS_SUBJECT'	=> 'Ваш наслов садржи следеће неподржане знакове:<br />%s',
 	'UPDATE_COMMENT'			=> 'Ажурирај коментар',
