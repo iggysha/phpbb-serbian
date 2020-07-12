@@ -6,3 +6,6 @@ composer.lock
 # validation prerequisites
 phpbb/
 3.?/
+
+# build directory
+build/
