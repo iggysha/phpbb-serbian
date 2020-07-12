@@ -47,4 +47,6 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Ваш јавни reCaptcha кључ. Кључеви се могу добити на <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'				=> 'Приватни reCaptcha кључ',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Ваш приватни reCaptcha кључ. Кључеви се могу добити на <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
+
+	'RECAPTCHA_INVISIBLE'			=> 'Овај CAPTCHA је заправо невидљив. Да би сте се уверили да заиста функционише проверите да ли у доњем десном углу ове странице постоји CAPTCHA иконица.',
 ));
