@@ -2,7 +2,7 @@
 
 # adjust these variables
 PHPBB_TAG="release-3.3.0"       # CHANGE the tag to checkout for validation HERE
-PHPBB_VERSION="3.3"             # CHANGE the main version of phpBB HERE - 3.0, 3.1 or 3.2
+PHPBB_VERSION="3.3"             # CHANGE the main version of phpBB HERE - 3.0, 3.1, etc.
 PHPBB_LANGUAGE="sr-cyr"         # CHANGE the language iso to validate HERE
 
 # prepare environment
