@@ -27,7 +27,7 @@ You should run this only once.
 ## Source files
 
 Translation source files are in `src/` directory and it is Cyrillic only.
-Latin translation is built automatically by simply transcribing Cyrillic to
+Latin translation is built automatically by simply transliterating Cyrillic to
 Latin script.
 The benefit is having a single source code for both scripts.
 

@@ -28,7 +28,7 @@ SR_LAT = (
 )
 
 def cyr_to_lat(text):
-    """ Transliterate Serbian Cyrillic srcipt to latin, character for character.
+    """ Transliterate Serbian Cyrillic srcipt to Latin, character for character.
     """
     return ''.join([c if c not in SR_CYR else SR_LAT[SR_CYR.index(c)] for c in text])
 
