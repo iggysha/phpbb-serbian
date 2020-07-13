@@ -9,3 +9,7 @@ phpbb/
 
 # build directory
 build/
+
+# please keep IDE files out of the source tree
+.vscode
+.vscode/
