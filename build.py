@@ -28,13 +28,13 @@ SR_LAT = (
 )
 
 def cyr_to_lat(text):
-    """ Transliterate Serbian Cyrillic srcipt to latin, character for character.
+    """ Transliterate Serbian Cyrillic srcipt to Latin, character for character.
     """
     return ''.join([c if c not in SR_CYR else SR_LAT[SR_CYR.index(c)] for c in text])
 
 class Builder(object):
     """ Serbian translation builder for phpBB.
-        1. build sr-Latn from sr-Cyrl by transliterating Cyrillic to Latin script
+        1. build sr-Latn from sr by transliterating Cyrillic to Latin script
     """
 
     def __init__(self):
@@ -48,20 +48,20 @@ class Builder(object):
 
     def _build_iso_txt(self):
 
-        cyr_iso_txt = os.path.join(self.dst, 'language/sr-Cyrl/iso.txt')
+        cyr_iso_txt = os.path.join(self.dst, 'language/sr/iso.txt')
         with open(cyr_iso_txt, mode='w') as f:
-            f.write('Serbian\nСрпски\nforum.astrolog.rs')
+            f.write('Serbian\nСрпски\nhttps://github.com/iggysha/phpbb-serbian')
 
         lat_iso_txt = os.path.join(self.dst, 'language/sr-Latn/iso.txt')
         with open(lat_iso_txt, mode='w') as f:
-            f.write('Serbian\nSrpski\nforum.astrolog.rs')
+            f.write('Serbian\nSrpski\nhttps://github.com/iggysha/phpbb-serbian')
 
     def _update_user_lang(self):
 
         lat_common_php = os.path.join(self.dst, 'language/sr-Latn/common.php')
         with open(lat_common_php, mode='rb') as f:
             content = f.read()
-        content = content.replace('sr-Cyrl'.encode('utf-8'), 'sr-Latn'.encode('utf-8'))
+        content = content.replace("'sr'".encode('utf-8'), "'sr-Latn'".encode('utf-8'))
         with open(lat_common_php, mode='wb') as f:
             f.write(content)
 
@@ -73,11 +73,14 @@ class Builder(object):
 
             relpath = os.path.relpath(directory, self.src)
             dst_cyr_dir = os.path.join(self.dst, relpath)
-            dst_lat_dir = dst_cyr_dir
-            if 'sr-Cyrl' in relpath:
-                tmp = relpath.replace('sr-Cyrl', 'sr-Latn')
-                dst_lat_dir = os.path.join(self.dst, tmp)
-
+            tmp = relpath
+            if relpath.startswith('sr/'):
+                tmp = 'sr-Latn/' + relpath[3:]
+            elif relpath.endswith('/sr'):
+                tmp = relpath[:-3] + '/sr-Latn'
+            elif  '/sr/' in relpath:
+                tmp = relpath.replace('/sr/', '/sr-Latn/')
+            dst_lat_dir = os.path.join(self.dst, tmp)
             if directory != self.src:
                 os.mkdir(dst_cyr_dir)
                 if dst_lat_dir != dst_cyr_dir:

@@ -27,7 +27,7 @@ You should run this only once.
 ## Source files
 
 Translation source files are in `src/` directory and it is Cyrillic only.
-Latin translation is built automatically by simply transcribing Cyrillic to
+Latin translation is built automatically by simply transliterating Cyrillic to
 Latin script.
 The benefit is having a single source code for both scripts.
 
@@ -44,7 +44,7 @@ this directory since it can be built again easily.
 
 Make sure translations pass the validator:
 
-    ./validate.sh sr-Cyrl
+    ./validate.sh sr
     ./validate.sh sr-Latn
 
 If everything is OK then zip the `build/` directory and ship it to end users.
@@ -65,7 +65,7 @@ Build:
 
 Validate:
 
-    ./validate.sh sr-Cyrl
+    ./validate.sh sr
     ./validate.sh sr-Latn
 
 When there are no errors/warnings/notices create pull request.
@@ -91,10 +91,13 @@ Feature banches are merged back into `master` through pull request.
 
 ## Note on language codes
 
-Language codes are `sr-Cyrl` and `sr-Latn` as recommended by:
+Language codes are `sr` and `sr-Latn` as recommended by:
 
     https://www.w3.org/International/questions/qa-html-language-declarations
 
 And listed here:
 
     http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+
+For casual honorifics, in accordance with practice used for other languages we
+intend to use `sr-x-ti` and `sr-Latn-x-ti`.

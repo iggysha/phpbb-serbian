@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d.m.Y|',	// 01 Jan 2007 (with Relative days enabled)
 	'DATETIME_FORMAT'	=> '|d M Y, H:i|',	// 01 Jan 2007, 13:37 (with Relative days enabled)
-	'USER_LANG'			=> 'sr-Cyrl',
+	'USER_LANG'			=> 'sr',
 
 	// You can define different rules for the determination of plural forms here.
 	// See https://area51.phpbb.com/docs/dev/32x/language/plurals.html for more information
