@@ -98,3 +98,6 @@ Language codes are `sr` and `sr-Latn` as recommended by:
 And listed here:
 
     http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+
+For casual honorifics, in accordance with practice used for other languages we
+intend to use `sr-x-ti` and `sr-Latn-x-ti`.
