@@ -32,6 +32,86 @@ def cyr_to_lat(text):
     """
     return ''.join([c if c not in SR_CYR else SR_LAT[SR_CYR.index(c)] for c in text])
 
+FORMAL_PREFIX = (
+    'Ваш',
+    'ваш'
+)
+
+CASUAL_PREFIX = (
+    'Твој',
+    'твој'
+)
+
+FORMAL_POSTFIX = (
+    'сте',  # нисте
+    'ћили', # омогућили
+    'ите',  # мислите
+    'ете',  # можете
+    'ате',  # морате
+)
+
+CASUAL_POSTFIX = (
+    'си',   # ниси
+    'ћио',  # омогућио
+    'иш',   # мислиш
+    'еш',   # можеш
+    'аш',   # мораш
+)
+
+FORMAL_WORD = (
+    'Ви',
+    'ви',
+    'сте',
+)
+
+CASUAL_WORD = (
+    'Ти',
+    'ти',
+    'си',
+)
+
+def to_casual(line):
+    result = list()
+    chunks = line.split()
+    for chunk in chunks:
+        modified = False
+
+        for word in FORMAL_WORD:
+            if chunk == word:
+                print(chunk + '->', end='')
+                chunk = CASUAL_WORD[FORMAL_WORD.index(word)]
+                modified = True
+                print(chunk)
+                break
+        if modified:
+            result.append(chunk)
+            continue
+
+        for prefix in FORMAL_PREFIX:
+            if chunk.startswith(prefix):
+                print(chunk + '->', end='')
+                chunk = CASUAL_PREFIX[FORMAL_PREFIX.index(prefix)] + chunk[len(prefix):]
+                modified = True
+                print(chunk)
+                break
+        if modified:
+            result.append(chunk)
+            continue
+
+        for postfix in FORMAL_POSTFIX:
+            if chunk.endswith(postfix):
+                print(chunk + '->', end='')
+                chunk = chunk[:-len(postfix)] + CASUAL_POSTFIX[FORMAL_POSTFIX.index(postfix)]
+                modified = True
+                print(chunk)
+                break
+        if modified:
+            result.append(chunk)
+            continue
+
+        result.append(chunk)
+    return ' '.join(result)
+
 class Builder(object):
     """ Serbian translation builder for phpBB.
         1. build sr-Latn from sr by transliterating Cyrillic to Latin script
@@ -103,6 +183,9 @@ class Builder(object):
         self._update_user_lang()
 
 def main():
+    x = to_casual("	'QUESTIONS_EXPLAIN'			=> 'За свако попуњавање образаца где сте омогућили Q&amp;A прикључак, корисници ће бити питани једно од питања назначених овде. За коришћење овог прикључка бар једно питање мора бити постављено у подразумеваном језику. Ова питања би требало да буду лака за вашу циљну групу да одговори али ван домашаја ботова који могу да врше Google™ претраге. Само једно питање је неопходно. Уколико будете почели да добијате спам регистрације, питање треба бити промењено. Омогућите стриктну поставку уколико ваше питање указује на мешовита велика и мала слова, знакове интерпункције или празан простор.'")
+    print(x)
+    return
     t = Builder()
     t.build()
 
