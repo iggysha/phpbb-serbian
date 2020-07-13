@@ -34,7 +34,7 @@ def cyr_to_lat(text):
 
 class Builder(object):
     """ Serbian translation builder for phpBB.
-        1. build sr-lat from sr-cyr by transliterating Cyrillic to Latin script
+        1. build sr-Latn from sr-Cyrl by transliterating Cyrillic to Latin script
     """
 
     def __init__(self):
@@ -48,20 +48,20 @@ class Builder(object):
 
     def _build_iso_txt(self):
 
-        cyr_iso_txt = os.path.join(self.dst, 'language/sr-cyr/iso.txt')
+        cyr_iso_txt = os.path.join(self.dst, 'language/sr-Cyrl/iso.txt')
         with open(cyr_iso_txt, mode='w') as f:
             f.write('Serbian\nСрпски\nforum.astrolog.rs')
 
-        lat_iso_txt = os.path.join(self.dst, 'language/sr-lat/iso.txt')
+        lat_iso_txt = os.path.join(self.dst, 'language/sr-Latn/iso.txt')
         with open(lat_iso_txt, mode='w') as f:
             f.write('Serbian\nSrpski\nforum.astrolog.rs')
 
     def _update_user_lang(self):
 
-        lat_common_php = os.path.join(self.dst, 'language/sr-lat/common.php')
+        lat_common_php = os.path.join(self.dst, 'language/sr-Latn/common.php')
         with open(lat_common_php, mode='rb') as f:
             content = f.read()
-        content = content.replace('sr-cyr'.encode('utf-8'), 'sr-lat'.encode('utf-8'))
+        content = content.replace('sr-Cyrl'.encode('utf-8'), 'sr-Latn'.encode('utf-8'))
         with open(lat_common_php, mode='wb') as f:
             f.write(content)
 
@@ -74,8 +74,8 @@ class Builder(object):
             relpath = os.path.relpath(directory, self.src)
             dst_cyr_dir = os.path.join(self.dst, relpath)
             dst_lat_dir = dst_cyr_dir
-            if 'sr-cyr' in relpath:
-                tmp = relpath.replace('sr-cyr', 'sr-lat')
+            if 'sr-Cyrl' in relpath:
+                tmp = relpath.replace('sr-Cyrl', 'sr-Latn')
                 dst_lat_dir = os.path.join(self.dst, tmp)
 
             if directory != self.src:
