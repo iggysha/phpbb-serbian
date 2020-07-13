@@ -44,7 +44,7 @@ this directory since it can be built again easily.
 
 Make sure translations pass the validator:
 
-    ./validate.sh sr-Cyrl
+    ./validate.sh sr
     ./validate.sh sr-Latn
 
 If everything is OK then zip the `build/` directory and ship it to end users.
@@ -65,7 +65,7 @@ Build:
 
 Validate:
 
-    ./validate.sh sr-Cyrl
+    ./validate.sh sr
     ./validate.sh sr-Latn
 
 When there are no errors/warnings/notices create pull request.
@@ -91,7 +91,7 @@ Feature banches are merged back into `master` through pull request.
 
 ## Note on language codes
 
-Language codes are `sr-Cyrl` and `sr-Latn` as recommended by:
+Language codes are `sr` and `sr-Latn` as recommended by:
 
     https://www.w3.org/International/questions/qa-html-language-declarations
 

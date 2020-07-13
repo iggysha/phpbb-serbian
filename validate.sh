@@ -10,7 +10,7 @@ function usage() {
     echo "Usage:"
     echo "    $0 LANG"
     echo "Arguments:"
-    echo "    LANG: sr-Cyrl or sr-Latn"
+    echo "    LANG: sr or sr-Latn"
     echo ""
 }
 
