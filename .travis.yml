@@ -1,0 +1,41 @@
+language: php
+
+php:
+  - 7.4
+
+python:
+  - 3.6
+
+dist: bionic
+
+env:
+  global:
+    - PHPBB_TAG="release-3.3.0"
+    - PHPBB_VERSION="3.3"
+    - PHPBB_LANGUAGE1="sr"
+    - PHPBB_LANGUAGE2="sr-Latn"
+
+before_install:
+  - rm -rf $PHPBB_VERSION
+  - mkdir -p $PHPBB_VERSION/en/language
+  - mkdir -p $PHPBB_VERSION/en/styles/prosilver/theme
+  - mkdir -p $PHPBB_VERSION/$PHPBB_LANGUAGE1/language
+  - mkdir -p $PHPBB_VERSION/$PHPBB_LANGUAGE1/styles/prosilver/theme
+  - mkdir -p $PHPBB_VERSION/$PHPBB_LANGUAGE2/language
+  - mkdir -p $PHPBB_VERSION/$PHPBB_LANGUAGE2/styles/prosilver/theme
+  - git clone --branch $PHPBB_TAG "https://github.com/phpbb/phpbb.git"
+  - cp -r phpbb/phpBB/language/en $PHPBB_VERSION/en/language
+  - cp -r phpbb/phpBB/styles/prosilver/theme/en $PHPBB_VERSION/en/styles/prosilver/theme
+  - curl -sS "https://getcomposer.org/installer" | php
+
+install:
+  - php composer.phar install --no-interaction --prefer-source
+
+script:
+  - ./build.py
+  - cp -r build/language/$PHPBB_LANGUAGE1 $PHPBB_VERSION/$PHPBB_LANGUAGE1/language/$PHPBB_LANGUAGE1
+  - cp -r build/styles/prosilver/theme/$PHPBB_LANGUAGE1 $PHPBB_VERSION/$PHPBB_LANGUAGE1/styles/prosilver/theme/$PHPBB_LANGUAGE1
+  - cp -r build/language/$PHPBB_LANGUAGE2 $PHPBB_VERSION/$PHPBB_LANGUAGE2/language/$PHPBB_LANGUAGE2
+  - cp -r build/styles/prosilver/theme/$PHPBB_LANGUAGE2 $PHPBB_VERSION/$PHPBB_LANGUAGE2/styles/prosilver/theme/$PHPBB_LANGUAGE2
+  - php vendor/bin/translation.php validate $PHPBB_LANGUAGE1 --phpbb-version=$PHPBB_VERSION --display-notices
+  - php vendor/bin/translation.php validate $PHPBB_LANGUAGE2 --phpbb-version=$PHPBB_VERSION --display-notices
