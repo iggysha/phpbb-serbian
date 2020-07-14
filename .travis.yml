@@ -3,6 +3,8 @@ language: php
 php:
   - 5.6
 
+dist: bionic
+
 env:
   global:
     - PHPBB_TAG="release-3.3.0"
@@ -15,8 +17,6 @@ before_install:
   - mkdir -p $PHPBB_VERSION/en/styles/prosilver/theme
   - mkdir -p $PHPBB_VERSION/$PHPBB_LANGUAGE/language
   - mkdir -p $PHPBB_VERSION/$PHPBB_LANGUAGE/styles/prosilver/theme
-  - cp -r build/language/$PHPBB_LANGUAGE $PHPBB_VERSION/$PHPBB_LANGUAGE/language/$PHPBB_LANGUAGE
-  - cp -r build/styles/prosilver/theme/$PHPBB_LANGUAGE $PHPBB_VERSION/$PHPBB_LANGUAGE/styles/prosilver/theme/$PHPBB_LANGUAGE
   - git clone --branch $PHPBB_TAG "https://github.com/phpbb/phpbb.git"
   - cp -r phpbb/phpBB/language/en $PHPBB_VERSION/en/language
   - cp -r phpbb/phpBB/styles/prosilver/theme/en $PHPBB_VERSION/en/styles/prosilver/theme
@@ -26,4 +26,7 @@ install:
   - php composer.phar install --no-interaction --prefer-source
 
 script:
+  - ./build.py
+  - cp -r build/language/$PHPBB_LANGUAGE $PHPBB_VERSION/$PHPBB_LANGUAGE/language/$PHPBB_LANGUAGE
+  - cp -r build/styles/prosilver/theme/$PHPBB_LANGUAGE $PHPBB_VERSION/$PHPBB_LANGUAGE/styles/prosilver/theme/$PHPBB_LANGUAGE
   - php vendor/bin/translation.php validate $PHPBB_LANGUAGE --phpbb-version=$PHPBB_VERSION --display-notices
