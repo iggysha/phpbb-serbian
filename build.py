@@ -31,7 +31,7 @@ def cyr_to_lat(text):
     """ Transliterate Serbian Cyrillic srcipt to Latin, character for character.
     """
     return ''.join([c if c not in SR_CYR else SR_LAT[SR_CYR.index(c)] for c in text])
-
+'''
 FORMAL_PREFIX = (
     'Ваш',
     'ваш'
@@ -41,33 +41,67 @@ CASUAL_PREFIX = (
     'Твој',
     'твој'
 )
-
+'''
 FORMAL_POSTFIX = (
     'сте',  # нисте
-    'ћили', # омогућили
-    'ите',  # мислите
+    'или',  # омогућили
+    'ите',  # мислите, пратите, посетите, кликните ## ПРОБЛЕМ: кликните! А ако кликнете?
     'ете',  # можете
     'ате',  # морате
+    'ели',  # почели
 )
 
 CASUAL_POSTFIX = (
     'си',   # ниси
-    'ћио',  # омогућио
-    'иш',   # мислиш
+    'ио',   # омогућио
+    'и',   # мислиш ## ПРОБЛЕМ: кликни! А ако кликнеш?
     'еш',   # можеш
     'аш',   # мораш
+    'ео',   # почео
 )
 
 FORMAL_WORD = (
+    'сте',
+    'бисте',
     'Ви',
     'ви',
-    'сте',
+    'Ваш',
+    'ваш',
+    'Ваши',
+    'ваши',
+    'Ваша',
+    'ваша',
+    'Ваше',
+    'ваше',
+    'Вашу',
+    'вашу',
+    'Вама',
+    'вама',
+    'вам',
+    'Желите',
+    'желите',
 )
 
 CASUAL_WORD = (
+    'си',
+    'би',
     'Ти',
     'ти',
-    'си',
+    'Твој',
+    'твој',
+    'Твоји',
+    'твоји',
+    'Твоја',
+    'твоја',
+    'Твоје',
+    'твоје',
+    'Твоју',
+    'твоју',
+    'Теби',
+    'теби',
+    'ти',
+    'Желиш',
+    'желиш',
 )
 
 def to_casual(line):
@@ -78,15 +112,15 @@ def to_casual(line):
 
         for word in FORMAL_WORD:
             if chunk == word:
-                print(chunk + '->', end='')
+                #print(chunk + '->', end='')
                 chunk = CASUAL_WORD[FORMAL_WORD.index(word)]
                 modified = True
-                print(chunk)
+                #print(chunk)
                 break
         if modified:
             result.append(chunk)
             continue
-
+        '''
         for prefix in FORMAL_PREFIX:
             if chunk.startswith(prefix):
                 print(chunk + '->', end='')
@@ -97,13 +131,15 @@ def to_casual(line):
         if modified:
             result.append(chunk)
             continue
-
+        '''
         for postfix in FORMAL_POSTFIX:
             if chunk.endswith(postfix):
-                print(chunk + '->', end='')
+                if postfix == 'ите':
+                    print(chunk + '->', end='')
                 chunk = chunk[:-len(postfix)] + CASUAL_POSTFIX[FORMAL_POSTFIX.index(postfix)]
                 modified = True
-                print(chunk)
+                if postfix == 'ите':
+                    print(chunk)
                 break
         if modified:
             result.append(chunk)
@@ -172,10 +208,14 @@ class Builder(object):
                 dst_lat_file_path = os.path.join(dst_lat_dir, filename)
                 with open(srcfilepath, mode='rb') as srcfile:
                     src = srcfile.read()
+                    srcfile.seek(0)
+                    lines = srcfile.readlines()
                     with open(dst_cyr_file_path, mode='wb') as dstfile:
                         dstfile.write(src)
                     if dst_lat_file_path.endswith('.php') or dst_lat_file_path.endswith('.txt'):
                         src = cyr_to_lat(src.decode('utf-8')).encode('utf-8')
+                        for line in lines:
+                            to_casual(line.decode('utf-8'))
                     with open(dst_lat_file_path, mode='wb') as dstfile:
                         dstfile.write(src)
 
@@ -183,9 +223,6 @@ class Builder(object):
         self._update_user_lang()
 
 def main():
-    x = to_casual("	'QUESTIONS_EXPLAIN'			=> 'За свако попуњавање образаца где сте омогућили Q&amp;A прикључак, корисници ће бити питани једно од питања назначених овде. За коришћење овог прикључка бар једно питање мора бити постављено у подразумеваном језику. Ова питања би требало да буду лака за вашу циљну групу да одговори али ван домашаја ботова који могу да врше Google™ претраге. Само једно питање је неопходно. Уколико будете почели да добијате спам регистрације, питање треба бити промењено. Омогућите стриктну поставку уколико ваше питање указује на мешовита велика и мала слова, знакове интерпункције или празан простор.'")
-    print(x)
-    return
     t = Builder()
     t.build()
 
