@@ -1,5 +1,7 @@
 # phpbb-serbian
 
+[![Build Status](https://travis-ci.com/iggysha/phpbb-serbian.svg?branch=master)](https://travis-ci.com/iggysha/phpbb-serbian)
+
 Serbian Cyrillic/Latin translation source files, build and validation system for
 phpBB.
 This is unofficial repository.
